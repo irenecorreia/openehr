@@ -1,0 +1,48 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-COMPOSITION.teste.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
+    
+description
+    copyright = <"">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"">
+        >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
+    lifecycle_state = <"unmanaged">
+
+definition
+    COMPOSITION[id1] matches {    -- teste composition
+        category matches {
+            DV_TEXT[id2] 
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"teste composition">
+                description = <"teste composition">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"*teste compisiçao (pt-br)">
+                description = <"*teste compisiçao (en)">
+            >
+        >
+    >
+
