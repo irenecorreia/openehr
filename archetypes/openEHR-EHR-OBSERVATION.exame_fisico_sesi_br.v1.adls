@@ -179,6 +179,17 @@ definition
                                             }
                                         }
                                     }
+                                    CLUSTER[id52] occurrences matches {1} matches {    -- Abdômen
+                                        items matches {
+                                            ELEMENT[id53] occurrences matches {0..1} matches {    -- Inspeção
+                                                value matches {
+                                                    DV_CODED_TEXT[id54] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -314,6 +325,14 @@ terminology
                 text = <"Especificar">
                 description = <"Especificar">
             >
+            ["id52"] = <
+                text = <"Abdômen">
+                description = <"Abdômen">
+            >
+            ["id53"] = <
+                text = <"Inspeção">
+                description = <"Inspeção">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -435,6 +454,14 @@ terminology
             ["id50"] = <
                 text = <"Especificar (pt-br)">
                 description = <"Especificar (pt-br)">
+            >
+            ["id52"] = <
+                text = <"Abdômen (pt-br)">
+                description = <"Abdômen (pt-br)">
+            >
+            ["id53"] = <
+                text = <"Inspeção (pt-br)">
+                description = <"Inspeção (pt-br)">
             >
         >
     >
