@@ -299,6 +299,20 @@ definition
                                                     }
                                                 }
                                             }
+                                            ELEMENT[id90] occurrences matches {0..1} matches {    -- Irradiação membro superior direito
+                                                value matches {
+                                                    DV_CODED_TEXT[id91] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
+                                            ELEMENT[id92] occurrences matches {0..1} matches {    -- Irradiação membro superior esquerdo
+                                                value matches {
+                                                    DV_CODED_TEXT[id93] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -516,6 +530,14 @@ terminology
                 text = <"Irradiação escapular">
                 description = <"Irradiação escapular">
             >
+            ["id90"] = <
+                text = <"Irradiação membro superior direito">
+                description = <"Irradiação membro superior direito">
+            >
+            ["id92"] = <
+                text = <"Irradiação membro superior esquerdo">
+                description = <"Irradiação membro superior esquerdo">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -717,6 +739,14 @@ terminology
             ["id88"] = <
                 text = <"Irradiação escapular (pt-br)">
                 description = <"Irradiação escapular (pt-br)">
+            >
+            ["id90"] = <
+                text = <"Irradiação membro superior direito (pt-br)">
+                description = <"Irradiação membro superior direito (pt-br)">
+            >
+            ["id92"] = <
+                text = <"Irradiação membro superior esquerdo (pt-br)">
+                description = <"Irradiação membro superior esquerdo (pt-br)">
             >
         >
     >
