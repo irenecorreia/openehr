@@ -973,5 +973,12 @@
     "path" : "archetypes/openEHR-EHR-ACTION.teste.v1.adls",
     "sha" : "5628466637005ec94357c3274fa6791c99d9c277",
     "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.teste1.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "teste1",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.teste1.v1.adls",
+    "sha" : "204ea290811fd014139de568747366bdd1b878e9",
+    "languages" : [ "en" ]
   } ]
 }
