@@ -92,7 +92,7 @@ definition
                                                     }
                                                 }
                                             }
-                                            ELEMENT[id25] occurrences matches {1} matches {    -- Especificar
+                                            ELEMENT[id25] occurrences matches {0..1} matches {    -- Especificar
                                                 value matches {
                                                     DV_TEXT[id26] 
                                                 }
@@ -112,6 +112,11 @@ definition
                                                     DV_BOOLEAN[id32] matches {
                                                         value matches {True, False}
                                                     }
+                                                }
+                                            }
+                                            ELEMENT[id33] occurrences matches {0..1} matches {    -- Especificar
+                                                value matches {
+                                                    DV_TEXT[id34] 
                                                 }
                                             }
                                         }
@@ -211,6 +216,10 @@ terminology
                 text = <"Deformidade">
                 description = <"Deformidade">
             >
+            ["id33"] = <
+                text = <"Especificar">
+                description = <"Especificar">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -292,6 +301,10 @@ terminology
             ["id31"] = <
                 text = <"Deformidade (pt-br)">
                 description = <"Deformidade (pt-br)">
+            >
+            ["id33"] = <
+                text = <"Especificar (pt-br)">
+                description = <"Especificar (pt-br)">
             >
         >
     >
