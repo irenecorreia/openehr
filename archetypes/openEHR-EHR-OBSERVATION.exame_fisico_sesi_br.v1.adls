@@ -85,6 +85,18 @@ definition
                                                     }
                                                 }
                                             }
+                                            ELEMENT[id23] occurrences matches {0..1} matches {    -- Visão
+                                                value matches {
+                                                    DV_CODED_TEXT[id24] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
+                                            ELEMENT[id25] occurrences matches {1} matches {    -- Especificar
+                                                value matches {
+                                                    DV_TEXT[id26] 
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -162,6 +174,14 @@ terminology
                 text = <"Boca e dentes">
                 description = <"Boca e dentes">
             >
+            ["id23"] = <
+                text = <"Visão">
+                description = <"Visão">
+            >
+            ["id25"] = <
+                text = <"Especificar">
+                description = <"Especificar">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -223,6 +243,14 @@ terminology
             ["id21"] = <
                 text = <"Boca e dentes (pt-br)">
                 description = <"Boca e dentes (pt-br)">
+            >
+            ["id23"] = <
+                text = <"Visão (pt-br)">
+                description = <"Visão (pt-br)">
+            >
+            ["id25"] = <
+                text = <"Especificar (pt-br)">
+                description = <"Especificar (pt-br)">
             >
         >
     >
