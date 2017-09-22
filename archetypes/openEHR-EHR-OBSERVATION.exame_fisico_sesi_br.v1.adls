@@ -381,6 +381,11 @@ definition
                                                     }
                                                 }
                                             }
+                                            ELEMENT[id116] occurrences matches {0..1} matches {    -- Especificar
+                                                value matches {
+                                                    DV_TEXT[id117] 
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -650,6 +655,10 @@ terminology
                 text = <"Força">
                 description = <"Força">
             >
+            ["id116"] = <
+                text = <"Especificar">
+                description = <"Especificar">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -903,6 +912,10 @@ terminology
             ["id114"] = <
                 text = <"Força (pt-br)">
                 description = <"Força (pt-br)">
+            >
+            ["id116"] = <
+                text = <"Especificar (pt-br)">
+                description = <"Especificar (pt-br)">
             >
         >
     >
