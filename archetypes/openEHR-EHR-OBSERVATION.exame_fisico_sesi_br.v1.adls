@@ -249,6 +249,13 @@ definition
                                                     DV_TEXT[id73] 
                                                 }
                                             }
+                                            ELEMENT[id74] occurrences matches {0..1} matches {    -- Deformidade
+                                                value matches {
+                                                    DV_CODED_TEXT[id75] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -434,6 +441,10 @@ terminology
                 text = <"Especificar">
                 description = <"Especificar">
             >
+            ["id74"] = <
+                text = <"Deformidade">
+                description = <"Deformidade">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -603,6 +614,10 @@ terminology
             ["id72"] = <
                 text = <"Especificar (pt-br)">
                 description = <"Especificar (pt-br)">
+            >
+            ["id74"] = <
+                text = <"Deformidade (pt-br)">
+                description = <"Deformidade (pt-br)">
             >
         >
     >
