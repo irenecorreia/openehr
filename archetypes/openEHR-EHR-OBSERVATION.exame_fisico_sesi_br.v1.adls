@@ -405,6 +405,11 @@ definition
                                                     }
                                                 }
                                             }
+                                            ELEMENT[id124] occurrences matches {0..1} matches {    -- Especificar
+                                                value matches {
+                                                    DV_TEXT[id125] 
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -690,6 +695,10 @@ terminology
                 text = <"Prótese/ órtese">
                 description = <"Prótese/ órtese">
             >
+            ["id124"] = <
+                text = <"Especificar">
+                description = <"Especificar">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -959,6 +968,10 @@ terminology
             ["id122"] = <
                 text = <"Prótese/ órtese (pt-br)">
                 description = <"Prótese/ órtese (pt-br)">
+            >
+            ["id124"] = <
+                text = <"Especificar (pt-br)">
+                description = <"Especificar (pt-br)">
             >
         >
     >
