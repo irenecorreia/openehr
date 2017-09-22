@@ -235,7 +235,22 @@ definition
                                             }
                                         }
                                     }
-                                    CLUSTER[id69] occurrences matches {0..1}     -- Coluna
+                                    CLUSTER[id69] occurrences matches {0..1} matches {    -- Coluna
+                                        items matches {
+                                            ELEMENT[id70] occurrences matches {0..1} matches {    -- Inspeção
+                                                value matches {
+                                                    DV_CODED_TEXT[id71] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
+                                            ELEMENT[id72] occurrences matches {0..1} matches {    -- Especificar
+                                                value matches {
+                                                    DV_TEXT[id73] 
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -411,6 +426,14 @@ terminology
                 text = <"Coluna">
                 description = <"Coluna">
             >
+            ["id70"] = <
+                text = <"Inspeção">
+                description = <"Inspeção">
+            >
+            ["id72"] = <
+                text = <"Especificar">
+                description = <"Especificar">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -572,6 +595,14 @@ terminology
             ["id69"] = <
                 text = <"Coluna (pt-br)">
                 description = <"Coluna (pt-br)">
+            >
+            ["id70"] = <
+                text = <"Inspeção (pt-br)">
+                description = <"Inspeção (pt-br)">
+            >
+            ["id72"] = <
+                text = <"Especificar (pt-br)">
+                description = <"Especificar (pt-br)">
             >
         >
     >
