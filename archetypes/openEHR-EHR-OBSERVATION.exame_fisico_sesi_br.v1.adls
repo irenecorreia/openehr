@@ -292,6 +292,13 @@ definition
                                                     DV_TEXT[id87] 
                                                 }
                                             }
+                                            ELEMENT[id88] occurrences matches {0..1} matches {    -- Irradiação escapular
+                                                value matches {
+                                                    DV_CODED_TEXT[id89] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -505,6 +512,10 @@ terminology
                 text = <"Especificar">
                 description = <"Especificar">
             >
+            ["id88"] = <
+                text = <"Irradiação escapular">
+                description = <"Irradiação escapular">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -702,6 +713,10 @@ terminology
             ["id86"] = <
                 text = <"Especificar (pt-br)">
                 description = <"Especificar (pt-br)">
+            >
+            ["id88"] = <
+                text = <"Irradiação escapular (pt-br)">
+                description = <"Irradiação escapular (pt-br)">
             >
         >
     >
