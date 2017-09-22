@@ -410,6 +410,42 @@ definition
                                                     DV_TEXT[id125] 
                                                 }
                                             }
+                                            ELEMENT[id126] occurrences matches {0..1} matches {    -- Varizes em membro inferior direito
+                                                value matches {
+                                                    DV_CODED_TEXT[id127] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
+                                            ELEMENT[id128] occurrences matches {0..1} matches {    -- Especificar
+                                                value matches {
+                                                    DV_TEXT[id129] 
+                                                }
+                                            }
+                                            ELEMENT[id130] occurrences matches {0..1} matches {    -- Varizes em membro inferior esquerdo
+                                                value matches {
+                                                    DV_CODED_TEXT[id131] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
+                                            ELEMENT[id132] occurrences matches {0..1} matches {    -- Especificar
+                                                value matches {
+                                                    DV_TEXT[id133] 
+                                                }
+                                            }
+                                            ELEMENT[id134] occurrences matches {0..1} matches {    -- Varizes ausentes
+                                                value matches {
+                                                    DV_CODED_TEXT[id135] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
+                                            ELEMENT[id136] occurrences matches {0..1} matches {    -- Especificar
+                                                value matches {
+                                                    DV_TEXT[id137] 
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -699,6 +735,30 @@ terminology
                 text = <"Especificar">
                 description = <"Especificar">
             >
+            ["id126"] = <
+                text = <"Varizes em membro inferior direito">
+                description = <"Varizes em membro inferior direito">
+            >
+            ["id128"] = <
+                text = <"Especificar">
+                description = <"Especificar">
+            >
+            ["id130"] = <
+                text = <"Varizes em membro inferior esquerdo">
+                description = <"Varizes em membro inferior esquerdo">
+            >
+            ["id132"] = <
+                text = <"Especificar">
+                description = <"Especificar">
+            >
+            ["id134"] = <
+                text = <"Varizes ausentes">
+                description = <"Varizes ausentes">
+            >
+            ["id136"] = <
+                text = <"Especificar">
+                description = <"Especificar">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -970,6 +1030,30 @@ terminology
                 description = <"Prótese/ órtese (pt-br)">
             >
             ["id124"] = <
+                text = <"Especificar (pt-br)">
+                description = <"Especificar (pt-br)">
+            >
+            ["id126"] = <
+                text = <"Varizes em membro inferior direito (pt-br)">
+                description = <"Varizes em membro inferior direito (pt-br)">
+            >
+            ["id128"] = <
+                text = <"Especificar (pt-br)">
+                description = <"Especificar (pt-br)">
+            >
+            ["id130"] = <
+                text = <"Varizes em membro inferior esquerdo (pt-br)">
+                description = <"Varizes em membro inferior esquerdo (pt-br)">
+            >
+            ["id132"] = <
+                text = <"Especificar (pt-br)">
+                description = <"Especificar (pt-br)">
+            >
+            ["id134"] = <
+                text = <"Varizes ausentes (pt-br)">
+                description = <"Varizes ausentes (pt-br)">
+            >
+            ["id136"] = <
                 text = <"Especificar (pt-br)">
                 description = <"Especificar (pt-br)">
             >
