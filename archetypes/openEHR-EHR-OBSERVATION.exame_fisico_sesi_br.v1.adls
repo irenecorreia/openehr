@@ -200,6 +200,13 @@ definition
                                                     DV_TEXT[id58] 
                                                 }
                                             }
+                                            ELEMENT[id59] occurrences matches {0..1} matches {    -- Hérnia umbilical
+                                                value matches {
+                                                    DV_CODED_TEXT[id60] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -353,6 +360,10 @@ terminology
                 text = <"Especificar">
                 description = <"Especificar">
             >
+            ["id59"] = <
+                text = <"Hérnia umbilical">
+                description = <"Hérnia umbilical">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -490,6 +501,10 @@ terminology
             ["id57"] = <
                 text = <"Especificar (pt-br)">
                 description = <"Especificar (pt-br)">
+            >
+            ["id59"] = <
+                text = <"Hérnia umbilical (pt-br)">
+                description = <"Hérnia umbilical (pt-br)">
             >
         >
     >
