@@ -334,6 +334,18 @@ definition
                                                     }
                                                 }
                                             }
+                                            ELEMENT[id100] occurrences matches {0..1} matches {    -- Outras irradiações
+                                                value matches {
+                                                    DV_CODED_TEXT[id101] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
+                                            ELEMENT[id102] occurrences matches {0..1} matches {    -- Especificar
+                                                value matches {
+                                                    DV_TEXT[id103] 
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -571,6 +583,14 @@ terminology
                 text = <"Irradiação ausente">
                 description = <"Irradiação ausente">
             >
+            ["id100"] = <
+                text = <"Outras irradiações">
+                description = <"Outras irradiações">
+            >
+            ["id102"] = <
+                text = <"Especificar">
+                description = <"Especificar">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -792,6 +812,14 @@ terminology
             ["id98"] = <
                 text = <"Irradiação ausente (pt-br)">
                 description = <"Irradiação ausente (pt-br)">
+            >
+            ["id100"] = <
+                text = <"Outras irradiações (pt-br)">
+                description = <"Outras irradiações (pt-br)">
+            >
+            ["id102"] = <
+                text = <"Especificar (pt-br)">
+                description = <"Especificar (pt-br)">
             >
         >
     >
