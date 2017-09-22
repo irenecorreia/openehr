@@ -78,6 +78,13 @@ definition
                                                     }
                                                 }
                                             }
+                                            ELEMENT[id21] occurrences matches {1} matches {    -- Boca e dentes
+                                                value matches {
+                                                    DV_CODED_TEXT[id22] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -151,6 +158,10 @@ terminology
                 text = <"Orofaringe">
                 description = <"Orofaringe">
             >
+            ["id21"] = <
+                text = <"Boca e dentes">
+                description = <"Boca e dentes">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -208,6 +219,10 @@ terminology
             ["id19"] = <
                 text = <"Orofaringe (pt-br)">
                 description = <"Orofaringe (pt-br)">
+            >
+            ["id21"] = <
+                text = <"Boca e dentes (pt-br)">
+                description = <"Boca e dentes (pt-br)">
             >
         >
     >
