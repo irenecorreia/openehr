@@ -393,6 +393,18 @@ definition
                                                     }
                                                 }
                                             }
+                                            ELEMENT[id120] occurrences matches {0..1} matches {    -- Especifica
+                                                value matches {
+                                                    DV_TEXT[id121] 
+                                                }
+                                            }
+                                            ELEMENT[id122] occurrences matches {0..1} matches {    -- Prótese/ órtese
+                                                value matches {
+                                                    DV_CODED_TEXT[id123] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -670,6 +682,14 @@ terminology
                 text = <"Deformidade">
                 description = <"Deformidade">
             >
+            ["id120"] = <
+                text = <"Especifica">
+                description = <"Especifica">
+            >
+            ["id122"] = <
+                text = <"Prótese/ órtese">
+                description = <"Prótese/ órtese">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -931,6 +951,14 @@ terminology
             ["id118"] = <
                 text = <"Deformidade (pt-br)">
                 description = <"Deformidade (pt-br)">
+            >
+            ["id120"] = <
+                text = <"Especifica (pt-br)">
+                description = <"Especifica (pt-br)">
+            >
+            ["id122"] = <
+                text = <"Prótese/ órtese (pt-br)">
+                description = <"Prótese/ órtese (pt-br)">
             >
         >
     >
