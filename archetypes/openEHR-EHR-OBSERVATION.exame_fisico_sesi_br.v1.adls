@@ -62,7 +62,7 @@ definition
                                             DV_TEXT[id15] 
                                         }
                                     }
-                                    CLUSTER[id16] occurrences matches {1} matches {    -- Cabeça e pescoço
+                                    CLUSTER[id16] occurrences matches {0..1} matches {    -- Cabeça e pescoço
                                         items matches {
                                             ELEMENT[id17] occurrences matches {0..1} matches {    -- Audição
                                                 value matches {
@@ -121,7 +121,7 @@ definition
                                             }
                                         }
                                     }
-                                    CLUSTER[id35] occurrences matches {1} matches {    -- Tórax
+                                    CLUSTER[id35] occurrences matches {0..1} matches {    -- Tórax
                                         items matches {
                                             ELEMENT[id36] occurrences matches {0..1} matches {    -- Simetria
                                                 value matches {
@@ -179,7 +179,7 @@ definition
                                             }
                                         }
                                     }
-                                    CLUSTER[id52] occurrences matches {1} matches {    -- Abdômen
+                                    CLUSTER[id52] occurrences matches {0..1} matches {    -- Abdômen
                                         items matches {
                                             ELEMENT[id53] occurrences matches {0..1} matches {    -- Inspeção
                                                 value matches {
@@ -235,6 +235,7 @@ definition
                                             }
                                         }
                                     }
+                                    CLUSTER[id69] occurrences matches {0..1}     -- Coluna
                                 }
                             }
                         }
@@ -406,6 +407,10 @@ terminology
                 text = <"Especificar">
                 description = <"Especificar">
             >
+            ["id69"] = <
+                text = <"Coluna">
+                description = <"Coluna">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -563,6 +568,10 @@ terminology
             ["id67"] = <
                 text = <"Especificar (pt-br)">
                 description = <"Especificar (pt-br)">
+            >
+            ["id69"] = <
+                text = <"Coluna (pt-br)">
+                description = <"Coluna (pt-br)">
             >
         >
     >
