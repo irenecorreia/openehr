@@ -151,6 +151,13 @@ definition
                                                     }
                                                 }
                                             }
+                                            ELEMENT[id44] occurrences matches {0..1} matches {    -- Ausculta respiratória
+                                                value matches {
+                                                    DV_CODED_TEXT[id45] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -272,6 +279,10 @@ terminology
                 text = <"Ausculta pulmonar">
                 description = <"Ausculta pulmonar">
             >
+            ["id44"] = <
+                text = <"Ausculta respiratória">
+                description = <"Ausculta respiratória">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -377,6 +388,10 @@ terminology
             ["id42"] = <
                 text = <"Ausculta pulmonar (pt-br)">
                 description = <"Ausculta pulmonar (pt-br)">
+            >
+            ["id44"] = <
+                text = <"Ausculta respiratória (pt-br)">
+                description = <"Ausculta respiratória (pt-br)">
             >
         >
     >
