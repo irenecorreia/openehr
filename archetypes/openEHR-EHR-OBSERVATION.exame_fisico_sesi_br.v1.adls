@@ -130,6 +130,13 @@ definition
                                                     }
                                                 }
                                             }
+                                            ELEMENT[id38] occurrences matches {0..1} matches {    -- Expansibilidade
+                                                value matches {
+                                                    DV_CODED_TEXT[id39] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -239,6 +246,10 @@ terminology
                 text = <"Simetria">
                 description = <"Simetria">
             >
+            ["id38"] = <
+                text = <"Expansibilidade">
+                description = <"Expansibilidade">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -332,6 +343,10 @@ terminology
             ["id36"] = <
                 text = <"Simetria (pt-br)">
                 description = <"Simetria (pt-br)">
+            >
+            ["id38"] = <
+                text = <"Expansibilidade (pt-br)">
+                description = <"Expansibilidade (pt-br)">
             >
         >
     >
