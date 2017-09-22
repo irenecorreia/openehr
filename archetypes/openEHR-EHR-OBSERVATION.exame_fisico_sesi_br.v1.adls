@@ -270,7 +270,9 @@ definition
                                             }
                                             ELEMENT[id80] occurrences matches {0..1} matches {    -- Especificar
                                                 value matches {
-                                                    DV_TEXT[id81] 
+                                                    DV_CODED_TEXT[id81] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
                                                 }
                                             }
                                         }
