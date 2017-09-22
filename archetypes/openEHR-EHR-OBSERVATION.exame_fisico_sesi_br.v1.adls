@@ -29,10 +29,54 @@ definition
                         data matches {
                             ITEM_TREE[id4] matches {
                                 items matches {
-                                    ELEMENT[id6] occurrences matches {1} matches {    -- Detalhamento do exame fisico
+                                    ELEMENT[id6] occurrences matches {0..1} matches {    -- Detalhamento do exame fisico
                                         value matches {
                                             DV_CODED_TEXT[id7] matches {
                                                 defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id8] occurrences matches {0..1} matches {    -- Pelos e fâneros
+                                        value matches {
+                                            DV_CODED_TEXT[id9] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id10] occurrences matches {0..1} matches {    -- Gânglios
+                                        value matches {
+                                            DV_CODED_TEXT[id11] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id12] occurrences matches {0..1} matches {    -- Marcha
+                                        value matches {
+                                            DV_CODED_TEXT[id13] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id14] occurrences matches {0..1} matches {    -- Especificar
+                                        value matches {
+                                            DV_TEXT[id15] 
+                                        }
+                                    }
+                                    CLUSTER[id16] occurrences matches {1} matches {    -- Cabeça e pescoço
+                                        items matches {
+                                            ELEMENT[id17] occurrences matches {0..1} matches {    -- Audição
+                                                value matches {
+                                                    DV_CODED_TEXT[id18] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
+                                            ELEMENT[id19] occurrences matches {0..1} matches {    -- Orofaringe
+                                                value matches {
+                                                    DV_CODED_TEXT[id20] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
                                             }
                                         }
                                     }
@@ -79,6 +123,34 @@ terminology
                 text = <"Exame físico">
                 description = <"Exame físico">
             >
+            ["id8"] = <
+                text = <"Pelos e fâneros">
+                description = <"Pelos e fâneros">
+            >
+            ["id10"] = <
+                text = <"Gânglios">
+                description = <"Gânglios">
+            >
+            ["id12"] = <
+                text = <"Marcha">
+                description = <"Marcha">
+            >
+            ["id14"] = <
+                text = <"Especificar">
+                description = <"Especificar">
+            >
+            ["id16"] = <
+                text = <"Cabeça e pescoço">
+                description = <"Cabeça e pescoço">
+            >
+            ["id17"] = <
+                text = <"Audição">
+                description = <"Audição">
+            >
+            ["id19"] = <
+                text = <"Orofaringe">
+                description = <"Orofaringe">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -108,6 +180,34 @@ terminology
             ["ac1"] = <
                 text = <"*Exame físico (pt-br)">
                 description = <"*Exame físico (pt-br)">
+            >
+            ["id8"] = <
+                text = <"Pelos e fâneros (pt-br)">
+                description = <"Pelos e fâneros (pt-br)">
+            >
+            ["id10"] = <
+                text = <"Gânglios (pt-br)">
+                description = <"Gânglios (pt-br)">
+            >
+            ["id12"] = <
+                text = <"Marcha (pt-br)">
+                description = <"Marcha (pt-br)">
+            >
+            ["id14"] = <
+                text = <"Especificar (pt-br)">
+                description = <"Especificar (pt-br)">
+            >
+            ["id16"] = <
+                text = <"Cabeça e pescoço (pt-br)">
+                description = <"Cabeça e pescoço (pt-br)">
+            >
+            ["id17"] = <
+                text = <"Audição (pt-br)">
+                description = <"Audição (pt-br)">
+            >
+            ["id19"] = <
+                text = <"Orofaringe (pt-br)">
+                description = <"Orofaringe (pt-br)">
             >
         >
     >
