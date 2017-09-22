@@ -392,11 +392,10 @@
     "sha" : "61dd815b7cceb7af52e5dc092296cdcb1f43e66d",
     "languages" : [ "en", "sl" ]
   }, {
-    "id" : "openEHR-EHR-ACTION.pathology_test.v1.0.0",
     "rmType" : "ACTION",
     "name" : "Pathology test",
     "path" : "archetypes/openEHR-EHR-ACTION.pathology_test.v1.adls",
-    "sha" : "2329cc02a73fd547f67a10e54f68623e6131a0e7",
+    "sha" : "800fe20e2e06915a4a24c44a3023f930356c7db7",
     "languages" : [ "en" ]
   }, {
     "id" : "openEHR-EHR-ACTION.procedure-SESI_BR.v1.0.0",
@@ -1031,13 +1030,12 @@
     "languages" : [ "pt-br", "en" ]
   }, {
     "path" : "archetypes/openEHR-EHR-OBSERVATION.exame_fisico_sesi_br.v1.adls",
-    "sha" : "9509f660aaf07c50cde4250805db3b4eacdd82b8"
+    "sha" : "acca26acc094a546064e9b4f50adda09729c98a0"
   }, {
-    "id" : "openEHR-EHR-OBSERVATION.morbidade_referida.v1.0.0",
     "rmType" : "OBSERVATION",
     "name" : "morbidade referida",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.morbidade_referida.v1.adls",
-    "sha" : "50c33758d836f83b11f18458ba04c0cba14858ee",
+    "sha" : "6edd2b4761cfc9524a738bb34f981e0ba19a6448",
     "languages" : [ "pt-br" ]
   } ]
 }
