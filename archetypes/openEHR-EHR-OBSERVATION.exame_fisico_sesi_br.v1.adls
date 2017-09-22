@@ -137,6 +137,20 @@ definition
                                                     }
                                                 }
                                             }
+                                            ELEMENT[id40] occurrences matches {0..1} matches {    -- Ritmo cardíaco
+                                                value matches {
+                                                    DV_CODED_TEXT[id41] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
+                                            ELEMENT[id42] occurrences matches {0..1} matches {    -- Ausculta pulmonar
+                                                value matches {
+                                                    DV_CODED_TEXT[id43] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -250,6 +264,14 @@ terminology
                 text = <"Expansibilidade">
                 description = <"Expansibilidade">
             >
+            ["id40"] = <
+                text = <"Ritmo cardíaco">
+                description = <"Ritmo cardíaco">
+            >
+            ["id42"] = <
+                text = <"Ausculta pulmonar">
+                description = <"Ausculta pulmonar">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -347,6 +369,14 @@ terminology
             ["id38"] = <
                 text = <"Expansibilidade (pt-br)">
                 description = <"Expansibilidade (pt-br)">
+            >
+            ["id40"] = <
+                text = <"Ritmo cardíaco (pt-br)">
+                description = <"Ritmo cardíaco (pt-br)">
+            >
+            ["id42"] = <
+                text = <"Ausculta pulmonar (pt-br)">
+                description = <"Ausculta pulmonar (pt-br)">
             >
         >
     >
