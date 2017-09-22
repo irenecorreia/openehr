@@ -165,6 +165,13 @@ definition
                                                     }
                                                 }
                                             }
+                                            ELEMENT[id48] occurrences matches {0..1} matches {    -- Outras deformidades
+                                                value matches {
+                                                    DV_BOOLEAN[id49] matches {
+                                                        value matches {True, False}
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -294,6 +301,10 @@ terminology
                 text = <"Especificar">
                 description = <"Especificar">
             >
+            ["id48"] = <
+                text = <"Outras deformidades">
+                description = <"Outras deformidades">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -407,6 +418,10 @@ terminology
             ["id46"] = <
                 text = <"Especificar (pt-br)">
                 description = <"Especificar (pt-br)">
+            >
+            ["id48"] = <
+                text = <"Outras deformidades (pt-br)">
+                description = <"Outras deformidades (pt-br)">
             >
         >
     >
