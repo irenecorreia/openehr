@@ -448,6 +448,17 @@ definition
                                             }
                                         }
                                     }
+                                    CLUSTER[id138] occurrences matches {1} matches {    -- Psiquismo
+                                        items matches {
+                                            ELEMENT[id139] occurrences matches {0..1} matches {    -- Orientação tempo / espaço
+                                                value matches {
+                                                    DV_CODED_TEXT[id140] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -759,6 +770,14 @@ terminology
                 text = <"Especificar">
                 description = <"Especificar">
             >
+            ["id138"] = <
+                text = <"Psiquismo">
+                description = <"Psiquismo">
+            >
+            ["id139"] = <
+                text = <"Orientação tempo / espaço">
+                description = <"Orientação tempo / espaço">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -1056,6 +1075,14 @@ terminology
             ["id136"] = <
                 text = <"Especificar (pt-br)">
                 description = <"Especificar (pt-br)">
+            >
+            ["id138"] = <
+                text = <"Psiquismo (pt-br)">
+                description = <"Psiquismo (pt-br)">
+            >
+            ["id139"] = <
+                text = <"Orientação tempo / espaço (pt-br)">
+                description = <"Orientação tempo / espaço (pt-br)">
             >
         >
     >
