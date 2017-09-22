@@ -287,6 +287,11 @@ definition
                                                     DV_TEXT[id85] 
                                                 }
                                             }
+                                            ELEMENT[id86] occurrences matches {0..1} matches {    -- Especificar
+                                                value matches {
+                                                    DV_TEXT[id87] 
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -496,6 +501,10 @@ terminology
                 text = <"Localização da dor">
                 description = <"Localização da dor">
             >
+            ["id86"] = <
+                text = <"Especificar">
+                description = <"Especificar">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -689,6 +698,10 @@ terminology
             ["id84"] = <
                 text = <"Localização da dor (pt-br)">
                 description = <"Localização da dor (pt-br)">
+            >
+            ["id86"] = <
+                text = <"Especificar (pt-br)">
+                description = <"Especificar (pt-br)">
             >
         >
     >
