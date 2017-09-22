@@ -207,7 +207,7 @@ definition
                                                     }
                                                 }
                                             }
-                                            ELEMENT[id61] occurrences matches {1} matches {    -- Hérnia ignal
+                                            ELEMENT[id61] occurrences matches {0..1} matches {    -- Hérnia ignal
                                                 value matches {
                                                     DV_CODED_TEXT[id62] matches {
                                                         defining_code matches {[ac1]}
@@ -226,6 +226,11 @@ definition
                                                     DV_CODED_TEXT[id66] matches {
                                                         defining_code matches {[ac1]}
                                                     }
+                                                }
+                                            }
+                                            ELEMENT[id67] occurrences matches {0..1} matches {    -- Especificar
+                                                value matches {
+                                                    DV_TEXT[id68] 
                                                 }
                                             }
                                         }
@@ -397,6 +402,10 @@ terminology
                 text = <"Hérnia incisional">
                 description = <"Hérnia incisional">
             >
+            ["id67"] = <
+                text = <"Especificar">
+                description = <"Especificar">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -550,6 +559,10 @@ terminology
             ["id65"] = <
                 text = <"Hérnia incisional (pt-br)">
                 description = <"Hérnia incisional (pt-br)">
+            >
+            ["id67"] = <
+                text = <"Especificar (pt-br)">
+                description = <"Especificar (pt-br)">
             >
         >
     >
