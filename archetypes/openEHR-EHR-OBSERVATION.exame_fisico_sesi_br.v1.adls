@@ -357,6 +357,30 @@ definition
                                                     }
                                                 }
                                             }
+                                            ELEMENT[id108] occurrences matches {0..1} matches {    -- Especificar
+                                                value matches {
+                                                    DV_TEXT[id109] 
+                                                }
+                                            }
+                                            ELEMENT[id110] occurrences matches {0..1} matches {    -- Palpação
+                                                value matches {
+                                                    DV_CODED_TEXT[id111] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
+                                            ELEMENT[id112] occurrences matches {0..1} matches {    -- Especificar
+                                                value matches {
+                                                    DV_TEXT[id113] 
+                                                }
+                                            }
+                                            ELEMENT[id114] occurrences matches {0..1} matches {    -- Força
+                                                value matches {
+                                                    DV_CODED_TEXT[id115] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -610,6 +634,22 @@ terminology
                 text = <"Inspeção">
                 description = <"Inspeção">
             >
+            ["id108"] = <
+                text = <"Especificar">
+                description = <"Especificar">
+            >
+            ["id110"] = <
+                text = <"Palpação">
+                description = <"Palpação">
+            >
+            ["id112"] = <
+                text = <"Especificar">
+                description = <"Especificar">
+            >
+            ["id114"] = <
+                text = <"Força">
+                description = <"Força">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -847,6 +887,22 @@ terminology
             ["id106"] = <
                 text = <"Inspeção (pt-br)">
                 description = <"Inspeção (pt-br)">
+            >
+            ["id108"] = <
+                text = <"Especificar (pt-br)">
+                description = <"Especificar (pt-br)">
+            >
+            ["id110"] = <
+                text = <"Palpação (pt-br)">
+                description = <"Palpação (pt-br)">
+            >
+            ["id112"] = <
+                text = <"Especificar (pt-br)">
+                description = <"Especificar (pt-br)">
+            >
+            ["id114"] = <
+                text = <"Força (pt-br)">
+                description = <"Força (pt-br)">
             >
         >
     >
