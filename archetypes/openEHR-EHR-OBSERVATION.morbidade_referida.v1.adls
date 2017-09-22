@@ -3,8 +3,9 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::pt-br]>
-    
+
 description
+    lifecycle_state = <"unmanaged">
     copyright = <"">
     details = <
         ["pt-br"] = <
@@ -12,7 +13,6 @@ description
             purpose = <"">
         >
     >
-    lifecycle_state = <"unmanaged">
 
 definition
     OBSERVATION[id1] occurrences matches {1} matches {    -- morbidade referida
@@ -45,4 +45,3 @@ terminology
             >
         >
     >
-
