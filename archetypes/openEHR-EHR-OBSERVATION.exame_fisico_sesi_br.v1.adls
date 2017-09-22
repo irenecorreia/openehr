@@ -121,6 +121,17 @@ definition
                                             }
                                         }
                                     }
+                                    CLUSTER[id35] occurrences matches {1} matches {    -- Tórax
+                                        items matches {
+                                            ELEMENT[id36] occurrences matches {0..1} matches {    -- Simetria
+                                                value matches {
+                                                    DV_CODED_TEXT[id37] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -220,6 +231,14 @@ terminology
                 text = <"Especificar">
                 description = <"Especificar">
             >
+            ["id35"] = <
+                text = <"Tórax">
+                description = <"Tórax">
+            >
+            ["id36"] = <
+                text = <"Simetria">
+                description = <"Simetria">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -305,6 +324,14 @@ terminology
             ["id33"] = <
                 text = <"Especificar (pt-br)">
                 description = <"Especificar (pt-br)">
+            >
+            ["id35"] = <
+                text = <"Tórax (pt-br)">
+                description = <"Tórax (pt-br)">
+            >
+            ["id36"] = <
+                text = <"Simetria (pt-br)">
+                description = <"Simetria (pt-br)">
             >
         >
     >
