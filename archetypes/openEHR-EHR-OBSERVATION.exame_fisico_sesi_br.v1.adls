@@ -1,0 +1,77 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-OBSERVATION.exame_fisico_sesi_br.v1.0.0
+
+language
+    original_language = <[ISO_639-1::pt-br]>
+
+description
+    lifecycle_state = <"unmanaged">
+    copyright = <"">
+    details = <
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
+            purpose = <"">
+        >
+    >
+
+definition
+    OBSERVATION[id1] occurrences matches {1} matches {    -- exame_fisico_sesi_br
+        data matches {
+            HISTORY[id2] matches {
+                events matches {
+                    EVENT[id3] matches {    -- Any event
+                        data matches {
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id6] occurrences matches {1} matches {    -- Detalhamento do exame fisico
+                                        value matches {
+                                            DV_CODED_TEXT[id7] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        state matches {
+                            ITEM_TREE[id5] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"exame_fisico_sesi_br">
+                description = <"exame_fisico_sesi_br">
+            >
+            ["id3"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"Detalhamento do exame fisico">
+                description = <"Detalhamento do exame fisico">
+            >
+            ["at1"] = <
+                text = <"Não examinado">
+                description = <"Não examinado">
+            >
+            ["at2"] = <
+                text = <"Alterado">
+                description = <"Alterado">
+            >
+            ["at3"] = <
+                text = <"Normal">
+                description = <"Normal">
+            >
+            ["ac1"] = <
+                text = <"Exame físico">
+                description = <"Exame físico">
+            >
+        >
+    >
