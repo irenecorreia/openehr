@@ -348,6 +348,17 @@ definition
                                             }
                                         }
                                     }
+                                    CLUSTER[id105] occurrences matches {0..1} matches {    -- Membros
+                                        items matches {
+                                            ELEMENT[id106] occurrences matches {0..1} matches {    -- Inspeção
+                                                value matches {
+                                                    DV_CODED_TEXT[id107] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -591,6 +602,14 @@ terminology
                 text = <"Especificar">
                 description = <"Especificar">
             >
+            ["id105"] = <
+                text = <"Membros">
+                description = <"Membros">
+            >
+            ["id106"] = <
+                text = <"Inspeção">
+                description = <"Inspeção">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -820,6 +839,14 @@ terminology
             ["id102"] = <
                 text = <"Especificar (pt-br)">
                 description = <"Especificar (pt-br)">
+            >
+            ["id105"] = <
+                text = <"Membros (pt-br)">
+                description = <"Membros (pt-br)">
+            >
+            ["id106"] = <
+                text = <"Inspeção (pt-br)">
+                description = <"Inspeção (pt-br)">
             >
         >
     >
