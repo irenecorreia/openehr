@@ -275,6 +275,18 @@ definition
                                                     }
                                                 }
                                             }
+                                            ELEMENT[id82] occurrences matches {0..1} matches {    -- Dor ausente
+                                                value matches {
+                                                    DV_CODED_TEXT[id83] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
+                                            ELEMENT[id84] occurrences matches {0..1} matches {    -- Localização da dor
+                                                value matches {
+                                                    DV_TEXT[id85] 
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -476,6 +488,14 @@ terminology
                 text = <"Especificar">
                 description = <"Especificar">
             >
+            ["id82"] = <
+                text = <"Dor ausente">
+                description = <"Dor ausente">
+            >
+            ["id84"] = <
+                text = <"Localização da dor">
+                description = <"Localização da dor">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -661,6 +681,14 @@ terminology
             ["id80"] = <
                 text = <"Especificar (pt-br)">
                 description = <"Especificar (pt-br)">
+            >
+            ["id82"] = <
+                text = <"Dor ausente (pt-br)">
+                description = <"Dor ausente (pt-br)">
+            >
+            ["id84"] = <
+                text = <"Localização da dor (pt-br)">
+                description = <"Localização da dor (pt-br)">
             >
         >
     >
