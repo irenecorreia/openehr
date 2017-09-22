@@ -256,6 +256,18 @@ definition
                                                     }
                                                 }
                                             }
+                                            ELEMENT[id76] occurrences matches {0..1} matches {    -- Especificar
+                                                value matches {
+                                                    DV_TEXT[id77] 
+                                                }
+                                            }
+                                            ELEMENT[id78] occurrences matches {0..1} matches {    -- Dor aos esforços
+                                                value matches {
+                                                    DV_CODED_TEXT[id79] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -445,6 +457,14 @@ terminology
                 text = <"Deformidade">
                 description = <"Deformidade">
             >
+            ["id76"] = <
+                text = <"Especificar">
+                description = <"Especificar">
+            >
+            ["id78"] = <
+                text = <"Dor aos esforços">
+                description = <"Dor aos esforços">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -618,6 +638,14 @@ terminology
             ["id74"] = <
                 text = <"Deformidade (pt-br)">
                 description = <"Deformidade (pt-br)">
+            >
+            ["id76"] = <
+                text = <"Especificar (pt-br)">
+                description = <"Especificar (pt-br)">
+            >
+            ["id78"] = <
+                text = <"Dor aos esforços (pt-br)">
+                description = <"Dor aos esforços (pt-br)">
             >
         >
     >
