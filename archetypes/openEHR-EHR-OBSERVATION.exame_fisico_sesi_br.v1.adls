@@ -313,6 +313,27 @@ definition
                                                     }
                                                 }
                                             }
+                                            ELEMENT[id94] occurrences matches {0..1} matches {    -- Irradiação membro inferior direito
+                                                value matches {
+                                                    DV_CODED_TEXT[id95] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
+                                            ELEMENT[id96] occurrences matches {0..1} matches {    -- Irradiação membro inferior esquerdo
+                                                value matches {
+                                                    DV_CODED_TEXT[id97] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
+                                            ELEMENT[id98] occurrences matches {0..1} matches {    -- Irradiação ausente
+                                                value matches {
+                                                    DV_CODED_TEXT[id99] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -538,6 +559,18 @@ terminology
                 text = <"Irradiação membro superior esquerdo">
                 description = <"Irradiação membro superior esquerdo">
             >
+            ["id94"] = <
+                text = <"Irradiação membro inferior direito">
+                description = <"Irradiação membro inferior direito">
+            >
+            ["id96"] = <
+                text = <"Irradiação membro inferior esquerdo">
+                description = <"Irradiação membro inferior esquerdo">
+            >
+            ["id98"] = <
+                text = <"Irradiação ausente">
+                description = <"Irradiação ausente">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -747,6 +780,18 @@ terminology
             ["id92"] = <
                 text = <"Irradiação membro superior esquerdo (pt-br)">
                 description = <"Irradiação membro superior esquerdo (pt-br)">
+            >
+            ["id94"] = <
+                text = <"Irradiação membro inferior direito (pt-br)">
+                description = <"Irradiação membro inferior direito (pt-br)">
+            >
+            ["id96"] = <
+                text = <"Irradiação membro inferior esquerdo (pt-br)">
+                description = <"Irradiação membro inferior esquerdo (pt-br)">
+            >
+            ["id98"] = <
+                text = <"Irradiação ausente (pt-br)">
+                description = <"Irradiação ausente (pt-br)">
             >
         >
     >
