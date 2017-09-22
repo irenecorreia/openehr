@@ -158,6 +158,13 @@ definition
                                                     }
                                                 }
                                             }
+                                            ELEMENT[id46] occurrences matches {0..1} matches {    -- Especificar
+                                                value matches {
+                                                    DV_CODED_TEXT[id47] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -283,6 +290,10 @@ terminology
                 text = <"Ausculta respiratória">
                 description = <"Ausculta respiratória">
             >
+            ["id46"] = <
+                text = <"Especificar">
+                description = <"Especificar">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -392,6 +403,10 @@ terminology
             ["id44"] = <
                 text = <"Ausculta respiratória (pt-br)">
                 description = <"Ausculta respiratória (pt-br)">
+            >
+            ["id46"] = <
+                text = <"Especificar (pt-br)">
+                description = <"Especificar (pt-br)">
             >
         >
     >
