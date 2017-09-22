@@ -78,7 +78,7 @@ definition
                                                     }
                                                 }
                                             }
-                                            ELEMENT[id21] occurrences matches {1} matches {    -- Boca e dentes
+                                            ELEMENT[id21] occurrences matches {0..1} matches {    -- Boca e dentes
                                                 value matches {
                                                     DV_CODED_TEXT[id22] matches {
                                                         defining_code matches {[ac1]}
