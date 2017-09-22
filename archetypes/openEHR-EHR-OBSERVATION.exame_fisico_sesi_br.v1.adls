@@ -188,6 +188,18 @@ definition
                                                     }
                                                 }
                                             }
+                                            ELEMENT[id55] occurrences matches {0..1} matches {    -- Palpação
+                                                value matches {
+                                                    DV_CODED_TEXT[id56] matches {
+                                                        defining_code matches {[ac1]}
+                                                    }
+                                                }
+                                            }
+                                            ELEMENT[id57] occurrences matches {0..1} matches {    -- Especificar
+                                                value matches {
+                                                    DV_TEXT[id58] 
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -333,6 +345,14 @@ terminology
                 text = <"Inspeção">
                 description = <"Inspeção">
             >
+            ["id55"] = <
+                text = <"Palpação">
+                description = <"Palpação">
+            >
+            ["id57"] = <
+                text = <"Especificar">
+                description = <"Especificar">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -462,6 +482,14 @@ terminology
             ["id53"] = <
                 text = <"Inspeção (pt-br)">
                 description = <"Inspeção (pt-br)">
+            >
+            ["id55"] = <
+                text = <"Palpação (pt-br)">
+                description = <"Palpação (pt-br)">
+            >
+            ["id57"] = <
+                text = <"Especificar (pt-br)">
+                description = <"Especificar (pt-br)">
             >
         >
     >
