@@ -966,5 +966,12 @@
     "path" : "archetypes/openEHR-EHR-SECTION.vital_signs.v1.0.0.adls",
     "sha" : "9ff781a5e5ceba8a24bc03d410859101a78056e5",
     "languages" : [ "en", "de", "ko" ]
+  }, {
+    "id" : "openEHR-EHR-ACTION.teste.v1.0.0",
+    "rmType" : "ACTION",
+    "name" : "Teste",
+    "path" : "archetypes/openEHR-EHR-ACTION.teste.v1.adls",
+    "sha" : "5628466637005ec94357c3274fa6791c99d9c277",
+    "languages" : [ "en" ]
   } ]
 }
