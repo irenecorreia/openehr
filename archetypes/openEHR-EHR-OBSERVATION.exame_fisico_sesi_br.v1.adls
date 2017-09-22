@@ -97,6 +97,23 @@ definition
                                                     DV_TEXT[id26] 
                                                 }
                                             }
+                                            ELEMENT[id27] occurrences matches {0..1} matches {    -- Uso obrigatório de lentes corretivas
+                                                value matches {
+                                                    DV_TEXT[id28] 
+                                                }
+                                            }
+                                            ELEMENT[id29] occurrences matches {0..1} matches {    -- Especificar
+                                                value matches {
+                                                    DV_TEXT[id30] 
+                                                }
+                                            }
+                                            ELEMENT[id31] occurrences matches {0..1} matches {    -- Deformidade
+                                                value matches {
+                                                    DV_BOOLEAN[id32] matches {
+                                                        value matches {True, False}
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -182,6 +199,18 @@ terminology
                 text = <"Especificar">
                 description = <"Especificar">
             >
+            ["id27"] = <
+                text = <"Uso obrigatório de lentes corretivas">
+                description = <"Uso obrigatório de lentes corretivas">
+            >
+            ["id29"] = <
+                text = <"Especificar">
+                description = <"Especificar">
+            >
+            ["id31"] = <
+                text = <"Deformidade">
+                description = <"Deformidade">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -251,6 +280,18 @@ terminology
             ["id25"] = <
                 text = <"Especificar (pt-br)">
                 description = <"Especificar (pt-br)">
+            >
+            ["id27"] = <
+                text = <"Uso obrigatório de lentes corretivas (pt-br)">
+                description = <"Uso obrigatório de lentes corretivas (pt-br)">
+            >
+            ["id29"] = <
+                text = <"Especificar (pt-br)">
+                description = <"Especificar (pt-br)">
+            >
+            ["id31"] = <
+                text = <"Deformidade (pt-br)">
+                description = <"Deformidade (pt-br)">
             >
         >
     >
