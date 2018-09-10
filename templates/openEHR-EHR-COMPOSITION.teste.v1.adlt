@@ -1,0 +1,126 @@
+template (adl_version=2.0.5; rm_release=1.0.2; generated)
+    openEHR-EHR-COMPOSITION.teste.v1.0.0
+
+specialize
+    openEHR-EHR-COMPOSITION.encounter.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
+    
+description
+    copyright = <"© openEHR">
+    details = <
+        ["en"] = <
+            keywords = <"progress", "note", "encounter">
+            language = <[ISO_639-1::en]>
+            misuse = <"">
+            purpose = <"Record of encounter as a progress note.">
+            use = <"For use to record when a person and clinician interact.">
+        >
+        ["pt-br"] = <
+            keywords = <"Progresso", "nota", "encontro">
+            language = <[ISO_639-1::pt-br]>
+            misuse = <"">
+            purpose = <"Registro de encontro como nota de progresso.">
+            use = <"Usado para gravar uma interação entre uma pessoa e um clínico.">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+    original_author = <
+        ["name"] = <"Thomas Beale">
+        ["organisation"] = <"Ocean Informatics">
+        ["date"] = <"2005-10-10">
+    >
+
+definition
+    COMPOSITION[id1.1] matches {    -- Encounter
+        /category[id3]/defining_code matches {[at1]}
+        content matches {
+            use_archetype ADMIN_ENTRY[id0.2, openEHR-EHR-ADMIN_ENTRY.ovl-teste-historia_ocupacional_atual-001.v1.0.0]
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Encounter">
+                description = <"Generic encounter or progress note composition.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Encontro">
+                description = <"Encontro genérico ou  composição da nota de progresso.">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-ADMIN_ENTRY.ovl-teste-historia_ocupacional_atual-001.v1.0.0
+
+specialize
+    openEHR-EHR-ADMIN_ENTRY.historia_ocupacional_atual.v1.0.0
+
+definition
+    ADMIN_ENTRY[id1.1] matches {    -- historia_ocupacional_atual_SESI_BR
+        /data[id2]/items matches {
+            ELEMENT[id5.1] matches {    -- Cargo
+                value matches {
+                    DV_TEXT[id6.1] 
+                }
+            }
+            ELEMENT[id7.1] matches {    -- Função
+                value matches {
+                    DV_TEXT[id8.1] 
+                }
+            }
+            ELEMENT[id13] matches {
+                /value[id14]/value matches {True, False}
+            }
+            ELEMENT[id17] matches {
+                /value[id18]/defining_code matches {[ac1]}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"historia_ocupacional_atual_SESI_BR">
+                description = <"historia_ocupacional atual">
+            >
+            ["id5.1"] = <
+                text = <"Cargo">
+                description = <"Cargo">
+            >
+            ["id7.1"] = <
+                text = <"Função">
+                description = <"Função">
+            >
+        >
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"current_occupational_history">
+                description = <"current_occupational_history">
+            >
+            ["id5.1"] = <
+                text = <"Charge">
+                description = <"Charge">
+            >
+            ["id7.1"] = <
+                text = <"Function">
+                description = <"Function">
+            >
+        >
+    >
+
