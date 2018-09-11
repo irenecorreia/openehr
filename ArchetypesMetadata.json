@@ -1056,7 +1056,7 @@
     "rmType" : "OBSERVATION",
     "name" : "Body Weight",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.body_weight-SESI_BR3.v1.adls",
-    "sha" : "689459d8fabbae758d375351a5b9cf96ebccb5a6",
+    "sha" : "cb0b8f1fe09ef498bbce985e3ef7b3f8d681889e",
     "languages" : [ "en", "de", "ru", "nl", "pt-br" ]
   } ]
 }
