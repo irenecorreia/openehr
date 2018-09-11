@@ -125,27 +125,40 @@ definition
     OBSERVATION[id1.1] matches {    -- Body Weight
         /data[id3]/events matches {
             EVENT[id4] matches {
-                /data[id2]/items[id5]/value matches {
-                    DV_QUANTITY[id30] matches {
-                        property matches {[at19]}
-                        [magnitude, units] matches {
-                            [{|0.0..1000.0|}, {"kg"}], 
-                            [{|0.0..2000.0|}, {"lb"}]
+                /data[id2]/items matches {
+                    ELEMENT[id5] matches {
+                        value matches {
+                            DV_QUANTITY[id30] matches {
+                                property matches {[at19]}
+                                [magnitude, units] matches {
+                                    [{|0.0..1000.0|}, {"kg"}], 
+                                    [{|0.0..2000.0|}, {"lb"}]
+                                }
+                            }
+                        }
+                    }
+                    ELEMENT[id0.3] occurrences matches {0..1} matches {    -- Abdominal circumference
+                        value matches {
+                            DV_QUANTITY[id0.4] matches {
+                                [units, magnitude, precision] matches {
+                                    [{"cm"}, {|>0.0..<10000.0|}, {|>=0|}]
+                                }
+                            }
                         }
                     }
                 }
                 /state[id9]/items matches {
-                    ELEMENT[id10] matches {
+                    ELEMENT[id10] occurrences matches {0..1} matches {
                         /value[id32]/defining_code matches {[ac1; at12]}
                     }
-                    ELEMENT[id29] matches {
+                    ELEMENT[id29] occurrences matches {0..1} matches {    -- Pregnant?
                         /value[id33]/value matches {True, False; false}
                     }
                 }
             }
         }
         /protocol[id16]/items matches {
-            allow_archetype CLUSTER[id21] matches { 
+            allow_archetype CLUSTER[id21] occurrences matches {0..1} matches { 
                 include
                     archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-a-zA-Z0-9_]+)*\.v1/}
             }
