@@ -305,7 +305,7 @@
     "rmType" : "OBSERVATION",
     "name" : "Body Weight",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.body_weight-SESI_BR.v1.adls",
-    "sha" : "c030bda98163e9107e7c71e7ca96ee16a986675b",
+    "sha" : "c13bb19901a3c949e26c89baf3186b5dd7fe0f08",
     "languages" : [ "en", "de", "ru", "nl", "pt-br" ]
   }, {
     "id" : "openEHR-EHR-OBSERVATION.habitos_lazer.v1.0.0",
