@@ -125,12 +125,26 @@ definition
     OBSERVATION[id1.1] matches {    -- Body Weight
         /data[id3]/events matches {
             EVENT[id4] matches {
-                /data[id2]/items[id5]/value matches {
-                    DV_QUANTITY[id30] matches {
-                        property matches {[at19]}
-                        [magnitude, units] matches {
-                            [{|0.0..1000.0|}, {"kg"}], 
-                            [{|0.0..2000.0|}, {"lb"}]
+                /data[id2]/items matches {
+                    ELEMENT[id5] matches {
+                        value matches {
+                            DV_QUANTITY[id30] matches {
+                                property matches {[at19]}
+                                [magnitude, units] matches {
+                                    [{|0.0..1000.0|}, {"kg"}], 
+                                    [{|0.0..2000.0|}, {"lb"}]
+                                }
+                            }
+                        }
+                    }
+                    ELEMENT[id0.2] matches {    -- Circunferência Abdominal
+                        value matches {
+                            DV_QUANTITY[id0.3] matches {
+                                property matches {[at0.1]}
+                                [units, magnitude, precision] matches {
+                                    [{"cm"}, {|>0.0..<10000.0|}, {|>=0|}]
+                                }
+                            }
                         }
                     }
                 }
@@ -150,14 +164,29 @@ definition
                     archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-a-zA-Z0-9_]+)*\.v1/}
             }
         }
+        state
     }
 
 terminology
+    term_bindings = <
+        ["openehr"] = <
+            ["at0.1"] = <http://openehr.org/id/122>
+        
+        >
+    >
     term_definitions = <
         ["nl"] = <
             ["id1.1"] = <
                 text = <"Lichaamsgewicht">
                 description = <"Meting van het lichaamsgewicht van een individu.">
+            >
+            ["id0.2"] = <
+                text = <"Circunferência Abdominal (en)">
+                description = <"Circunferência Abdominal (en)">
+            >
+            ["at0.1"] = <
+                text = <"Length (en)">
+                description = <"Length (en)">
             >
         >
         ["en"] = <
@@ -165,11 +194,27 @@ terminology
                 text = <"Body Weight">
                 description = <"Measurement of the body weight of an individual.">
             >
+            ["id0.2"] = <
+                text = <"Circunferência Abdominal">
+                description = <"Circunferência Abdominal">
+            >
+            ["at0.1"] = <
+                text = <"Length">
+                description = <"Length">
+            >
         >
         ["de"] = <
             ["id1.1"] = <
                 text = <"Körpergewicht">
                 description = <"Messung des Körpergewichts eines Individuums.">
+            >
+            ["id0.2"] = <
+                text = <"Circunferência Abdominal (en)">
+                description = <"Circunferência Abdominal (en)">
+            >
+            ["at0.1"] = <
+                text = <"Length (en)">
+                description = <"Length (en)">
             >
         >
         ["pt-br"] = <
@@ -177,11 +222,27 @@ terminology
                 text = <"Peso corporal">
                 description = <"A medição do peso corporal de um indivíduo.">
             >
+            ["id0.2"] = <
+                text = <"Circunferência Abdominal (en)">
+                description = <"Circunferência Abdominal (en)">
+            >
+            ["at0.1"] = <
+                text = <"Length (en)">
+                description = <"Length (en)">
+            >
         >
         ["ru"] = <
             ["id1.1"] = <
                 text = <"Масса тела">
                 description = <"Взвешивание пациента.">
+            >
+            ["id0.2"] = <
+                text = <"Circunferência Abdominal (en)">
+                description = <"Circunferência Abdominal (en)">
+            >
+            ["at0.1"] = <
+                text = <"Length (en)">
+                description = <"Length (en)">
             >
         >
     >
