@@ -298,14 +298,14 @@
     "rmType" : "OBSERVATION",
     "name" : "Antecedentes_ginecologico_urologico",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.antecedentes_ginecologico_urologico.v1.adls",
-    "sha" : "151010fc322962e8082bdaac5ab0751919ee361f",
+    "sha" : "2dd1ebcb827224d782b660cc08fe5d91ee88af81",
     "languages" : [ "en", "pt-br" ]
   }, {
     "id" : "openEHR-EHR-OBSERVATION.body_weight-SESI_BR.v1.0.0",
     "rmType" : "OBSERVATION",
     "name" : "Body Weight",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.body_weight-SESI_BR.v1.adls",
-    "sha" : "c13bb19901a3c949e26c89baf3186b5dd7fe0f08",
+    "sha" : "c030bda98163e9107e7c71e7ca96ee16a986675b",
     "languages" : [ "en", "de", "ru", "nl", "pt-br" ]
   }, {
     "id" : "openEHR-EHR-OBSERVATION.habitos_lazer.v1.0.0",
@@ -354,7 +354,7 @@
     "rmType" : "OBSERVATION",
     "name" : "Tobacco Use",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.substance_use-tobacco-SESI_BR.v1.adls",
-    "sha" : "d58a95cbe5d17f2627fd44f75cdb5d5788a2c5a2",
+    "sha" : "f92ee880cb296fe3afb72f25759be224220b9d14",
     "languages" : [ "en", "pt-br" ]
   }, {
     "id" : "openEHR-EHR-SECTION.adhoc.v1.0.0",
@@ -984,7 +984,7 @@
     "rmType" : "ADMIN_ENTRY",
     "name" : "Patient admission",
     "path" : "archetypes/openEHR-EHR-ADMIN_ENTRY.admission_SESI-BR.v1.adls",
-    "sha" : "f0b8aead642eed55da0d511c5636991e156ccbdd",
+    "sha" : "5a4a9fb46e601ea5f250efb54cb5cd00506b244a",
     "languages" : [ "en", "ar-sy", "pt-br" ]
   }, {
     "id" : "openEHR-EHR-ADMIN_ENTRY.aplicacao_pesquisa.v1.0.0",
@@ -996,10 +996,10 @@
   }, {
     "id" : "openEHR-EHR-ADMIN_ENTRY.dados_socioeconomicos.v1.0.0",
     "rmType" : "ADMIN_ENTRY",
-    "name" : "dados socioeconomicos",
+    "name" : "Dados socioeconômicos",
     "path" : "archetypes/openEHR-EHR-ADMIN_ENTRY.dados_socioeconomicos.v1.adls",
-    "sha" : "d06a91583a4191212bc776b63726b53cac05903d",
-    "languages" : [ "pt-br" ]
+    "sha" : "35ce57ddcc50b9b1cd25dc417d05bfe18a0dcc60",
+    "languages" : [ "pt-br", "en" ]
   }, {
     "id" : "openEHR-EHR-CLUSTER.dados.v1.0.0",
     "rmType" : "CLUSTER",
