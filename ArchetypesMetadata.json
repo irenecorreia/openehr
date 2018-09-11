@@ -1044,5 +1044,12 @@
     "path" : "archetypes/openEHR-EHR-OBSERVATION.exame_fisico_sesi.v1.adls",
     "sha" : "7791c054d09c2504472a4841a2b73841fe7f434c",
     "languages" : [ "pt-br", "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.body_weight-SESI_BR2.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "Body Weight",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.body_weight-SESI_BR2.v1.adls",
+    "sha" : "5c84d1c7ad042a62f19eacfcf93e3458b609a820",
+    "languages" : [ "en", "de", "ru", "nl", "pt-br" ]
   } ]
 }
