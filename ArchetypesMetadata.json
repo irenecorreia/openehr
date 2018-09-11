@@ -1037,5 +1037,12 @@
     "path" : "archetypes/openEHR-EHR-OBSERVATION.morbidade_referida.v1.adls",
     "sha" : "6edd2b4761cfc9524a738bb34f981e0ba19a6448",
     "languages" : [ "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.exame_fisico_sesi.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "Exame fisico SESI",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.exame_fisico_sesi.v1.adls",
+    "sha" : "7791c054d09c2504472a4841a2b73841fe7f434c",
+    "languages" : [ "pt-br", "en" ]
   } ]
 }
