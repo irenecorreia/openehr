@@ -848,6 +848,203 @@ terminology
         >
     >
 
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-sesi_fco_completa-substance_use-tobacco-SESI_BR-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.substance_use-tobacco-SESI_BR.v1.0.0
+
+definition
+    OBSERVATION[id1.1.1.1] matches {    -- Tobacco Use
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id5.0.0.1] occurrences matches {0} matches {    -- Substance
+                value matches {
+                    DV_CODED_TEXT[id20.1.0.1] matches {
+                        defining_code matches {[at0.2]}
+                    }
+                }
+            }
+            CLUSTER[id11] occurrences matches {0..1} matches {
+                items matches {
+                    ELEMENT[id12] occurrences matches {0..1} matches {
+                        /value[id21.1]/defining_code matches {[ac0.1]}
+                    }
+                    ELEMENT[id19.0.0.1] occurrences matches {0} matches {    -- Method of use
+                        value matches {
+                            DV_TEXT[id22.0.0.1] 
+                        }
+                    }
+                    ELEMENT[id6.0.0.1] occurrences matches {0} matches {    -- Frequency
+                        value matches {
+                            DV_CODED_TEXT[id23.0.0.1] matches {
+                                defining_code matches {[ac1]}
+                            }
+                        }
+                    }
+                    ELEMENT[id0.0.2] occurrences matches {0..1} matches {
+                        /value[id0.0.3]/value matches {True, False}
+                    }
+                }
+                items matches {
+                    ELEMENT[id12.0.0.1] occurrences matches {0} matches {    -- Form
+                        value matches {
+                            DV_CODED_TEXT[id21.1.0.1] matches {
+                                defining_code matches {[ac0.1]}
+                            }
+                        }
+                    }
+                    ELEMENT[id19.0.0.2] occurrences matches {0} matches {    -- Method of use
+                        value matches {
+                            DV_TEXT[id22.0.0.2] 
+                        }
+                    }
+                    ELEMENT[id6.0.0.2] occurrences matches {0} matches {    -- Frequency
+                        value matches {
+                            DV_CODED_TEXT[id23.0.0.2] matches {
+                                defining_code matches {[ac1]}
+                            }
+                        }
+                    }
+                    ELEMENT[id13.2.0.1] occurrences matches {0} matches {    -- Grams of tobacco
+                        value matches {
+                            DV_QUANTITY[id0.2.0.1] matches {
+                                property matches {[at0.8]}
+                                units matches {"gm/d", "gm/wk"}
+                            }
+                        }
+                    }
+                    ELEMENT[id13.1.0.1] occurrences matches {0} matches {    -- Number smoked
+                        value matches {
+                            DV_QUANTITY[id0.1.0.1] matches {
+                                property matches {[at0.7]}
+                                units matches {"/h", "/d", "/wk"}
+                            }
+                        }
+                    }
+                    ELEMENT[id0.0.2] occurrences matches {0..1} matches {
+                        /value[id0.0.3]/value matches {True, False}
+                    }
+                }
+            }
+            ELEMENT[id14.0.0.1] occurrences matches {0} matches {    -- Triggers
+                value matches {
+                    DV_TEXT[id24.0.0.1] 
+                }
+            }
+            allow_archetype CLUSTER[id15] occurrences matches {0} matches { 
+                include
+                    archetype_id/value matches {/openEHR-EHR-CLUSTER\.change\.v1/}
+            }
+            ELEMENT[id17.0.0.1] occurrences matches {0} matches {    -- Evidence of dependence
+                value matches {
+                    DV_TEXT[id25.0.0.1] 
+                }
+            }
+            ELEMENT[id0.0.4] occurrences matches {0..1} matches {
+                /value[id0.0.5]/value matches {True, False}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1.1.1"] = <
+                text = <"Tobacco Use">
+                description = <"Archetype to record the actual use or consumption of a tobacco at the present time, a specific time or over a period of time.">
+            >
+            ["id5.0.0.1"] = <
+                text = <"Substance">
+                description = <"Identification of substance">
+            >
+            ["id14.0.0.1"] = <
+                text = <"Triggers">
+                description = <"Identified triggers which stimulate or cause use">
+            >
+            ["id17.0.0.1"] = <
+                text = <"Evidence of dependence">
+                description = <"Description of any evidence of dependence on the substance">
+            >
+            ["id19.0.0.1"] = <
+                text = <"Method of use">
+                description = <"Method of use or consumption of the substance">
+            >
+            ["id6.0.0.1"] = <
+                text = <"Frequency">
+                description = <"Frequency of use of substance">
+            >
+            ["id12.0.0.1"] = <
+                text = <"Form">
+                description = <"Form of the substance used">
+            >
+            ["id19.0.0.2"] = <
+                text = <"Method of use">
+                description = <"Method of use or consumption of the substance">
+            >
+            ["id6.0.0.2"] = <
+                text = <"Frequency">
+                description = <"Frequency of use of substance">
+            >
+            ["id13.1.0.1"] = <
+                text = <"Number smoked">
+                description = <"Number of units containing tobacco consumed eg cigarettes or cigars">
+            >
+            ["id13.2.0.1"] = <
+                text = <"Grams of tobacco">
+                description = <"Weight of tobacco consumed eg in a pipe">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1.1.1"] = <
+                text = <"Fumo">
+                description = <"Arquétipo para registrar o uso ou o consumo real de um tabaco no momento presente, um tempo específico ou durante um período de tempo.">
+            >
+            ["id5.0.0.1"] = <
+                text = <"Substância">
+                description = <"Identificação da substância">
+            >
+            ["id14.0.0.1"] = <
+                text = <"Gatilhos">
+                description = <"Identificadores de gatilhos que estimulam ou causam uso.">
+            >
+            ["id17.0.0.1"] = <
+                text = <"Evidência de dependência">
+                description = <"Descrição de qualquer evidência de dependência da substância.">
+            >
+            ["id19.0.0.1"] = <
+                text = <"Modo de uso">
+                description = <"Modo de uso ou consumo da substância.">
+            >
+            ["id6.0.0.1"] = <
+                text = <"Frequência">
+                description = <"Frequência do uso da substância.">
+            >
+            ["id12.0.0.1"] = <
+                text = <"Forma">
+                description = <"Forma de consumo da substância.">
+            >
+            ["id19.0.0.2"] = <
+                text = <"Modo de uso">
+                description = <"Modo de uso ou consumo da substância.">
+            >
+            ["id6.0.0.2"] = <
+                text = <"Frequência">
+                description = <"Frequência do uso da substância.">
+            >
+            ["id13.1.0.1"] = <
+                text = <"Número de unidades de tabaco">
+                description = <"Número de unidades contendo tabaco consumido, por exemplo, cigarros ou charutos.">
+            >
+            ["id13.2.0.1"] = <
+                text = <"Gramas de tabaco">
+                description = <"Peso do tabaco consumido, por exemplo, em um tubo.">
+            >
+        >
+    >
+
+
 ---------------------------------------------------------------------------------
 template_overlay
     openEHR-EHR-SECTION.ovl-sesi_fco_completa-adhoc-002.v1.0.0
@@ -947,6 +1144,268 @@ terminology
             >
         >
     >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-sesi_fco_completa-problem_diagnosis-SESI_BR-001.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.problem_diagnosis-SESI_BR.v1.0.0
+
+definition
+    EVALUATION[id1.1.1] matches {    -- Problem/Diagnosis
+        /data[id2]/items matches {
+            ELEMENT[id3.0.1] occurrences matches {1} matches {    -- Problem/Diagnosis
+                value matches {
+                    DV_TEXT[id84.0.1] 
+                }
+            }
+            ELEMENT[id10.0.1] occurrences matches {1} matches {    -- Clinical description
+                value matches {
+                    DV_TEXT[id85.0.1] 
+                }
+            }
+            ELEMENT[id83.0.1] occurrences matches {0} matches {    -- Severity
+                value matches {
+                    DV_TEXT[id86.0.1] 
+                }
+            }
+            ELEMENT[id11.0.1] occurrences matches {0} matches {    -- Date of onset
+                value matches {
+                    DV_DATE_TIME[id87.0.1] 
+                }
+            }
+            ELEMENT[id38.0.1] occurrences matches {0} matches {    -- Age at onset
+                value matches {
+                    DV_DURATION[id88.0.1] 
+                }
+            }
+            allow_archetype CLUSTER[id45] occurrences matches {0} matches { 
+                include
+                    archetype_id/value matches {/openEHR-EHR-CLUSTER\.anatomical_location(-a-zA-Z0-9_]+)*\.v1/}
+            }
+            CLUSTER[id19] occurrences matches {0..1} matches {
+                items matches {
+                    ELEMENT[id26.0.1] occurrences matches {0} matches {    -- Number
+                        value matches {
+                            DV_COUNT[id89.0.1] matches {
+                                magnitude matches {|>=1|}
+                            }
+                        }
+                    }
+                    ELEMENT[id20.0.1] occurrences matches {0} matches {    -- Frequency
+                        value matches {
+                            DV_QUANTITY[id90.0.1] matches {
+                                property matches {[at83]}
+                                units matches {"/min", "/h", "/d", "/wk", "/mo", "/yr"}
+                            }
+                        }
+                    }
+                    ELEMENT[id21.0.1] occurrences matches {0} matches {    -- Latest occurrence
+                        value matches {
+                            DV_DATE[id91.0.1] 
+                        }
+                    }
+                    ELEMENT[id73.0.1] occurrences matches {0} matches {    -- Description
+                        value matches {
+                            DV_TEXT[id92.0.1] 
+                        }
+                    }
+                    ELEMENT[id74.0.1] occurrences matches {0} matches {    -- Link to occurrence details
+                        value matches {
+                            DV_URI[id93.0.1] 
+                        }
+                    }
+                }
+            }
+            CLUSTER[id27] matches {
+                items matches {
+                    ELEMENT[id29.0.1] occurrences matches {0} matches {    -- Related item
+                        value matches {
+                            DV_TEXT[id94.0.1] 
+                        }
+                    }
+                    ELEMENT[id57.0.1] occurrences matches {0} matches {    -- Relationship type
+                        value matches {
+                            DV_CODED_TEXT[id95.0.1] matches {
+                                defining_code matches {[ac1]}
+                            }
+                        }
+                    }
+                }
+            }
+            ELEMENT[id31.0.1] occurrences matches {0} matches {    -- Date of resolution/remission
+                value matches {
+                    DV_DATE[id96.0.1] 
+                }
+            }
+            ELEMENT[id32.0.1] occurrences matches {0} matches {    -- Age at resolution/remission
+                value matches {
+                    DV_DURATION[id97.0.1] 
+                }
+            }
+            allow_archetype CLUSTER[id55] occurrences matches {0} matches { 
+                include
+                    archetype_id/value matches {/.*/}
+            }
+            allow_archetype CLUSTER[id56] occurrences matches {0} matches { 
+                include
+                    archetype_id/value matches {/.*/}
+            }
+            ELEMENT[id0.2] occurrences matches {0..1} matches {
+                /value[id0.3]/defining_code matches {[ac0.1]}
+            }
+        }
+        /protocol[id75]/items matches {
+            ELEMENT[id76.0.1] occurrences matches {0} matches {    -- Link to supporting clinical evidence
+                value matches {
+                    DV_URI[id99.0.1] 
+                }
+            }
+            allow_archetype CLUSTER[id77] occurrences matches {0} matches { 
+                include
+                    archetype_id/value matches {/.*/}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1.1"] = <
+                text = <"Problem/Diagnosis">
+                description = <"Any health care condition which may impact on the physical, mental and/or social well-being of an individual, that may require diagnostic, therapeutic or educational action, and which has been determined by a clinician. A diagnosis is based on scientific evaluation of physical signs, symptoms, history, laboratory tests results, and procedures.">
+            >
+            ["id3.0.1"] = <
+                text = <"Problem/Diagnosis">
+                description = <"Identification of the problem or diagnosis. Coding of the problem or diagnosis with a terminology is preferred, where possible.">
+            >
+            ["id10.0.1"] = <
+                text = <"Clinical description">
+                description = <"Narrative description or comments about clinical aspects of the problem/diagnosis.">
+            >
+            ["id83.0.1"] = <
+                text = <"Severity">
+                description = <"A subjective assessment of the severity of the Problem/Diagnosis as evaluated by the clinician. Coding of the severity with a terminology is preferred, where possible.">
+            >
+            ["id11.0.1"] = <
+                text = <"Date of onset">
+                description = <"Estimated or actual date the problem/diagnosis began, in the opinion of the clinician.">
+            >
+            ["id38.0.1"] = <
+                text = <"Age at onset">
+                description = <"The estimated or actual age of the individual when the clinician assesses that the problem/diagnosis began. Note: May be important in situations where approximations of age based on calculations are not accurate enough, eg in infants under one year.">
+            >
+            ["id26.0.1"] = <
+                text = <"Number">
+                description = <"Cumulative number of occurrences or exacerbations of the problem/diagnosis.">
+            >
+            ["id20.0.1"] = <
+                text = <"Frequency">
+                description = <"The frequency or estimated frequency of occurrences or exacerbations of the problem/diagnosis.">
+            >
+            ["id21.0.1"] = <
+                text = <"Latest occurrence">
+                description = <"The date of the last occurrence or exacerbation of the problem/diagnosis.">
+            >
+            ["id73.0.1"] = <
+                text = <"Description">
+                description = <"A narrative description, including outcomes and other key details, about occurrences or exacerbations of the problem/diagnosis.">
+            >
+            ["id74.0.1"] = <
+                text = <"Link to occurrence details">
+                description = <"Link to further information about past occurrences or exacerbations of the problem/diagnosis that exist elsewhere in the health record.">
+            >
+            ["id31.0.1"] = <
+                text = <"Date of resolution/remission">
+                description = <"The date or estimated date that the problem/diagnosis resolved or went into remission.">
+            >
+            ["id32.0.1"] = <
+                text = <"Age at resolution/remission">
+                description = <"The age of the person at the time of resolution or remission of the problem/diagnosis. Note: May be important in situations where approximations of age based on calculations are not accurate enough, eg in infants under one year.">
+            >
+            ["id76.0.1"] = <
+                text = <"Link to supporting clinical evidence">
+                description = <"Links to other relevant information, including pathology reports.">
+            >
+            ["id57.0.1"] = <
+                text = <"Relationship type">
+                description = <"The type of relationship that this problem/diagnosis has to the related item.">
+            >
+            ["id29.0.1"] = <
+                text = <"Related item">
+                description = <"Identification of a related problem, diagnosis, procedure, or event as text, coded text or link within the health record. Note: It is desirable that this field should be coded using terminology, wherever possible.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1.1"] = <
+                text = <"Diagnósticos">
+                description = <"Qualquer condição de cuidados de saúde que possa afetar o bem-estar físico, mental e/ou social de um indivíduo, que pode exigir ação diagnóstica, terapêutica ou educacional e que tenha sido determinada por um clínico. O diagnóstico é baseado na avaliação científica de sinais físicos, sintomas, história, resultados de testes laboratoriais e procedimentos.">
+            >
+            ["id3.0.1"] = <
+                text = <"Diagnósticos códigos CID 10">
+                description = <"Identificação do problema ou diagnóstico. A codificação do problema ou diagnóstico com uma terminologia é preferida, sempre que possível.">
+            >
+            ["id10.0.1"] = <
+                text = <"Descrição CID 10">
+                description = <"Descrição narrativa ou comentários sobre aspectos clínicos do problema/diagnóstico.">
+            >
+            ["id83.0.1"] = <
+                text = <"Gravidade">
+                description = <"Uma avaliação subjetiva da gravidade do Problema / Diagnóstico conforme avaliado pelo clínico. A codificação da gravidade com uma terminologia é preferida, sempre que possível.">
+            >
+            ["id11.0.1"] = <
+                text = <"Data do início">
+                description = <"Data estimada ou atual, qunado o problema/diagnóstico começou, na opinião do clínico.">
+            >
+            ["id38.0.1"] = <
+                text = <"Idade no ínicio">
+                description = <"A idade estimada ou real do indivíduo quando o clínico avalia que o problema / diagnóstico começou. Nota: Pode ser importante em situações em que as aproximações de idade com base nos cálculos não são suficientemente precisas, por exemplo, em lactentes com menos de um ano.">
+            >
+            ["id26.0.1"] = <
+                text = <"Número de ocorrências">
+                description = <"Número cumulativo de ocorrências ou exacerbações do problema / diagnóstico.">
+            >
+            ["id20.0.1"] = <
+                text = <"Frequência">
+                description = <"Frequência ou frequência estimada de ocorrências ou exacerbações do problema / diagnóstico.">
+            >
+            ["id21.0.1"] = <
+                text = <"Última ocorrência">
+                description = <"A data da última ocorrência ou exacerbação do problema / diagnóstico.">
+            >
+            ["id73.0.1"] = <
+                text = <"Descrição">
+                description = <"Uma descrição narrativa, incluindo resultados e outros detalhes-chave, sobre ocorrências ou exacerbações do problema / diagnóstico.">
+            >
+            ["id74.0.1"] = <
+                text = <"Link de detalhes da ocorrência">
+                description = <"Vincule informações adicionais sobre ocorrências passadas ou exacerbações do problema / diagnóstico que existem em outro lugar no registro de saúde.">
+            >
+            ["id31.0.1"] = <
+                text = <"Data da resolução / remissão">
+                description = <"A data ou a data estimada em que o problema / diagnóstico foi resolvido ou entrou em remissão.">
+            >
+            ["id32.0.1"] = <
+                text = <"Idade no momento da resolução/remissão">
+                description = <"A idade da pessoa no momento da resolução ou remissão do problema / diagnóstico. Nota: Pode ser importante em situações em que as aproximações de idade com base nos cálculos não são suficientemente precisas, por exemplo, em lactentes com menos de um ano.">
+            >
+            ["id76.0.1"] = <
+                text = <"Link de suporte de evidência clínica">
+                description = <"Links para outras informações relevantes, incluindo relatórios de patologia.">
+            >
+            ["id57.0.1"] = <
+                text = <"Tipo de relacionamento">
+                description = <"O tipo de relacionamento que este problema / diagnóstico tem com o item relacionado.">
+            >
+            ["id29.0.1"] = <
+                text = <"Item relacionado">
+                description = <"Identificação de um problema relacionado, diagnóstico, procedimento ou evento como texto, texto codificado ou link dentro do registro de saúde. Nota: É desejável que este campo seja codificado usando terminologia, sempre que possível.">
+            >
+        >
+    >
+
 
 ---------------------------------------------------------------------------------
 template_overlay
@@ -1630,6 +2089,246 @@ terminology
         >
     >
 
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-sesi_fco_completa-family_history-SESI-BR-001.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.family_history-SESI-BR.v1.0.0
+
+definition
+    EVALUATION[id1.1.1] matches {    -- Family History
+        /data[id2]/items matches {
+            ELEMENT[id3.0.1] occurrences matches {0} matches {    -- Summary
+                value matches {
+                    DV_TEXT[id29.0.1] 
+                }
+            }
+            CLUSTER[id4] matches {
+                items matches {
+                    ELEMENT[id5.0.1] occurrences matches {0} matches {    -- Name
+                        value matches {
+                            DV_TEXT[id30.0.1] 
+                        }
+                    }
+                    ELEMENT[id21.0.1] occurrences matches {0} matches {    -- Alias
+                        value matches {
+                            DV_TEXT[id31.0.1] 
+                        }
+                    }
+                    ELEMENT[id17.0.1] occurrences matches {1} matches {    -- Relationship
+                        value matches {
+                            DV_CODED_TEXT[id32.0.1] matches {
+                                defining_code matches {[ac0.2]}
+                            }
+                        }
+                    }
+                    ELEMENT[id6.0.1] occurrences matches {0} matches {    -- Date of Birth
+                        value matches {
+                            DV_DATE_TIME[id33.0.1] 
+                        }
+                    }
+                    ELEMENT[id24.0.1] occurrences matches {0} matches {    -- Deceased?
+                        value matches {
+                            DV_BOOLEAN[id34.0.1] matches {
+                                value matches {True}
+                            }
+                        }
+                    }
+                    ELEMENT[id12.0.1] occurrences matches {0} matches {    -- Age at Death
+                        value matches {
+                            DV_DURATION[id35.0.1] 
+                        }
+                    }
+                    CLUSTER[id9.0.1] occurrences matches {0} matches {    -- Medical History
+                        items matches {
+                            ELEMENT[id10.0.1] occurrences matches {0..1} matches {    -- Problem/Diagnosis
+                                value matches {
+                                    DV_TEXT[id36.0.1] 
+                                }
+                            }
+                            ELEMENT[id13.0.1] occurrences matches {0} matches {    -- Clinical Description
+                                value matches {
+                                    DV_TEXT[id37.0.1] 
+                                }
+                            }
+                            ELEMENT[id11.0.1] occurrences matches {0} matches {    -- Age at Onset
+                                value matches {
+                                    DV_DURATION[id38.0.1] 
+                                }
+                            }
+                            ELEMENT[id15.0.1] occurrences matches {0} matches {    -- Cause of Death?
+                                value matches {
+                                    DV_BOOLEAN[id39.0.1] matches {
+                                        value matches {True, False}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    CLUSTER[id25.0.1] occurrences matches {0} matches {    -- Genetic Markers
+                        items matches {
+                            ELEMENT[id23.0.1] occurrences matches {0} matches {    -- Marker Description
+                                value matches {
+                                    DV_TEXT[id40.0.1] 
+                                }
+                            }
+                            allow_archetype ITEM[id28] occurrences matches {0} matches { 
+                                include
+                                    archetype_id/value matches {/.*/}
+                            }
+                        }
+                    }
+                    ELEMENT[id0.3.1] occurrences matches {1} matches {    -- Family illness
+                        value matches {
+                            DV_CODED_TEXT[id0.4.1] matches {
+                                defining_code matches {[ac0.1]}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1.1"] = <
+                text = <"Family History">
+                description = <"Summary information about the problems and/or diagnoses found in genetic relatives.">
+            >
+            ["id3.0.1"] = <
+                text = <"Summary">
+                description = <"Textual description about the problems, diagnoses, and genetic markers found in genetic relatives. This field may be used to capture unstructured family history information recorded in clinical records.">
+            >
+            ["id5.0.1"] = <
+                text = <"Name">
+                description = <"Name of genetic relative.">
+            >
+            ["id21.0.1"] = <
+                text = <"Alias">
+                description = <"An alias or label to uniquely identify a genetic relative, without using a personal name.">
+            >
+            ["id6.0.1"] = <
+                text = <"Date of Birth">
+                description = <"Date of birth of the genetic relative.">
+            >
+            ["id24.0.1"] = <
+                text = <"Deceased?">
+                description = <"Is the genetic relative is deceased?">
+            >
+            ["id12.0.1"] = <
+                text = <"Age at Death">
+                description = <"Age of the genetic relative at death.">
+            >
+            ["id9.0.1"] = <
+                text = <"Medical History">
+                description = <"Detail about problems or diagnoses for the genetic relative.">
+            >
+            ["id25.0.1"] = <
+                text = <"Genetic Markers">
+                description = <"Detailed genetic marker information for the genetic relative.">
+            >
+            ["id0.3.1"] = <
+                text = <"Family illness">
+                description = <"Report disease in the family">
+            >
+            ["id17.0.1"] = <
+                text = <"Relationship">
+                description = <"The relationship of the genetic relative to the individual.">
+            >
+            ["id11.0.1"] = <
+                text = <"Age at Onset">
+                description = <"Estimated or actual age of the genetic relative when the problem/diagnosis was clinically recognised.">
+            >
+            ["id15.0.1"] = <
+                text = <"Cause of Death?">
+                description = <"True if the problem/diagnosis was a direct cause of death in this genetic relative.">
+            >
+            ["id23.0.1"] = <
+                text = <"Marker Description">
+                description = <"Description of risk-related genetic markers identified in this genetic relative.">
+            >
+            ["id13.0.1"] = <
+                text = <"Clinical Description">
+                description = <"Narrative description or comments about clinical aspects of the genetic relative's problem/diagnosis.">
+            >
+            ["id10.0.1"] = <
+                text = <"Problem/Diagnosis">
+                description = <"Identification of the genetic relative's problem or diagnosis.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1.1"] = <
+                text = <"Histórico Familiar">
+                description = <"Resumo de informações sobre os problemas e / ou diagnósticos encontrados em parentes genéticos.">
+            >
+            ["id3.0.1"] = <
+                text = <"Resumo/Sumário">
+                description = <"Descrição textual dos problemas, diagnósticos e marcadores genéticos encontrados em parentes genéticos. Este campo pode ser usado para capturar informações de história familiar não estruturada registradas em registros clínicos.">
+            >
+            ["id5.0.1"] = <
+                text = <"Nome">
+                description = <"Nome do parente genético.">
+            >
+            ["id21.0.1"] = <
+                text = <"Alias">
+                description = <"Um alias ou rótulo para identificar de maneira exclusiva um parente genético, sem usar um nome pessoal.">
+            >
+            ["id6.0.1"] = <
+                text = <"Data de nascimento">
+                description = <"Data de nascimento do parente genético.">
+            >
+            ["id24.0.1"] = <
+                text = <"Falecido?">
+                description = <"O parente genético é falecido?">
+            >
+            ["id12.0.1"] = <
+                text = <"Idade da morte">
+                description = <"Idade do parente genético na morte.">
+            >
+            ["id9.0.1"] = <
+                text = <"Histórico Médico">
+                description = <"Detalhes sobre os problemas/diagnósticos do parente genético.">
+            >
+            ["id25.0.1"] = <
+                text = <"Marcadores genéticos">
+                description = <"Informação detalhada de marcador genético para o parente genético.">
+            >
+            ["id0.3.1"] = <
+                text = <"Doença familiar">
+                description = <"Informar doença na família.">
+            >
+            ["id17.0.1"] = <
+                text = <"Grau de parentesco">
+                description = <"A relação do parente genético com o indivíduo.">
+            >
+            ["id11.0.1"] = <
+                text = <"Idade inicial">
+                description = <"Idade estimada ou real do parente genético quando o problema / diagnóstico foi clinicamente reconhecido.">
+            >
+            ["id15.0.1"] = <
+                text = <"Causa da morte?">
+                description = <"Verdadeiro se o problema / diagnóstico fosse uma causa direta de morte nesse parente genético.">
+            >
+            ["id23.0.1"] = <
+                text = <"Descrição do marcador">
+                description = <"Descrição dos marcadores genéticos relacionados ao risco identificados neste parente genético.">
+            >
+            ["id13.0.1"] = <
+                text = <"Descrição clínica">
+                description = <"Descrição narrativa ou comentários sobre aspectos clínicos do problema / diagnóstico do parente genético.">
+            >
+            ["id10.0.1"] = <
+                text = <"Problema/Diagnóstico">
+                description = <"Identificação do problema ou diagnóstico do parente genético.">
+            >
+        >
+    >
+
+
 ---------------------------------------------------------------------------------
 template_overlay
     openEHR-EHR-SECTION.ovl-sesi_fco_completa-adhoc-005.v1.0.0
@@ -1695,6 +2394,260 @@ terminology
             >
         >
     >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-sesi_fco_completa-body_weight-SESI_BR-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.body_weight-SESI_BR.v1.0.0
+
+definition
+    OBSERVATION[id1.1.1] matches {    -- Lichaamsgewicht
+        /data[id3]/events matches {
+            EVENT[id4] matches {
+                /data[id2]/items matches {
+                    ELEMENT[id5] matches {
+                        value matches {
+                            DV_QUANTITY[id30] matches {
+                                property matches {[at19]}
+                                [magnitude, units] matches {
+                                    [{|0.0..1000.0|}, {"kg"}], 
+                                    [{|0.0..2000.0|}, {"lb"}]
+                                }
+                            }
+                        }
+                    }
+                    ELEMENT[id25.0.1] occurrences matches {0} matches {    -- Opmerking
+                        value matches {
+                            DV_TEXT[id31.0.1] 
+                        }
+                    }
+                    ELEMENT[id0.3.1] occurrences matches {0} matches {    -- Abdominal circumference (en)
+                        value matches {
+                            DV_QUANTITY[id0.4.1] matches {
+                                [units, magnitude, precision] matches {
+                                    [{"cm"}, {|>0.0..<10000.0|}, {|>=0|}]
+                                }
+                            }
+                        }
+                    }
+                }
+                /state[id9]/items matches {
+                    ELEMENT[id10.0.1] occurrences matches {0} matches {    -- Hoeveelheid kleding
+                        value matches {
+                            DV_CODED_TEXT[id32.0.1] matches {
+                                defining_code matches {[ac1; at12]}
+                            }
+                        }
+                    }
+                    ELEMENT[id29.0.1] occurrences matches {0} matches {    -- *New element(en)
+                        value matches {
+                            DV_BOOLEAN[id33.0.1] matches {
+                                value matches {True, False; false}
+                            }
+                        }
+                    }
+                    ELEMENT[id26.0.1] occurrences matches {0} matches {    -- BeÏnvloedende factoren
+                        value matches {
+                            DV_TEXT[id34.0.1] 
+                        }
+                    }
+                }
+            }
+            POINT_EVENT[id27.0.1] occurrences matches {0} matches {    -- *Any event(en)
+                data
+                state
+            }
+        }
+        /protocol[id16]/items matches {
+            allow_archetype CLUSTER[id21] occurrences matches {0} matches { 
+                include
+                    archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-a-zA-Z0-9_]+)*\.v1/}
+            }
+            ELEMENT[id28.0.1] occurrences matches {0} matches {    -- *New element(en)
+                value matches {
+                    DV_TEXT[id37.0.1] 
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["nl"] = <
+            ["id1.1.1"] = <
+                text = <"Lichaamsgewicht">
+                description = <"Meting van het lichaamsgewicht van een individu.">
+            >
+            ["id10.0.1"] = <
+                text = <"Hoeveelheid kleding">
+                description = <"Beschrijving van de hoeveelheid kleding van de persoon, op het moment van wegen.">
+            >
+            ["id29.0.1"] = <
+                text = <"*New element(en)">
+                description = <"**(en)">
+            >
+            ["id26.0.1"] = <
+                text = <"BeÏnvloedende factoren">
+                description = <"Registreer eventuele problemen of factoren die van invloed kunnen zijn op de meting van het lichaamsgewicht bijvoorbeeld timing in de menstruele cyclus, timing van de recente stoelgang of het noteren van een amputatie.">
+            >
+            ["id0.3.1"] = <
+                text = <"Abdominal circumference (en)">
+                description = <"Record abdominal circumference (en)">
+            >
+            ["id25.0.1"] = <
+                text = <"Opmerking">
+                description = <"Opmerking over de gewichts meting.">
+            >
+            ["id27.0.1"] = <
+                text = <"*Any event(en)">
+                description = <"**(en)">
+            >
+            ["id28.0.1"] = <
+                text = <"*New element(en)">
+                description = <"**(en)">
+            >
+        >
+        ["en"] = <
+            ["id1.1.1"] = <
+                text = <"Body Weight">
+                description = <"Measurement of the body weight of an individual.">
+            >
+            ["id10.0.1"] = <
+                text = <"State of Dress">
+                description = <"Description of the state of dress of the person at the time of weighing.">
+            >
+            ["id29.0.1"] = <
+                text = <"Pregnant?">
+                description = <"Is the woman pregnant at time of measurement?">
+            >
+            ["id26.0.1"] = <
+                text = <"Confounding Factors">
+                description = <"Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.">
+            >
+            ["id0.3.1"] = <
+                text = <"Abdominal circumference">
+                description = <"Record abdominal circumference">
+            >
+            ["id25.0.1"] = <
+                text = <"Comment">
+                description = <"Comment about the measurement of weight.">
+            >
+            ["id27.0.1"] = <
+                text = <"Birth">
+                description = <"First weight recorded after birth.">
+            >
+            ["id28.0.1"] = <
+                text = <"Weight Estimation Formula">
+                description = <"Formula used to calculate the estimated weight.">
+            >
+        >
+        ["de"] = <
+            ["id1.1.1"] = <
+                text = <"Körpergewicht">
+                description = <"Messung des Körpergewichts eines Individuums.">
+            >
+            ["id10.0.1"] = <
+                text = <"Bekleidung">
+                description = <"Beschreibung der Bekleidung zum Zeitpunkt der Messung.">
+            >
+            ["id29.0.1"] = <
+                text = <"*New element(en)">
+                description = <"**(en)">
+            >
+            ["id26.0.1"] = <
+                text = <"Störfaktoren">
+                description = <"Zur Dokumentation von Faktoren, die einen Einfluss auf die Messung des Körpergewichts haben können, z.B. Zeitpunkt in der Menstruationsperiode, Zeitpunkt des letzten Stuhlgangs, durchgeführte Amputationen.">
+            >
+            ["id0.3.1"] = <
+                text = <"Abdominal circumference (en)">
+                description = <"Record abdominal circumference (en)">
+            >
+            ["id25.0.1"] = <
+                text = <"Kommentar">
+                description = <"Kommentar über die Messung des Gewichts.">
+            >
+            ["id27.0.1"] = <
+                text = <"*Any event(en)">
+                description = <"**(en)">
+            >
+            ["id28.0.1"] = <
+                text = <"*New element(en)">
+                description = <"**(en)">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1.1"] = <
+                text = <"Peso corporal">
+                description = <"A medição do peso corporal de um indivíduo.">
+            >
+            ["id10.0.1"] = <
+                text = <"Vestuário">
+                description = <"Descrição do vestuário da pessoa na hora da pesagem.">
+            >
+            ["id29.0.1"] = <
+                text = <"Novo elemento">
+                description = <"Novo elemento">
+            >
+            ["id26.0.1"] = <
+                text = <"Fatores de erro">
+                description = <"Registrar quaisquer problemas ou fatores que possam ter impacto sobre a medição de peso corporal, por exemplo, no momento do ciclo menstrual, o ciclo intestinal ou anotando amputação.">
+            >
+            ["id0.3.1"] = <
+                text = <"Circunferência abdominal">
+                description = <"Circunferência abdominal">
+            >
+            ["id25.0.1"] = <
+                text = <"Comentário">
+                description = <"Comentário sobre a medição do peso.">
+            >
+            ["id27.0.1"] = <
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
+            >
+            ["id28.0.1"] = <
+                text = <"Novo elemento">
+                description = <"Novo elemento">
+            >
+        >
+        ["ru"] = <
+            ["id1.1.1"] = <
+                text = <"Масса тела">
+                description = <"Взвешивание пациента.">
+            >
+            ["id10.0.1"] = <
+                text = <"Наличие и характер одежды">
+                description = <"Описание наличия и характера одежды пациента во время взвешивания.">
+            >
+            ["id29.0.1"] = <
+                text = <"*New element(en)">
+                description = <"**(en)">
+            >
+            ["id26.0.1"] = <
+                text = <"Стохастическая погрешность">
+                description = <"Фиксация любых фактов, могущих повлиять на результат взвешивания: фаза менструального цикла, давность опорожнения кишечника, сведения об ампутации и др.">
+            >
+            ["id0.3.1"] = <
+                text = <"Abdominal circumference (en)">
+                description = <"Record abdominal circumference (en)">
+            >
+            ["id25.0.1"] = <
+                text = <"Комментарии">
+                description = <"Комментарии к взвешиванию.">
+            >
+            ["id27.0.1"] = <
+                text = <"*Any event(en)">
+                description = <"**(en)">
+            >
+            ["id28.0.1"] = <
+                text = <"*New element(en)">
+                description = <"**(en)">
+            >
+        >
+    >
+
 
 ---------------------------------------------------------------------------------
 template_overlay
@@ -1993,6 +2946,227 @@ terminology
             >
         >
     >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-sesi_fco_completa-body_weight-SESI_BR-002.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.body_weight-SESI_BR.v1.0.0
+
+definition
+    OBSERVATION[id1.1.1] matches {    -- Lichaamsgewicht
+        /data[id3]/events matches {
+            EVENT[id4] matches {
+                /data[id2]/items matches {
+                    ELEMENT[id5.0.1] occurrences matches {0} matches {    -- Gewicht
+                        value matches {
+                            DV_QUANTITY[id30.0.1] matches {
+                                property matches {[at19]}
+                                [magnitude, units] matches {
+                                    [{|0.0..1000.0|}, {"kg"}], 
+                                    [{|0.0..2000.0|}, {"lb"}]
+                                }
+                            }
+                        }
+                    }
+                    ELEMENT[id25.0.1] occurrences matches {0} matches {    -- Opmerking
+                        value matches {
+                            DV_TEXT[id31.0.1] 
+                        }
+                    }
+                }
+                /state[id9]/items matches {
+                    ELEMENT[id10.0.1] occurrences matches {0} matches {    -- Hoeveelheid kleding
+                        value matches {
+                            DV_CODED_TEXT[id32.0.1] matches {
+                                defining_code matches {[ac1; at12]}
+                            }
+                        }
+                    }
+                    ELEMENT[id29.0.1] occurrences matches {0} matches {    -- *New element(en)
+                        value matches {
+                            DV_BOOLEAN[id33.0.1] matches {
+                                value matches {True, False; false}
+                            }
+                        }
+                    }
+                    ELEMENT[id26.0.1] occurrences matches {0} matches {    -- BeÏnvloedende factoren
+                        value matches {
+                            DV_TEXT[id34.0.1] 
+                        }
+                    }
+                }
+            }
+        }
+        /protocol[id16]/items matches {
+            allow_archetype CLUSTER[id21] occurrences matches {0} matches { 
+                include
+                    archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-a-zA-Z0-9_]+)*\.v1/}
+            }
+            ELEMENT[id28.0.1] occurrences matches {0} matches {    -- *New element(en)
+                value matches {
+                    DV_TEXT[id37.0.1] 
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["nl"] = <
+            ["id1.1.1"] = <
+                text = <"Lichaamsgewicht">
+                description = <"Meting van het lichaamsgewicht van een individu.">
+            >
+            ["id5.0.1"] = <
+                text = <"Gewicht">
+                description = <"Het gewicht van het individu.">
+            >
+            ["id25.0.1"] = <
+                text = <"Opmerking">
+                description = <"Opmerking over de gewichts meting.">
+            >
+            ["id10.0.1"] = <
+                text = <"Hoeveelheid kleding">
+                description = <"Beschrijving van de hoeveelheid kleding van de persoon, op het moment van wegen.">
+            >
+            ["id29.0.1"] = <
+                text = <"*New element(en)">
+                description = <"**(en)">
+            >
+            ["id26.0.1"] = <
+                text = <"BeÏnvloedende factoren">
+                description = <"Registreer eventuele problemen of factoren die van invloed kunnen zijn op de meting van het lichaamsgewicht bijvoorbeeld timing in de menstruele cyclus, timing van de recente stoelgang of het noteren van een amputatie.">
+            >
+            ["id28.0.1"] = <
+                text = <"*New element(en)">
+                description = <"**(en)">
+            >
+        >
+        ["en"] = <
+            ["id1.1.1"] = <
+                text = <"Body Weight">
+                description = <"Measurement of the body weight of an individual.">
+            >
+            ["id5.0.1"] = <
+                text = <"Weight">
+                description = <"The weight of the individual.">
+            >
+            ["id25.0.1"] = <
+                text = <"Comment">
+                description = <"Comment about the measurement of weight.">
+            >
+            ["id10.0.1"] = <
+                text = <"State of Dress">
+                description = <"Description of the state of dress of the person at the time of weighing.">
+            >
+            ["id29.0.1"] = <
+                text = <"Pregnant?">
+                description = <"Is the woman pregnant at time of measurement?">
+            >
+            ["id26.0.1"] = <
+                text = <"Confounding Factors">
+                description = <"Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.">
+            >
+            ["id28.0.1"] = <
+                text = <"Weight Estimation Formula">
+                description = <"Formula used to calculate the estimated weight.">
+            >
+        >
+        ["de"] = <
+            ["id1.1.1"] = <
+                text = <"Körpergewicht">
+                description = <"Messung des Körpergewichts eines Individuums.">
+            >
+            ["id5.0.1"] = <
+                text = <"Gewicht">
+                description = <"Das Gewicht eines Individuums.">
+            >
+            ["id25.0.1"] = <
+                text = <"Kommentar">
+                description = <"Kommentar über die Messung des Gewichts.">
+            >
+            ["id10.0.1"] = <
+                text = <"Bekleidung">
+                description = <"Beschreibung der Bekleidung zum Zeitpunkt der Messung.">
+            >
+            ["id29.0.1"] = <
+                text = <"*New element(en)">
+                description = <"**(en)">
+            >
+            ["id26.0.1"] = <
+                text = <"Störfaktoren">
+                description = <"Zur Dokumentation von Faktoren, die einen Einfluss auf die Messung des Körpergewichts haben können, z.B. Zeitpunkt in der Menstruationsperiode, Zeitpunkt des letzten Stuhlgangs, durchgeführte Amputationen.">
+            >
+            ["id28.0.1"] = <
+                text = <"*New element(en)">
+                description = <"**(en)">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1.1"] = <
+                text = <"Circunferência abdominal">
+                description = <"A medição do peso corporal de um indivíduo.">
+            >
+            ["id5.0.1"] = <
+                text = <"Peso">
+                description = <"O peso do indivíduo.">
+            >
+            ["id25.0.1"] = <
+                text = <"Comentário">
+                description = <"Comentário sobre a medição do peso.">
+            >
+            ["id10.0.1"] = <
+                text = <"Vestuário">
+                description = <"Descrição do vestuário da pessoa na hora da pesagem.">
+            >
+            ["id29.0.1"] = <
+                text = <"Novo elemento">
+                description = <"Novo elemento">
+            >
+            ["id26.0.1"] = <
+                text = <"Fatores de erro">
+                description = <"Registrar quaisquer problemas ou fatores que possam ter impacto sobre a medição de peso corporal, por exemplo, no momento do ciclo menstrual, o ciclo intestinal ou anotando amputação.">
+            >
+            ["id28.0.1"] = <
+                text = <"Novo elemento">
+                description = <"Novo elemento">
+            >
+        >
+        ["ru"] = <
+            ["id1.1.1"] = <
+                text = <"Масса тела">
+                description = <"Взвешивание пациента.">
+            >
+            ["id5.0.1"] = <
+                text = <"Вес">
+                description = <"Вес пациента.">
+            >
+            ["id25.0.1"] = <
+                text = <"Комментарии">
+                description = <"Комментарии к взвешиванию.">
+            >
+            ["id10.0.1"] = <
+                text = <"Наличие и характер одежды">
+                description = <"Описание наличия и характера одежды пациента во время взвешивания.">
+            >
+            ["id29.0.1"] = <
+                text = <"*New element(en)">
+                description = <"**(en)">
+            >
+            ["id26.0.1"] = <
+                text = <"Стохастическая погрешность">
+                description = <"Фиксация любых фактов, могущих повлиять на результат взвешивания: фаза менструального цикла, давность опорожнения кишечника, сведения об ампутации и др.">
+            >
+            ["id28.0.1"] = <
+                text = <"*New element(en)">
+                description = <"**(en)">
+            >
+        >
+    >
+
 
 ---------------------------------------------------------------------------------
 template_overlay
@@ -2945,6 +4119,297 @@ terminology
             >
         >
     >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-sesi_fco_completa-problem_diagnosis-SESI_BR-002.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.problem_diagnosis-SESI_BR.v1.0.0
+
+definition
+    EVALUATION[id1.1.1] matches {    -- Problem/Diagnosis
+        /data[id2]/items matches {
+            ELEMENT[id3.0.1] occurrences matches {1} matches {    -- Problem/Diagnosis
+                value matches {
+                    DV_TEXT[id84.0.1] 
+                }
+            }
+            ELEMENT[id10.0.1] occurrences matches {1} matches {    -- Clinical description
+                value matches {
+                    DV_TEXT[id85.0.1] 
+                }
+            }
+            ELEMENT[id83.0.1] occurrences matches {1} matches {    -- Severity
+                value matches {
+                    DV_TEXT[id86.0.1] 
+                }
+            }
+            ELEMENT[id11.0.1] occurrences matches {0} matches {    -- Date of onset
+                value matches {
+                    DV_DATE_TIME[id87.0.1] 
+                }
+            }
+            ELEMENT[id38.0.1] occurrences matches {0} matches {    -- Age at onset
+                value matches {
+                    DV_DURATION[id88.0.1] 
+                }
+            }
+            allow_archetype CLUSTER[id45] occurrences matches {0} matches { 
+                include
+                    archetype_id/value matches {/openEHR-EHR-CLUSTER\.anatomical_location(-a-zA-Z0-9_]+)*\.v1/}
+            }
+            CLUSTER[id19.0.1] occurrences matches {0} matches {    -- Occurrence summary
+                items matches {
+                    ELEMENT[id26.0.1] occurrences matches {0} matches {    -- Number
+                        value matches {
+                            DV_COUNT[id89.0.1] matches {
+                                magnitude matches {|>=1|}
+                            }
+                        }
+                    }
+                    ELEMENT[id20.0.1] occurrences matches {0} matches {    -- Frequency
+                        value matches {
+                            DV_QUANTITY[id90.0.1] matches {
+                                property matches {[at83]}
+                                units matches {"/min", "/h", "/d", "/wk", "/mo", "/yr"}
+                            }
+                        }
+                    }
+                    ELEMENT[id21.0.1] occurrences matches {0} matches {    -- Latest occurrence
+                        value matches {
+                            DV_DATE[id91.0.1] 
+                        }
+                    }
+                    ELEMENT[id73.0.1] occurrences matches {0} matches {    -- Description
+                        value matches {
+                            DV_TEXT[id92.0.1] 
+                        }
+                    }
+                    ELEMENT[id74.0.1] occurrences matches {0} matches {    -- Link to occurrence details
+                        value matches {
+                            DV_URI[id93.0.1] 
+                        }
+                    }
+                }
+            }
+            CLUSTER[id27.0.1] occurrences matches {0} matches {    -- Related items
+                items matches {
+                    ELEMENT[id29.0.1] occurrences matches {0} matches {    -- Related item
+                        value matches {
+                            DV_TEXT[id94.0.1] 
+                        }
+                    }
+                    ELEMENT[id57.0.1] occurrences matches {0} matches {    -- Relationship type
+                        value matches {
+                            DV_CODED_TEXT[id95.0.1] matches {
+                                defining_code matches {[ac1]}
+                            }
+                        }
+                    }
+                }
+            }
+            ELEMENT[id31.0.1] occurrences matches {0} matches {    -- Date of resolution/remission
+                value matches {
+                    DV_DATE[id96.0.1] 
+                }
+            }
+            ELEMENT[id32.0.1] occurrences matches {0} matches {    -- Age at resolution/remission
+                value matches {
+                    DV_DURATION[id97.0.1] 
+                }
+            }
+            allow_archetype CLUSTER[id55] occurrences matches {0} matches { 
+                include
+                    archetype_id/value matches {/.*/}
+            }
+            allow_archetype CLUSTER[id56] occurrences matches {0} matches { 
+                include
+                    archetype_id/value matches {/.*/}
+            }
+            ELEMENT[id70.0.1] occurrences matches {1} matches {    -- Comment
+                value matches {
+                    DV_TEXT[id98.0.1] 
+                }
+            }
+            ELEMENT[id0.2] occurrences matches {0..1} matches {
+                /value[id0.3]/defining_code matches {[ac0.1]}
+            }
+        }
+        /protocol[id75]/items matches {
+            ELEMENT[id76.0.1] occurrences matches {0} matches {    -- Link to supporting clinical evidence
+                value matches {
+                    DV_URI[id99.0.1] 
+                }
+            }
+            allow_archetype CLUSTER[id77] occurrences matches {0} matches { 
+                include
+                    archetype_id/value matches {/.*/}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1.1"] = <
+                text = <"Problem/Diagnosis">
+                description = <"Any health care condition which may impact on the physical, mental and/or social well-being of an individual, that may require diagnostic, therapeutic or educational action, and which has been determined by a clinician. A diagnosis is based on scientific evaluation of physical signs, symptoms, history, laboratory tests results, and procedures.">
+            >
+            ["id3.0.1"] = <
+                text = <"Problem/Diagnosis">
+                description = <"Identification of the problem or diagnosis. Coding of the problem or diagnosis with a terminology is preferred, where possible.">
+            >
+            ["id10.0.1"] = <
+                text = <"Clinical description">
+                description = <"Narrative description or comments about clinical aspects of the problem/diagnosis.">
+            >
+            ["id11.0.1"] = <
+                text = <"Date of onset">
+                description = <"Estimated or actual date the problem/diagnosis began, in the opinion of the clinician.">
+            >
+            ["id38.0.1"] = <
+                text = <"Age at onset">
+                description = <"The estimated or actual age of the individual when the clinician assesses that the problem/diagnosis began. Note: May be important in situations where approximations of age based on calculations are not accurate enough, eg in infants under one year.">
+            >
+            ["id26.0.1"] = <
+                text = <"Number">
+                description = <"Cumulative number of occurrences or exacerbations of the problem/diagnosis.">
+            >
+            ["id19.0.1"] = <
+                text = <"Occurrence summary">
+                description = <"Summary information about occurrences or exacerbations. Note: Detailed information about each occurrence or exacerbation is likely to be held in other parts of the health record.">
+            >
+            ["id20.0.1"] = <
+                text = <"Frequency">
+                description = <"The frequency or estimated frequency of occurrences or exacerbations of the problem/diagnosis.">
+            >
+            ["id21.0.1"] = <
+                text = <"Latest occurrence">
+                description = <"The date of the last occurrence or exacerbation of the problem/diagnosis.">
+            >
+            ["id73.0.1"] = <
+                text = <"Description">
+                description = <"A narrative description, including outcomes and other key details, about occurrences or exacerbations of the problem/diagnosis.">
+            >
+            ["id74.0.1"] = <
+                text = <"Link to occurrence details">
+                description = <"Link to further information about past occurrences or exacerbations of the problem/diagnosis that exist elsewhere in the health record.">
+            >
+            ["id29.0.1"] = <
+                text = <"Related item">
+                description = <"Identification of a related problem, diagnosis, procedure, or event as text, coded text or link within the health record. Note: It is desirable that this field should be coded using terminology, wherever possible.">
+            >
+            ["id57.0.1"] = <
+                text = <"Relationship type">
+                description = <"The type of relationship that this problem/diagnosis has to the related item.">
+            >
+            ["id27.0.1"] = <
+                text = <"Related items">
+                description = <"Further problems, diagnoses, procedures or events that are related in some way to this problem/diagnosis.">
+            >
+            ["id31.0.1"] = <
+                text = <"Date of resolution/remission">
+                description = <"The date or estimated date that the problem/diagnosis resolved or went into remission.">
+            >
+            ["id32.0.1"] = <
+                text = <"Age at resolution/remission">
+                description = <"The age of the person at the time of resolution or remission of the problem/diagnosis. Note: May be important in situations where approximations of age based on calculations are not accurate enough, eg in infants under one year.">
+            >
+            ["id76.0.1"] = <
+                text = <"Link to supporting clinical evidence">
+                description = <"Links to other relevant information, including pathology reports.">
+            >
+            ["id70.0.1"] = <
+                text = <"Comment">
+                description = <"Additional narrative about the problem or diagnosis not captured in other fields.">
+            >
+            ["id83.0.1"] = <
+                text = <"Severity">
+                description = <"A subjective assessment of the severity of the Problem/Diagnosis as evaluated by the clinician. Coding of the severity with a terminology is preferred, where possible.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1.1"] = <
+                text = <"Problema/Diagnóstico">
+                description = <"Qualquer condição de cuidados de saúde que possa afetar o bem-estar físico, mental e/ou social de um indivíduo, que pode exigir ação diagnóstica, terapêutica ou educacional e que tenha sido determinada por um clínico. O diagnóstico é baseado na avaliação científica de sinais físicos, sintomas, história, resultados de testes laboratoriais e procedimentos.">
+            >
+            ["id3.0.1"] = <
+                text = <"Diagnóstico">
+                description = <"Identificação do problema ou diagnóstico. A codificação do problema ou diagnóstico com uma terminologia é preferida, sempre que possível.">
+            >
+            ["id10.0.1"] = <
+                text = <"Descrição do diagnóstico ">
+                description = <"Descrição narrativa ou comentários sobre aspectos clínicos do problema/diagnóstico.">
+            >
+            ["id11.0.1"] = <
+                text = <"Data do início">
+                description = <"Data estimada ou atual, qunado o problema/diagnóstico começou, na opinião do clínico.">
+            >
+            ["id38.0.1"] = <
+                text = <"Idade no ínicio">
+                description = <"A idade estimada ou real do indivíduo quando o clínico avalia que o problema / diagnóstico começou. Nota: Pode ser importante em situações em que as aproximações de idade com base nos cálculos não são suficientemente precisas, por exemplo, em lactentes com menos de um ano.">
+            >
+            ["id26.0.1"] = <
+                text = <"Número de ocorrências">
+                description = <"Número cumulativo de ocorrências ou exacerbações do problema / diagnóstico.">
+            >
+            ["id19.0.1"] = <
+                text = <"Resumo da ocorrência">
+                description = <"Resumo de informações sobre ocorrências ou exacerbações. Observação: informações detalhadas sobre cada ocorrência ou exacerbação provavelmente serão realizadas em outras partes do registro de saúde.">
+            >
+            ["id20.0.1"] = <
+                text = <"Frequência">
+                description = <"Frequência ou frequência estimada de ocorrências ou exacerbações do problema / diagnóstico.">
+            >
+            ["id21.0.1"] = <
+                text = <"Última ocorrência">
+                description = <"A data da última ocorrência ou exacerbação do problema / diagnóstico.">
+            >
+            ["id73.0.1"] = <
+                text = <"Descrição">
+                description = <"Uma descrição narrativa, incluindo resultados e outros detalhes-chave, sobre ocorrências ou exacerbações do problema / diagnóstico.">
+            >
+            ["id74.0.1"] = <
+                text = <"Link de detalhes da ocorrência">
+                description = <"Vincule informações adicionais sobre ocorrências passadas ou exacerbações do problema / diagnóstico que existem em outro lugar no registro de saúde.">
+            >
+            ["id29.0.1"] = <
+                text = <"Item relacionado">
+                description = <"Identificação de um problema relacionado, diagnóstico, procedimento ou evento como texto, texto codificado ou link dentro do registro de saúde. Nota: É desejável que este campo seja codificado usando terminologia, sempre que possível.">
+            >
+            ["id57.0.1"] = <
+                text = <"Tipo de relacionamento">
+                description = <"O tipo de relacionamento que este problema / diagnóstico tem com o item relacionado.">
+            >
+            ["id27.0.1"] = <
+                text = <"Itens relacionados">
+                description = <"Outros problemas, diagnósticos, procedimentos ou eventos relacionados de algum modo a este problema / diagnóstico.">
+            >
+            ["id31.0.1"] = <
+                text = <"Data da resolução / remissão">
+                description = <"A data ou a data estimada em que o problema / diagnóstico foi resolvido ou entrou em remissão.">
+            >
+            ["id32.0.1"] = <
+                text = <"Idade no momento da resolução/remissão">
+                description = <"A idade da pessoa no momento da resolução ou remissão do problema / diagnóstico. Nota: Pode ser importante em situações em que as aproximações de idade com base nos cálculos não são suficientemente precisas, por exemplo, em lactentes com menos de um ano.">
+            >
+            ["id76.0.1"] = <
+                text = <"Link de suporte de evidência clínica">
+                description = <"Links para outras informações relevantes, incluindo relatórios de patologia.">
+            >
+            ["id70.0.1"] = <
+                text = <"Observações diagnósticas">
+                description = <"Narração adicional sobre o problema ou diagnóstico não capturado em outros campos.">
+            >
+            ["id83.0.1"] = <
+                text = <"Código CID do diagnóstico">
+                description = <"Código CID do diagnóstico">
+            >
+        >
+    >
+
 
 ---------------------------------------------------------------------------------
 template_overlay
