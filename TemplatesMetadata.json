@@ -17,5 +17,11 @@
     "name" : "Encounter",
     "path" : "templates/openEHR-EHR-COMPOSITION.sesifco2.v1.adlt",
     "sha" : "3244d55149db0e5ad991f24706b5d45b417f0284"
+  }, {
+    "id" : "openEHR-EHR-COMPOSITION.sesi_fco_completa.v1.0.0",
+    "rmType" : "COMPOSITION",
+    "name" : "Encounter",
+    "path" : "templates/openEHR-EHR-COMPOSITION.sesi_fco_completa.v1.adlt",
+    "sha" : "38986043c3de15a0adb14570df366fb566e24786"
   } ]
 }
