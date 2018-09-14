@@ -25,7 +25,7 @@ Not to be used to record symptoms or signs - these should be recorded as part of
 Use to record all problems or diagnoses, including those with context-specific qualifiers such as past/present, primary/secondary, active/inactive etc. These qualifiers can be archetyped separately and included in the ‘Status’ slot, because their use varies in different settings.">
         >
     >
-    lifecycle_state = <"draft">
+    lifecycle_state = <"in_review">
     original_author = <
         ["name"] = <"Sam Heard">
         ["organisation"] = <"Ocean Informatics">
