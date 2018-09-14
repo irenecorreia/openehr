@@ -136,8 +136,8 @@ terminology
                 description = <"Exposure occurred in the occupational environment or workplace.">
             >
             ["ac1"] = <
-                text = <"Category (synthesised)">
-                description = <"Type of exposure. (synthesised)">
+                text = <"categoria">
+                description = <"Tipo de exposição">
             >
             ["id10"] = <
                 text = <"Date Updated">
@@ -159,66 +159,82 @@ terminology
                 text = <"Description">
                 description = <"Detailed description of an episode of exposure to the identified substance.">
             >
+            ["at9"] = <
+                text = <"Ambiental">
+                description = <"Ambiental">
+            >
+            ["at10"] = <
+                text = <"Ocupacional">
+                description = <"Ocupacional">
+            >
         >
         ["pt-br"] = <
             ["id1"] = <
-                text = <"*Exposure (en)">
-                description = <"*Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health. (en)">
+                text = <"Exposição">
+                description = <"Exposição">
             >
             ["id3"] = <
-                text = <"*Agent (en)">
-                description = <"*Identification of the chemical, physical or biological agent to which the subject was exposed. (en)">
+                text = <"Agente">
+                description = <"Agente">
             >
             ["id4"] = <
-                text = <"*Overall Description (en)">
-                description = <"*Overall description of the exposure to the identified substance. (en)">
+                text = <"Descrição">
+                description = <"Descrição">
             >
             ["id5"] = <
-                text = <"*Ongoing Exposure (en)">
-                description = <"*Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health? (en)">
+                text = <"Exposição">
+                description = <"Exposição">
             >
             ["id6"] = <
-                text = <"*Category (en)">
-                description = <"*Type of exposure. (en)">
+                text = <"Categoria">
+                description = <"Categoria">
             >
             ["at7"] = <
-                text = <"*Environmental (en)">
-                description = <"*Exposure occurred in the environment. (en)">
+                text = <"Ambiental">
+                description = <"Ambiental">
             >
             ["at8"] = <
                 text = <"*Occupational (en)">
                 description = <"*Exposure occurred in the occupational environment or workplace. (en)">
             >
             ["ac1"] = <
-                text = <"*Category (synthesised) (en)">
-                description = <"*Type of exposure. (synthesised) (en)">
+                text = <"categoria (en)">
+                description = <"Tipo de exposição (en)">
             >
             ["id10"] = <
-                text = <"*Date Updated (en)">
-                description = <"*The date this exposure summary was last updated. (en)">
+                text = <"Data de inicio">
+                description = <"Data de inicio">
             >
             ["id11"] = <
-                text = <"*Exposure Details (en)">
-                description = <"*Detailed information about an episode of exposure to the agent. (en)">
+                text = <"Detalhes da exposição">
+                description = <"Detalhes da exposição">
             >
             ["id12"] = <
-                text = <"*Date of Onset (en)">
-                description = <"*Date of onset of exposure to the agent. (en)">
+                text = <"Data inicial">
+                description = <"Data inicial">
             >
             ["id13"] = <
-                text = <"*Date Ceased (en)">
-                description = <"*Date of cessation of exposure to the agent. (en)">
+                text = <"Data final">
+                description = <"Data final">
             >
             ["id14"] = <
-                text = <"*Description (en)">
-                description = <"*Detailed description of an episode of exposure to the identified substance. (en)">
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["at9"] = <
+                text = <"Ambiental (en)">
+                description = <"Ambiental (en)">
+            >
+            ["at10"] = <
+                text = <"Ocupacional (en)">
+                description = <"Ocupacional (en)">
             >
         >
     >
     value_sets = <
         ["ac1"] = <
             id = <"ac1">
-            members = <"at7", "at8">
+            members = <"at7", "at8", "at9", "at10">
         >
     >
 
