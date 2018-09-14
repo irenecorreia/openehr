@@ -5,7 +5,7 @@ language
     original_language = <[ISO_639-1::en]>
     
 description
-    copyright = <"© 2011 NEHTA">
+    copyright = <"">
     details = <
         ["en"] = <
             keywords = <"issue", "condition", "problem", "concern", "diagnosis", "criteria", "illness", "disease", "disorder">
