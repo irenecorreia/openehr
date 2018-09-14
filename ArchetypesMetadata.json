@@ -653,7 +653,7 @@
     "rmType" : "EVALUATION",
     "name" : "Exposure",
     "path" : "archetypes/openEHR-EHR-EVALUATION.exposure.v1.adls",
-    "sha" : "5b1b1dba87d20c8454e46a7d0a88b8e6179fff54",
+    "sha" : "5225f1c5e773a2d360f6f7b63c85c41cd4b95256",
     "languages" : [ "en" ]
   }, {
     "id" : "openEHR-EHR-EVALUATION.family_history.v1.0.0",
@@ -1057,6 +1057,13 @@
     "name" : "Body Weight",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.body_weight-SESI_BR3.v1.adls",
     "sha" : "cb0b8f1fe09ef498bbce985e3ef7b3f8d681889e",
+    "languages" : [ "en", "de", "ru", "nl", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.body_weight-SESI_BR4.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "Body Weight",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.body_weight-SESI_BR4.v1.adls",
+    "sha" : "069762ebb11de20acf5332feb2bbae2b18396e2e",
     "languages" : [ "en", "de", "ru", "nl", "pt-br" ]
   } ]
 }
