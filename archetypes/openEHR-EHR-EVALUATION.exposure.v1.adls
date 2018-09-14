@@ -3,6 +3,15 @@ archetype (adl_version=2.0.5; rm_release=1.0.2; generated)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"IHealthGroup">
+            author = <
+                ["Ihealth"] = <"Ihealth">
+            >
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -12,6 +21,9 @@ description
             misuse = <"">
             purpose = <"">
             use = <"">
+        >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
         >
     >
     lifecycle_state = <"in_review">
@@ -141,6 +153,60 @@ terminology
             ["id14"] = <
                 text = <"Description">
                 description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"*Exposure (en)">
+                description = <"*Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health. (en)">
+            >
+            ["id3"] = <
+                text = <"*Agent (en)">
+                description = <"*Identification of the chemical, physical or biological agent to which the subject was exposed. (en)">
+            >
+            ["id4"] = <
+                text = <"*Overall Description (en)">
+                description = <"*Overall description of the exposure to the identified substance. (en)">
+            >
+            ["id5"] = <
+                text = <"*Ongoing Exposure (en)">
+                description = <"*Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health? (en)">
+            >
+            ["id6"] = <
+                text = <"*Category (en)">
+                description = <"*Type of exposure. (en)">
+            >
+            ["at7"] = <
+                text = <"*Environmental (en)">
+                description = <"*Exposure occurred in the environment. (en)">
+            >
+            ["at8"] = <
+                text = <"*Occupational (en)">
+                description = <"*Exposure occurred in the occupational environment or workplace. (en)">
+            >
+            ["ac1"] = <
+                text = <"*Category (synthesised) (en)">
+                description = <"*Type of exposure. (synthesised) (en)">
+            >
+            ["id10"] = <
+                text = <"*Date Updated (en)">
+                description = <"*The date this exposure summary was last updated. (en)">
+            >
+            ["id11"] = <
+                text = <"*Exposure Details (en)">
+                description = <"*Detailed information about an episode of exposure to the agent. (en)">
+            >
+            ["id12"] = <
+                text = <"*Date of Onset (en)">
+                description = <"*Date of onset of exposure to the agent. (en)">
+            >
+            ["id13"] = <
+                text = <"*Date Ceased (en)">
+                description = <"*Date of cessation of exposure to the agent. (en)">
+            >
+            ["id14"] = <
+                text = <"*Description (en)">
+                description = <"*Detailed description of an episode of exposure to the identified substance. (en)">
             >
         >
     >
