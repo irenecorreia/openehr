@@ -194,8 +194,8 @@ terminology
                 description = <"Ambiental">
             >
             ["at8"] = <
-                text = <"*Occupational (en)">
-                description = <"*Exposure occurred in the occupational environment or workplace. (en)">
+                text = <"Ocupacional">
+                description = <"Exposição ocupacional">
             >
             ["ac1"] = <
                 text = <"categoria (en)">
@@ -222,19 +222,19 @@ terminology
                 description = <"Descrição">
             >
             ["at9"] = <
-                text = <"Ambiental (en)">
-                description = <"Ambiental (en)">
+                text = <"Ambiental">
+                description = <"Ambiental">
             >
             ["at10"] = <
-                text = <"Ocupacional (en)">
-                description = <"Ocupacional (en)">
+                text = <"Ocupacional">
+                description = <"Ocupacional">
             >
         >
     >
     value_sets = <
         ["ac1"] = <
             id = <"ac1">
-            members = <"at7", "at8", "at9", "at10">
+            members = <"at7", "at8">
         >
     >
 
