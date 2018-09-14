@@ -3,17 +3,6 @@ archetype (adl_version=2.0.5; rm_release=1.0.2; generated)
 
 language
 	original_language = <[ISO_639-1::en]>
-	translations = <
-        ["pt-br"] = <
-            accreditation = <"P2D Health Advisor Council">
-            author = <
-                ["name"] = <"Marco Borges">
-                ["organisation"] = <"P2D">
-                ["email"] = <"marco.borges@p2d.com.br">
-            >
-            language = <[ISO_639-1::pt-br]>
-        >
-    >
 
 description
 	lifecycle_state = <"unmanaged">
