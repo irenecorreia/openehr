@@ -14,16 +14,21 @@ language
     >
     
 description
-    copyright = <"">
+    copyright = <"SALVO">
     details = <
         ["en"] = <
+            keywords = <"save">
             language = <[ISO_639-1::en]>
-            misuse = <"">
-            purpose = <"">
-            use = <"">
+            misuse = <"Save">
+            purpose = <"Save">
+            use = <"Save">
         >
         ["pt-br"] = <
+            keywords = <"SALVO">
             language = <[ISO_639-1::pt-br]>
+            misuse = <"SALVO">
+            purpose = <"SALVO">
+            use = <"SALVO">
         >
     >
     lifecycle_state = <"in_review">
