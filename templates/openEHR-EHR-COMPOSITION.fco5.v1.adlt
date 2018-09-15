@@ -2571,7 +2571,7 @@ terminology
                 description = <"Data de inicio">
             >
             ["id5.1"] = <
-                text = <"Trabalho com exposição a radiações ionizantes (RX e outros)">
+                text = <"Trabalho em pedreira">
                 description = <"Exposição">
             >
             ["id14.1"] = <
