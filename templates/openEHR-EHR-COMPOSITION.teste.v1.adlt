@@ -42,7 +42,7 @@ definition
     COMPOSITION[id1.1] matches {    -- Encounter
         /category[id3]/defining_code matches {[at1]}
         content matches {
-            use_archetype ADMIN_ENTRY[id0.2, openEHR-EHR-ADMIN_ENTRY.ovl-teste-historia_ocupacional_atual-001.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-teste-exposure-001.v1.0.0]
         }
     }
 
@@ -65,61 +65,103 @@ terminology
 
 ---------------------------------------------------------------------------------
 template_overlay
-    openEHR-EHR-ADMIN_ENTRY.ovl-teste-historia_ocupacional_atual-001.v1.0.0
+    openEHR-EHR-EVALUATION.ovl-teste-exposure-001.v1.0.0
 
 specialize
-    openEHR-EHR-ADMIN_ENTRY.historia_ocupacional_atual.v1.0.0
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
 
 definition
-    ADMIN_ENTRY[id1.1] matches {    -- historia_ocupacional_atual_SESI_BR
+    EVALUATION[id1.1] matches {    -- Exposure
         /data[id2]/items matches {
-            ELEMENT[id5.1] matches {    -- Cargo
+            ELEMENT[id3.1] matches {    -- Agent
                 value matches {
-                    DV_TEXT[id6.1] 
+                    DV_TEXT[id15.1] 
                 }
             }
-            ELEMENT[id7.1] matches {    -- Função
+            ELEMENT[id4.1] matches {    -- Overall Description
                 value matches {
-                    DV_TEXT[id8.1] 
+                    DV_TEXT[id16.1] 
                 }
             }
-            ELEMENT[id13] matches {
-                /value[id14]/value matches {True, False}
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
             }
-            ELEMENT[id17] matches {
-                /value[id18]/defining_code matches {[ac1]}
+            ELEMENT[id5] matches {
+                /value[id18]/value matches {True}
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
             }
         }
     }
 
 terminology
     term_definitions = <
-        ["pt-br"] = <
-            ["id1.1"] = <
-                text = <"historia_ocupacional_atual_SESI_BR">
-                description = <"historia_ocupacional atual">
-            >
-            ["id5.1"] = <
-                text = <"Cargo">
-                description = <"Cargo">
-            >
-            ["id7.1"] = <
-                text = <"Função">
-                description = <"Função">
-            >
-        >
         ["en"] = <
             ["id1.1"] = <
-                text = <"current_occupational_history">
-                description = <"current_occupational_history">
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
             >
-            ["id5.1"] = <
-                text = <"Charge">
-                description = <"Charge">
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
             >
-            ["id7.1"] = <
-                text = <"Function">
-                description = <"Function">
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Exposição">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
             >
         >
     >
