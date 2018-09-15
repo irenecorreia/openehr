@@ -399,24 +399,24 @@ terminology
                 description = <"Descritor para o rótulo específico do caso de uso ou contexto ou aspecto relacionado ao fluxo de trabalho do processo de diagnóstico que pode não ser seguro para troca entre sistemas ou uso em um ambiente compartilhado. Exemplos incluem: ativo / inativo; primário secundário; preliminar / provisional / trabalho / final.">
             >
             ["at81"] = <
-                text = <"*Caused by (en)">
-                description = <"*This concept identifies the direct cause or causative agent of a Problem/Diagnosis.  The concept includes the idea of ‘complications’, ‘causative agent’ and ‘due to’.  Note: Where no causality or sequence of events is known, this relationship type should be left blank. (en)">
+                text = <"Causado por">
+                description = <"Este conceito identifica a causa direta ou agente causador de um problema / diagnóstico. O conceito inclui a ideia de \"complicações\", \"agente causativo\" e \"devido a\". Nota: Quando nenhuma causalidade ou sequência de eventos é conhecida, esse tipo de relação deve ser deixado em branco.">
             >
             ["at82"] = <
-                text = <"*Following (en)">
-                description = <"*This value identifies the sequence of events between the related items, but does not assert causality.  This can be used for sequelae or late effects.  Note: Where no causality or sequence of events is known, this relationship type should be left blank. (en)">
+                text = <"Segue">
+                description = <"Esse valor identifica a sequência de eventos entre os itens relacionados, mas não afirma a causalidade. Isso pode ser usado para seqüelas ou efeitos tardios. Nota: Quando nenhuma causalidade ou sequência de eventos é conhecida, esse tipo de relação deve ser deixado em branco.">
             >
             ["id83"] = <
                 text = <"Gravidade">
                 description = <"Uma avaliação subjetiva da gravidade do problema / diagnóstico, conforme avaliado pelo clínico. A codificação da gravidade com uma terminologia é preferida, quando possível.">
             >
             ["at83"] = <
-                text = <"*Frequency (en)">
-                description = <"*Frequency (en)">
+                text = <"Freqüência">
+                description = <"Freqüência">
             >
             ["ac1"] = <
-                text = <"*Relationship type (synthesised) (en)">
-                description = <"*The type of relationship that this problem/diagnosis has to the related item. (synthesised) (en)">
+                text = <"Relationship type (synthesised) (en)">
+                description = <"The type of relationship that this problem/diagnosis has to the related item. (synthesised) (en)">
             >
         >
     >
