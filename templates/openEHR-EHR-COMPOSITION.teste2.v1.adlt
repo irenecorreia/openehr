@@ -1,0 +1,112 @@
+template (adl_version=2.0.5; rm_release=1.0.2; generated)
+    openEHR-EHR-COMPOSITION.teste2.v1.0.0
+
+specialize
+    openEHR-EHR-COMPOSITION.encounter.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
+    
+description
+    copyright = <"© openEHR">
+    details = <
+        ["en"] = <
+            keywords = <"progress", "note", "encounter">
+            language = <[ISO_639-1::en]>
+            misuse = <"">
+            purpose = <"Record of encounter as a progress note.">
+            use = <"For use to record when a person and clinician interact.">
+        >
+        ["pt-br"] = <
+            keywords = <"Progresso", "nota", "encontro">
+            language = <[ISO_639-1::pt-br]>
+            misuse = <"">
+            purpose = <"Registro de encontro como nota de progresso.">
+            use = <"Usado para gravar uma interação entre uma pessoa e um clínico.">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+    original_author = <
+        ["name"] = <"Thomas Beale">
+        ["organisation"] = <"Ocean Informatics">
+        ["date"] = <"2005-10-10">
+    >
+
+definition
+    COMPOSITION[id1.1] matches {    -- Encounter
+        /category[id3]/defining_code matches {[at1]}
+        content matches {
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-teste2-problem_diagnosis-001.v1.0.0]
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Encounter">
+                description = <"Generic encounter or progress note composition.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Encontro">
+                description = <"Encontro genérico ou  composição da nota de progresso.">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-teste2-problem_diagnosis-001.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.problem_diagnosis.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Problem/Diagnosis
+        /data[id2]/items matches {
+            CLUSTER[id19] matches {
+                items matches {
+                    ELEMENT[id26] matches {
+                        /value[id89]/magnitude matches {|>=1|}
+                    }
+                    ELEMENT[id20] matches {
+                        value matches {
+                            DV_QUANTITY[id90] matches {
+                                property matches {[at83]}
+                                units matches {"/min", "/h", "/d", "/wk", "/mo", "/yr"}
+                            }
+                        }
+                    }
+                }
+            }
+            CLUSTER[id27] matches {
+                /items[id57]/value[id95]/defining_code matches {[ac1]}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Problem/Diagnosis">
+                description = <"Any health care condition which may impact on the physical, mental and/or social well-being of an individual, that may require diagnostic, therapeutic or educational action, and which has been determined by a clinician. A diagnosis is based on scientific evaluation of physical signs, symptoms, history, laboratory tests results, and procedures.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Problema / Diagnostico">
+                description = <"Qualquer condição de cuidados de saúde que possa ter impacto no bem-estar físico, mental e / ou social de um indivíduo, que possa requerer ação diagnóstica, terapêutica ou educacional e que tenha sido determinada por um clínico. Um diagnóstico é baseado na avaliação científica dos sinais físicos, sintomas, história, resultados de exames laboratoriais e procedimentos.">
+            >
+        >
+    >
+
