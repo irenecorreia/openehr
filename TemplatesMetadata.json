@@ -28,6 +28,18 @@
     "rmType" : "COMPOSITION",
     "name" : "Encounter",
     "path" : "templates/openEHR-EHR-COMPOSITION.teste.v1.adlt",
-    "sha" : "52aba8b0bd2cb41159774369d48676aacf290e80"
+    "sha" : "a3adfaef0e2c746b52816617504470dc305f2aba"
+  }, {
+    "id" : "openEHR-EHR-COMPOSITION.fco5.v1.0.0",
+    "rmType" : "COMPOSITION",
+    "name" : "Encounter",
+    "path" : "templates/openEHR-EHR-COMPOSITION.fco5.v1.adlt",
+    "sha" : "7ff916243771f2f4148c117a194983652c57b8d4"
+  }, {
+    "id" : "openEHR-EHR-COMPOSITION.teste5.v1.0.0",
+    "rmType" : "COMPOSITION",
+    "name" : "Encounter",
+    "path" : "templates/openEHR-EHR-COMPOSITION.teste5.v1.adlt",
+    "sha" : "824f98518d098bb42d408cbf8b7aa4219400e650"
   } ]
 }
