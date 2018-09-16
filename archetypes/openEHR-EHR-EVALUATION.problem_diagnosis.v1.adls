@@ -68,7 +68,7 @@ definition
     EVALUATION[id1] matches {    -- Problem/Diagnosis
         data matches {
             ITEM_TREE[id2] matches {
-                items cardinality matches {1..*} matches {
+                items cardinality matches {1..*; unordered} matches {
                     ELEMENT[id3] matches {    -- Problem/Diagnosis
                         value matches {
                             DV_TEXT[id84] 
@@ -323,7 +323,7 @@ terminology
         >
         ["pt-br"] = <
             ["id1"] = <
-                text = <"Problema / Diagnóstico">
+                text = <"Problema / Diagnostico">
                 description = <"Qualquer condição de cuidados de saúde que possa ter impacto no bem-estar físico, mental e / ou social de um indivíduo, que possa requerer ação diagnóstica, terapêutica ou educacional e que tenha sido determinada por um clínico. Um diagnóstico é baseado na avaliação científica dos sinais físicos, sintomas, história, resultados de exames laboratoriais e procedimentos.">
             >
             ["id3"] = <
