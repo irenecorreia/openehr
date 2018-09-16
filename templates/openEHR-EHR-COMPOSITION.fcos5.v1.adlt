@@ -1,0 +1,3053 @@
+template (adl_version=2.0.5; rm_release=1.0.2; generated)
+    openEHR-EHR-COMPOSITION.fcos5.v1.0.0
+
+specialize
+    openEHR-EHR-COMPOSITION.encounter.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
+    
+description
+    copyright = <"© openEHR">
+    details = <
+        ["en"] = <
+            keywords = <"progress", "note", "encounter">
+            language = <[ISO_639-1::en]>
+            misuse = <"">
+            purpose = <"Record of encounter as a progress note.">
+            use = <"For use to record when a person and clinician interact.">
+        >
+        ["pt-br"] = <
+            keywords = <"Progresso", "nota", "encontro">
+            language = <[ISO_639-1::pt-br]>
+            misuse = <"">
+            purpose = <"Registro de encontro como nota de progresso.">
+            use = <"Usado para gravar uma interação entre uma pessoa e um clínico.">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+    original_author = <
+        ["name"] = <"Thomas Beale">
+        ["organisation"] = <"Ocean Informatics">
+        ["date"] = <"2005-10-10">
+    >
+
+definition
+    COMPOSITION[id1.1] matches {    -- Encounter
+        /category[id3]/defining_code matches {[at1]}
+        content matches {
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-001.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-002.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-003.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-004.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-005.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-006.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-007.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-008.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-009.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-010.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-011.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-012.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-013.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-014.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-015.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-016.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-017.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-018.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-019.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-020.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-021.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-022.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-023.v1.0.0]
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Encounter">
+                description = <"Generic encounter or progress note composition.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Encontro">
+                description = <"Encontro genérico ou  composição da nota de progresso.">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-001.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou em alguma das atividades listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Trabalho com exposição a radiações ionizantes (RX e outros)">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-002.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou em alguma das atividades listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Trabalho com geração de energia (termoelétrica / hidroelétrica)">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-003.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou em alguma das atividades listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Trabalho em \"call center / telemarketing\"">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-004.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou em alguma das atividades listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Trabalho como \"operador de checkout\"">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-005.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou em alguma das atividades listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Trabalho em câmara fria">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-006.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou em alguma das atividades listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Trabalho em linha de produção / montagem">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-007.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou em alguma das atividades listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Trabalho em mineração">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-008.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou em alguma das atividades listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Trabalho em pedreira">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-009.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou em alguma das atividades listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Trabalho em siderurgia">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-010.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou em alguma das atividades listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Trabalho com pintura">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-011.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou em alguma das atividades listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Trabalho em Condições Hiperbáricas">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-012.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou em alguma das atividades listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Trabalho em Construção Civil">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-013.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou em alguma das atividades listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Outros (especificar)">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-014.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou exposto à algum dos produtos listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Asbesto">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-015.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou exposto à algum dos produtos listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Sílica">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-016.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou exposto à algum dos produtos listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Tungstênio / Cobalto">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-017.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou exposto à algum dos produtos listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Berílio">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-018.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou exposto à algum dos produtos listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Alumínio">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-019.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou exposto à algum dos produtos listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Carvão">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-020.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou exposto à algum dos produtos listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Ferro">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-021.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou exposto à algum dos produtos listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Estanho">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-022.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou exposto à algum dos produtos listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Ambiente empoeirado">
+                description = <"Exposição">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-exposure-023.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.exposure.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Exposure
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Agent
+                value matches {
+                    DV_TEXT[id15.1] 
+                }
+            }
+            ELEMENT[id4.1] matches {    -- Overall Description
+                value matches {
+                    DV_TEXT[id16.1] 
+                }
+            }
+            ELEMENT[id6.1] matches {    -- Category
+                value matches {
+                    DV_CODED_TEXT[id17.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id5.1] matches {    -- Ongoing Exposure
+                value matches {
+                    DV_BOOLEAN[id18.1] matches {
+                        value matches {True}
+                    }
+                }
+            }
+            CLUSTER[id11] matches {
+                items matches {
+                    ELEMENT[id12.1] matches {    -- Date of Onset
+                        value matches {
+                            DV_DATE_TIME[id19.1] 
+                        }
+                    }
+                    ELEMENT[id14.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id20.1] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Exposure">
+                description = <"Exposure of the subject to a chemical, physical or biological agent within their environment that has caused, or may possibly cause in the future, a negative impact on health.">
+            >
+            ["id3.1"] = <
+                text = <"Agent">
+                description = <"Identification of the chemical, physical or biological agent to which the subject was exposed.">
+            >
+            ["id4.1"] = <
+                text = <"Overall Description">
+                description = <"Overall description of the exposure to the identified substance.">
+            >
+            ["id6.1"] = <
+                text = <"Category">
+                description = <"Type of exposure.">
+            >
+            ["id12.1"] = <
+                text = <"Date of Onset">
+                description = <"Date of onset of exposure to the agent.">
+            >
+            ["id13.1"] = <
+                text = <"Date Ceased">
+                description = <"Date of cessation of exposure to the agent.">
+            >
+            ["id14.1"] = <
+                text = <"Description">
+                description = <"Detailed description of an episode of exposure to the identified substance.">
+            >
+            ["id5.1"] = <
+                text = <"Ongoing Exposure">
+                description = <"Does the subject remain exposed to the substance to a degree that could be regarded as a potential risk to health?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Você já trabalhou exposto à algum dos produtos listadas abaixo? (Marcar em caso afirmativo)">
+                description = <"Exposição">
+            >
+            ["id3.1"] = <
+                text = <"Agente">
+                description = <"Agente">
+            >
+            ["id4.1"] = <
+                text = <"Descrição">
+                description = <"Descrição">
+            >
+            ["id6.1"] = <
+                text = <"Categoria">
+                description = <"Categoria">
+            >
+            ["id12.1"] = <
+                text = <"Data inicial">
+                description = <"Data inicial">
+            >
+            ["id13.1"] = <
+                text = <"Data final">
+                description = <"Data final">
+            >
+            ["id14.1"] = <
+                text = <"Especifique como, em que período e por quanto tempo?">
+                description = <"Descrição">
+            >
+            ["id5.1"] = <
+                text = <"Outros (especificar)">
+                description = <"Exposição">
+            >
+        >
+    >
+
