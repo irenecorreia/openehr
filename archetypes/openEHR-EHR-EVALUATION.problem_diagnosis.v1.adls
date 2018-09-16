@@ -194,7 +194,7 @@ definition
 terminology
     term_bindings = <
         ["openehr"] = <
-            ["at83"] = <http://openehr.org/id/382>
+            
         
         >
     >
