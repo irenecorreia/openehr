@@ -320,6 +320,10 @@ terminology
                 text = <"Seguido">
                 description = <"Seguido">
             >
+            ["ac2"] = <
+                text = <"Type of relationship">
+                description = <"type of relationship">
+            >
         >
         ["pt-br"] = <
             ["id1"] = <
@@ -442,12 +446,20 @@ terminology
                 text = <"Seguido (en)">
                 description = <"Seguido (en)">
             >
+            ["ac2"] = <
+                text = <"Type of relationship (en)">
+                description = <"type of relationship (en)">
+            >
         >
     >
     value_sets = <
         ["ac1"] = <
             id = <"ac1">
             members = <"at85", "at86">
+        >
+        ["ac2"] = <
+            id = <"ac2">
+            members = <"at81", "at83">
         >
     >
 
