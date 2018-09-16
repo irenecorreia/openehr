@@ -305,8 +305,8 @@ terminology
                 description = <"Frequency">
             >
             ["ac1"] = <
-                text = <"Relationship type (synthesised)">
-                description = <"The type of relationship that this problem/diagnosis has to the related item. (synthesised)">
+                text = <"Tipo de relacionamento">
+                description = <"O tipo de relacionamento que esse problema / diagnóstico tem para o item relacionado. (sintetizado)">
             >
             ["at84"] = <
                 text = <"Segue">
@@ -427,8 +427,8 @@ terminology
                 description = <"Freqüência">
             >
             ["ac1"] = <
-                text = <"Relationship type (synthesised) (en)">
-                description = <"The type of relationship that this problem/diagnosis has to the related item. (synthesised) (en)">
+                text = <"Tipo de relacionamento (en)">
+                description = <"O tipo de relacionamento que esse problema / diagnóstico tem para o item relacionado. (sintetizado) (en)">
             >
             ["at84"] = <
                 text = <"Segue (en)">
@@ -447,7 +447,7 @@ terminology
     value_sets = <
         ["ac1"] = <
             id = <"ac1">
-            members = <"at81", "at82">
+            members = <"at85", "at86">
         >
     >
 
