@@ -1,45 +1,21 @@
 {
   "templates" : [ {
-    "id" : "openEHR-EHR-COMPOSITION.sesifco.v1.0.0",
-    "rmType" : "COMPOSITION",
-    "name" : "Encounter",
-    "path" : "templates/openEHR-EHR-COMPOSITION.sesifco.v1.adlt",
-    "sha" : "197866c5769eff112a35b5675082a7295e751c97"
-  }, {
-    "id" : "openEHR-EHR-COMPOSITION.medicacoes.v1.0.0",
-    "rmType" : "COMPOSITION",
-    "name" : "Medication List",
-    "path" : "templates/openEHR-EHR-COMPOSITION.medicacoes.v1.adlt",
-    "sha" : "c98dd2185bbe21f1971566d33be1d18b81b68b07"
-  }, {
-    "id" : "openEHR-EHR-COMPOSITION.sesifco.v1.0.0",
-    "rmType" : "COMPOSITION",
-    "name" : "Encounter",
-    "path" : "templates/openEHR-EHR-COMPOSITION.sesifco2.v1.adlt",
-    "sha" : "3244d55149db0e5ad991f24706b5d45b417f0284"
-  }, {
-    "id" : "openEHR-EHR-COMPOSITION.sesi_fco_completa.v1.0.0",
-    "rmType" : "COMPOSITION",
-    "name" : "Encounter",
-    "path" : "templates/openEHR-EHR-COMPOSITION.sesi_fco_completa.v1.adlt",
-    "sha" : "38986043c3de15a0adb14570df366fb566e24786"
-  }, {
     "id" : "openEHR-EHR-COMPOSITION.teste.v1.0.0",
     "rmType" : "COMPOSITION",
     "name" : "Encounter",
     "path" : "templates/openEHR-EHR-COMPOSITION.teste.v1.adlt",
-    "sha" : "a3adfaef0e2c746b52816617504470dc305f2aba"
-  }, {
-    "id" : "openEHR-EHR-COMPOSITION.fco5.v1.0.0",
-    "rmType" : "COMPOSITION",
-    "name" : "Encounter",
-    "path" : "templates/openEHR-EHR-COMPOSITION.fco5.v1.adlt",
-    "sha" : "7ff916243771f2f4148c117a194983652c57b8d4"
+    "sha" : "ccdf9569ac44cd4469ee08d35b7031a08efc6b13"
   }, {
     "id" : "openEHR-EHR-COMPOSITION.teste5.v1.0.0",
     "rmType" : "COMPOSITION",
     "name" : "Encounter",
     "path" : "templates/openEHR-EHR-COMPOSITION.teste5.v1.adlt",
-    "sha" : "824f98518d098bb42d408cbf8b7aa4219400e650"
+    "sha" : "27a440bf0ea4d254e3d6d7e97944e97f021cdf2f"
+  }, {
+    "id" : "openEHR-EHR-COMPOSITION.fcos5.v1.0.0",
+    "rmType" : "COMPOSITION",
+    "name" : "Encounter",
+    "path" : "templates/openEHR-EHR-COMPOSITION.fcos5.v1.adlt",
+    "sha" : "f3a91ce5b220990eb9dd38c9bf8504a211e204c6"
   } ]
 }
