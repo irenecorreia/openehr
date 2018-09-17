@@ -43,6 +43,7 @@ definition
         /category[id3]/defining_code matches {[at1]}
         content matches {
             use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-teste4-problem_diagnosis-001.v1.0.0]
+            use_archetype SECTION[id0.4, openEHR-EHR-SECTION.ovl-teste4-adhoc-002.v1.0.0]
             use_archetype SECTION[id0.3, openEHR-EHR-SECTION.ovl-teste4-adhoc-001.v1.0.0]
         }
     }
@@ -186,6 +187,35 @@ terminology
             ["id1.1"] = <
                 text = <"Problema/Diagnostico">
                 description = <"Qualquer condição de cuidados de saúde que possa ter impacto no bem-estar físico, mental e / ou social de um indivíduo, que possa requerer ação diagnóstica, terapêutica ou educacional e que tenha sido determinada por um clínico. Um diagnóstico é baseado na avaliação científica dos sinais físicos, sintomas, história, resultados de exames laboratoriais e procedimentos.">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-teste4-adhoc-002.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Encabeçamento">
+                description = <"Um título genérico para renomeação contextual dentro de um modelo.">
             >
         >
     >
