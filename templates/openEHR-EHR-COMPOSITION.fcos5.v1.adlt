@@ -3242,6 +3242,21 @@ definition
                     DV_TEXT[id84.1] 
                 }
             }
+            ELEMENT[id10.1] matches {    -- Clinical description
+                value matches {
+                    DV_TEXT[id85.1] 
+                }
+            }
+            ELEMENT[id83.1] matches {    -- Severity
+                value matches {
+                    DV_TEXT[id86.1] 
+                }
+            }
+            ELEMENT[id11.1] matches {    -- Date of onset
+                value matches {
+                    DV_DATE_TIME[id87.1] 
+                }
+            }
             CLUSTER[id19] matches {
                 items matches {
                     ELEMENT[id26] matches {
@@ -3255,10 +3270,25 @@ definition
                             }
                         }
                     }
+                    ELEMENT[id73.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id92.1] 
+                        }
+                    }
                 }
             }
             CLUSTER[id27] matches {
                 /items[id57]/value[id95]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id70.1] matches {    -- Comment
+                value matches {
+                    DV_TEXT[id98.1] 
+                }
+            }
+            ELEMENT[id3.2] matches {    -- Problem/Diagnosis
+                value matches {
+                    DV_TEXT[id84.2] 
+                }
             }
         }
     }
@@ -3274,6 +3304,30 @@ terminology
                 text = <"Problem/Diagnosis">
                 description = <"Identification of the problem or diagnosis. Coding of the problem or diagnosis with a terminology is preferred, where possible.">
             >
+            ["id10.1"] = <
+                text = <"Clinical description">
+                description = <"Narrative description or comments about clinical aspects of the problem/diagnosis.">
+            >
+            ["id83.1"] = <
+                text = <"Severity">
+                description = <"A subjective assessment of the severity of the Problem/Diagnosis as evaluated by the clinician. Coding of the severity with a terminology is preferred, where possible.">
+            >
+            ["id11.1"] = <
+                text = <"Date of onset">
+                description = <"Estimated or actual date the problem/diagnosis began, in the opinion of the clinician.">
+            >
+            ["id3.2"] = <
+                text = <"Problem/Diagnosis">
+                description = <"Identification of the problem or diagnosis. Coding of the problem or diagnosis with a terminology is preferred, where possible.">
+            >
+            ["id73.1"] = <
+                text = <"Description">
+                description = <"A narrative description, including outcomes and other key details, about occurrences or exacerbations of the problem/diagnosis.">
+            >
+            ["id70.1"] = <
+                text = <"Comment">
+                description = <"Additional narrative about the problem or diagnosis not captured in other fields.">
+            >
         >
         ["pt-br"] = <
             ["id1.1"] = <
@@ -3283,6 +3337,30 @@ terminology
             ["id3.1"] = <
                 text = <"CID">
                 description = <"Identificação do problema ou diagnóstico. A codificação do problema ou diagnóstico com uma terminologia é preferida, quando possível.">
+            >
+            ["id10.1"] = <
+                text = <"Queixas Clínicas?">
+                description = <"Descrição narrativa ou comentários sobre aspectos clínicos do problema / diagnóstico.">
+            >
+            ["id83.1"] = <
+                text = <"Gravidade">
+                description = <"Uma avaliação subjetiva da gravidade do problema / diagnóstico, conforme avaliado pelo clínico. A codificação da gravidade com uma terminologia é preferida, quando possível.">
+            >
+            ["id11.1"] = <
+                text = <"Data de inicio">
+                description = <"Data estimada ou real o problema / diagnóstico começou, na opinião do clínico.">
+            >
+            ["id3.2"] = <
+                text = <"Queixa PRINCIPAL:">
+                description = <"Identificação do problema ou diagnóstico. A codificação do problema ou diagnóstico com uma terminologia é preferida, quando possível.">
+            >
+            ["id73.1"] = <
+                text = <"Há quanto tempo a queixa principal está presente?">
+                description = <"Uma descrição narrativa, incluindo resultados e outros detalhes importantes, sobre ocorrências ou exacerbações do problema / diagnóstico.">
+            >
+            ["id70.1"] = <
+                text = <"Outras QUEIXAS:">
+                description = <"Narrativa adicional sobre o problema ou diagnóstico não capturado em outros campos.">
             >
         >
     >
