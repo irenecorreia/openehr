@@ -30,6 +30,11 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id9] matches {    -- What is the reason for the withdrawal period?
+                                        value matches {
+                                            DV_TEXT[id10] 
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -56,6 +61,10 @@ terminology
             ["id6"] = <
                 text = <"Have you been away from work in the past 12 months?">
                 description = <"Have you been away from work in the past 12 months?">
+            >
+            ["id9"] = <
+                text = <"What is the reason for the withdrawal period?">
+                description = <"What is the reason for the withdrawal period?">
             >
         >
     >
