@@ -71,29 +71,29 @@ specialize
     openEHR-EHR-EVALUATION.problem_diagnosis.v1.0.0
 
 definition
-    EVALUATION[id1.1] matches {    -- Problem/Diagnosis
+    EVALUATION[id1.1] matches {    
         /data[id2]/items matches {
-            ELEMENT[id3.1] matches {    -- Problem/Diagnosis
+            ELEMENT[id3.1] matches {  
                 value matches {
                     DV_TEXT[id84.1] 
                 }
             }
-            ELEMENT[id10.1] matches {    -- Clinical description
+            ELEMENT[id10.1] matches {    
                 value matches {
                     DV_TEXT[id85.1] 
                 }
             }
-            ELEMENT[id83.1] matches {    -- Severity
+            ELEMENT[id83.1] matches {    
                 value matches {
                     DV_TEXT[id86.1] 
                 }
             }
-            ELEMENT[id11.1] matches {    -- Date of onset
+            ELEMENT[id11.1] matches {    
                 value matches {
                     DV_DATE_TIME[id87.1] 
                 }
             }
-            ELEMENT[id38.1] matches {    -- Age at onset
+            ELEMENT[id38.1] matches {    
                 value matches {
                     DV_DURATION[id88.1] 
                 }
@@ -104,14 +104,14 @@ definition
             }
             CLUSTER[id19] matches {
                 items matches {
-                    ELEMENT[id26.1] matches {    -- Number
+                    ELEMENT[id26.1] matches {    
                         value matches {
                             DV_COUNT[id89.1] matches {
                                 magnitude matches {|>=1|}
                             }
                         }
                     }
-                    ELEMENT[id20.1] matches {    -- Frequency
+                    ELEMENT[id20.1] matches {    
                         value matches {
                             DV_QUANTITY[id90.1] matches {
                                 property matches {[at83]}
@@ -119,17 +119,17 @@ definition
                             }
                         }
                     }
-                    ELEMENT[id21.1] matches {    -- Latest occurrence
+                    ELEMENT[id21.1] matches {    
                         value matches {
                             DV_DATE[id91.1] 
                         }
                     }
-                    ELEMENT[id73.1] matches {    -- Description
+                    ELEMENT[id73.1] matches {    
                         value matches {
                             DV_TEXT[id92.1] 
                         }
                     }
-                    ELEMENT[id74.1] matches {    -- Link to occurrence details
+                    ELEMENT[id74.1] matches {   
                         value matches {
                             DV_URI[id93.1] 
                         }
@@ -138,12 +138,12 @@ definition
             }
             CLUSTER[id27] matches {
                 items matches {
-                    ELEMENT[id29.1] matches {    -- Related item
+                    ELEMENT[id29.1] matches {    
                         value matches {
                             DV_TEXT[id94.1] 
                         }
                     }
-                    ELEMENT[id57.1] matches {    -- Relationship type
+                    ELEMENT[id57.1] matches {    
                         value matches {
                             DV_CODED_TEXT[id95.1] matches {
                                 defining_code matches {[ac1]}
@@ -152,12 +152,12 @@ definition
                     }
                 }
             }
-            ELEMENT[id31.1] matches {    -- Date of resolution/remission
+            ELEMENT[id31.1] matches {    
                 value matches {
                     DV_DATE[id96.1] 
                 }
             }
-            ELEMENT[id32.1] matches {    -- Age at resolution/remission
+            ELEMENT[id32.1] matches {    
                 value matches {
                     DV_DURATION[id97.1] 
                 }
@@ -170,24 +170,24 @@ definition
                 include
                     archetype_id/value matches {/.*/}
             }
-            ELEMENT[id70.1] matches {    -- Comment
+            ELEMENT[id70.1] matches {    
                 value matches {
                     DV_TEXT[id98.1] 
                 }
             }
-            ELEMENT[id3.2] matches {    -- Problem/Diagnosis
+            ELEMENT[id3.2] matches {    
                 value matches {
                     DV_TEXT[id84.2] 
                 }
             }
-            ELEMENT[id10.2] matches {    -- Clinical description
+            ELEMENT[id10.2] matches {    
                 value matches {
                     DV_TEXT[id85.2] 
                 }
             }
         }
         /protocol[id75]/items matches {
-            ELEMENT[id76.1] matches {    -- Link to supporting clinical evidence
+            ELEMENT[id76.1] matches {  
                 value matches {
                     DV_URI[id99.1] 
                 }
