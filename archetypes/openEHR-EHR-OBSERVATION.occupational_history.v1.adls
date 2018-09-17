@@ -160,20 +160,20 @@ terminology
                 description = <"Qual e em que atividade?">
             >
             ["id15"] = <
-                text = <"*Have you suffered an accident at work since the last exam? (en)">
-                description = <"*Have you suffered an accident at work since the last exam? (en)">
+                text = <"Você sofreu acidente de trabalho desde o último exame?">
+                description = <"Você sofreu acidente de trabalho desde o último exame?">
             >
             ["id17"] = <
-                text = <"*There was an injury or a sequel, if (en)">
-                description = <"*There was an injury or a sequel, if (en)">
+                text = <"Houve lesão ou sequela, se sim especifique">
+                description = <"Houve lesão ou sequela, se sim especifique">
             >
             ["id19"] = <
-                text = <"*Você exerce outra atividade de trabalho remunerada (formal ou informal)? (en)">
-                description = <"*Você exerce outra atividade de trabalho remunerada (formal ou informal)? (en)">
+                text = <"Você exerce outra atividade de trabalho remunerada (formal ou informal)?">
+                description = <"Você exerce outra atividade de trabalho remunerada (formal ou informal)?">
             >
             ["id21"] = <
-                text = <"*which are? (en)">
-                description = <"*which are? (en)">
+                text = <"Qual(is)?">
+                description = <"Qual(is)?">
             >
         >
     >
