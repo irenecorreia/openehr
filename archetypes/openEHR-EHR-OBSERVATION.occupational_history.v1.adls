@@ -54,6 +54,21 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id17] matches {    -- There was an injury or a sequel, if
+                                        value matches {
+                                            DV_TEXT[id18] 
+                                        }
+                                    }
+                                    ELEMENT[id19] matches {    -- Você exerce outra atividade de trabalho remunerada (formal ou informal)?
+                                        value matches {
+                                            DV_TEXT[id20] 
+                                        }
+                                    }
+                                    ELEMENT[id21] matches {    -- which are?
+                                        value matches {
+                                            DV_TEXT[id22] 
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -96,6 +111,18 @@ terminology
             ["id15"] = <
                 text = <"Have you suffered an accident at work since the last exam?">
                 description = <"Have you suffered an accident at work since the last exam?">
+            >
+            ["id17"] = <
+                text = <"There was an injury or a sequel, if">
+                description = <"There was an injury or a sequel, if">
+            >
+            ["id19"] = <
+                text = <"Você exerce outra atividade de trabalho remunerada (formal ou informal)?">
+                description = <"Você exerce outra atividade de trabalho remunerada (formal ou informal)?">
+            >
+            ["id21"] = <
+                text = <"which are?">
+                description = <"which are?">
             >
         >
     >
