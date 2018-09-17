@@ -327,19 +327,19 @@ terminology
         >
         ["pt-br"] = <
             ["id1"] = <
-                text = <"Problema / Diagnostico">
+                text = <"Problema/Diagnostico">
                 description = <"Qualquer condição de cuidados de saúde que possa ter impacto no bem-estar físico, mental e / ou social de um indivíduo, que possa requerer ação diagnóstica, terapêutica ou educacional e que tenha sido determinada por um clínico. Um diagnóstico é baseado na avaliação científica dos sinais físicos, sintomas, história, resultados de exames laboratoriais e procedimentos.">
             >
             ["id3"] = <
-                text = <"Problema / Diagnóstico">
+                text = <"Problema/Diagnóstico">
                 description = <"Identificação do problema ou diagnóstico. A codificação do problema ou diagnóstico com uma terminologia é preferida, quando possível.">
             >
             ["id10"] = <
-                text = <"Descrição clínica">
+                text = <"Descrição clinica">
                 description = <"Descrição narrativa ou comentários sobre aspectos clínicos do problema / diagnóstico.">
             >
             ["id11"] = <
-                text = <"Data de início">
+                text = <"Data de inicio">
                 description = <"Data estimada ou real o problema / diagnóstico começou, na opinião do clínico.">
             >
             ["id19"] = <
@@ -435,16 +435,16 @@ terminology
                 description = <"O tipo de relacionamento que esse problema / diagnóstico tem para o item relacionado. (sintetizado) (en)">
             >
             ["at84"] = <
-                text = <"Segue (en)">
-                description = <"Segue (en)">
+                text = <"Segue">
+                description = <"Segue">
             >
             ["at85"] = <
-                text = <"Causado por (en)">
-                description = <"Causado por (en)">
+                text = <"Causado por">
+                description = <"Causado por">
             >
             ["at86"] = <
-                text = <"Seguido (en)">
-                description = <"Seguido (en)">
+                text = <"Seguido">
+                description = <"Seguido">
             >
             ["ac2"] = <
                 text = <"Type of relationship (en)">
