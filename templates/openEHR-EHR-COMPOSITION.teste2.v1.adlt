@@ -39,7 +39,7 @@ description
     >
 
 definition
-    COMPOSITION[id1.1] matches {
+    COMPOSITION[id1.1] matches {    -- Encounter
         /category[id3]/defining_code matches {[at1]}
         content matches {
             use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-teste2-problem_diagnosis-001.v1.0.0]
@@ -97,10 +97,6 @@ definition
                 value matches {
                     DV_DURATION[id88.1] 
                 }
-            }
-            allow_archetype CLUSTER[id45] matches { 
-                include
-                    archetype_id/value matches {/openEHR-EHR-CLUSTER\.anatomical_location(-a-zA-Z0-9_]+)*\.v1/}
             }
             CLUSTER[id19] matches {
                 items matches {
