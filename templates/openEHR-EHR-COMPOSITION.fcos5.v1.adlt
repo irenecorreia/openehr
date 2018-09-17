@@ -3206,10 +3206,6 @@ specialize
 definition
     EVALUATION[id1.1] matches {    -- Problem/Diagnosis
         /data[id2]/items matches {
-            allow_archetype CLUSTER[id45] matches { 
-                include
-                    archetype_id/value matches {/openEHR-EHR-CLUSTER\.anatomical_location(-a-zA-Z0-9_]+)*\.v1/}
-            }
             CLUSTER[id19] matches {
                 items matches {
                     ELEMENT[id26] matches {
@@ -3227,20 +3223,6 @@ definition
             }
             CLUSTER[id27] matches {
                 /items[id57]/value[id95]/defining_code matches {[ac1]}
-            }
-            allow_archetype CLUSTER[id55] matches { 
-                include
-                    archetype_id/value matches {/.*/}
-            }
-            allow_archetype CLUSTER[id56] matches { 
-                include
-                    archetype_id/value matches {/.*/}
-            }
-        }
-        /protocol[id75]/items matches {
-            allow_archetype CLUSTER[id77] matches { 
-                include
-                    archetype_id/value matches {/.*/}
             }
         }
     }
