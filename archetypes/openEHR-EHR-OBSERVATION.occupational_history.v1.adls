@@ -47,6 +47,13 @@ definition
                                             DV_TEXT[id14] 
                                         }
                                     }
+                                    ELEMENT[id15] matches {    -- Have you suffered an accident at work since the last exam?
+                                        value matches {
+                                            DV_BOOLEAN[id16] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -85,6 +92,10 @@ terminology
             ["id13"] = <
                 text = <"What and in what activity?">
                 description = <"What and in what activity?">
+            >
+            ["id15"] = <
+                text = <"Have you suffered an accident at work since the last exam?">
+                description = <"Have you suffered an accident at work since the last exam?">
             >
         >
     >
