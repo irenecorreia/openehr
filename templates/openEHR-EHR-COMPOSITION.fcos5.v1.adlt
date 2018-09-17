@@ -42,7 +42,6 @@ definition
     COMPOSITION[id1.1] matches {    -- Encounter
         /category[id3]/defining_code matches {[at1]}
         content matches {
-            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-001.v1.0.0]
             use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-002.v1.0.0]
             use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-003.v1.0.0]
             use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-004.v1.0.0]
@@ -66,6 +65,8 @@ definition
             use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-022.v1.0.0]
             use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-023.v1.0.0]
             use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-024.v1.0.0]
+            use_archetype SECTION[id0.4, openEHR-EHR-SECTION.ovl-fcos5-adhoc-002.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-001.v1.0.0]
             use_archetype SECTION[id0.3, openEHR-EHR-SECTION.ovl-fcos5-adhoc-001.v1.0.0]
         }
     }
@@ -3242,6 +3243,11 @@ definition
                     DV_TEXT[id84.1] 
                 }
             }
+            ELEMENT[id3.2] matches {    -- Problem/Diagnosis
+                value matches {
+                    DV_TEXT[id84.2] 
+                }
+            }
             ELEMENT[id10.1] matches {    -- Clinical description
                 value matches {
                     DV_TEXT[id85.1] 
@@ -3256,6 +3262,10 @@ definition
                 value matches {
                     DV_DATE_TIME[id87.1] 
                 }
+            }
+            allow_archetype CLUSTER[id45] matches { 
+                include
+                    archetype_id/value matches {/openEHR-EHR-CLUSTER\.anatomical_location(-a-zA-Z0-9_]+)*\.v1/}
             }
             CLUSTER[id19] matches {
                 items matches {
@@ -3280,15 +3290,24 @@ definition
             CLUSTER[id27] matches {
                 /items[id57]/value[id95]/defining_code matches {[ac1]}
             }
+            allow_archetype CLUSTER[id55] matches { 
+                include
+                    archetype_id/value matches {/.*/}
+            }
+            allow_archetype CLUSTER[id56] matches { 
+                include
+                    archetype_id/value matches {/.*/}
+            }
             ELEMENT[id70.1] matches {    -- Comment
                 value matches {
                     DV_TEXT[id98.1] 
                 }
             }
-            ELEMENT[id3.2] matches {    -- Problem/Diagnosis
-                value matches {
-                    DV_TEXT[id84.2] 
-                }
+        }
+        /protocol[id75]/items matches {
+            allow_archetype CLUSTER[id77] matches { 
+                include
+                    archetype_id/value matches {/.*/}
             }
         }
     }
@@ -3331,7 +3350,7 @@ terminology
         >
         ["pt-br"] = <
             ["id1.1"] = <
-                text = <"Problema/Diagnostico">
+                text = <"História Clinica">
                 description = <"Qualquer condição de cuidados de saúde que possa ter impacto no bem-estar físico, mental e / ou social de um indivíduo, que possa requerer ação diagnóstica, terapêutica ou educacional e que tenha sido determinada por um clínico. Um diagnóstico é baseado na avaliação científica dos sinais físicos, sintomas, história, resultados de exames laboratoriais e procedimentos.">
             >
             ["id3.1"] = <
@@ -3361,6 +3380,35 @@ terminology
             ["id70.1"] = <
                 text = <"Outras QUEIXAS:">
                 description = <"Narrativa adicional sobre o problema ou diagnóstico não capturado em outros campos.">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-fcos5-adhoc-002.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Histórico Ocupacional">
+                description = <"Um título genérico para renomeação contextual dentro de um modelo.">
             >
         >
     >
