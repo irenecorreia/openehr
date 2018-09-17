@@ -136,28 +136,28 @@ terminology
         >
         ["pt-br"] = <
             ["id1"] = <
-                text = <"*occupational history (en)">
-                description = <"*occupational history (en)">
+                text = <"História Ocupacional">
+                description = <"História Ocupacional">
             >
             ["id3"] = <
-                text = <"*Any event (en)">
-                description = <"*Any event (en)">
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
             >
             ["id6"] = <
-                text = <"*Have you been away from work in the past 12 months? (en)">
-                description = <"*Have you been away from work in the past 12 months? (en)">
+                text = <"Você esteve afastado do trabalho nos últimos 12 meses?">
+                description = <"Você esteve afastado do trabalho nos últimos 12 meses?">
             >
             ["id9"] = <
-                text = <"*What is the reason for the withdrawal period? (en)">
-                description = <"*What is the reason for the withdrawal period? (en)">
+                text = <"Qual o motivo e período do afastamento?">
+                description = <"Qual o motivo e período do afastamento?">
             >
             ["id11"] = <
-                text = <"*Have you ever acquired any work-related illness (LER / DORT, Hearing Loss, Asthma, Dermatosis, etc.)? (en)">
-                description = <"*Have you ever acquired any work-related illness (LER / DORT, Hearing Loss, Asthma, Dermatosis, etc.)? (en)">
+                text = <"Já adquiriu alguma doença relacionada ao trabalho (LER/DORT, Perda auditiva, Asma, Dermatose, etc.)?">
+                description = <"Já adquiriu alguma doença relacionada ao trabalho (LER/DORT, Perda auditiva, Asma, Dermatose, etc.)?">
             >
             ["id13"] = <
-                text = <"*What and in what activity? (en)">
-                description = <"*What and in what activity? (en)">
+                text = <"Qual e em que atividade?">
+                description = <"Qual e em que atividade?">
             >
             ["id15"] = <
                 text = <"*Have you suffered an accident at work since the last exam? (en)">
