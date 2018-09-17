@@ -42,6 +42,11 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id13] matches {    -- What and in what activity?
+                                        value matches {
+                                            DV_TEXT[id14] 
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -76,6 +81,10 @@ terminology
             ["id11"] = <
                 text = <"Have you ever acquired any work-related illness (LER / DORT, Hearing Loss, Asthma, Dermatosis, etc.)?">
                 description = <"Have you ever acquired any work-related illness (LER / DORT, Hearing Loss, Asthma, Dermatosis, etc.)?">
+            >
+            ["id13"] = <
+                text = <"What and in what activity?">
+                description = <"What and in what activity?">
             >
         >
     >
