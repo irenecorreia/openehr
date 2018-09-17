@@ -151,7 +151,7 @@
     "rmType" : "EVALUATION",
     "name" : "Problem/Diagnosis",
     "path" : "archetypes/openEHR-EHR-EVALUATION.problem_diagnosis.v1.adls",
-    "sha" : "c0be7eb152b616d4fe6b3a653e73c3e673e2d633",
+    "sha" : "cac02fa757bf5a72c94af06a703ce30b8db796e4",
     "languages" : [ "en", "pt-br" ]
   }, {
     "id" : "openEHR-EHR-INSTRUCTION.medication.v1.0.0",
@@ -375,7 +375,7 @@
     "rmType" : "ACTION",
     "name" : "Health Education",
     "path" : "archetypes/openEHR-EHR-ACTION.health_education.v1.adls",
-    "sha" : "638b171594852385e8cbc33d85e0c310febc9199",
+    "sha" : "d15653f8de1151a41ad15def67149e2514cfaac1",
     "languages" : [ "en" ]
   }, {
     "id" : "openEHR-EHR-ACTION.imaging_exam-SESI_BR.v1.0.0",
