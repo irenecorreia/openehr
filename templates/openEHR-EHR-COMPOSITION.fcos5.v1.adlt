@@ -73,6 +73,7 @@ definition
             use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-023.v1.0.0]
             use_archetype SECTION[id0.3, openEHR-EHR-SECTION.ovl-fcos5-adhoc-001.v1.0.0]
             use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-024.v1.0.0]
+            use_archetype SECTION[id0.5, openEHR-EHR-SECTION.ovl-fcos5-adhoc-003.v1.0.0]
             use_archetype SECTION[id0.4, openEHR-EHR-SECTION.ovl-fcos5-adhoc-002.v1.0.0]
         }
     }
@@ -3309,6 +3310,106 @@ terminology
             ["id1.1"] = <
                 text = <"História Clínica">
                 description = <"História Clínica">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-fcos5-adhoc-003.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items matches {
+            use_archetype OBSERVATION[id0.2, openEHR-EHR-OBSERVATION.ovl-fcos5-occupational_history-002.v1.0.0]
+            use_archetype OBSERVATION[id0.3, openEHR-EHR-OBSERVATION.ovl-fcos5-personal_protective_equipament-001.v1.0.0]
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Encabeçamento">
+                description = <"Um título genérico para renomeação contextual dentro de um modelo.">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-fcos5-occupational_history-002.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.occupational_history.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- occupational history
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6] matches {
+                /value[id8]/value matches {True, False}
+            }
+            ELEMENT[id11] matches {
+                /value[id12]/value matches {True, False}
+            }
+            ELEMENT[id15] matches {
+                /value[id16]/value matches {True, False}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"occupational history">
+                description = <"occupational history">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"História Ocupacional">
+                description = <"História Ocupacional">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-fcos5-personal_protective_equipament-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.personal_protective_equipament.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- Personal protective equipament
+        /data[id2]/events[id3]/data[id4]/items[id6]/value[id7]/value matches {True, False}
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Personal protective equipament">
+                description = <"Personal protective equipament">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Equipamento de proteção individual">
+                description = <"Equipamento de proteção individual">
             >
         >
     >
