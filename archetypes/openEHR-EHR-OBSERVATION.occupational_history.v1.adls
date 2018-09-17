@@ -25,7 +25,6 @@ definition
                                 items matches {
                                     ELEMENT[id6] matches {    -- Have you been away from work in the past 12 months?
                                         value matches {
-                                            DV_TEXT[id7] 
                                             DV_BOOLEAN[id8] matches {
                                                 value matches {True, False}
                                             }
