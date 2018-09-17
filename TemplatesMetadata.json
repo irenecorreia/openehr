@@ -16,18 +16,24 @@
     "rmType" : "COMPOSITION",
     "name" : "Encounter",
     "path" : "templates/openEHR-EHR-COMPOSITION.fcos5.v1.adlt",
-    "sha" : "48a796af67338dc6e3972f696425ea6f78116bec"
+    "sha" : "701fea9c74fb34ba753af093990b32f1afe4189d"
   }, {
     "id" : "openEHR-EHR-COMPOSITION.teste2.v1.0.0",
     "rmType" : "COMPOSITION",
     "name" : "Encounter",
     "path" : "templates/openEHR-EHR-COMPOSITION.teste2.v1.adlt",
-    "sha" : "f329d5dc53b7ba89fb89d4011994725529f328f5"
+    "sha" : "ea22e1c76c4c9c1a4fa1f268b3d2066660bd4e61"
   }, {
     "id" : "openEHR-EHR-COMPOSITION.teste3.v1.0.0",
     "rmType" : "COMPOSITION",
     "name" : "Encounter",
     "path" : "templates/openEHR-EHR-COMPOSITION.teste3.v1.adlt",
-    "sha" : "576209653c9a46c3286701909a088c59f5fc3476"
+    "sha" : "45f82ab3e6fec15de6d4f297d6c9512f01ae9cc8"
+  }, {
+    "id" : "openEHR-EHR-COMPOSITION.teste4.v1.0.0",
+    "rmType" : "COMPOSITION",
+    "name" : "Encounter",
+    "path" : "templates/openEHR-EHR-COMPOSITION.teste4.v1.adlt",
+    "sha" : "7ef8ba11a88f64b8be3b7876f56fc55d627124bd"
   } ]
 }
