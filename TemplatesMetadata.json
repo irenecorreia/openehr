@@ -22,6 +22,12 @@
     "rmType" : "COMPOSITION",
     "name" : "Encounter",
     "path" : "templates/openEHR-EHR-COMPOSITION.teste2.v1.adlt",
-    "sha" : "ac84abba8964591c6a6f4a586f33475b80e5804b"
+    "sha" : "f329d5dc53b7ba89fb89d4011994725529f328f5"
+  }, {
+    "id" : "openEHR-EHR-COMPOSITION.teste3.v1.0.0",
+    "rmType" : "COMPOSITION",
+    "name" : "Encounter",
+    "path" : "templates/openEHR-EHR-COMPOSITION.teste3.v1.adlt",
+    "sha" : "576209653c9a46c3286701909a088c59f5fc3476"
   } ]
 }
