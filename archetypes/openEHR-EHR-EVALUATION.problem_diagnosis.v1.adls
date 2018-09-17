@@ -309,8 +309,8 @@ terminology
                 description = <"O tipo de relacionamento que esse problema / diagnóstico tem para o item relacionado. (sintetizado)">
             >
             ["at84"] = <
-                text = <"Segue">
-                description = <"Segue">
+                text = <"Frequency">
+                description = <"">
             >
             ["at85"] = <
                 text = <"Causado por">
@@ -435,8 +435,8 @@ terminology
                 description = <"O tipo de relacionamento que esse problema / diagnóstico tem para o item relacionado. (sintetizado) (en)">
             >
             ["at84"] = <
-                text = <"Segue">
-                description = <"Segue">
+                text = <"Frequencia">
+                description = <"">
             >
             ["at85"] = <
                 text = <"Causado por">
