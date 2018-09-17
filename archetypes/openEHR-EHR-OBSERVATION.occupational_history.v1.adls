@@ -35,6 +35,13 @@ definition
                                             DV_TEXT[id10] 
                                         }
                                     }
+                                    ELEMENT[id11] matches {    -- Have you ever acquired any work-related illness (LER / DORT, Hearing Loss, Asthma, Dermatosis, etc.)?
+                                        value matches {
+                                            DV_BOOLEAN[id12] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -65,6 +72,10 @@ terminology
             ["id9"] = <
                 text = <"What is the reason for the withdrawal period?">
                 description = <"What is the reason for the withdrawal period?">
+            >
+            ["id11"] = <
+                text = <"Have you ever acquired any work-related illness (LER / DORT, Hearing Loss, Asthma, Dermatosis, etc.)?">
+                description = <"Have you ever acquired any work-related illness (LER / DORT, Hearing Loss, Asthma, Dermatosis, etc.)?">
             >
         >
     >
