@@ -3099,14 +3099,14 @@ definition
                             DV_TEXT[id20.1] 
                         }
                     }
-                    ELEMENT[id13.1] matches {    -- Date Ceased
-                        value matches {
-                            DV_DATE_TIME[id21.1] 
-                        }
-                    }
                     ELEMENT[id14.2] matches {    -- Description
                         value matches {
                             DV_TEXT[id20.2] 
+                        }
+                    }
+                    ELEMENT[id13.1] matches {    -- Date Ceased
+                        value matches {
+                            DV_DATE_TIME[id21.1] 
                         }
                     }
                 }
@@ -3193,3 +3193,4 @@ terminology
             >
         >
     >
+
