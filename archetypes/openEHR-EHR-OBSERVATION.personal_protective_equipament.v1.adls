@@ -30,6 +30,11 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id8] matches {    -- Which are?
+                                        value matches {
+                                            DV_TEXT[id9] 
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -56,6 +61,10 @@ terminology
             ["id6"] = <
                 text = <"Have you had problem related to the used of persolnal protective equipament ?">
                 description = <"Have you had problem related to the used of persolnal protective equipament ?">
+            >
+            ["id8"] = <
+                text = <"Which are?">
+                description = <"Which are?">
             >
         >
     >
