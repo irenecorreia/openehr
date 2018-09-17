@@ -35,6 +35,11 @@ definition
                                             DV_TEXT[id9] 
                                         }
                                     }
+                                    ELEMENT[id10] matches {    -- Notes
+                                        value matches {
+                                            DV_TEXT[id11] 
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -65,6 +70,10 @@ terminology
             ["id8"] = <
                 text = <"Which are?">
                 description = <"Which are?">
+            >
+            ["id10"] = <
+                text = <"Notes">
+                description = <"Notes">
             >
         >
     >
