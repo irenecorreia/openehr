@@ -151,7 +151,7 @@
     "rmType" : "EVALUATION",
     "name" : "Problem/Diagnosis",
     "path" : "archetypes/openEHR-EHR-EVALUATION.problem_diagnosis.v1.adls",
-    "sha" : "bfeb15bfe5cc111e0fc5b4288c80d6cb5f3c0686",
+    "sha" : "d6af973c1e90f5976c5dfd1835c84cee23419962",
     "languages" : [ "en", "pt-br" ]
   }, {
     "id" : "openEHR-EHR-INSTRUCTION.medication.v1.0.0",
@@ -1042,7 +1042,7 @@
     "rmType" : "OBSERVATION",
     "name" : "occupational history",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.occupational_history.v1.adls",
-    "sha" : "255aeec68a4c0df5c0ca1b77bb645cdbd12cc95f",
-    "languages" : [ "en" ]
+    "sha" : "bd1f1063a1d967ed5a1576ea909457ec09c6f4bb",
+    "languages" : [ "en", "pt-br" ]
   } ]
 }
