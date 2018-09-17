@@ -42,7 +42,7 @@ definition
     COMPOSITION[id1.1] matches {    -- Encounter
         /category[id3]/defining_code matches {[at1]}
         content matches {
-            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-teste3-problem_diagnosis-001.v1.0.0]
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-teste4-problem_diagnosis-001.v1.0.0]
         }
     }
 
@@ -91,20 +91,6 @@ definition
             CLUSTER[id27] matches {
                 /items[id57]/value[id95]/defining_code matches {[ac1]}
             }
-            allow_archetype CLUSTER[id55] matches { 
-                include
-                    archetype_id/value matches {/.*/}
-            }
-            allow_archetype CLUSTER[id56] matches { 
-                include
-                    archetype_id/value matches {/.*/}
-            }
-        }
-        /protocol[id75]/items matches {
-            allow_archetype CLUSTER[id77] matches { 
-                include
-                    archetype_id/value matches {/.*/}
-            }
         }
     }
 
@@ -118,7 +104,7 @@ terminology
         >
         ["pt-br"] = <
             ["id1.1"] = <
-                text = <"Problema / Diagnostico">
+                text = <"Problema/Diagnostico">
                 description = <"Qualquer condição de cuidados de saúde que possa ter impacto no bem-estar físico, mental e / ou social de um indivíduo, que possa requerer ação diagnóstica, terapêutica ou educacional e que tenha sido determinada por um clínico. Um diagnóstico é baseado na avaliação científica dos sinais físicos, sintomas, história, resultados de exames laboratoriais e procedimentos.">
             >
         >
