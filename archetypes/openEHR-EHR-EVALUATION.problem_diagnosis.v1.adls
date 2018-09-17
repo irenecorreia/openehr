@@ -55,7 +55,7 @@ Registrar detalhes sobre um problema ou diagnóstico por um médico.">
 Use para registrar todos os problemas ou diagnósticos, incluindo aqueles com qualificadores específicos ao contexto, como passado / presente, primário / secundário, ativo / inativo, etc. Esses qualificadores podem ser arquetetados separadamente e incluídos no slot 'Status', porque seu uso varia em configurações diferentes.">
         >
     >
-    lifecycle_state = <"in_review">
+    lifecycle_state = <"unmanaged">
     original_author = <
         ["name"] = <"Sam Heard">
         ["organisation"] = <"Ocean Informatics">
