@@ -3,6 +3,12 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -10,6 +16,9 @@ description
         ["en"] = <
             language = <[ISO_639-1::en]>
             purpose = <"">
+        >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
         >
     >
     lifecycle_state = <"unmanaged">
@@ -74,6 +83,28 @@ terminology
             ["id10"] = <
                 text = <"Notes">
                 description = <"Notes">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"Equipamento de proteção individual">
+                description = <"Equipamento de proteção individual">
+            >
+            ["id3"] = <
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
+            >
+            ["id6"] = <
+                text = <"Você já teve problema(s) relacionado(s) ao uso de equipamentos de proteção individual - EPI ?">
+                description = <"Você ja teve problema(s) relacionado(s) ao uso de equipamentos de proteção individual - EPI ?">
+            >
+            ["id8"] = <
+                text = <"Qual (is)?">
+                description = <"Qual (is)?">
+            >
+            ["id10"] = <
+                text = <"Anotação">
+                description = <"Anotação">
             >
         >
     >
