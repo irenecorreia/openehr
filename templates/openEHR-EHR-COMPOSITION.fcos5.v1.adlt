@@ -3340,8 +3340,8 @@ terminology
         >
         ["pt-br"] = <
             ["id1.1"] = <
-                text = <"Encabeçamento">
-                description = <"Um título genérico para renomeação contextual dentro de um modelo.">
+                text = <"Histórico Ocupacional">
+                description = <"Histórico Ocupacional">
             >
         >
     >
@@ -3356,15 +3356,19 @@ specialize
 
 definition
     OBSERVATION[id1.1] matches {    -- occupational history
-        /data[id2]/events[id3]/data[id4]/items matches {
-            ELEMENT[id6] matches {
-                /value[id8]/value matches {True, False}
-            }
-            ELEMENT[id11] matches {
-                /value[id12]/value matches {True, False}
-            }
-            ELEMENT[id15] matches {
-                /value[id16]/value matches {True, False}
+        /data[id2]/events matches {
+            EVENT[id3.1] matches {    -- Any event
+                /data[id4]/items matches {
+                    ELEMENT[id6] matches {
+                        /value[id8]/value matches {True, False}
+                    }
+                    ELEMENT[id11] matches {
+                        /value[id12]/value matches {True, False}
+                    }
+                    ELEMENT[id15] matches {
+                        /value[id16]/value matches {True, False}
+                    }
+                }
             }
         }
     }
@@ -3376,11 +3380,19 @@ terminology
                 text = <"occupational history">
                 description = <"occupational history">
             >
+            ["id3.1"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
         >
         ["pt-br"] = <
             ["id1.1"] = <
                 text = <"História Ocupacional">
                 description = <"História Ocupacional">
+            >
+            ["id3.1"] = <
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
             >
         >
     >
@@ -3395,7 +3407,11 @@ specialize
 
 definition
     OBSERVATION[id1.1] matches {    -- Personal protective equipament
-        /data[id2]/events[id3]/data[id4]/items[id6]/value[id7]/value matches {True, False}
+        /data[id2]/events matches {
+            EVENT[id3.1] matches {    -- Any event
+                /data[id4]/items[id6]/value[id7]/value matches {True, False}
+            }
+        }
     }
 
 terminology
@@ -3405,11 +3421,19 @@ terminology
                 text = <"Personal protective equipament">
                 description = <"Personal protective equipament">
             >
+            ["id3.1"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
         >
         ["pt-br"] = <
             ["id1.1"] = <
                 text = <"Equipamento de proteção individual">
                 description = <"Equipamento de proteção individual">
+            >
+            ["id3.1"] = <
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
             >
         >
     >
