@@ -37,6 +37,20 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id10] matches {    -- Confined space
+                                        value matches {
+                                            DV_CODED_TEXT[id11] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id12] matches {    -- Brigade
+                                        value matches {
+                                            DV_CODED_TEXT[id13] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -79,6 +93,14 @@ terminology
             ["ac1"] = <
                 text = <"Work at height">
                 description = <"Work at height">
+            >
+            ["id10"] = <
+                text = <"Confined space">
+                description = <"Confined space">
+            >
+            ["id12"] = <
+                text = <"Brigade">
+                description = <"Brigade">
             >
         >
     >
