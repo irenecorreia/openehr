@@ -49,6 +49,20 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id14] matches {    -- Do you find it difficult to perform your daily activities with satisfaction?
+                                        value matches {
+                                            DV_BOOLEAN[id15] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id16] matches {    -- Do you have a lack of appetite?
+                                        value matches {
+                                            DV_BOOLEAN[id17] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -107,6 +121,14 @@ terminology
             ["id12"] = <
                 text = <"Do you have frequent headaches?">
                 description = <"Do you have frequent headaches?">
+            >
+            ["id14"] = <
+                text = <"Do you find it difficult to perform your daily activities with satisfaction?">
+                description = <"Do you find it difficult to perform your daily activities with satisfaction?">
+            >
+            ["id16"] = <
+                text = <"Do you have a lack of appetite?">
+                description = <"Do you have a lack of appetite?">
             >
         >
     >
