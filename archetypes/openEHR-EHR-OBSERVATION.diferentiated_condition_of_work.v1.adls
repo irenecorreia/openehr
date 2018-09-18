@@ -30,6 +30,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id8] matches {    -- Work at height
+                                        value matches {
+                                            DV_CODED_TEXT[id9] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -57,6 +64,28 @@ terminology
                 text = <"Differential Condition of Work?">
                 description = <"Differential Condition of Work?">
             >
+            ["id8"] = <
+                text = <"Work at height">
+                description = <"Work at height">
+            >
+            ["at1"] = <
+                text = <"apt">
+                description = <"apt">
+            >
+            ["at2"] = <
+                text = <"inapt">
+                description = <"inapt">
+            >
+            ["ac1"] = <
+                text = <"Work at height">
+                description = <"Work at height">
+            >
+        >
+    >
+    value_sets = <
+        ["ac1"] = <
+            id = <"ac1">
+            members = <"at1", "at2">
         >
     >
 
