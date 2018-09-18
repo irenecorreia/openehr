@@ -66,6 +66,13 @@ definition
                             }
                         }
                     }
+                    ELEMENT[id19] matches {    -- Sleep bad?
+                        value matches {
+                            DV_BOOLEAN[id20] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -129,6 +136,10 @@ terminology
             ["id17"] = <
                 text = <"Are you having trouble making decisions?">
                 description = <"Are you having trouble making decisions?">
+            >
+            ["id19"] = <
+                text = <"Sleep bad?">
+                description = <"Sleep bad?">
             >
         >
     >
