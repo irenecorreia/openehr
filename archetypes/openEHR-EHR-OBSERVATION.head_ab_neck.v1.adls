@@ -152,8 +152,8 @@ terminology
                 description = <"normal">
             >
             ["at2"] = <
-                text = <"mudou">
-                description = <"mudou">
+                text = <"Alterado">
+                description = <"Alterado">
             >
             ["ac1"] = <
                 text = <"*head and neck (en)">
