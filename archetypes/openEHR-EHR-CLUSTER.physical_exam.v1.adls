@@ -164,6 +164,20 @@ definition
                             }
                         }
                     }
+                    ELEMENT[id47] matches {    -- Are you crying more than you usually do?
+                        value matches {
+                            DV_BOOLEAN[id48] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                    ELEMENT[id49] matches {    -- Do you get tired easily?
+                        value matches {
+                            DV_BOOLEAN[id50] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -283,6 +297,14 @@ terminology
             ["id45"] = <
                 text = <"Do you have unpleasant sensations in your stomach?">
                 description = <"Do you have unpleasant sensations in your stomach?">
+            >
+            ["id47"] = <
+                text = <"Are you crying more than you usually do?">
+                description = <"Are you crying more than you usually do?">
+            >
+            ["id49"] = <
+                text = <"Do you get tired easily?">
+                description = <"Do you get tired easily?">
             >
         >
     >
