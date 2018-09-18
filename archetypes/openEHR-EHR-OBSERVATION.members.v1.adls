@@ -30,6 +30,11 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id8] matches {    -- Laterality
+                                        value matches {
+                                            DV_TEXT[id9] 
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -68,6 +73,10 @@ terminology
             ["ac1"] = <
                 text = <"examination">
                 description = <"examination">
+            >
+            ["id8"] = <
+                text = <"Laterality">
+                description = <"Laterality">
             >
         >
     >
