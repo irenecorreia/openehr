@@ -80,6 +80,20 @@ definition
                             }
                         }
                     }
+                    ELEMENT[id23] matches {    -- Are you scared easily?
+                        value matches {
+                            DV_BOOLEAN[id24] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                    ELEMENT[id25] matches {    -- Are you unable to play a useful role in your life?
+                        value matches {
+                            DV_BOOLEAN[id26] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -151,6 +165,14 @@ terminology
             ["id21"] = <
                 text = <"Do you have difficulties in the service (your job is painful, causes suffering)?">
                 description = <"Do you have difficulties in the service (your job is painful, causes suffering)?">
+            >
+            ["id23"] = <
+                text = <"Are you scared easily?">
+                description = <"Are you scared easily?">
+            >
+            ["id25"] = <
+                text = <"Are you unable to play a useful role in your life?">
+                description = <"Are you unable to play a useful role in your life?">
             >
         >
     >
