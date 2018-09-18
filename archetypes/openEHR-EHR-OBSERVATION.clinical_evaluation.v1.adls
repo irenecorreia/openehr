@@ -1,0 +1,93 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-OBSERVATION.clinical_evaluation.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    
+description
+    copyright = <"">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+
+definition
+    OBSERVATION[id1] matches {    -- clinical evaluation
+        data matches {
+            HISTORY[id2] matches {
+                events matches {
+                    EVENT[id3] matches {    -- Any event
+                        data matches {
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id6] matches {    -- Conclusion of clinical evaluation
+                                        value matches {
+                                            DV_CODED_TEXT[id7] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id8] matches {    -- Justification
+                                        value matches {
+                                            DV_TEXT[id9] 
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        state matches {
+                            ITEM_TREE[id5] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"clinical evaluation">
+                description = <"clinical evaluation">
+            >
+            ["id3"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"Conclusion of clinical evaluation">
+                description = <"Conclusion of clinical evaluation">
+            >
+            ["at1"] = <
+                text = <"apt for function">
+                description = <"apt for function">
+            >
+            ["at2"] = <
+                text = <"inapt for function">
+                description = <"inapt for function">
+            >
+            ["at3"] = <
+                text = <"not completed">
+                description = <"not completed">
+            >
+            ["ac1"] = <
+                text = <"conclusion">
+                description = <"conclusion">
+            >
+            ["id8"] = <
+                text = <"Justification">
+                description = <"Justification">
+            >
+        >
+    >
+    value_sets = <
+        ["ac1"] = <
+            id = <"ac1">
+            members = <"at1", "at2", "at3">
+        >
+    >
+
