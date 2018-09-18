@@ -143,6 +143,20 @@ definition
                             }
                         }
                     }
+                    ELEMENT[id41] matches {    -- Do you feel tired all the time?
+                        value matches {
+                            DV_BOOLEAN[id42] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                    ELEMENT[id43] matches {    -- Have you felt sad lately?
+                        value matches {
+                            DV_BOOLEAN[id44] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -250,6 +264,14 @@ terminology
             ["id39"] = <
                 text = <"Do you have difficulty thinking clearly?">
                 description = <"Do you have difficulty thinking clearly?">
+            >
+            ["id41"] = <
+                text = <"Do you feel tired all the time?">
+                description = <"Do you feel tired all the time?">
+            >
+            ["id43"] = <
+                text = <"Have you felt sad lately?">
+                description = <"Have you felt sad lately?">
             >
         >
     >
