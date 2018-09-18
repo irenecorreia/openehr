@@ -42,6 +42,23 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id12] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id13] 
+                                        }
+                                    }
+                                    ELEMENT[id14] matches {    -- Peripheral reflexes
+                                        value matches {
+                                            DV_CODED_TEXT[id15] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id16] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id17] 
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -88,6 +105,18 @@ terminology
             ["id10"] = <
                 text = <"Motor coordination">
                 description = <"Motor coordination">
+            >
+            ["id12"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id14"] = <
+                text = <"Peripheral reflexes">
+                description = <"Peripheral reflexes">
+            >
+            ["id16"] = <
+                text = <"Specify">
+                description = <"Specify">
             >
         >
     >
