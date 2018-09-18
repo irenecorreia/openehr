@@ -24,23 +24,23 @@ description
     lifecycle_state = <"unmanaged">
 
 definition
-    EVALUATION[id1] occurrences matches {1} matches {    -- exame_fisico
+    EVALUATION[id1] matches {    -- exame_fisico
         data matches {
-            ITEM_TREE[id2] occurrences matches {0..1} matches {    -- Detalhamento do exame físico
+            ITEM_TREE[id2] matches {    -- Detalhamento do exame físico
                 items matches {
-                    ELEMENT[id3] occurrences matches {0..1} matches {    -- Região anatômica examinada
+                    ELEMENT[id3] matches {    -- Região anatômica examinada
                         value matches {
                             DV_CODED_TEXT[id4] matches {
                                 defining_code matches {[ac1]}
                             }
                         }
                     }
-                    ELEMENT[id5] occurrences matches {0..1} matches {    -- Descrição
+                    ELEMENT[id5] matches {    -- Descrição
                         value matches {
                             DV_TEXT[id6] 
                         }
                     }
-                    ELEMENT[id7] occurrences matches {0..1} matches {    -- Interpretação do achado no exame físico
+                    ELEMENT[id7] matches {    -- Interpretação do achado no exame físico
                         value matches {
                             DV_CODED_TEXT[id8] matches {
                                 defining_code matches {[ac2]}
