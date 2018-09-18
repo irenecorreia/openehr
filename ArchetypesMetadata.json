@@ -1044,5 +1044,33 @@
     "path" : "archetypes/openEHR-EHR-OBSERVATION.occupational_history.v1.adls",
     "sha" : "bd1f1063a1d967ed5a1576ea909457ec09c6f4bb",
     "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-CLUSTER.physical_exam.v1.0.0",
+    "rmType" : "CLUSTER",
+    "name" : "physical exam",
+    "path" : "archetypes/openEHR-EHR-CLUSTER.physical_exam.v1.adls",
+    "sha" : "92ccb748f83192c37cdddbd02a0937eebf958db6",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.chest.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "chest",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.chest.v1.adls",
+    "sha" : "85616c731424a381c240d2e177857ae0f91df13b",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.head_ab_neck.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "head ab neck",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.head_ab_neck.v1.adls",
+    "sha" : "c1e18a81920a0ac62ec4509521b7a412352fdce7",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.personal_protective_equipament.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "Personal protective equipament",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.personal_protective_equipament.v1.adls",
+    "sha" : "31b1e642ffade187c725dc4ecbf5c8de6b6dbb6f",
+    "languages" : [ "en", "pt-br" ]
   } ]
 }
