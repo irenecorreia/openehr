@@ -91,6 +91,20 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id31] matches {    -- Lower members
+                                        value matches {
+                                            DV_CODED_TEXT[id32] matches {
+                                                defining_code matches {[ac3]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id33] matches {    -- Laterality
+                                        value matches {
+                                            DV_CODED_TEXT[id34] matches {
+                                                defining_code matches {[ac2]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -219,6 +233,14 @@ terminology
                 description = <"Filkeinstein Sign">
             >
             ["id29"] = <
+                text = <"Laterality">
+                description = <"Laterality">
+            >
+            ["id31"] = <
+                text = <"Lower members">
+                description = <"Lower members">
+            >
+            ["id33"] = <
                 text = <"Laterality">
                 description = <"Laterality">
             >
