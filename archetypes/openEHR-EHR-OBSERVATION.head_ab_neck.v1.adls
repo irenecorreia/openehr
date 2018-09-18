@@ -3,6 +3,12 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -10,6 +16,9 @@ description
         ["en"] = <
             language = <[ISO_639-1::en]>
             purpose = <"">
+        >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
         >
     >
     lifecycle_state = <"in_review">
@@ -123,6 +132,52 @@ terminology
             ["id16"] = <
                 text = <"Neck">
                 description = <"Neck">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"*head ab neck (en)">
+                description = <"*head ab neck (en)">
+            >
+            ["id3"] = <
+                text = <"*Any event (en)">
+                description = <"*Any event (en)">
+            >
+            ["id6"] = <
+                text = <"*Eyes (en)">
+                description = <"*Eyes (en)">
+            >
+            ["at1"] = <
+                text = <"*normal (en)">
+                description = <"*normal (en)">
+            >
+            ["at2"] = <
+                text = <"*changed (en)">
+                description = <"*changed (en)">
+            >
+            ["ac1"] = <
+                text = <"*head and neck (en)">
+                description = <"*head and neck (en)">
+            >
+            ["id8"] = <
+                text = <"*Mouth and teeth (en)">
+                description = <"*Mouth and teeth (en)">
+            >
+            ["id10"] = <
+                text = <"*Otological examination (en)">
+                description = <"*Otological examination (en)">
+            >
+            ["id12"] = <
+                text = <"*Phonator - Conversation and Communication (en)">
+                description = <"*Phonator - Conversation and Communication (en)">
+            >
+            ["id14"] = <
+                text = <"*Deformities / Scars (en)">
+                description = <"*Deformities / Scars (en)">
+            >
+            ["id16"] = <
+                text = <"*Neck (en)">
+                description = <"*Neck (en)">
             >
         >
     >
