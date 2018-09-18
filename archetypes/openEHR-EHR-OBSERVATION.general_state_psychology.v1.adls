@@ -42,6 +42,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id12] matches {    -- Do you have frequent headaches?
+                                        value matches {
+                                            DV_BOOLEAN[id13] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -96,6 +103,10 @@ terminology
             ["id10"] = <
                 text = <"Evaluation of Psychosocial Risk Factors? (SRQ 20)">
                 description = <"Evaluation of Psychosocial Risk Factors? (SRQ 20)">
+            >
+            ["id12"] = <
+                text = <"Do you have frequent headaches?">
+                description = <"Do you have frequent headaches?">
             >
         >
     >
