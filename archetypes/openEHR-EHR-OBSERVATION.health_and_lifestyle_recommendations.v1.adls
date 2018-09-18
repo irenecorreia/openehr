@@ -3,6 +3,12 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -11,8 +17,11 @@ description
             language = <[ISO_639-1::en]>
             purpose = <"">
         >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
+        >
     >
-    lifecycle_state = <"unmanaged">
+    lifecycle_state = <"in_review">
 
 definition
     OBSERVATION[id1] matches {    -- health and lifestyle recommendations
@@ -30,7 +39,7 @@ definition
                                             }
                                         }
                                     }
-                                    ELEMENT[id8] matches {    -- Realizar atividade física regularmente
+                                    ELEMENT[id8] matches {    -- Play the physical game regularly
                                         value matches {
                                             DV_BOOLEAN[id9] matches {
                                                 value matches {True, False}
@@ -154,8 +163,8 @@ terminology
                 description = <"Measure blood pressure regularly">
             >
             ["id8"] = <
-                text = <"Realizar atividade física regularmente">
-                description = <"Realizar atividade física regularmente">
+                text = <"Play the physical game regularly">
+                description = <"Play the physical game regularly">
             >
             ["id10"] = <
                 text = <"Reduce salt intake">
@@ -208,6 +217,76 @@ terminology
             ["id34"] = <
                 text = <"Others">
                 description = <"Others">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"recomendações de saúde e estilo de vida">
+                description = <"recomendações de saúde e estilo de vida">
+            >
+            ["id3"] = <
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
+            >
+            ["id6"] = <
+                text = <"Mede a pressão arterial regularmente">
+                description = <"Mede a pressão arterial regularmente">
+            >
+            ["id8"] = <
+                text = <"Realizar atividade física regularmente">
+                description = <"Realizar atividade física regularmente">
+            >
+            ["id10"] = <
+                text = <"Reduz o consumo de sal">
+                description = <"Reduz o consumo de sal">
+            >
+            ["id12"] = <
+                text = <"Reduzir a ingestão de gordura">
+                description = <"Reduzir a ingestão de gordura">
+            >
+            ["id14"] = <
+                text = <"Reduzir a ingestão de doces, massas, pães, bolos">
+                description = <"Reduzir a ingestão de doces, massas, pães, bolos">
+            >
+            ["id16"] = <
+                text = <"Aumentar a ingestão de vegetais e fibras">
+                description = <"Aumentar a ingestão de vegetais e fibras">
+            >
+            ["id18"] = <
+                text = <"Use medicação conforme prescrito">
+                description = <"Use medicação conforme prescrito">
+            >
+            ["id20"] = <
+                text = <"Parar de fumar vício">
+                description = <"Parar de fumar vício">
+            >
+            ["id22"] = <
+                text = <"Reduzir o consumo de bebidas alcoólicas">
+                description = <"Reduzir o consumo de bebidas alcoólicas">
+            >
+            ["id24"] = <
+                text = <"Aumentar a ingestão de líquidos">
+                description = <"Aumentar a ingestão de líquidos">
+            >
+            ["id26"] = <
+                text = <"Controle de glicose no sangue">
+                description = <"Controle de glicose no sangue">
+            >
+            ["id28"] = <
+                text = <"Não faz esforço físico intenso">
+                description = <"Não faz esforço físico intenso">
+            >
+            ["id30"] = <
+                text = <"Obtenha acompanhamento médico">
+                description = <"Obtenha acompanhamento médico">
+            >
+            ["id32"] = <
+                text = <"Uso de protetor solar">
+                description = <"Uso de protetor solar">
+            >
+            ["id34"] = <
+                text = <"Outros">
+                description = <"Outros">
             >
         >
     >
