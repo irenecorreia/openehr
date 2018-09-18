@@ -106,16 +106,16 @@ terminology
                 description = <"Conclusão da avaliação clínica">
             >
             ["at1"] = <
-                text = <"*apt for function (en)">
-                description = <"*apt for function (en)">
+                text = <"Apto para a função">
+                description = <"Apto para a função">
             >
             ["at2"] = <
-                text = <"*inapt for function (en)">
-                description = <"*inapt for function (en)">
+                text = <"Inapto para a função">
+                description = <"Inapto para a função">
             >
             ["at3"] = <
-                text = <"*not completed (en)">
-                description = <"*not completed (en)">
+                text = <"Não concluído">
+                description = <"Não concluído">
             >
             ["ac1"] = <
                 text = <"*conclusion (en)">
