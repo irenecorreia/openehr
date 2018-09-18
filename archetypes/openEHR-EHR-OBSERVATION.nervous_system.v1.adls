@@ -3,6 +3,12 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -11,8 +17,11 @@ description
             language = <[ISO_639-1::en]>
             purpose = <"">
         >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
+        >
     >
-    lifecycle_state = <"unmanaged">
+    lifecycle_state = <"in_review">
 
 definition
     OBSERVATION[id1] matches {    -- NERVOUS SYSTEM
@@ -117,6 +126,52 @@ terminology
             ["id16"] = <
                 text = <"Specify">
                 description = <"Specify">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"SISTEMA NERVOSO">
+                description = <"SISTEMA NERVOSO">
+            >
+            ["id3"] = <
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
+            >
+            ["id6"] = <
+                text = <"Equilibrio">
+                description = <"Equilibrio">
+            >
+            ["at1"] = <
+                text = <"*normal (en)">
+                description = <"*normal (en)">
+            >
+            ["at2"] = <
+                text = <"*changed (en)">
+                description = <"*changed (en)">
+            >
+            ["ac1"] = <
+                text = <"*examination (en)">
+                description = <"*examination (en)">
+            >
+            ["id8"] = <
+                text = <"Especifique">
+                description = <"Especifique">
+            >
+            ["id10"] = <
+                text = <"Coordenação motora">
+                description = <"Coordenação motora">
+            >
+            ["id12"] = <
+                text = <"Especifique">
+                description = <"Especifique">
+            >
+            ["id14"] = <
+                text = <"Reflexos periféricos">
+                description = <"Reflexos periféricos">
+            >
+            ["id16"] = <
+                text = <"Especifique">
+                description = <"Especifique">
             >
         >
     >
