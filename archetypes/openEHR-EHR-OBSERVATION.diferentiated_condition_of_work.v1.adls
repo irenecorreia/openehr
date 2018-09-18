@@ -172,12 +172,12 @@ terminology
                 description = <"Trabalho em altura">
             >
             ["at1"] = <
-                text = <"*apt (en)">
-                description = <"*apt (en)">
+                text = <"Apto">
+                description = <"Apto">
             >
             ["at2"] = <
-                text = <"*inapt (en)">
-                description = <"*inapt (en)">
+                text = <"Inapto">
+                description = <"Inapto">
             >
             ["ac1"] = <
                 text = <"*Work at height (en)">
