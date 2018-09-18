@@ -26,6 +26,18 @@ definition
                             }
                         }
                     }
+                    ELEMENT[id7] matches {    -- Comments
+                        value matches {
+                            DV_TEXT[id8] 
+                        }
+                    }
+                    ELEMENT[id9] matches {    -- Evaluation of Psychosocial Risk Factors? (SRQ 20)
+                        value matches {
+                            DV_BOOLEAN[id10] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -65,6 +77,14 @@ terminology
             ["at4"] = <
                 text = <"Angry / Exalted">
                 description = <"Angry / Exalted">
+            >
+            ["id7"] = <
+                text = <"Comments">
+                description = <"Comments">
+            >
+            ["id9"] = <
+                text = <"Evaluation of Psychosocial Risk Factors? (SRQ 20)">
+                description = <"Evaluation of Psychosocial Risk Factors? (SRQ 20)">
             >
         >
     >
