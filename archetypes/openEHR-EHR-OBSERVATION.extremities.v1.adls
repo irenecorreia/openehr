@@ -58,6 +58,20 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id16] matches {    -- Healed ulcer
+                                        value matches {
+                                            DV_BOOLEAN[id17] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id18] matches {    -- Open ulcer
+                                        value matches {
+                                            DV_BOOLEAN[id19] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -100,6 +114,14 @@ terminology
             ["id14"] = <
                 text = <"Brown pigmentation, Eczema">
                 description = <"Brown pigmentation, Eczema">
+            >
+            ["id16"] = <
+                text = <"Healed ulcer">
+                description = <"Healed ulcer">
+            >
+            ["id18"] = <
+                text = <"Open ulcer">
+                description = <"Open ulcer">
             >
         >
     >
