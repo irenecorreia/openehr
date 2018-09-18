@@ -24,7 +24,7 @@ description
     lifecycle_state = <"in_review">
 
 definition
-    OBSERVATION[id1] matches {    -- head ab neck
+    OBSERVATION[id1] matches {    -- head and neck
         data matches {
             HISTORY[id2] matches {
                 events matches {
@@ -90,7 +90,7 @@ terminology
     term_definitions = <
         ["en"] = <
             ["id1"] = <
-                text = <"head ab neck">
+                text = <"head and neck">
                 description = <"head ab neck">
             >
             ["id3"] = <
@@ -136,48 +136,48 @@ terminology
         >
         ["pt-br"] = <
             ["id1"] = <
-                text = <"*head ab neck (en)">
-                description = <"*head ab neck (en)">
+                text = <"cabeça e pescoço">
+                description = <"cabeça e pescoço">
             >
             ["id3"] = <
-                text = <"*Any event (en)">
-                description = <"*Any event (en)">
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
             >
             ["id6"] = <
-                text = <"*Eyes (en)">
-                description = <"*Eyes (en)">
+                text = <"Olhos">
+                description = <"Olhos">
             >
             ["at1"] = <
-                text = <"*normal (en)">
-                description = <"*normal (en)">
+                text = <"normal">
+                description = <"normal">
             >
             ["at2"] = <
-                text = <"*changed (en)">
-                description = <"*changed (en)">
+                text = <"mudou">
+                description = <"mudou">
             >
             ["ac1"] = <
                 text = <"*head and neck (en)">
                 description = <"*head and neck (en)">
             >
             ["id8"] = <
-                text = <"*Mouth and teeth (en)">
-                description = <"*Mouth and teeth (en)">
+                text = <"Boca e dentes">
+                description = <"Boca e dentes">
             >
             ["id10"] = <
-                text = <"*Otological examination (en)">
-                description = <"*Otological examination (en)">
+                text = <"Exame otológico">
+                description = <"Exame otológico">
             >
             ["id12"] = <
-                text = <"*Phonator - Conversation and Communication (en)">
-                description = <"*Phonator - Conversation and Communication (en)">
+                text = <"Phonator - Conversação e Comunicação">
+                description = <"Phonator - Conversação e Comunicação">
             >
             ["id14"] = <
-                text = <"*Deformities / Scars (en)">
-                description = <"*Deformities / Scars (en)">
+                text = <"Deformidades / cicatrizes">
+                description = <"Deformidades / cicatrizes">
             >
             ["id16"] = <
-                text = <"*Neck (en)">
-                description = <"*Neck (en)">
+                text = <"Pescoço">
+                description = <"Pescoço">
             >
         >
     >
