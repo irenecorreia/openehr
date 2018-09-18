@@ -135,8 +135,8 @@ terminology
                 description = <"normal">
             >
             ["at2"] = <
-                text = <"Mudou">
-                description = <"Mudou">
+                text = <"Alterado">
+                description = <"Alterado">
             >
             ["ac1"] = <
                 text = <"chest (en)">
