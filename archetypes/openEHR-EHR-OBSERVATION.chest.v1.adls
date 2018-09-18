@@ -42,6 +42,16 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id12] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id13] 
+                                        }
+                                    }
+                                    ELEMENT[id14] matches {    -- Notes
+                                        value matches {
+                                            DV_TEXT[id15] 
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -88,6 +98,14 @@ terminology
             ["id10"] = <
                 text = <"Cardiovascular Apparatus">
                 description = <"Cardiovascular Apparatus">
+            >
+            ["id12"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id14"] = <
+                text = <"Notes">
+                description = <"Notes">
             >
         >
     >
