@@ -3,6 +3,12 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -11,8 +17,11 @@ description
             language = <[ISO_639-1::en]>
             purpose = <"">
         >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
+        >
     >
-    lifecycle_state = <"unmanaged">
+    lifecycle_state = <"in_review">
 
 definition
     OBSERVATION[id1] matches {    -- extremities
@@ -122,6 +131,44 @@ terminology
             ["id18"] = <
                 text = <"Open ulcer">
                 description = <"Open ulcer">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"*extremities (en)">
+                description = <"*extremities (en)">
+            >
+            ["id3"] = <
+                text = <"*Any event (en)">
+                description = <"*Any event (en)">
+            >
+            ["id6"] = <
+                text = <"*Signs of visible or palpable vascular disease in lower limbs? (en)">
+                description = <"*Signs of visible or palpable vascular disease in lower limbs? (en)">
+            >
+            ["id8"] = <
+                text = <"*Reticular Teleangiectasias and Veins (en)">
+                description = <"*Reticular Teleangiectasias and Veins (en)">
+            >
+            ["id10"] = <
+                text = <"*Varicose veins (en)">
+                description = <"*Varicose veins (en)">
+            >
+            ["id12"] = <
+                text = <"*Edema (en)">
+                description = <"*Edema (en)">
+            >
+            ["id14"] = <
+                text = <"*Brown pigmentation, Eczema (en)">
+                description = <"*Brown pigmentation, Eczema (en)">
+            >
+            ["id16"] = <
+                text = <"*Healed ulcer (en)">
+                description = <"*Healed ulcer (en)">
+            >
+            ["id18"] = <
+                text = <"*Open ulcer (en)">
+                description = <"*Open ulcer (en)">
             >
         >
     >
