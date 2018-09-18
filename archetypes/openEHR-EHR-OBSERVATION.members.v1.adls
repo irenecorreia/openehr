@@ -98,11 +98,9 @@ definition
                                             }
                                         }
                                     }
-                                    ELEMENT[id33] matches {    -- Laterality
+                                    ELEMENT[id35] matches {    -- Specify
                                         value matches {
-                                            DV_CODED_TEXT[id34] matches {
-                                                defining_code matches {[ac2]}
-                                            }
+                                            DV_TEXT[id36] 
                                         }
                                     }
                                 }
@@ -240,9 +238,9 @@ terminology
                 text = <"Lower members">
                 description = <"Lower members">
             >
-            ["id33"] = <
-                text = <"Laterality">
-                description = <"Laterality">
+            ["id35"] = <
+                text = <"Specify">
+                description = <"Specify">
             >
         >
     >
