@@ -135,40 +135,40 @@ terminology
         >
         ["pt-br"] = <
             ["id1"] = <
-                text = <"*extremities (en)">
-                description = <"*extremities (en)">
+                text = <"extremidades">
+                description = <"extremidades">
             >
             ["id3"] = <
-                text = <"*Any event (en)">
-                description = <"*Any event (en)">
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
             >
             ["id6"] = <
-                text = <"*Signs of visible or palpable vascular disease in lower limbs? (en)">
-                description = <"*Signs of visible or palpable vascular disease in lower limbs? (en)">
+                text = <"Sinais de doença vascular visível ou palpável nos membros inferiores?">
+                description = <"Sinais de doença vascular visível ou palpável nos membros inferiores?">
             >
             ["id8"] = <
-                text = <"*Reticular Teleangiectasias and Veins (en)">
-                description = <"*Reticular Teleangiectasias and Veins (en)">
+                text = <"Teleangiectasias e veias Reticulares">
+                description = <"Teleangiectasias e veias Reticulares">
             >
             ["id10"] = <
-                text = <"*Varicose veins (en)">
-                description = <"*Varicose veins (en)">
+                text = <"Varizes">
+                description = <"Varizes">
             >
             ["id12"] = <
-                text = <"*Edema (en)">
-                description = <"*Edema (en)">
+                text = <"Edema">
+                description = <"Edema">
             >
             ["id14"] = <
-                text = <"*Brown pigmentation, Eczema (en)">
-                description = <"*Brown pigmentation, Eczema (en)">
+                text = <"Pigmentação marrom, eczema">
+                description = <"Pigmentação marrom, eczema">
             >
             ["id16"] = <
-                text = <"*Healed ulcer (en)">
-                description = <"*Healed ulcer (en)">
+                text = <"Úlcera curada">
+                description = <"Úlcera curada">
             >
             ["id18"] = <
-                text = <"*Open ulcer (en)">
-                description = <"*Open ulcer (en)">
+                text = <"Úlcera aberta">
+                description = <"Úlcera aberta">
             >
         >
     >
