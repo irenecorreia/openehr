@@ -56,6 +56,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id17] matches {    -- Laterality
+                                        value matches {
+                                            DV_CODED_TEXT[id18] matches {
+                                                defining_code matches {[ac3]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -150,6 +157,10 @@ terminology
             ["ac4"] = <
                 text = <"Sign of Phalen">
                 description = <"Sign of Phalen">
+            >
+            ["id17"] = <
+                text = <"Laterality">
+                description = <"Laterality">
             >
         >
     >
