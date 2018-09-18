@@ -98,6 +98,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id29] matches {    -- Do you have hand tremors?
+                                        value matches {
+                                            DV_BOOLEAN[id30] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -184,6 +191,10 @@ terminology
             ["id27"] = <
                 text = <"Are you unable to play a useful role in your life?">
                 description = <"Are you unable to play a useful role in your life?">
+            >
+            ["id29"] = <
+                text = <"Do you have hand tremors?">
+                description = <"Do you have hand tremors?">
             >
         >
     >
