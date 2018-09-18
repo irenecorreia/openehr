@@ -30,6 +30,11 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id8] matches {    -- In which part of the body?
+                                        value matches {
+                                            DV_TEXT[id9] 
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -56,6 +61,10 @@ terminology
             ["id6"] = <
                 text = <"Do you use Prosthesis or Bracing?">
                 description = <"Do you use Prosthesis or Bracing?">
+            >
+            ["id8"] = <
+                text = <"In which part of the body?">
+                description = <"In which part of the body?">
             >
         >
     >
