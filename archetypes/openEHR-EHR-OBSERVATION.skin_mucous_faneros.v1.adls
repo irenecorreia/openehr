@@ -1,0 +1,80 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-OBSERVATION.skin_mucous_faneros.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    
+description
+    copyright = <"">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+
+definition
+    OBSERVATION[id1] matches {    -- skin_mucous_faneros
+        data matches {
+            HISTORY[id2] matches {
+                events matches {
+                    EVENT[id3] matches {    -- Any event
+                        data matches {
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id6] matches {    -- Skin, mucous and faneros
+                                        value matches {
+                                            DV_CODED_TEXT[id7] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        state matches {
+                            ITEM_TREE[id5] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"skin_mucous_faneros">
+                description = <"skin_mucous_faneros">
+            >
+            ["id3"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"Skin, mucous and faneros">
+                description = <"Skin, mucous and faneros">
+            >
+            ["at1"] = <
+                text = <"normal">
+                description = <"normal">
+            >
+            ["at2"] = <
+                text = <"Changed">
+                description = <"Changed">
+            >
+            ["ac1"] = <
+                text = <"Skin, mucous and faneros">
+                description = <"Skin, mucous and faneros">
+            >
+        >
+    >
+    value_sets = <
+        ["ac1"] = <
+            id = <"ac1">
+            members = <"at1", "at2">
+        >
+    >
+
