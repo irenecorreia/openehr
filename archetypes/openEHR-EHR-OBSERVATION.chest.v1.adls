@@ -32,7 +32,7 @@ definition
                         data matches {
                             ITEM_TREE[id4] matches {
                                 items matches {
-                                    ELEMENT[id6] matches {    -- Aparelho Respiratório
+                                    ELEMENT[id6] matches {    -- Respiratory System
                                         value matches {
                                             DV_CODED_TEXT[id7] matches {
                                                 defining_code matches {[ac1]}
@@ -85,8 +85,8 @@ terminology
                 description = <"Any event">
             >
             ["id6"] = <
-                text = <"Aparelho Respiratório">
-                description = <"Aparelho Respiratório">
+                text = <"Respiratory System">
+                description = <"Respiratory System">
             >
             ["at1"] = <
                 text = <"normal">
@@ -119,16 +119,16 @@ terminology
         >
         ["pt-br"] = <
             ["id1"] = <
-                text = <"*chest (en)">
-                description = <"*chest (en)">
+                text = <"Peito">
+                description = <"Peito">
             >
             ["id3"] = <
-                text = <"*Any event (en)">
-                description = <"*Any event (en)">
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
             >
             ["id6"] = <
-                text = <"*Aparelho Respiratório (en)">
-                description = <"*Aparelho Respiratório (en)">
+                text = <"Aparelho Respiratório">
+                description = <"Aparelho Respiratório">
             >
             ["at1"] = <
                 text = <"*normal (en)">
@@ -143,20 +143,20 @@ terminology
                 description = <"*chest (en)">
             >
             ["id8"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especificamos">
+                description = <"Especificamos">
             >
             ["id10"] = <
-                text = <"*Cardiovascular Apparatus (en)">
-                description = <"*Cardiovascular Apparatus (en)">
+                text = <"Aparelho Cardiovascular">
+                description = <"Aparelho Cardiovascular">
             >
             ["id12"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especificamos">
+                description = <"Especificamos">
             >
             ["id14"] = <
-                text = <"*Notes (en)">
-                description = <"*Notes (en)">
+                text = <"Anotações">
+                description = <"Anotações">
             >
         >
     >
