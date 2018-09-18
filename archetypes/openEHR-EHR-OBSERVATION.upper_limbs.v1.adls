@@ -63,6 +63,20 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id19] matches {    -- Inverted Phalen Sign
+                                        value matches {
+                                            DV_CODED_TEXT[id20] matches {
+                                                defining_code matches {[ac4]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id21] matches {    -- Laterality
+                                        value matches {
+                                            DV_CODED_TEXT[id22] matches {
+                                                defining_code matches {[ac3]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -159,6 +173,14 @@ terminology
                 description = <"Sign of Phalen">
             >
             ["id17"] = <
+                text = <"Laterality">
+                description = <"Laterality">
+            >
+            ["id19"] = <
+                text = <"Inverted Phalen Sign">
+                description = <"Inverted Phalen Sign">
+            >
+            ["id21"] = <
                 text = <"Laterality">
                 description = <"Laterality">
             >
