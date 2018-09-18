@@ -51,6 +51,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id14] matches {    -- Deformities / Scars
+                                        value matches {
+                                            DV_CODED_TEXT[id15] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -101,6 +108,10 @@ terminology
             ["id12"] = <
                 text = <"Phonator - Conversation and Communication">
                 description = <"Phonator - Conversation and Communication">
+            >
+            ["id14"] = <
+                text = <"Deformities / Scars">
+                description = <"Deformities / Scars">
             >
         >
     >
