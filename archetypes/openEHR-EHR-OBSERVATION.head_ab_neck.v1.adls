@@ -58,6 +58,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id16] matches {    -- Neck
+                                        value matches {
+                                            DV_CODED_TEXT[id17] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -112,6 +119,10 @@ terminology
             ["id14"] = <
                 text = <"Deformities / Scars">
                 description = <"Deformities / Scars">
+            >
+            ["id16"] = <
+                text = <"Neck">
+                description = <"Neck">
             >
         >
     >
