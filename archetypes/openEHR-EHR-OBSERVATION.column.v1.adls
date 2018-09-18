@@ -103,7 +103,7 @@ terminology
                 description = <"absent">
             >
             ["at4"] = <
-                text = <"being">
+                text = <"Being">
                 description = <"being">
             >
             ["ac2"] = <
@@ -113,44 +113,44 @@ terminology
         >
         ["pt-br"] = <
             ["id1"] = <
-                text = <"*Column (en)">
-                description = <"*Column (en)">
+                text = <"Coluna">
+                description = <"Coluna">
             >
             ["id3"] = <
-                text = <"*Any event (en)">
-                description = <"*Any event (en)">
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
             >
             ["id6"] = <
-                text = <"*Spine (en)">
-                description = <"*Spine (en)">
+                text = <"Coluna vertebral">
+                description = <"Coluna vertebral">
             >
             ["at1"] = <
-                text = <"*normal (en)">
-                description = <"*normal (en)">
+                text = <"normal">
+                description = <"normal">
             >
             ["at2"] = <
-                text = <"*changed (en)">
-                description = <"*changed (en)">
+                text = <"Mudou">
+                description = <"Mudou">
             >
             ["ac1"] = <
                 text = <"*examination (en)">
                 description = <"*examination (en)">
             >
             ["id8"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
             ["id10"] = <
-                text = <"*Sign of Laségue (en)">
-                description = <"*Sign of Laségue (en)">
+                text = <"Sinal de Laségue">
+                description = <"Sinal de Laségue">
             >
             ["at3"] = <
-                text = <"*absent (en)">
-                description = <"*absent (en)">
+                text = <"ausente">
+                description = <"ausente">
             >
             ["at4"] = <
-                text = <"*being (en)">
-                description = <"*being (en)">
+                text = <"Bom">
+                description = <"Bom">
             >
             ["ac2"] = <
                 text = <"*Note (en)">
