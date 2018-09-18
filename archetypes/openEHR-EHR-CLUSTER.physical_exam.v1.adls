@@ -129,6 +129,13 @@ definition
                             }
                         }
                     }
+                    ELEMENT[id37] matches {    -- Have you had ideas to end life?
+                        value matches {
+                            DV_BOOLEAN[id38] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -228,6 +235,10 @@ terminology
             ["id35"] = <
                 text = <"Does it have poor digestion?">
                 description = <"Does it have poor digestion?">
+            >
+            ["id37"] = <
+                text = <"Have you had ideas to end life?">
+                description = <"Have you had ideas to end life?">
             >
         >
     >
