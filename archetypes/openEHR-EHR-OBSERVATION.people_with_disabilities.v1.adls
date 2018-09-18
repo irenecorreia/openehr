@@ -30,6 +30,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id8] matches {    -- Characterize the disability and issue the Attestation of Person with a disability?
+                                        value matches {
+                                            DV_BOOLEAN[id9] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -56,6 +63,10 @@ terminology
             ["id6"] = <
                 text = <"Disabled person?">
                 description = <"Disabled person?">
+            >
+            ["id8"] = <
+                text = <"Characterize the disability and issue the Attestation of Person with a disability?">
+                description = <"Characterize the disability and issue the Attestation of Person with a disability?">
             >
         >
     >
