@@ -3,6 +3,12 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -11,8 +17,11 @@ description
             language = <[ISO_639-1::en]>
             purpose = <"">
         >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
+        >
     >
-    lifecycle_state = <"unmanaged">
+    lifecycle_state = <"in_review">
 
 definition
     OBSERVATION[id1] matches {    -- Column
@@ -100,6 +109,52 @@ terminology
             ["ac2"] = <
                 text = <"Note">
                 description = <"Note">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"*Column (en)">
+                description = <"*Column (en)">
+            >
+            ["id3"] = <
+                text = <"*Any event (en)">
+                description = <"*Any event (en)">
+            >
+            ["id6"] = <
+                text = <"*Spine (en)">
+                description = <"*Spine (en)">
+            >
+            ["at1"] = <
+                text = <"*normal (en)">
+                description = <"*normal (en)">
+            >
+            ["at2"] = <
+                text = <"*changed (en)">
+                description = <"*changed (en)">
+            >
+            ["ac1"] = <
+                text = <"*examination (en)">
+                description = <"*examination (en)">
+            >
+            ["id8"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
+            >
+            ["id10"] = <
+                text = <"*Sign of Laségue (en)">
+                description = <"*Sign of Laségue (en)">
+            >
+            ["at3"] = <
+                text = <"*absent (en)">
+                description = <"*absent (en)">
+            >
+            ["at4"] = <
+                text = <"*being (en)">
+                description = <"*being (en)">
+            >
+            ["ac2"] = <
+                text = <"*Note (en)">
+                description = <"*Note (en)">
             >
         >
     >
