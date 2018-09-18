@@ -122,6 +122,13 @@ definition
                             }
                         }
                     }
+                    ELEMENT[id35] matches {    -- Does it have poor digestion?
+                        value matches {
+                            DV_BOOLEAN[id36] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -217,6 +224,10 @@ terminology
             ["id33"] = <
                 text = <"Do you feel like a useless, helpless person?">
                 description = <"Do you feel like a useless, helpless person?">
+            >
+            ["id35"] = <
+                text = <"Does it have poor digestion?">
+                description = <"Does it have poor digestion?">
             >
         >
     >
