@@ -78,20 +78,20 @@ terminology
         >
         ["pt-br"] = <
             ["id1"] = <
-                text = <"*prosthetics or organs (en)">
-                description = <"*prosthetics or organs (en)">
+                text = <"próteses ou órgãos">
+                description = <"próteses ou órgãos">
             >
             ["id3"] = <
-                text = <"*Any event (en)">
-                description = <"*Any event (en)">
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
             >
             ["id6"] = <
-                text = <"*Do you use Prosthesis or Bracing? (en)">
-                description = <"*Do you use Prosthesis or Bracing? (en)">
+                text = <"Você usa prótese ou prótese?">
+                description = <"Você usa prótese ou prótese?">
             >
             ["id8"] = <
-                text = <"*In which part of the body? (en)">
-                description = <"*In which part of the body? (en)">
+                text = <"Em qual parte do corpo?">
+                description = <"Em qual parte do corpo?">
             >
         >
     >
