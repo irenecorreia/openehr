@@ -3,6 +3,12 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -10,6 +16,9 @@ description
         ["en"] = <
             language = <[ISO_639-1::en]>
             purpose = <"">
+        >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
         >
     >
     lifecycle_state = <"in_review">
@@ -81,6 +90,40 @@ terminology
             ["id8"] = <
                 text = <"Justification">
                 description = <"Justification">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"Avaliação clínica">
+                description = <"Avaliação clínica">
+            >
+            ["id3"] = <
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
+            >
+            ["id6"] = <
+                text = <"Conclusão da avaliação clínica">
+                description = <"Conclusão da avaliação clínica">
+            >
+            ["at1"] = <
+                text = <"*apt for function (en)">
+                description = <"*apt for function (en)">
+            >
+            ["at2"] = <
+                text = <"*inapt for function (en)">
+                description = <"*inapt for function (en)">
+            >
+            ["at3"] = <
+                text = <"*not completed (en)">
+                description = <"*not completed (en)">
+            >
+            ["ac1"] = <
+                text = <"*conclusion (en)">
+                description = <"*conclusion (en)">
+            >
+            ["id8"] = <
+                text = <"Justificativa">
+                description = <"Justificativa">
             >
         >
     >
