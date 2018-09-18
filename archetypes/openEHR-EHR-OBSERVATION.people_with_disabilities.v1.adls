@@ -3,6 +3,12 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -11,8 +17,11 @@ description
             language = <[ISO_639-1::en]>
             purpose = <"">
         >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
+        >
     >
-    lifecycle_state = <"unmanaged">
+    lifecycle_state = <"in_review">
 
 definition
     OBSERVATION[id1] matches {    -- People with Disabilities
@@ -67,6 +76,24 @@ terminology
             ["id8"] = <
                 text = <"Characterize the disability and issue the Attestation of Person with a disability?">
                 description = <"Characterize the disability and issue the Attestation of Person with a disability?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"*People with Disabilities (en)">
+                description = <"*People with Disabilities (en)">
+            >
+            ["id3"] = <
+                text = <"*Any event (en)">
+                description = <"*Any event (en)">
+            >
+            ["id6"] = <
+                text = <"*Disabled person? (en)">
+                description = <"*Disabled person? (en)">
+            >
+            ["id8"] = <
+                text = <"*Characterize the disability and issue the Attestation of Person with a disability? (en)">
+                description = <"*Characterize the disability and issue the Attestation of Person with a disability? (en)">
             >
         >
     >
