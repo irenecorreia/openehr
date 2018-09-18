@@ -93,6 +93,27 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id26] matches {    -- Control blood glucose
+                                        value matches {
+                                            DV_BOOLEAN[id27] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id28] matches {    -- Do not carry out intense physical exertion
+                                        value matches {
+                                            DV_BOOLEAN[id29] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id30] matches {    -- Get medical follow-up
+                                        value matches {
+                                            DV_BOOLEAN[id31] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -155,6 +176,18 @@ terminology
             ["id24"] = <
                 text = <"Increase fluid intake">
                 description = <"Increase fluid intake">
+            >
+            ["id26"] = <
+                text = <"Control blood glucose">
+                description = <"Control blood glucose">
+            >
+            ["id28"] = <
+                text = <"Do not carry out intense physical exertion">
+                description = <"Do not carry out intense physical exertion">
+            >
+            ["id30"] = <
+                text = <"Get medical follow-up">
+                description = <"Get medical follow-up">
             >
         >
     >
