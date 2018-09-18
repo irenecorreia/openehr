@@ -105,6 +105,34 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id31] matches {    -- Have you lost interest in things?
+                                        value matches {
+                                            DV_BOOLEAN[id32] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id33] matches {    -- Do you feel nervous, tense, or worried?
+                                        value matches {
+                                            DV_BOOLEAN[id34] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id35] matches {    -- Do you feel like a useless, helpless person?
+                                        value matches {
+                                            DV_BOOLEAN[id36] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id37] matches {    -- Does it have bad digestion ?
+                                        value matches {
+                                            DV_BOOLEAN[id38] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -195,6 +223,22 @@ terminology
             ["id29"] = <
                 text = <"Do you have hand tremors?">
                 description = <"Do you have hand tremors?">
+            >
+            ["id31"] = <
+                text = <"Have you lost interest in things?">
+                description = <"Have you lost interest in things?">
+            >
+            ["id33"] = <
+                text = <"Do you feel nervous, tense, or worried?">
+                description = <"Do you feel nervous, tense, or worried?">
+            >
+            ["id35"] = <
+                text = <"Do you feel like a useless, helpless person?">
+                description = <"Do you feel like a useless, helpless person?">
+            >
+            ["id37"] = <
+                text = <"Does it have bad digestion ?">
+                description = <"Does it have bad digestion ?">
             >
         >
     >
