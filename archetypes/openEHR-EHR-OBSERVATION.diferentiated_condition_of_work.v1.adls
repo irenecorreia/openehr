@@ -3,6 +3,12 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -11,8 +17,11 @@ description
             language = <[ISO_639-1::en]>
             purpose = <"">
         >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
+        >
     >
-    lifecycle_state = <"unmanaged">
+    lifecycle_state = <"in_review">
 
 definition
     OBSERVATION[id1] matches {    -- diferentiated condition of work
@@ -143,6 +152,60 @@ terminology
             ["id20"] = <
                 text = <"Others">
                 description = <"Others">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"condição diferenciada de trabalho">
+                description = <"condição diferenciada de trabalho">
+            >
+            ["id3"] = <
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
+            >
+            ["id6"] = <
+                text = <"Condição Diferencial do Trabalho?">
+                description = <"Condição Diferencial do Trabalho?">
+            >
+            ["id8"] = <
+                text = <"Trabalho em altura">
+                description = <"Trabalho em altura">
+            >
+            ["at1"] = <
+                text = <"*apt (en)">
+                description = <"*apt (en)">
+            >
+            ["at2"] = <
+                text = <"*inapt (en)">
+                description = <"*inapt (en)">
+            >
+            ["ac1"] = <
+                text = <"*Work at height (en)">
+                description = <"*Work at height (en)">
+            >
+            ["id10"] = <
+                text = <"Espaço confinado">
+                description = <"Espaço confinado">
+            >
+            ["id12"] = <
+                text = <"Brigada">
+                description = <"Brigada">
+            >
+            ["id14"] = <
+                text = <"Manipulação de alimentos">
+                description = <"Manipulação de alimentos">
+            >
+            ["id16"] = <
+                text = <"Aeroespacial">
+                description = <"Aeroespacial">
+            >
+            ["id18"] = <
+                text = <"Condição Hiperbárica">
+                description = <"Condição Hiperbárica">
+            >
+            ["id20"] = <
+                text = <"Outros">
+                description = <"Outros">
             >
         >
     >
