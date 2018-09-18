@@ -77,6 +77,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id23] matches {    -- Do you have difficulties in the service (your job is painful, causes suffering)?
+                                        value matches {
+                                            DV_BOOLEAN[id24] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -151,6 +158,10 @@ terminology
             ["id21"] = <
                 text = <"Sleep bad?">
                 description = <"Sleep bad?">
+            >
+            ["id23"] = <
+                text = <"Do you have difficulties in the service (your job is painful, causes suffering)?">
+                description = <"Do you have difficulties in the service (your job is painful, causes suffering)?">
             >
         >
     >
