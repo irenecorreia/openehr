@@ -58,6 +58,20 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id16] matches {    -- Aerospace
+                                        value matches {
+                                            DV_CODED_TEXT[id17] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id18] matches {    -- Hyperbaric Condition
+                                        value matches {
+                                            DV_BOOLEAN[id19] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -112,6 +126,14 @@ terminology
             ["id14"] = <
                 text = <"Food Handling">
                 description = <"Food Handling">
+            >
+            ["id16"] = <
+                text = <"Aerospace">
+                description = <"Aerospace">
+            >
+            ["id18"] = <
+                text = <"Hyperbaric Condition">
+                description = <"Hyperbaric Condition">
             >
         >
     >
