@@ -30,15 +30,67 @@ definition
                                             }
                                         }
                                     }
-                                    ELEMENT[id8] matches {    -- Laterality
+                                    ELEMENT[id13] matches {    -- Specify
                                         value matches {
-                                            DV_TEXT[id9] 
-                                            DV_CODED_TEXT[id11] matches {
+                                            DV_TEXT[id14] 
+                                        }
+                                    }
+                                    ELEMENT[id15] matches {    -- Tinel Sign
+                                        value matches {
+                                            DV_CODED_TEXT[id16] matches {
+                                                defining_code matches {[ac4]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id17] matches {    -- Laterality
+                                        value matches {
+                                            DV_CODED_TEXT[id18] matches {
+                                                defining_code matches {[ac5]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id19] matches {    -- Sign of Phalen
+                                        value matches {
+                                            DV_CODED_TEXT[id20] matches {
+                                                defining_code matches {[ac4]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id21] matches {    -- Laterality
+                                        value matches {
+                                            DV_CODED_TEXT[id22] matches {
                                                 defining_code matches {[ac2]}
                                             }
                                         }
                                     }
-                                    ELEMENT[id10]     -- Tinel Sign
+                                    ELEMENT[id23] matches {    -- Inverted Phalen Sign
+                                        value matches {
+                                            DV_CODED_TEXT[id24] matches {
+                                                defining_code matches {[ac4]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id25] matches {    -- Laterality
+                                        value matches {
+                                            DV_CODED_TEXT[id26] matches {
+                                                defining_code matches {[ac2]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id27] matches {    -- Filkeinstein Sign
+                                        value matches {
+                                            DV_CODED_TEXT[id28] matches {
+                                                defining_code matches {[ac4]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id29] matches {    -- Laterality
+                                        value matches {
+                                            DV_CODED_TEXT[id30] matches {
+                                                defining_code matches {[ac2]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -78,14 +130,6 @@ terminology
                 text = <"examination">
                 description = <"examination">
             >
-            ["id8"] = <
-                text = <"Laterality">
-                description = <"Laterality">
-            >
-            ["id10"] = <
-                text = <"Tinel Sign">
-                description = <"Tinel Sign">
-            >
             ["at3"] = <
                 text = <"right">
                 description = <"right">
@@ -98,6 +142,86 @@ terminology
                 text = <"Laterality">
                 description = <"Laterality">
             >
+            ["at5"] = <
+                text = <"absent">
+                description = <"absent">
+            >
+            ["at6"] = <
+                text = <"being">
+                description = <"being">
+            >
+            ["ac3"] = <
+                text = <"Note">
+                description = <"Note">
+            >
+            ["at7"] = <
+                text = <"both">
+                description = <"both">
+            >
+            ["id13"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id15"] = <
+                text = <"Tinel Sign">
+                description = <"Tinel Sign">
+            >
+            ["at8"] = <
+                text = <"normal">
+                description = <"normal">
+            >
+            ["at9"] = <
+                text = <"absent">
+                description = <"absent">
+            >
+            ["at10"] = <
+                text = <"being">
+                description = <"being">
+            >
+            ["ac4"] = <
+                text = <"Note">
+                description = <"Note">
+            >
+            ["id17"] = <
+                text = <"Laterality">
+                description = <"Laterality">
+            >
+            ["at11"] = <
+                text = <"right">
+                description = <"right">
+            >
+            ["at12"] = <
+                text = <"left">
+                description = <"left">
+            >
+            ["ac5"] = <
+                text = <"Laterality">
+                description = <"Laterality">
+            >
+            ["id19"] = <
+                text = <"Sign of Phalen">
+                description = <"Sign of Phalen">
+            >
+            ["id21"] = <
+                text = <"Laterality">
+                description = <"Laterality">
+            >
+            ["id23"] = <
+                text = <"Inverted Phalen Sign">
+                description = <"Inverted Phalen Sign">
+            >
+            ["id25"] = <
+                text = <"Laterality">
+                description = <"Laterality">
+            >
+            ["id27"] = <
+                text = <"Filkeinstein Sign">
+                description = <"Filkeinstein Sign">
+            >
+            ["id29"] = <
+                text = <"Laterality">
+                description = <"Laterality">
+            >
         >
     >
     value_sets = <
@@ -107,7 +231,19 @@ terminology
         >
         ["ac2"] = <
             id = <"ac2">
-            members = <"at3", "at4">
+            members = <"at3", "at4", "at7">
+        >
+        ["ac3"] = <
+            id = <"ac3">
+            members = <"at5", "at6">
+        >
+        ["ac4"] = <
+            id = <"ac4">
+            members = <"at9", "at10">
+        >
+        ["ac5"] = <
+            id = <"ac5">
+            members = <"at11", "at12">
         >
     >
 
