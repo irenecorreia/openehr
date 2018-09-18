@@ -72,6 +72,11 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id20] matches {    -- Others
+                                        value matches {
+                                            DV_TEXT[id21] 
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -134,6 +139,10 @@ terminology
             ["id18"] = <
                 text = <"Hyperbaric Condition">
                 description = <"Hyperbaric Condition">
+            >
+            ["id20"] = <
+                text = <"Others">
+                description = <"Others">
             >
         >
     >
