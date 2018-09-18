@@ -80,20 +80,20 @@ terminology
         >
         ["pt-br"] = <
             ["id1"] = <
-                text = <"*People with Disabilities (en)">
-                description = <"*People with Disabilities (en)">
+                text = <"Pessoa com Deficiências">
+                description = <"Pessoa com Deficiências">
             >
             ["id3"] = <
-                text = <"*Any event (en)">
-                description = <"*Any event (en)">
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
             >
             ["id6"] = <
-                text = <"*Disabled person? (en)">
-                description = <"*Disabled person? (en)">
+                text = <"Pessoa com deficiência?">
+                description = <"Pessoa com deficiência?">
             >
             ["id8"] = <
-                text = <"*Characterize the disability and issue the Attestation of Person with a disability? (en)">
-                description = <"*Characterize the disability and issue the Attestation of Person with a disability? (en)">
+                text = <"Caracterizar a deficiência e emitir o atestado de pessoa com deficiência?">
+                description = <"Caracterizar a deficiência e emitir o atestado de pessoa com deficiência?">
             >
         >
     >
