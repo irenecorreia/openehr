@@ -142,12 +142,12 @@ terminology
                 description = <"Equilibrio">
             >
             ["at1"] = <
-                text = <"*normal (en)">
-                description = <"*normal (en)">
+                text = <"Normal">
+                description = <"Normal">
             >
             ["at2"] = <
-                text = <"*changed (en)">
-                description = <"*changed (en)">
+                text = <"Alterado">
+                description = <"Alterado">
             >
             ["ac1"] = <
                 text = <"*examination (en)">
