@@ -44,6 +44,20 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id12] matches {    -- Edema
+                                        value matches {
+                                            DV_BOOLEAN[id13] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id14] matches {    -- Brown pigmentation, Eczema
+                                        value matches {
+                                            DV_BOOLEAN[id15] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -78,6 +92,14 @@ terminology
             ["id10"] = <
                 text = <"Varicose veins">
                 description = <"Varicose veins">
+            >
+            ["id12"] = <
+                text = <"Edema">
+                description = <"Edema">
+            >
+            ["id14"] = <
+                text = <"Brown pigmentation, Eczema">
+                description = <"Brown pigmentation, Eczema">
             >
         >
     >
