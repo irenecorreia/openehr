@@ -114,6 +114,18 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id32] matches {    -- Use of sunscreen
+                                        value matches {
+                                            DV_BOOLEAN[id33] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id34] matches {    -- Others
+                                        value matches {
+                                            DV_TEXT[id35] 
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -188,6 +200,14 @@ terminology
             ["id30"] = <
                 text = <"Get medical follow-up">
                 description = <"Get medical follow-up">
+            >
+            ["id32"] = <
+                text = <"Use of sunscreen">
+                description = <"Use of sunscreen">
+            >
+            ["id34"] = <
+                text = <"Others">
+                description = <"Others">
             >
         >
     >
