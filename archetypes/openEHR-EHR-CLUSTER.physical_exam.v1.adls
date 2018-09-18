@@ -115,6 +115,13 @@ definition
                             }
                         }
                     }
+                    ELEMENT[id33] matches {    -- Do you feel like a useless, helpless person?
+                        value matches {
+                            DV_BOOLEAN[id34] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -206,6 +213,10 @@ terminology
             ["id31"] = <
                 text = <"Do you feel nervous, tense, or worried?">
                 description = <"Do you feel nervous, tense, or worried?">
+            >
+            ["id33"] = <
+                text = <"Do you feel like a useless, helpless person?">
+                description = <"Do you feel like a useless, helpless person?">
             >
         >
     >
