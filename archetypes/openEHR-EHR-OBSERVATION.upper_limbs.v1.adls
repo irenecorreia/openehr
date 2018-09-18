@@ -49,6 +49,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id15] matches {    -- Sign of Phalen
+                                        value matches {
+                                            DV_CODED_TEXT[id16] matches {
+                                                defining_code matches {[ac4]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -128,6 +135,22 @@ terminology
                 text = <"both">
                 description = <"both">
             >
+            ["id15"] = <
+                text = <"Sign of Phalen">
+                description = <"Sign of Phalen">
+            >
+            ["at8"] = <
+                text = <"absent">
+                description = <"absent">
+            >
+            ["at9"] = <
+                text = <"being">
+                description = <"being">
+            >
+            ["ac4"] = <
+                text = <"Sign of Phalen">
+                description = <"Sign of Phalen">
+            >
         >
     >
     value_sets = <
@@ -142,6 +165,10 @@ terminology
         ["ac3"] = <
             id = <"ac3">
             members = <"at5", "at6", "at7">
+        >
+        ["ac4"] = <
+            id = <"ac4">
+            members = <"at8", "at9">
         >
     >
 
