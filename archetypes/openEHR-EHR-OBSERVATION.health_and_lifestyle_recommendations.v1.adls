@@ -1,0 +1,150 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-OBSERVATION.health_and_lifestyle_recommendations.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    
+description
+    copyright = <"">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+
+definition
+    OBSERVATION[id1] matches {    -- health and lifestyle recommendations
+        data matches {
+            HISTORY[id2] matches {
+                events matches {
+                    EVENT[id3] matches {    -- Any event
+                        data matches {
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id6] matches {    -- Measure blood pressure regularly
+                                        value matches {
+                                            DV_BOOLEAN[id7] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id8] matches {    -- Realizar atividade física regularmente
+                                        value matches {
+                                            DV_BOOLEAN[id9] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id10] matches {    -- Reduce salt intake
+                                        value matches {
+                                            DV_BOOLEAN[id11] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id12] matches {    -- Reduce fat intake
+                                        value matches {
+                                            DV_BOOLEAN[id13] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id14] matches {    -- Reduce intake of sweets, pasta, breads, cakes
+                                        value matches {
+                                            DV_BOOLEAN[id15] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id16] matches {    -- Increase intake of vegetables and fiber
+                                        value matches {
+                                            DV_BOOLEAN[id17] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id18] matches {    -- Use medication as prescribed
+                                        value matches {
+                                            DV_BOOLEAN[id19] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id20] matches {    -- Quit smoking addiction
+                                        value matches {
+                                            DV_BOOLEAN[id21] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id22] matches {    -- Reduce consumption of alcoholic beverages
+                                        value matches {
+                                            DV_BOOLEAN[id23] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        state matches {
+                            ITEM_TREE[id5] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"health and lifestyle recommendations">
+                description = <"health and lifestyle recommendations">
+            >
+            ["id3"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"Measure blood pressure regularly">
+                description = <"Measure blood pressure regularly">
+            >
+            ["id8"] = <
+                text = <"Realizar atividade física regularmente">
+                description = <"Realizar atividade física regularmente">
+            >
+            ["id10"] = <
+                text = <"Reduce salt intake">
+                description = <"Reduce salt intake">
+            >
+            ["id12"] = <
+                text = <"Reduce fat intake">
+                description = <"Reduce fat intake">
+            >
+            ["id14"] = <
+                text = <"Reduce intake of sweets, pasta, breads, cakes">
+                description = <"Reduce intake of sweets, pasta, breads, cakes">
+            >
+            ["id16"] = <
+                text = <"Increase intake of vegetables and fiber">
+                description = <"Increase intake of vegetables and fiber">
+            >
+            ["id18"] = <
+                text = <"Use medication as prescribed">
+                description = <"Use medication as prescribed">
+            >
+            ["id20"] = <
+                text = <"Quit smoking addiction">
+                description = <"Quit smoking addiction">
+            >
+            ["id22"] = <
+                text = <"Reduce consumption of alcoholic beverages">
+                description = <"Reduce consumption of alcoholic beverages">
+            >
+        >
+    >
+
