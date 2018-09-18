@@ -33,8 +33,12 @@ definition
                                     ELEMENT[id8] matches {    -- Laterality
                                         value matches {
                                             DV_TEXT[id9] 
+                                            DV_CODED_TEXT[id11] matches {
+                                                defining_code matches {[ac2]}
+                                            }
                                         }
                                     }
+                                    ELEMENT[id10]     -- Tinel Sign
                                 }
                             }
                         }
@@ -78,12 +82,32 @@ terminology
                 text = <"Laterality">
                 description = <"Laterality">
             >
+            ["id10"] = <
+                text = <"Tinel Sign">
+                description = <"Tinel Sign">
+            >
+            ["at3"] = <
+                text = <"right">
+                description = <"right">
+            >
+            ["at4"] = <
+                text = <"left">
+                description = <"left">
+            >
+            ["ac2"] = <
+                text = <"Laterality">
+                description = <"Laterality">
+            >
         >
     >
     value_sets = <
         ["ac1"] = <
             id = <"ac1">
             members = <"at1", "at2">
+        >
+        ["ac2"] = <
+            id = <"ac2">
+            members = <"at3", "at4">
         >
     >
 
