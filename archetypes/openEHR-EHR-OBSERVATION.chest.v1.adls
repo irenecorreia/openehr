@@ -30,6 +30,18 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id8] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id9] 
+                                        }
+                                    }
+                                    ELEMENT[id10] matches {    -- Cardiovascular Apparatus
+                                        value matches {
+                                            DV_CODED_TEXT[id11] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -68,6 +80,14 @@ terminology
             ["ac1"] = <
                 text = <"chest">
                 description = <"chest">
+            >
+            ["id8"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id10"] = <
+                text = <"Cardiovascular Apparatus">
+                description = <"Cardiovascular Apparatus">
             >
         >
     >
