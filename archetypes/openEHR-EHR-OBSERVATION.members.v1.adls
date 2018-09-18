@@ -3,6 +3,12 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -10,6 +16,9 @@ description
         ["en"] = <
             language = <[ISO_639-1::en]>
             purpose = <"">
+        >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
         >
     >
     lifecycle_state = <"in_review">
@@ -241,6 +250,132 @@ terminology
             ["id35"] = <
                 text = <"Specify">
                 description = <"Specify">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"*members (en)">
+                description = <"*members (en)">
+            >
+            ["id3"] = <
+                text = <"*Any event (en)">
+                description = <"*Any event (en)">
+            >
+            ["id6"] = <
+                text = <"*Upper limbs (en)">
+                description = <"*Upper limbs (en)">
+            >
+            ["at1"] = <
+                text = <"*normal (en)">
+                description = <"*normal (en)">
+            >
+            ["at2"] = <
+                text = <"*changed (en)">
+                description = <"*changed (en)">
+            >
+            ["ac1"] = <
+                text = <"*examination (en)">
+                description = <"*examination (en)">
+            >
+            ["at3"] = <
+                text = <"*right (en)">
+                description = <"*right (en)">
+            >
+            ["at4"] = <
+                text = <"*left (en)">
+                description = <"*left (en)">
+            >
+            ["ac2"] = <
+                text = <"*Laterality (en)">
+                description = <"*Laterality (en)">
+            >
+            ["at5"] = <
+                text = <"*absent (en)">
+                description = <"*absent (en)">
+            >
+            ["at6"] = <
+                text = <"*being (en)">
+                description = <"*being (en)">
+            >
+            ["ac3"] = <
+                text = <"*Note (en)">
+                description = <"*Note (en)">
+            >
+            ["at7"] = <
+                text = <"*both (en)">
+                description = <"*both (en)">
+            >
+            ["id13"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
+            >
+            ["id15"] = <
+                text = <"*Tinel Sign (en)">
+                description = <"*Tinel Sign (en)">
+            >
+            ["at8"] = <
+                text = <"*normal (en)">
+                description = <"*normal (en)">
+            >
+            ["at9"] = <
+                text = <"*absent (en)">
+                description = <"*absent (en)">
+            >
+            ["at10"] = <
+                text = <"*being (en)">
+                description = <"*being (en)">
+            >
+            ["ac4"] = <
+                text = <"*Note (en)">
+                description = <"*Note (en)">
+            >
+            ["id17"] = <
+                text = <"*Laterality (en)">
+                description = <"*Laterality (en)">
+            >
+            ["at11"] = <
+                text = <"*right (en)">
+                description = <"*right (en)">
+            >
+            ["at12"] = <
+                text = <"*left (en)">
+                description = <"*left (en)">
+            >
+            ["ac5"] = <
+                text = <"*Laterality (en)">
+                description = <"*Laterality (en)">
+            >
+            ["id19"] = <
+                text = <"*Sign of Phalen (en)">
+                description = <"*Sign of Phalen (en)">
+            >
+            ["id21"] = <
+                text = <"*Laterality (en)">
+                description = <"*Laterality (en)">
+            >
+            ["id23"] = <
+                text = <"*Inverted Phalen Sign (en)">
+                description = <"*Inverted Phalen Sign (en)">
+            >
+            ["id25"] = <
+                text = <"*Laterality (en)">
+                description = <"*Laterality (en)">
+            >
+            ["id27"] = <
+                text = <"*Filkeinstein Sign (en)">
+                description = <"*Filkeinstein Sign (en)">
+            >
+            ["id29"] = <
+                text = <"*Laterality (en)">
+                description = <"*Laterality (en)">
+            >
+            ["id31"] = <
+                text = <"*Lower members (en)">
+                description = <"*Lower members (en)">
+            >
+            ["id35"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
             >
         >
     >
