@@ -77,6 +77,20 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id23] matches {    -- Filkeinstein Sign
+                                        value matches {
+                                            DV_CODED_TEXT[id24] matches {
+                                                defining_code matches {[ac4]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id25] matches {    -- Laterality
+                                        value matches {
+                                            DV_CODED_TEXT[id26] matches {
+                                                defining_code matches {[ac3]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -181,6 +195,14 @@ terminology
                 description = <"Inverted Phalen Sign">
             >
             ["id21"] = <
+                text = <"Laterality">
+                description = <"Laterality">
+            >
+            ["id23"] = <
+                text = <"Filkeinstein Sign">
+                description = <"Filkeinstein Sign">
+            >
+            ["id25"] = <
                 text = <"Laterality">
                 description = <"Laterality">
             >
