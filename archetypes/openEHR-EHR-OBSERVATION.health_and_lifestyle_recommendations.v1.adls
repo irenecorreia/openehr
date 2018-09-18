@@ -86,6 +86,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id24] matches {    -- Increase fluid intake
+                                        value matches {
+                                            DV_BOOLEAN[id25] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -144,6 +151,10 @@ terminology
             ["id22"] = <
                 text = <"Reduce consumption of alcoholic beverages">
                 description = <"Reduce consumption of alcoholic beverages">
+            >
+            ["id24"] = <
+                text = <"Increase fluid intake">
+                description = <"Increase fluid intake">
             >
         >
     >
