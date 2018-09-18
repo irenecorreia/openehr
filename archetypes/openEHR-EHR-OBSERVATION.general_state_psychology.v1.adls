@@ -133,6 +133,43 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id39] matches {    -- Have you had ideas to end life?
+                                        value matches {
+                                            DV_BOOLEAN[id40] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id41] matches {    -- Do you have difficulty thinking clearly?
+                                        value matches {
+                                            DV_BOOLEAN[id42] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id43] matches {    -- Do you feel tired all the time?
+                                        value matches {
+                                            DV_BOOLEAN[id44] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id45] matches {    -- Have you felt sad lately?
+                                        value matches {
+                                            DV_BOOLEAN[id46] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id47]     -- Do you have unpleasant sensations in your stomach?
+                                    ELEMENT[id48] matches {    -- Are you crying more than you usually do?
+                                        value matches {
+                                            DV_BOOLEAN[id49] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id50]     -- Do you get tired easily?
                                 }
                             }
                         }
@@ -239,6 +276,34 @@ terminology
             ["id37"] = <
                 text = <"Does it have bad digestion ?">
                 description = <"Does it have bad digestion ?">
+            >
+            ["id39"] = <
+                text = <"Have you had ideas to end life?">
+                description = <"Have you had ideas to end life?">
+            >
+            ["id41"] = <
+                text = <"Do you have difficulty thinking clearly?">
+                description = <"Do you have difficulty thinking clearly?">
+            >
+            ["id43"] = <
+                text = <"Do you feel tired all the time?">
+                description = <"Do you feel tired all the time?">
+            >
+            ["id45"] = <
+                text = <"Have you felt sad lately?">
+                description = <"Have you felt sad lately?">
+            >
+            ["id47"] = <
+                text = <"Do you have unpleasant sensations in your stomach?">
+                description = <"Do you have unpleasant sensations in your stomach?">
+            >
+            ["id48"] = <
+                text = <"Are you crying more than you usually do?">
+                description = <"Are you crying more than you usually do?">
+            >
+            ["id50"] = <
+                text = <"Do you get tired easily?">
+                description = <"Do you get tired easily?">
             >
         >
     >
