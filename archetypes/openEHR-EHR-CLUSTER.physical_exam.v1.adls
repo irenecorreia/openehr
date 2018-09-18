@@ -59,6 +59,13 @@ definition
                             }
                         }
                     }
+                    ELEMENT[id17] matches {    -- Are you having trouble making decisions?
+                        value matches {
+                            DV_BOOLEAN[id18] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -118,6 +125,10 @@ terminology
             ["id15"] = <
                 text = <"Do you have a lack of appetite?">
                 description = <"Do you have a lack of appetite?">
+            >
+            ["id17"] = <
+                text = <"Are you having trouble making decisions?">
+                description = <"Are you having trouble making decisions?">
             >
         >
     >
