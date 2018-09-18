@@ -35,6 +35,13 @@ definition
                                             DV_TEXT[id9] 
                                         }
                                     }
+                                    ELEMENT[id10] matches {    -- Sign of Laségue
+                                        value matches {
+                                            DV_CODED_TEXT[id11] matches {
+                                                defining_code matches {[ac2]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -78,12 +85,32 @@ terminology
                 text = <"Specify">
                 description = <"Specify">
             >
+            ["id10"] = <
+                text = <"Sign of Laségue">
+                description = <"Sign of Laségue">
+            >
+            ["at3"] = <
+                text = <"absent">
+                description = <"absent">
+            >
+            ["at4"] = <
+                text = <"being">
+                description = <"being">
+            >
+            ["ac2"] = <
+                text = <"Note">
+                description = <"Note">
+            >
         >
     >
     value_sets = <
         ["ac1"] = <
             id = <"ac1">
             members = <"at1", "at2">
+        >
+        ["ac2"] = <
+            id = <"ac2">
+            members = <"at3", "at4">
         >
     >
 
