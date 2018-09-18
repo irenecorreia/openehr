@@ -18,7 +18,15 @@ definition
     CLUSTER[id1] matches {    -- physical exam
         items matches {
             CLUSTER[id4] matches {    -- General state - Psychology
-                items
+                items matches {
+                    ELEMENT[id5] matches {    -- State of Mood (at time of consultation)
+                        value matches {
+                            DV_CODED_TEXT[id6] matches {
+                                defining_code matches {[ac1]}
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -34,6 +42,36 @@ terminology
                 text = <"General state - Psychology">
                 description = <"General state - Psychology">
             >
+            ["id5"] = <
+                text = <"State of Mood (at time of consultation)">
+                description = <"State of Mood (at time of consultation)">
+            >
+            ["at1"] = <
+                text = <"Stable / Euthymic">
+                description = <"Stable / Euthymic">
+            >
+            ["ac1"] = <
+                text = <"State of mood">
+                description = <"State of mood">
+            >
+            ["at2"] = <
+                text = <"Anxious / Euphoric">
+                description = <"Anxious / Euphoric">
+            >
+            ["at3"] = <
+                text = <"Depressed / sad">
+                description = <"Depressed / sad">
+            >
+            ["at4"] = <
+                text = <"Angry / Exalted">
+                description = <"Angry / Exalted">
+            >
+        >
+    >
+    value_sets = <
+        ["ac1"] = <
+            id = <"ac1">
+            members = <"at1", "at2", "at3", "at4">
         >
     >
 
