@@ -30,6 +30,18 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id8] matches {    -- Comments
+                                        value matches {
+                                            DV_TEXT[id9] 
+                                        }
+                                    }
+                                    ELEMENT[id10] matches {    -- Evaluation of Psychosocial Risk Factors? (SRQ 20)
+                                        value matches {
+                                            DV_BOOLEAN[id11] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -76,6 +88,14 @@ terminology
             ["ac1"] = <
                 text = <"State of mood">
                 description = <"Stade of mood">
+            >
+            ["id8"] = <
+                text = <"Comments">
+                description = <"Comments">
+            >
+            ["id10"] = <
+                text = <"Evaluation of Psychosocial Risk Factors? (SRQ 20)">
+                description = <"Evaluation of Psychosocial Risk Factors? (SRQ 20)">
             >
         >
     >
