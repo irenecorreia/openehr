@@ -254,128 +254,128 @@ terminology
         >
         ["pt-br"] = <
             ["id1"] = <
-                text = <"*members (en)">
-                description = <"*members (en)">
+                text = <"membros">
+                description = <"membros">
             >
             ["id3"] = <
-                text = <"*Any event (en)">
-                description = <"*Any event (en)">
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
             >
             ["id6"] = <
-                text = <"*Upper limbs (en)">
-                description = <"*Upper limbs (en)">
+                text = <"Membros superiores">
+                description = <"Membros superiores">
             >
             ["at1"] = <
-                text = <"*normal (en)">
-                description = <"*normal (en)">
+                text = <"normal">
+                description = <"normal">
             >
             ["at2"] = <
-                text = <"*changed (en)">
-                description = <"*changed (en)">
+                text = <"Mudou">
+                description = <"Mudou">
             >
             ["ac1"] = <
                 text = <"*examination (en)">
                 description = <"*examination (en)">
             >
             ["at3"] = <
-                text = <"*right (en)">
-                description = <"*right (en)">
+                text = <"Direita">
+                description = <"Direita">
             >
             ["at4"] = <
-                text = <"*left (en)">
-                description = <"*left (en)">
+                text = <"Esquerda">
+                description = <"Esquerda">
             >
             ["ac2"] = <
                 text = <"*Laterality (en)">
                 description = <"*Laterality (en)">
             >
             ["at5"] = <
-                text = <"*absent (en)">
-                description = <"*absent (en)">
+                text = <"ausente">
+                description = <"ausente">
             >
             ["at6"] = <
-                text = <"*being (en)">
-                description = <"*being (en)">
+                text = <"ser">
+                description = <"ser">
             >
             ["ac3"] = <
                 text = <"*Note (en)">
                 description = <"*Note (en)">
             >
             ["at7"] = <
-                text = <"*both (en)">
-                description = <"*both (en)">
+                text = <"Ambos">
+                description = <"Ambos">
             >
             ["id13"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
             ["id15"] = <
-                text = <"*Tinel Sign (en)">
-                description = <"*Tinel Sign (en)">
+                text = <"Sinal de Tinel">
+                description = <"Sinal de Tinel">
             >
             ["at8"] = <
-                text = <"*normal (en)">
-                description = <"*normal (en)">
+                text = <"normal">
+                description = <"normal">
             >
             ["at9"] = <
-                text = <"*absent (en)">
-                description = <"*absent (en)">
+                text = <"ausente">
+                description = <"ausente">
             >
             ["at10"] = <
-                text = <"*being (en)">
-                description = <"*being (en)">
+                text = <"Ser">
+                description = <"Ser">
             >
             ["ac4"] = <
                 text = <"*Note (en)">
                 description = <"*Note (en)">
             >
             ["id17"] = <
-                text = <"*Laterality (en)">
-                description = <"*Laterality (en)">
+                text = <"Lateralmente">
+                description = <"Lateralmente">
             >
             ["at11"] = <
-                text = <"*right (en)">
-                description = <"*right (en)">
+                text = <"Direita">
+                description = <"Direita">
             >
             ["at12"] = <
-                text = <"*left (en)">
-                description = <"*left (en)">
+                text = <"Esquerda">
+                description = <"Esquerda">
             >
             ["ac5"] = <
                 text = <"*Laterality (en)">
                 description = <"*Laterality (en)">
             >
             ["id19"] = <
-                text = <"*Sign of Phalen (en)">
-                description = <"*Sign of Phalen (en)">
+                text = <"Sinal de Phalen">
+                description = <"Sinal de Phalen">
             >
             ["id21"] = <
-                text = <"*Laterality (en)">
-                description = <"*Laterality (en)">
+                text = <"Lateralmente">
+                description = <"Lateralmente">
             >
             ["id23"] = <
-                text = <"*Inverted Phalen Sign (en)">
-                description = <"*Inverted Phalen Sign (en)">
+                text = <"Sinal de Phalen invertido">
+                description = <"Sinal de Phalen invertido">
             >
             ["id25"] = <
-                text = <"*Laterality (en)">
-                description = <"*Laterality (en)">
+                text = <"Lateralmente">
+                description = <"Lateralmente">
             >
             ["id27"] = <
-                text = <"*Filkeinstein Sign (en)">
-                description = <"*Filkeinstein Sign (en)">
+                text = <"Sinal Filkeinstein">
+                description = <"Sinal Filkeinstein">
             >
             ["id29"] = <
-                text = <"*Laterality (en)">
-                description = <"*Laterality (en)">
+                text = <"Lateralmente">
+                description = <"Lateralmente">
             >
             ["id31"] = <
-                text = <"*Lower members (en)">
-                description = <"*Lower members (en)">
+                text = <"Membros inferiores">
+                description = <"Membros inferiores">
             >
             ["id35"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
         >
     >
