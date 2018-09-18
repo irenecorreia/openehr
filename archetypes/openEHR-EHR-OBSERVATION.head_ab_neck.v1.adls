@@ -37,6 +37,20 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id10] matches {    -- Otological examination
+                                        value matches {
+                                            DV_CODED_TEXT[id11] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id12] matches {    -- Phonator - Conversation and Communication
+                                        value matches {
+                                            DV_CODED_TEXT[id13] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -79,6 +93,14 @@ terminology
             ["id8"] = <
                 text = <"Mouth and teeth">
                 description = <"Mouth and teeth">
+            >
+            ["id10"] = <
+                text = <"Otological examination">
+                description = <"Otological examination">
+            >
+            ["id12"] = <
+                text = <"Phonator - Conversation and Communication">
+                description = <"Phonator - Conversation and Communication">
             >
         >
     >
