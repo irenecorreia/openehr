@@ -131,16 +131,16 @@ terminology
                 description = <"Aparelho Respiratório">
             >
             ["at1"] = <
-                text = <"*normal (en)">
-                description = <"*normal (en)">
+                text = <"normal">
+                description = <"normal">
             >
             ["at2"] = <
-                text = <"*changed (en)">
-                description = <"*changed (en)">
+                text = <"Mudou">
+                description = <"Mudou">
             >
             ["ac1"] = <
-                text = <"*chest (en)">
-                description = <"*chest (en)">
+                text = <"chest (en)">
+                description = <"chest (en)">
             >
             ["id8"] = <
                 text = <"Especificamos">
