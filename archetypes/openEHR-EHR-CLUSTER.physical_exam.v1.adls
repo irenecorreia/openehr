@@ -136,6 +136,13 @@ definition
                             }
                         }
                     }
+                    ELEMENT[id39] matches {    -- Do you have difficulty thinking clearly?
+                        value matches {
+                            DV_BOOLEAN[id40] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -239,6 +246,10 @@ terminology
             ["id37"] = <
                 text = <"Have you had ideas to end life?">
                 description = <"Have you had ideas to end life?">
+            >
+            ["id39"] = <
+                text = <"Do you have difficulty thinking clearly?">
+                description = <"Do you have difficulty thinking clearly?">
             >
         >
     >
