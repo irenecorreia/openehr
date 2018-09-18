@@ -84,6 +84,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id25] matches {    -- Are you scared easily?
+                                        value matches {
+                                            DV_BOOLEAN[id26] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -162,6 +169,10 @@ terminology
             ["id23"] = <
                 text = <"Do you have difficulties in the service (your job is painful, causes suffering)?">
                 description = <"Do you have difficulties in the service (your job is painful, causes suffering)?">
+            >
+            ["id25"] = <
+                text = <"Are you scared easily?">
+                description = <"Are you scared easily?">
             >
         >
     >
