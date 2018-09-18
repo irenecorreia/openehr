@@ -157,6 +157,13 @@ definition
                             }
                         }
                     }
+                    ELEMENT[id45] matches {    -- Do you have unpleasant sensations in your stomach?
+                        value matches {
+                            DV_BOOLEAN[id46] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -272,6 +279,10 @@ terminology
             ["id43"] = <
                 text = <"Have you felt sad lately?">
                 description = <"Have you felt sad lately?">
+            >
+            ["id45"] = <
+                text = <"Do you have unpleasant sensations in your stomach?">
+                description = <"Do you have unpleasant sensations in your stomach?">
             >
         >
     >
