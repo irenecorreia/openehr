@@ -1,0 +1,71 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-OBSERVATION.abdomen.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    
+description
+    copyright = <"">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+
+definition
+    OBSERVATION[id1] matches {    -- abdomen
+        data matches {
+            HISTORY[id2] matches {
+                events matches {
+                    EVENT[id3] matches {    -- Any event
+                        data matches {
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id6] matches {    -- Is there evidence of any change? (bulging, tumor, hernia, surgical scars)?
+                                        value matches {
+                                            DV_BOOLEAN[id7] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id8] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id9] 
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        state matches {
+                            ITEM_TREE[id5] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"abdomen">
+                description = <"abdomen">
+            >
+            ["id3"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"Is there evidence of any change? (bulging, tumor, hernia, surgical scars)?">
+                description = <"Is there evidence of any change? (bulging, tumor, hernia, surgical scars)?">
+            >
+            ["id8"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+        >
+    >
+
