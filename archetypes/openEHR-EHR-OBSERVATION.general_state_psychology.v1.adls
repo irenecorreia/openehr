@@ -63,6 +63,20 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id19] matches {    -- Are you having trouble making decisions?
+                                        value matches {
+                                            DV_BOOLEAN[id20] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id21] matches {    -- Sleep bad?
+                                        value matches {
+                                            DV_BOOLEAN[id22] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -129,6 +143,14 @@ terminology
             ["id16"] = <
                 text = <"Do you have a lack of appetite?">
                 description = <"Do you have a lack of appetite?">
+            >
+            ["id19"] = <
+                text = <"Are you having trouble making decisions?">
+                description = <"Are you having trouble making decisions?">
+            >
+            ["id21"] = <
+                text = <"Sleep bad?">
+                description = <"Sleep bad?">
             >
         >
     >
