@@ -75,6 +75,9 @@ definition
             use_archetype SECTION[id0.5, openEHR-EHR-SECTION.ovl-fcos5-adhoc-003.v1.0.0]
             use_archetype SECTION[id0.4, openEHR-EHR-SECTION.ovl-fcos5-adhoc-002.v1.0.0]
             use_archetype SECTION[id0.6, openEHR-EHR-SECTION.ovl-fcos5-adhoc-001.v1.0.0]
+            use_archetype SECTION[id0.7, openEHR-EHR-SECTION.ovl-fcos5-adhoc-004.v1.0.0]
+            use_archetype SECTION[id0.8, openEHR-EHR-SECTION.ovl-fcos5-adhoc-005.v1.0.0]
+            use_archetype SECTION[id0.9, openEHR-EHR-SECTION.ovl-fcos5-adhoc-006.v1.0.0]
         }
     }
 
@@ -3240,6 +3243,15 @@ definition
         items matches {
             use_archetype OBSERVATION[id0.3, openEHR-EHR-OBSERVATION.ovl-fcos5-general_state_psychology-001.v1.0.0]
             use_archetype OBSERVATION[id0.4, openEHR-EHR-OBSERVATION.ovl-fcos5-head_ab_neck-001.v1.0.0]
+            use_archetype OBSERVATION[id0.7, openEHR-EHR-OBSERVATION.ovl-fcos5-chest-001.v1.0.0]
+            use_archetype OBSERVATION[id0.8, openEHR-EHR-OBSERVATION.ovl-fcos5-abdomen-001.v1.0.0]
+            use_archetype OBSERVATION[id0.9, openEHR-EHR-OBSERVATION.ovl-fcos5-skin_mucous_faneros-001.v1.0.0]
+            use_archetype OBSERVATION[id0.10, openEHR-EHR-OBSERVATION.ovl-fcos5-members-001.v1.0.0]
+            use_archetype OBSERVATION[id0.11, openEHR-EHR-OBSERVATION.ovl-fcos5-column-001.v1.0.0]
+            use_archetype OBSERVATION[id0.12, openEHR-EHR-OBSERVATION.ovl-fcos5-extremities-001.v1.0.0]
+            use_archetype OBSERVATION[id0.13, openEHR-EHR-OBSERVATION.ovl-fcos5-prosthetics_or_organs-001.v1.0.0]
+            use_archetype OBSERVATION[id0.14, openEHR-EHR-OBSERVATION.ovl-fcos5-nervous_system-001.v1.0.0]
+            use_archetype OBSERVATION[id0.15, openEHR-EHR-OBSERVATION.ovl-fcos5-people_with_disabilities-001.v1.0.0]
         }
     }
 
@@ -3399,6 +3411,543 @@ terminology
             ["id1.1"] = <
                 text = <"Cabeça e pescoço">
                 description = <"cabeça e pescoço">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-fcos5-chest-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.chest.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- chest
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6] matches {
+                /value[id7]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id10] matches {
+                /value[id11]/defining_code matches {[ac1]}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"chest">
+                description = <"chest">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Peito">
+                description = <"Peito">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-fcos5-abdomen-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.abdomen.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- abdomen
+        /data[id2]/events[id3]/data[id4]/items[id6]/value[id7]/value matches {True, False}
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"abdomen">
+                description = <"abdomen">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Abdômen">
+                description = <"abdômen">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-fcos5-skin_mucous_faneros-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.skin_mucous_faneros.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- skin_mucous_faneros
+        /data[id2]/events[id3]/data[id4]/items[id6]/value[id7]/defining_code matches {[ac1]}
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"skin_mucous_faneros">
+                description = <"skin_mucous_faneros">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Fanêros Mucosas e Pele">
+                description = <"faneros_mucosas_pele">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-fcos5-members-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.members.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- members
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6] matches {
+                /value[id7]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id15] matches {
+                /value[id16]/defining_code matches {[ac4]}
+            }
+            ELEMENT[id17] matches {
+                /value[id18]/defining_code matches {[ac5]}
+            }
+            ELEMENT[id19] matches {
+                /value[id20]/defining_code matches {[ac4]}
+            }
+            ELEMENT[id21] matches {
+                /value[id22]/defining_code matches {[ac2]}
+            }
+            ELEMENT[id23] matches {
+                /value[id24]/defining_code matches {[ac4]}
+            }
+            ELEMENT[id25] matches {
+                /value[id26]/defining_code matches {[ac2]}
+            }
+            ELEMENT[id27] matches {
+                /value[id28]/defining_code matches {[ac4]}
+            }
+            ELEMENT[id29] matches {
+                /value[id30]/defining_code matches {[ac2]}
+            }
+            ELEMENT[id31] matches {
+                /value[id32]/defining_code matches {[ac3]}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"members">
+                description = <"members">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Membros">
+                description = <"Membros">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-fcos5-column-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.column.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- Column
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6] matches {
+                /value[id7]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id10] matches {
+                /value[id11]/defining_code matches {[ac2]}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Column">
+                description = <"Column">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Coluna">
+                description = <"Coluna">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-fcos5-extremities-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.extremities.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- extremities
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6] matches {
+                /value[id7]/value matches {True, False}
+            }
+            ELEMENT[id8] matches {
+                /value[id9]/value matches {True, False}
+            }
+            ELEMENT[id10] matches {
+                /value[id11]/value matches {True, False}
+            }
+            ELEMENT[id12] matches {
+                /value[id13]/value matches {True, False}
+            }
+            ELEMENT[id14] matches {
+                /value[id15]/value matches {True, False}
+            }
+            ELEMENT[id16] matches {
+                /value[id17]/value matches {True, False}
+            }
+            ELEMENT[id18] matches {
+                /value[id19]/value matches {True, False}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"extremities">
+                description = <"extremities">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Extremidades">
+                description = <"extremidades">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-fcos5-prosthetics_or_organs-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.prosthetics_or_organs.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- prosthetics or organs
+        /data[id2]/events[id3]/data[id4]/items[id6]/value[id7]/value matches {True, False}
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"prosthetics or organs">
+                description = <"prosthetics or organs">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Próteses ou órgãos">
+                description = <"próteses ou órgãos">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-fcos5-nervous_system-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.nervous_system.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- NERVOUS SYSTEM
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6] matches {
+                /value[id7]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id10] matches {
+                /value[id11]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id14] matches {
+                /value[id15]/defining_code matches {[ac1]}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"NERVOUS SYSTEM">
+                description = <"NERVOUS SYSTEM">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"SISTEMA NERVOSO">
+                description = <"SISTEMA NERVOSO">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-fcos5-people_with_disabilities-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.people_with_disabilities.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- People with Disabilities
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6] matches {
+                /value[id7]/value matches {True, False}
+            }
+            ELEMENT[id8] matches {
+                /value[id9]/value matches {True, False}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"People with Disabilities">
+                description = <"People with Disabilities">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Pessoa com Deficiências">
+                description = <"Pessoa com Deficiências">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-fcos5-adhoc-004.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items matches {
+            use_archetype OBSERVATION[id0.2, openEHR-EHR-OBSERVATION.ovl-fcos5-complementary_exames_altered-001.v1.0.0]
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Observações sobre exames complementares alterados">
+                description = <"Observações sobre exames complementares alterados">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-fcos5-complementary_exames_altered-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.complementary_exames_altered.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- complementary exames altered
+        /data[id2]/events[id3]/data[id4]/items[id6]/value[id7]/value matches {True, False}
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"complementary exames altered">
+                description = <"complementary exames altered">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Exames complementares alterados">
+                description = <"exames complementares alterados">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-fcos5-adhoc-005.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items matches {
+            use_archetype OBSERVATION[id0.2, openEHR-EHR-OBSERVATION.ovl-fcos5-health_and_lifestyle_recommendations-001.v1.0.0]
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Recomendações de saúde e estilo de vida">
+                description = <"Recomendações de saúde e estilo de vida">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-fcos5-health_and_lifestyle_recommendations-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.health_and_lifestyle_recommendations.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- health and lifestyle recommendations
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6] matches {
+                /value[id7]/value matches {True, False}
+            }
+            ELEMENT[id8] matches {
+                /value[id9]/value matches {True, False}
+            }
+            ELEMENT[id10] matches {
+                /value[id11]/value matches {True, False}
+            }
+            ELEMENT[id12] matches {
+                /value[id13]/value matches {True, False}
+            }
+            ELEMENT[id14] matches {
+                /value[id15]/value matches {True, False}
+            }
+            ELEMENT[id16] matches {
+                /value[id17]/value matches {True, False}
+            }
+            ELEMENT[id18] matches {
+                /value[id19]/value matches {True, False}
+            }
+            ELEMENT[id20] matches {
+                /value[id21]/value matches {True, False}
+            }
+            ELEMENT[id22] matches {
+                /value[id23]/value matches {True, False}
+            }
+            ELEMENT[id24] matches {
+                /value[id25]/value matches {True, False}
+            }
+            ELEMENT[id26] matches {
+                /value[id27]/value matches {True, False}
+            }
+            ELEMENT[id28] matches {
+                /value[id29]/value matches {True, False}
+            }
+            ELEMENT[id30] matches {
+                /value[id31]/value matches {True, False}
+            }
+            ELEMENT[id32] matches {
+                /value[id33]/value matches {True, False}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"health and lifestyle recommendations">
+                description = <"health and lifestyle recommendations">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Recomendações de saúde e estilo de vida">
+                description = <"recomendações de saúde e estilo de vida">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-fcos5-adhoc-006.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Encabeçamento">
+                description = <"Um título genérico para renomeação contextual dentro de um modelo.">
             >
         >
     >
