@@ -266,16 +266,16 @@ terminology
                 description = <"Especifique">
             >
             ["at0.1"] = <
-                text = <"Yes (en)">
-                description = <"Yes (en)">
+                text = <"Sim">
+                description = <"Sim">
             >
             ["at0.2"] = <
-                text = <"No (en)">
-                description = <"No (en)">
+                text = <"Não">
+                description = <"Não">
             >
             ["at0.3"] = <
-                text = <"do not know (en)">
-                description = <"do not know (en)">
+                text = <"Não sabe">
+                description = <"Não sabe">
             >
             ["ac0.1"] = <
                 text = <"Value (en)">
