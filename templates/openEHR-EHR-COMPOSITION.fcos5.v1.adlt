@@ -3246,7 +3246,6 @@ specialize
 definition
     SECTION[id1.1] matches {    -- Adhoc Heading
         items matches {
-            use_archetype OBSERVATION[id0.3, openEHR-EHR-OBSERVATION.ovl-fcos5-general_state_psychology-001.v1.0.0]
             use_archetype OBSERVATION[id0.4, openEHR-EHR-OBSERVATION.ovl-fcos5-head_ab_neck-001.v1.0.0]
             use_archetype OBSERVATION[id0.7, openEHR-EHR-OBSERVATION.ovl-fcos5-chest-001.v1.0.0]
             use_archetype OBSERVATION[id0.8, openEHR-EHR-OBSERVATION.ovl-fcos5-abdomen-001.v1.0.0]
@@ -3256,6 +3255,7 @@ definition
             use_archetype OBSERVATION[id0.12, openEHR-EHR-OBSERVATION.ovl-fcos5-extremities-001.v1.0.0]
             use_archetype OBSERVATION[id0.13, openEHR-EHR-OBSERVATION.ovl-fcos5-prosthetics_or_organs-001.v1.0.0]
             use_archetype OBSERVATION[id0.14, openEHR-EHR-OBSERVATION.ovl-fcos5-nervous_system-001.v1.0.0]
+            use_archetype OBSERVATION[id0.16, openEHR-EHR-OBSERVATION.ovl-fcos5-general_state_psychology-001.v1.0.0]
             use_archetype OBSERVATION[id0.15, openEHR-EHR-OBSERVATION.ovl-fcos5-people_with_disabilities-001.v1.0.0]
         }
     }
@@ -3272,102 +3272,6 @@ terminology
             ["id1.1"] = <
                 text = <"Exame físico">
                 description = <"Exame físico">
-            >
-        >
-    >
-
-
----------------------------------------------------------------------------------
-template_overlay
-    openEHR-EHR-OBSERVATION.ovl-fcos5-general_state_psychology-001.v1.0.0
-
-specialize
-    openEHR-EHR-OBSERVATION.general_state_psychology.v1.0.0
-
-definition
-    OBSERVATION[id1.1] matches {    -- General state_psychology
-        /data[id2]/events[id3]/data[id4]/items matches {
-            ELEMENT[id6] matches {
-                /value[id7]/defining_code matches {[ac1]}
-            }
-            ELEMENT[id10] matches {
-                /value[id11]/value matches {True, False}
-            }
-            ELEMENT[id12] matches {
-                /value[id13]/value matches {True, False}
-            }
-            ELEMENT[id14] matches {
-                /value[id15]/value matches {True, False}
-            }
-            ELEMENT[id16] matches {
-                /value[id17]/value matches {True, False}
-            }
-            ELEMENT[id19] matches {
-                /value[id20]/value matches {True, False}
-            }
-            ELEMENT[id21] matches {
-                /value[id22]/value matches {True, False}
-            }
-            ELEMENT[id23] matches {
-                /value[id24]/value matches {True, False}
-            }
-            ELEMENT[id25] matches {
-                /value[id26]/value matches {True, False}
-            }
-            ELEMENT[id27] matches {
-                /value[id28]/value matches {True, False}
-            }
-            ELEMENT[id29] matches {
-                /value[id30]/value matches {True, False}
-            }
-            ELEMENT[id31] matches {
-                /value[id32]/value matches {True, False}
-            }
-            ELEMENT[id33] matches {
-                /value[id34]/value matches {True, False}
-            }
-            ELEMENT[id35] matches {
-                /value[id36]/value matches {True, False}
-            }
-            ELEMENT[id37] matches {
-                /value[id38]/value matches {True, False}
-            }
-            ELEMENT[id39] matches {
-                /value[id40]/value matches {True, False}
-            }
-            ELEMENT[id41] matches {
-                /value[id42]/value matches {True, False}
-            }
-            ELEMENT[id43] matches {
-                /value[id44]/value matches {True, False}
-            }
-            ELEMENT[id45] matches {
-                /value[id46]/value matches {True, False}
-            }
-            ELEMENT[id47] matches {
-                /value[id51]/value matches {True, False}
-            }
-            ELEMENT[id48] matches {
-                /value[id49]/value matches {True, False}
-            }
-            ELEMENT[id50] matches {
-                /value[id52]/value matches {True, False}
-            }
-        }
-    }
-
-terminology
-    term_definitions = <
-        ["en"] = <
-            ["id1.1"] = <
-                text = <"General state_psychology">
-                description = <"General state_psychology">
-            >
-        >
-        ["pt-br"] = <
-            ["id1.1"] = <
-                text = <"Estado geral - Psiquismo">
-                description = <"Estado geral - Psiquismo">
             >
         >
     >
@@ -4201,6 +4105,145 @@ terminology
             ["id8.1"] = <
                 text = <"Justificativa">
                 description = <"Justificativa">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-fcos5-general_state_psychology-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.general_state_psychology.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- General state_psychology
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6] matches {
+                /value[id7]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id10] matches {
+                /value[id11]/value matches {True, False}
+            }
+            ELEMENT[id12] matches {
+                /value[id13]/value matches {True, False}
+            }
+            ELEMENT[id14] matches {
+                /value[id15]/value matches {True, False}
+            }
+            ELEMENT[id16] matches {
+                /value[id17]/value matches {True, False}
+            }
+            ELEMENT[id19] matches {
+                /value[id20]/value matches {True, False}
+            }
+            ELEMENT[id21] matches {
+                /value[id22]/value matches {True, False}
+            }
+            ELEMENT[id23] matches {
+                /value[id24]/value matches {True, False}
+            }
+            ELEMENT[id25] matches {
+                /value[id26]/value matches {True, False}
+            }
+            ELEMENT[id27] matches {
+                /value[id28]/value matches {True, False}
+            }
+            ELEMENT[id29] matches {
+                /value[id30]/value matches {True, False}
+            }
+            ELEMENT[id31] matches {
+                /value[id32]/value matches {True, False}
+            }
+            ELEMENT[id33] matches {
+                /value[id34]/value matches {True, False}
+            }
+            ELEMENT[id35] matches {
+                /value[id36]/value matches {True, False}
+            }
+            ELEMENT[id37] matches {
+                /value[id38]/value matches {True, False}
+            }
+            ELEMENT[id39] matches {
+                /value[id40]/value matches {True, False}
+            }
+            ELEMENT[id41] matches {
+                /value[id42]/value matches {True, False}
+            }
+            ELEMENT[id43] matches {
+                /value[id44]/value matches {True, False}
+            }
+            ELEMENT[id45] matches {
+                /value[id46]/value matches {True, False}
+            }
+            ELEMENT[id47] matches {
+                /value[id51]/value matches {True, False}
+            }
+            ELEMENT[id48] matches {
+                /value[id49]/value matches {True, False}
+            }
+            ELEMENT[id50] matches {
+                /value[id52]/value matches {True, False}
+            }
+            ELEMENT[id53.1] matches {    -- How would you define your state of mental health since the last medical examination?
+                value matches {
+                    DV_CODED_TEXT[id54.1] matches {
+                        defining_code matches {[ac2]}
+                    }
+                }
+            }
+            ELEMENT[id55.1] matches {    -- Do you have any other complaints or problems you want to report?
+                value matches {
+                    DV_BOOLEAN[id56.1] matches {
+                        value matches {True, False}
+                    }
+                }
+            }
+            ELEMENT[id57.1] matches {    -- Report
+                value matches {
+                    DV_TEXT[id58.1] 
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"General state_psychology">
+                description = <"General state_psychology">
+            >
+            ["id53.1"] = <
+                text = <"How would you define your state of mental health since the last medical examination?">
+                description = <"How would you define your state of mental health since the last medical examination?">
+            >
+            ["id55.1"] = <
+                text = <"Do you have any other complaints or problems you want to report?">
+                description = <"Do you have any other complaints or problems you want to report?">
+            >
+            ["id57.1"] = <
+                text = <"Report">
+                description = <"Report">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Estado geral - Psiquismo">
+                description = <"Estado geral - Psiquismo">
+            >
+            ["id53.1"] = <
+                text = <"Como você definiria seu estado de saúde mental desde o último exame médico?">
+                description = <"Como você definiria seu estado de saúde mental desde o último exame médico?">
+            >
+            ["id55.1"] = <
+                text = <"Você tem outras reclamações ou problemas que deseja denunciar?">
+                description = <"Você tem outras reclamações ou problemas que deseja denunciar?">
+            >
+            ["id57.1"] = <
+                text = <"Relate">
+                description = <"Relate">
             >
         >
     >
