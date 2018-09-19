@@ -3,6 +3,12 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -11,8 +17,11 @@ description
             language = <[ISO_639-1::en]>
             purpose = <"">
         >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
+        >
     >
-    lifecycle_state = <"unmanaged">
+    lifecycle_state = <"in_review">
 
 definition
     OBSERVATION[id1] matches {    -- General state_psychology
@@ -304,6 +313,128 @@ terminology
             ["id50"] = <
                 text = <"Do you get tired easily?">
                 description = <"Do you get tired easily?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"Estado geral - Psiquismo">
+                description = <"Estado geral - Psiquismo">
+            >
+            ["id3"] = <
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
+            >
+            ["id6"] = <
+                text = <"Estado de Humor">
+                description = <"Estado de Humor (no momento da consulta):">
+            >
+            ["at1"] = <
+                text = <"*Stable / Euthymic (en)">
+                description = <"*Stable / Euthymic (en)">
+            >
+            ["at2"] = <
+                text = <"*Anxious / Euphoric (en)">
+                description = <"*Anxious / Euphoric (en)">
+            >
+            ["at3"] = <
+                text = <"*Depressed / sad (en)">
+                description = <"*Depressed / sad (en)">
+            >
+            ["at4"] = <
+                text = <"*Angry / Exalted (en)">
+                description = <"*Angry / Exalted (en)">
+            >
+            ["ac1"] = <
+                text = <"*State of mood (en)">
+                description = <"*Stade of mood (en)">
+            >
+            ["id8"] = <
+                text = <"Observações">
+                description = <"Observações">
+            >
+            ["id10"] = <
+                text = <"Avaliação de Fatores de Riscos Psicossociais? (SRQ 20)">
+                description = <"Avaliação de Fatores de Riscos Psicossociais? (SRQ 20)">
+            >
+            ["id12"] = <
+                text = <"Tem dores de cabeça frequentes?">
+                description = <"Tem dores de cabeça frequentes?">
+            >
+            ["id14"] = <
+                text = <"Encontra dificuldades para realizar com satisfação suas atividades diárias?">
+                description = <"Encontra dificuldades para realizar com satisfação suas atividades diárias?">
+            >
+            ["id16"] = <
+                text = <"Tem falta de apetite?">
+                description = <"Tem falta de apetite?">
+            >
+            ["id19"] = <
+                text = <"Tem dificuldades para tomar decisões?">
+                description = <"Tem dificuldades para tomar decisões?">
+            >
+            ["id21"] = <
+                text = <"Dorme mal?">
+                description = <"Dorme mal?">
+            >
+            ["id23"] = <
+                text = <"Tem dificuldades no serviço (seu trabalho é penoso, causa sofrimento)?">
+                description = <"Tem dificuldades no serviço (seu trabalho é penoso, causa sofrimento)?">
+            >
+            ["id25"] = <
+                text = <"Assusta-se com facilidade?">
+                description = <"Assusta-se com facilidade?">
+            >
+            ["id27"] = <
+                text = <"É incapaz de desempenhar um papel útil em sua vida?">
+                description = <"É incapaz de desempenhar um papel útil em sua vida?">
+            >
+            ["id29"] = <
+                text = <"Tem tremores de mão?">
+                description = <"Tem tremores de mão?">
+            >
+            ["id31"] = <
+                text = <"Tem perdido o interesse pelas coisas?">
+                description = <"Tem perdido o interesse pelas coisas?">
+            >
+            ["id33"] = <
+                text = <"Sente-se nervoso (a),tenso(a) ou preocupado(a)?">
+                description = <"Sente-se nervoso (a),tenso(a) ou preocupado(a)?">
+            >
+            ["id35"] = <
+                text = <"Você se sente uma pessoa inútil, sem préstimo?">
+                description = <"Você se sente uma pessoa inútil, sem préstimo?">
+            >
+            ["id37"] = <
+                text = <"Tem má digestão?">
+                description = <"Tem má digestão?">
+            >
+            ["id39"] = <
+                text = <"Tem tido idéias de acabar com a vida?">
+                description = <"Tem tido idéias de acabar com a vida?">
+            >
+            ["id41"] = <
+                text = <"Tem dificuldade de pensar com clareza?">
+                description = <"Tem dificuldade de pensar com clareza?">
+            >
+            ["id43"] = <
+                text = <"Sente-se cansado(a) o tempo todo?">
+                description = <"Sente-se cansado(a) o tempo todo?">
+            >
+            ["id45"] = <
+                text = <"Tem se sentido triste ultimamente?">
+                description = <"Tem se sentido triste ultimamente?">
+            >
+            ["id47"] = <
+                text = <"Tem sensações desagradáveis no estômago?">
+                description = <"Tem sensações desagradáveis no estômago?">
+            >
+            ["id48"] = <
+                text = <"Tem chorado mais do que costuma?">
+                description = <"Tem chorado mais do que costuma?">
+            >
+            ["id50"] = <
+                text = <"Você se cansa com facilidade?">
+                description = <"Você se cansa com facilidade?">
             >
         >
     >
