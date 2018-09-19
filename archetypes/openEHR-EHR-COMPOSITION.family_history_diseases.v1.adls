@@ -129,6 +129,10 @@ definition
 terminology
     term_definitions = <
         ["en"] = <
+            ["at1"] = <
+                text = <"event">
+                description = <"event">
+            >
             ["id1.1"] = <
                 text = <"Family History">
                 description = <"A persistent and managed list about relevant family history of the subject that may influence clinical decision-making and care provision.">
@@ -175,6 +179,10 @@ terminology
             >
         >
         ["pt-br"] = <
+            ["at1"] = <
+                text = <"Evento">
+                description = <"Evento">
+            >
             ["id1.1"] = <
                 text = <"História familiar">
                 description = <"Uma lista persistente e gerenciada sobre histórico familiar relevante do assunto que pode influenciar a tomada de decisões clínicas e a provisão de cuidados.">
