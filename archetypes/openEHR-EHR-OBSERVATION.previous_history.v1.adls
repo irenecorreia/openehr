@@ -54,6 +54,35 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id16] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id17] 
+                                        }
+                                    }
+                                    ELEMENT[id18] matches {    -- Do you have any surgery planned?
+                                        value matches {
+                                            DV_BOOLEAN[id19] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id20] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id21] 
+                                        }
+                                    }
+                                    ELEMENT[id22] matches {    -- Have you ever had an innation?
+                                        value matches {
+                                            DV_BOOLEAN[id23] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id24] matches {    -- For what reason?
+                                        value matches {
+                                            DV_TEXT[id25] 
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -96,6 +125,26 @@ terminology
             ["id14"] = <
                 text = <"Have you ever had any surgery?">
                 description = <"Have you ever had any surgery?">
+            >
+            ["id16"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id18"] = <
+                text = <"Do you have any surgery planned?">
+                description = <"Do you have any surgery planned?">
+            >
+            ["id20"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id22"] = <
+                text = <"Have you ever had an innation?">
+                description = <"Have you ever had an innation?">
+            >
+            ["id24"] = <
+                text = <"For what reason?">
+                description = <"For what reason?">
             >
         >
     >
