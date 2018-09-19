@@ -83,16 +83,16 @@ terminology
                 description = <"10-20 cigarettes per day">
             >
             ["at5"] = <
-                text = <"21-30 cigarros por dia">
-                description = <"21-30 cigarros por dia">
+                text = <"21-30 cigarettes per day">
+                description = <"21-30 cigarettes per day">
             >
             ["at6"] = <
                 text = <"21-30 cigarettes per day">
                 description = <"21-30 cigarettes per day">
             >
             ["at7"] = <
-                text = <"31-40 cigarros por dia">
-                description = <"31-40 cigarros por dia">
+                text = <"31-40 cigarettes per day">
+                description = <"31-40 cigarettes per day">
             >
             ["ac1"] = <
                 text = <"Frequency">
@@ -113,36 +113,36 @@ terminology
                 description = <"Você fuma?">
             >
             ["at1"] = <
-                text = <"*Never smoked (en)">
-                description = <"*Never smoked (en)">
+                text = <"Nunca fumou">
+                description = <"Nunca fumou">
             >
             ["at2"] = <
-                text = <"*Former smoker or cigar smoker, pipe without inhaling (en)">
-                description = <"*Former smoker or cigar smoker, pipe without inhaling (en)">
+                text = <"Ex-fumante ou fumante de charuto, cachimbo sem inalar">
+                description = <"Ex-fumante ou fumante de charuto, cachimbo sem inalar">
             >
             ["at3"] = <
-                text = <"*Less than 10 cigarettes per day (en)">
-                description = <"*Less than 10 cigarettes per day (en)">
+                text = <"Menos de 10 cigarros por dia">
+                description = <"Menos de 10 cigarros por dia">
             >
             ["at4"] = <
                 text = <"*10-20 cigarettes per day (en)">
                 description = <"*10-20 cigarettes per day (en)">
             >
             ["at5"] = <
-                text = <"*21-30 cigarros por dia (en)">
-                description = <"*21-30 cigarros por dia (en)">
+                text = <"21-30 cigarros por dia">
+                description = <"21-30 cigarros por dia">
             >
             ["at6"] = <
-                text = <"*21-30 cigarettes per day (en)">
-                description = <"*21-30 cigarettes per day (en)">
+                text = <"21-30 cigarros por dia">
+                description = <"21-30 cigarros por dia">
             >
             ["at7"] = <
-                text = <"*31-40 cigarros por dia (en)">
-                description = <"*31-40 cigarros por dia (en)">
+                text = <"31-40 cigarros por dia">
+                description = <"31-40 cigarros por dia">
             >
             ["ac1"] = <
-                text = <"*Frequency (en)">
-                description = <"*Frequency (en)">
+                text = <"Frequency (en)">
+                description = <"Frequency (en)">
             >
         >
     >
