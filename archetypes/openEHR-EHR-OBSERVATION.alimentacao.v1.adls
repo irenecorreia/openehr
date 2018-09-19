@@ -27,7 +27,7 @@ description
     lifecycle_state = <"unmanaged">
 
 definition
-    OBSERVATION[id1] occurrences matches {1} matches {    -- Alimentacao
+    OBSERVATION[id1] matches {    -- Alimentacao
         data matches {
             HISTORY[id2] matches {
                 events matches {
@@ -35,56 +35,31 @@ definition
                         data matches {
                             ITEM_TREE[id4] matches {
                                 items matches {
-                                    ELEMENT[id6] occurrences matches {1} matches {    -- Com que frequência o trabalhador normalmente come frutas frescas.
+                                    ELEMENT[id6] matches {    -- Com que frequência o trabalhador normalmente come frutas frescas.
                                         value matches {
                                             DV_CODED_TEXT[id7] matches {
                                                 defining_code matches {[ac1]}
                                             }
                                         }
                                     }
-                                    ELEMENT[id9] occurrences matches {1} matches {    -- Com que frequência o trabalhador normalmente come verduras ou saladas cruas.
+                                    ELEMENT[id9] matches {    -- Com que frequência o trabalhador normalmente come verduras ou saladas cruas.
                                         value matches {
                                             DV_CODED_TEXT[id10] matches {
                                                 defining_code matches {[ac2]}
                                             }
                                         }
                                     }
-                                    ELEMENT[id11] occurrences matches {1} matches {    -- Quando o trabalhador come frango, o que normalmente faz com a pele.
+                                    ELEMENT[id11] matches {    -- Quando o trabalhador come frango, o que normalmente faz com a pele.
                                         value matches {
                                             DV_CODED_TEXT[id12] matches {
                                                 defining_code matches {[ac3]}
                                             }
                                         }
                                     }
-                                    ELEMENT[id13] occurrences matches {1} matches {    -- Quando o trabalhador come carne vermelha o que normalmente faz com a gordura aparente.
+                                    ELEMENT[id13] matches {    -- Quando o trabalhador come carne vermelha o que normalmente faz com a gordura aparente.
                                         value matches {
                                             DV_CODED_TEXT[id14] matches {
                                                 defining_code matches {[ac4]}
-                                            }
-                                        }
-                                    }
-                                    ELEMENT[id15] occurrences matches {1} matches {    -- Sem contar as saladas, com que frequência o trabalhador coloca sal no prato de comida.
-                                        value matches {
-                                            DV_CODED_TEXT[id16] matches {
-                                                defining_code matches {[ac5]}
-                                            }
-                                        }
-                                    }
-                                    ELEMENT[id17] occurrences matches {1} matches {    -- Durante uma semana normal, com que frequência o trabalhador toma refrigerantes ou sucos artificias (refrescos).
-                                        value matches {
-                                            DV_CODED_TEXT[id18] matches {
-                                                defining_code matches {[ac6]}
-                                            }
-                                        }
-                                    }
-                                    CLUSTER[id20] occurrences matches {0..1} matches {    -- Comportamento preventivo
-                                        items matches {
-                                            ELEMENT[id21] occurrences matches {1} matches {    -- Proteção solar
-                                                value matches {
-                                                    DV_CODED_TEXT[id22] matches {
-                                                        defining_code matches {[ac7]}
-                                                    }
-                                                }
                                             }
                                         }
                                     }
@@ -215,10 +190,6 @@ terminology
                 text = <"Quando o trabalhador come carne vermelha o que normalmente faz com a gordura aparente.">
                 description = <"Quando o trabalhador come carne vermelha o que normalmente faz com a gordura aparente.">
             >
-            ["id15"] = <
-                text = <"Sem contar as saladas, com que frequência o trabalhador coloca sal no prato de comida.">
-                description = <"Sem contar as saladas, com que frequência o trabalhador coloca sal no prato de comida.">
-            >
             ["at19"] = <
                 text = <"Nunca coloca sal no prato de comida">
                 description = <"Nunca coloca sal no prato de comida">
@@ -234,10 +205,6 @@ terminology
             ["ac5"] = <
                 text = <"Sem contar as saladas, com que frequência o trabalhador coloca sal no prato de comida.">
                 description = <"Sem contar as saladas, com que frequência o trabalhador coloca sal no prato de comida.">
-            >
-            ["id17"] = <
-                text = <"Durante uma semana normal, com que frequência o trabalhador toma refrigerantes ou sucos artificias (refrescos).">
-                description = <"Durante uma semana normal, com que frequência o trabalhador toma refrigerantes ou sucos artificias (refrescos).">
             >
             ["at22"] = <
                 text = <"Nunca">
@@ -262,14 +229,6 @@ terminology
             ["ac6"] = <
                 text = <"Durante uma semana normal, com que frequência o trabalhador toma refrigerantes ou sucos artificias (refrescos).">
                 description = <"Durante uma semana normal, com que frequência o trabalhador toma refrigerantes ou sucos artificias (refrescos).">
-            >
-            ["id20"] = <
-                text = <"Comportamento preventivo">
-                description = <"Comportamento preventivo">
-            >
-            ["id21"] = <
-                text = <"Proteção solar">
-                description = <"Quando o trabalhador está em ambiente ensolarado por mais de 30 minutos, com que freqüência o trabalhador usa protetor solar, boné ou chapéu, ou outro tipo de proteção contra o sol.">
             >
             ["at27"] = <
                 text = <"Nunca">
@@ -401,10 +360,6 @@ terminology
                 text = <"*Quando o trabalhador come carne vermelha o que normalmente faz com a gordura aparente. (pt-br)">
                 description = <"*Quando o trabalhador come carne vermelha o que normalmente faz com a gordura aparente. (pt-br)">
             >
-            ["id15"] = <
-                text = <"*Sem contar as saladas, com que frequência o trabalhador coloca sal no prato de comida. (pt-br)">
-                description = <"*Sem contar as saladas, com que frequência o trabalhador coloca sal no prato de comida. (pt-br)">
-            >
             ["at19"] = <
                 text = <"*Nunca coloca sal no prato de comida (pt-br)">
                 description = <"*Nunca coloca sal no prato de comida (pt-br)">
@@ -420,10 +375,6 @@ terminology
             ["ac5"] = <
                 text = <"*Sem contar as saladas, com que frequência o trabalhador coloca sal no prato de comida. (pt-br)">
                 description = <"*Sem contar as saladas, com que frequência o trabalhador coloca sal no prato de comida. (pt-br)">
-            >
-            ["id17"] = <
-                text = <"*Durante uma semana normal, com que frequência o trabalhador toma refrigerantes ou sucos artificias (refrescos). (pt-br)">
-                description = <"*Durante uma semana normal, com que frequência o trabalhador toma refrigerantes ou sucos artificias (refrescos). (pt-br)">
             >
             ["at22"] = <
                 text = <"*Nunca (pt-br)">
@@ -448,14 +399,6 @@ terminology
             ["ac6"] = <
                 text = <"*Durante uma semana normal, com que frequência o trabalhador toma refrigerantes ou sucos artificias (refrescos). (pt-br)">
                 description = <"*Durante uma semana normal, com que frequência o trabalhador toma refrigerantes ou sucos artificias (refrescos). (pt-br)">
-            >
-            ["id20"] = <
-                text = <"*Comportamento preventivo (pt-br)">
-                description = <"*Comportamento preventivo (pt-br)">
-            >
-            ["id21"] = <
-                text = <"*Proteção solar (pt-br)">
-                description = <"*Quando o trabalhador está em ambiente ensolarado por mais de 30 minutos, com que freqüência o trabalhador usa protetor solar, boné ou chapéu, ou outro tipo de proteção contra o sol. (pt-br)">
             >
             ["at27"] = <
                 text = <"*Nunca (pt-br)">
