@@ -42,7 +42,7 @@ definition
                                             }
                                         }
                                     }
-                                    ELEMENT[id9] matches {    -- Com que frequência o trabalhador normalmente come verduras ou saladas cruas.
+                                    ELEMENT[id9] matches {    -- Durante uma semana normal, com que frequência você come VERDURAS, HORTALIÇAS e SALADAS VERDES?
                                         value matches {
                                             DV_CODED_TEXT[id10] matches {
                                                 defining_code matches {[ac2]}
@@ -127,8 +127,8 @@ terminology
                 description = <"Com que freqüência o trabalhador normalmente come frutas frescas">
             >
             ["id9"] = <
-                text = <"Com que frequência o trabalhador normalmente come verduras ou saladas cruas.">
-                description = <"Com que frequência o trabalhador normalmente come verduras ou saladas cruas.">
+                text = <"Durante uma semana normal, com que frequência você come VERDURAS, HORTALIÇAS e SALADAS VERDES?">
+                description = <"Durante uma semana normal, com que frequência você come VERDURAS, HORTALIÇAS e SALADAS VERDES?">
             >
             ["ac2"] = <
                 text = <"Com que freqüência o trabalhador normalmente come verduras ou saladas cruas.">
@@ -249,16 +249,16 @@ terminology
         >
         ["en"] = <
             ["id1"] = <
-                text = <"*Alimentacao (pt-br)">
-                description = <"*Alimentacao (pt-br)">
+                text = <"Food">
+                description = <"Food">
             >
             ["id3"] = <
-                text = <"*Any event (pt-br)">
-                description = <"*Any event (pt-br)">
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
             >
             ["id6"] = <
-                text = <"*Com que frequência o trabalhador normalmente come frutas frescas. (pt-br)">
-                description = <"*Com que frequência o trabalhador normalmente come frutas frescas. (pt-br)">
+                text = <"During a normal week, how often do you eat FRUITS?">
+                description = <"During a normal week, how often do you eat FRUITS?">
             >
             ["at1"] = <
                 text = <"*5 ou mais vezes ao dia. (pt-br)">
@@ -297,8 +297,8 @@ terminology
                 description = <"*Com que freqüência o trabalhador normalmente come frutas frescas (pt-br)">
             >
             ["id9"] = <
-                text = <"*Com que frequência o trabalhador normalmente come verduras ou saladas cruas. (pt-br)">
-                description = <"*Com que frequência o trabalhador normalmente come verduras ou saladas cruas. (pt-br)">
+                text = <"During a normal week, how often do you eat GREEN VEGETABLES, GREEN SALADS, and GREEN SALADS?">
+                description = <"During a normal week, how often do you eat GREEN VEGETABLES, GREEN SALADS, and GREEN SALADS?">
             >
             ["ac2"] = <
                 text = <"*Com que freqüência o trabalhador normalmente come verduras ou saladas cruas. (pt-br)">
