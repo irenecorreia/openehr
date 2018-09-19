@@ -127,32 +127,32 @@ terminology
                 description = <"*Time (en)">
             >
             ["id1"] = <
-                text = <"*Physical Activity Summary (en)">
-                description = <"*A record of the level of physical activity undertaken by the individual as assessed by a clinician. (en)">
+                text = <"Resumo da atividade física">
+                description = <"Resumo da atividade física">
             >
             ["id3"] = <
-                text = <"*Physical activity status (en)">
-                description = <"*A short description of the general level of physical activity undertaken by the individual as described by a clinician.  Coding with a terminology is desirable, where possible. (en)">
+                text = <"Estado de atividade física">
+                description = <"Estado de atividade física">
             >
             ["id4"] = <
-                text = <"*Physical activity note (en)">
-                description = <"*A more detailed description of the physical activity status of the individual. (en)">
+                text = <"Nota de atividade física">
+                description = <"Nota de atividade física">
             >
             ["id6"] = <
-                text = <"*Barriers to activity (en)">
-                description = <"*Identified barriers to the individual being involved in physical activity. (en)">
+                text = <"Barreiras à atividade">
+                description = <"Barreiras à atividade">
             >
             ["id7"] = <
-                text = <"*Enabling factors (en)">
-                description = <"*Identified enabling factors to the individual being involved in physical activity, for example, lives close to a swimming pool or previously an elite athlete. (en)">
+                text = <"Fatores de habilitação">
+                description = <"Fatores de habilitação">
             >
             ["id8"] = <
-                text = <"*Vigorous exercise/week (en)">
-                description = <"*Number of times per week of 20 min vigorous exercise. (en)">
+                text = <"Exercício vigoroso / semana">
+                description = <"Exercício vigoroso / semana">
             >
             ["id9"] = <
-                text = <"*Moderate exercise/week (en)">
-                description = <"*Number of times per week of 30 min moderate exercise. (en)">
+                text = <"Exercício moderado / semana">
+                description = <"Exercício moderado / semana">
             >
         >
     >
