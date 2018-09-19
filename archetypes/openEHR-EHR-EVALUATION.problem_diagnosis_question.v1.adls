@@ -89,14 +89,8 @@ definition
             CLUSTER[id27] matches {
                 /items[id57]/value[id95]/defining_code matches {[ac1]}
             }
-            allow_archetype CLUSTER[id55] matches { 
-                include
-                    archetype_id/value matches {/.*/}
-            }
-            allow_archetype CLUSTER[id56] matches { 
-                include
-                    archetype_id/value matches {/.*/}
-            }
+            allow_archetype CLUSTER[id55]
+            allow_archetype CLUSTER[id56]
             ELEMENT[id0.2] matches {    -- Is there any other complaint?
                 value matches {
                     DV_BOOLEAN[id0.3] matches {
@@ -106,16 +100,17 @@ definition
             }
         }
         /protocol[id75]/items matches {
-            allow_archetype CLUSTER[id77] matches { 
-                include
-                    archetype_id/value matches {/.*/}
-            }
+            allow_archetype CLUSTER[id77]
         }
     }
 
 terminology
     term_definitions = <
         ["en"] = <
+            ["at83"] = <
+                text = <"Frequency">
+                description = <"Frequency">
+            >
             ["id1.1"] = <
                 text = <"Problem/Diagnosis">
                 description = <"Any health care condition which may impact on the physical, mental and/or social well-being of an individual, that may require diagnostic, therapeutic or educational action, and which has been determined by a clinician. A diagnosis is based on scientific evaluation of physical signs, symptoms, history, laboratory tests results, and procedures.">
@@ -126,6 +121,10 @@ terminology
             >
         >
         ["pt-br"] = <
+            ["at83"] = <
+                text = <"Frequência">
+                description = <"Frequência">
+            >
             ["id1.1"] = <
                 text = <"Problema/Diagnostico">
                 description = <"Qualquer condição de cuidados de saúde que possa ter impacto no bem-estar físico, mental e / ou social de um indivíduo, que possa requerer ação diagnóstica, terapêutica ou educacional e que tenha sido determinada por um clínico. Um diagnóstico é baseado na avaliação científica dos sinais físicos, sintomas, história, resultados de exames laboratoriais e procedimentos.">
