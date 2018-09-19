@@ -124,60 +124,60 @@ terminology
         >
         ["pt-br"] = <
             ["id1"] = <
-                text = <"*oral health (en)">
-                description = <"*oral health (en)">
+                text = <"saúde bucal">
+                description = <"saúde bucal">
             >
             ["id3"] = <
-                text = <"*Any event (en)">
-                description = <"*Any event (en)">
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
             >
             ["id6"] = <
-                text = <"*Have you been to the DENTISTA in the last 12 months? (en)">
-                description = <"*Have you been to the DENTISTA in the last 12 months? (en)">
+                text = <"Você já esteve na DENTISTA nos últimos 12 meses?">
+                description = <"Você já esteve na DENTISTA nos últimos 12 meses?">
             >
             ["at1"] = <
-                text = <"*Yes, Routine Consultation (en)">
-                description = <"*Yes, Routine Consultation (en)">
+                text = <"Sim, consulta de rotina">
+                description = <"Sim, consulta de rotina">
             >
             ["at2"] = <
-                text = <"*Yes, Specific Treatment (Esthetic, Orthodontic Apparatus, etc) (en)">
-                description = <"*Yes, Specific Treatment (Esthetic, Orthodontic Apparatus, etc) (en)">
+                text = <"Sim, Tratamento Específico (Estética, Aparelho Ortodôntico, etc)">
+                description = <"Sim, Tratamento Específico (Estética, Aparelho Ortodôntico, etc)">
             >
             ["at3"] = <
-                text = <"*Yes, Periodic Examination (en)">
-                description = <"*Yes, Periodic Examination (en)">
+                text = <"Sim, exame periódico">
+                description = <"Sim, exame periódico">
             >
             ["at4"] = <
-                text = <"*SESI (en)">
-                description = <"*SESI (en)">
+                text = <"SESI">
+                description = <"SESI">
             >
             ["at5"] = <
-                text = <"*SUS (en)">
-                description = <"*SUS (en)">
+                text = <"SUS">
+                description = <"SUS">
             >
             ["ac1"] = <
                 text = <"*Frenquency (en)">
                 description = <"*Frenquency (en)">
             >
             ["id8"] = <
-                text = <"*When are you looking for a DENTIST, where are you going? (en)">
-                description = <"*When are you looking for a DENTIST, where are you going? (en)">
+                text = <"Quando você procura por um DENTISTA, aonde vai?">
+                description = <"Quando você procura por um DENTISTA, aonde vai?">
             >
             ["at6"] = <
-                text = <"*Dental Plan (Agreement) (en)">
-                description = <"*Dental Plan (Agreement) (en)">
+                text = <"Plano Odontológico (Convênio)">
+                description = <"Plano Odontológico (Convênio)">
             >
             ["at7"] = <
-                text = <"*Syndicate (en)">
-                description = <"*Syndicate (en)">
+                text = <"Sindicato">
+                description = <"Sindicato">
             >
             ["at8"] = <
-                text = <"*Particular (en)">
-                description = <"*Particular (en)">
+                text = <"Particular">
+                description = <"Particular">
             >
             ["at9"] = <
-                text = <"*Do not look for (en)">
-                description = <"*Do not look for (en)">
+                text = <"Não procura">
+                description = <"Não procura">
             >
             ["ac2"] = <
                 text = <"*Plan (en)">
