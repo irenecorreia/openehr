@@ -577,8 +577,8 @@ terminology
                 description = <"Especifique">
             >
             ["id47"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
             ["id49"] = <
                 text = <"Doença Sexualmente Transmissível - DST / IST">
@@ -589,20 +589,20 @@ terminology
                 description = <"Especifique">
             >
             ["id53"] = <
-                text = <"*Epilepsy (en)">
-                description = <"*Epilepsy (en)">
+                text = <"Epilepsia">
+                description = <"Epilepsia">
             >
             ["id55"] = <
-                text = <"*Leprosy (en)">
-                description = <"*Leprosy (en)">
+                text = <"Lepra">
+                description = <"Lepra">
             >
             ["id57"] = <
-                text = <"*Hepatitis (en)">
-                description = <"*Hepatitis (en)">
+                text = <"Hepatite">
+                description = <"Hepatite">
             >
             ["id59"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
             ["id61"] = <
                 text = <"Lesão da coluna vertebral (hérnia de disco ou outro)">
@@ -613,8 +613,8 @@ terminology
                 description = <"Especifique">
             >
             ["id65"] = <
-                text = <"*Knee Injury (Ligament Rupture, Meniscus / Patella Injury or other) (en)">
-                description = <"*Knee Injury (Ligament Rupture, Meniscus / Patella Injury or other) (en)">
+                text = <"Lesão do Joelho (Ruptura Ligamentar, Menisco / Lesão da Patela ou outra)">
+                description = <"Lesão do Joelho (Ruptura Ligamentar, Menisco / Lesão da Patela ou outra)">
             >
             ["id67"] = <
                 text = <"Especifique">
