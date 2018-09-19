@@ -49,14 +49,14 @@ definition
                                             }
                                         }
                                     }
-                                    ELEMENT[id11] matches {    -- Quando o trabalhador come frango, o que normalmente faz com a pele.
+                                    ELEMENT[id11] matches {    -- Durante uma semana normal, com que frequência você toma REFRIGERANTES ou SUCOS ARTIFICIAIS?
                                         value matches {
                                             DV_CODED_TEXT[id12] matches {
                                                 defining_code matches {[ac3]}
                                             }
                                         }
                                     }
-                                    ELEMENT[id13] matches {    -- Quando o trabalhador come carne vermelha o que normalmente faz com a gordura aparente.
+                                    ELEMENT[id13] matches {    -- Em quantos dias da semana você costuma trocar a comida do almoço ou jantar por LANCHES (sanduíches, salgados, pizzas ou outros)?
                                         value matches {
                                             DV_CODED_TEXT[id14] matches {
                                                 defining_code matches {[ac4]}
@@ -135,8 +135,8 @@ terminology
                 description = <"Com que freqüência o trabalhador normalmente come verduras ou saladas cruas.">
             >
             ["id11"] = <
-                text = <"Quando o trabalhador come frango, o que normalmente faz com a pele.">
-                description = <"Quando o trabalhador come frango, o que normalmente faz com a pele.">
+                text = <"Durante uma semana normal, com que frequência você toma REFRIGERANTES ou SUCOS ARTIFICIAIS?">
+                description = <"Durante uma semana normal, com que frequência você toma REFRIGERANTES ou SUCOS ARTIFICIAIS?">
             >
             ["at9"] = <
                 text = <"Sempre retira antes de comer">
@@ -163,8 +163,8 @@ terminology
                 description = <"Quando o trabalhador come frango, o que normalmente faz com a pele.">
             >
             ["id13"] = <
-                text = <"Quando o trabalhador come carne vermelha o que normalmente faz com a gordura aparente.">
-                description = <"Quando o trabalhador come carne vermelha o que normalmente faz com a gordura aparente.">
+                text = <"Em quantos dias da semana você costuma trocar a comida do almoço ou jantar por LANCHES (sanduíches, salgados, pizzas ou outros)?">
+                description = <"Em quantos dias da semana você costuma trocar a comida do almoço ou jantar por LANCHES (sanduíches, salgados, pizzas ou outros)?">
             >
             ["at14"] = <
                 text = <"Sempre retira antes de comer">
@@ -305,8 +305,8 @@ terminology
                 description = <"*Com que freqüência o trabalhador normalmente come verduras ou saladas cruas. (pt-br)">
             >
             ["id11"] = <
-                text = <"*Quando o trabalhador come frango, o que normalmente faz com a pele. (pt-br)">
-                description = <"*Quando o trabalhador come frango, o que normalmente faz com a pele. (pt-br)">
+                text = <"During a normal week, how often do you take REFRIGERANTS or ARTIFICIAL JUICES?">
+                description = <"During a normal week, how often do you take REFRIGERANTS or ARTIFICIAL JUICES?">
             >
             ["at9"] = <
                 text = <"*Sempre retira antes de comer (pt-br)">
@@ -333,8 +333,8 @@ terminology
                 description = <"*Quando o trabalhador come frango, o que normalmente faz com a pele. (pt-br)">
             >
             ["id13"] = <
-                text = <"*Quando o trabalhador come carne vermelha o que normalmente faz com a gordura aparente. (pt-br)">
-                description = <"*Quando o trabalhador come carne vermelha o que normalmente faz com a gordura aparente. (pt-br)">
+                text = <"On how many days of the week do you usually exchange lunch or dinner for LANCHES (sandwiches, salads, pizzas or others)?">
+                description = <"On how many days of the week do you usually exchange lunch or dinner for LANCHES (sandwiches, salads, pizzas or others)?">
             >
             ["at14"] = <
                 text = <"*Sempre retira antes de comer (pt-br)">
