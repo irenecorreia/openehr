@@ -191,6 +191,25 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id53] matches {    -- How would you define your state of mental health since the last medical examination?
+                                        value matches {
+                                            DV_CODED_TEXT[id54] matches {
+                                                defining_code matches {[ac2]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id55] matches {    -- Do you have any other complaints or problems you want to report?
+                                        value matches {
+                                            DV_BOOLEAN[id56] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id57] matches {    -- Report
+                                        value matches {
+                                            DV_TEXT[id58] 
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -326,6 +345,38 @@ terminology
                 text = <"Do you get tired easily?">
                 description = <"Do you get tired easily?">
             >
+            ["id53"] = <
+                text = <"How would you define your state of mental health since the last medical examination?">
+                description = <"How would you define your state of mental health since the last medical examination?">
+            >
+            ["at5"] = <
+                text = <"great">
+                description = <"great">
+            >
+            ["at6"] = <
+                text = <"good">
+                description = <"good">
+            >
+            ["at7"] = <
+                text = <"regular">
+                description = <"regular">
+            >
+            ["at8"] = <
+                text = <"bad">
+                description = <"bad">
+            >
+            ["ac2"] = <
+                text = <"Mental Health">
+                description = <"Mental Health">
+            >
+            ["id55"] = <
+                text = <"Do you have any other complaints or problems you want to report?">
+                description = <"Do you have any other complaints or problems you want to report?">
+            >
+            ["id57"] = <
+                text = <"Report">
+                description = <"Report">
+            >
         >
         ["pt-br"] = <
             ["id1"] = <
@@ -448,12 +499,48 @@ terminology
                 text = <"Você se cansa com facilidade?">
                 description = <"Você se cansa com facilidade?">
             >
+            ["id53"] = <
+                text = <"How would you define your state of mental health since the last medical examination? (en)">
+                description = <"How would you define your state of mental health since the last medical examination? (en)">
+            >
+            ["at5"] = <
+                text = <"great (en)">
+                description = <"great (en)">
+            >
+            ["at6"] = <
+                text = <"good (en)">
+                description = <"good (en)">
+            >
+            ["at7"] = <
+                text = <"regular (en)">
+                description = <"regular (en)">
+            >
+            ["at8"] = <
+                text = <"bad (en)">
+                description = <"bad (en)">
+            >
+            ["ac2"] = <
+                text = <"Mental Health (en)">
+                description = <"Mental Health (en)">
+            >
+            ["id55"] = <
+                text = <"Do you have any other complaints or problems you want to report? (en)">
+                description = <"Do you have any other complaints or problems you want to report? (en)">
+            >
+            ["id57"] = <
+                text = <"Report (en)">
+                description = <"Report (en)">
+            >
         >
     >
     value_sets = <
         ["ac1"] = <
             id = <"ac1">
             members = <"at1", "at2", "at3", "at4">
+        >
+        ["ac2"] = <
+            id = <"ac2">
+            members = <"at5", "at6", "at7", "at8">
         >
     >
 
