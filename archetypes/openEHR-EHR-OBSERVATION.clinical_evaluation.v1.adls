@@ -44,6 +44,11 @@ definition
                                             DV_TEXT[id9] 
                                         }
                                     }
+                                    ELEMENT[id10] matches {    -- Professional name
+                                        value matches {
+                                            DV_TEXT[id11] 
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -91,6 +96,10 @@ terminology
                 text = <"Justification">
                 description = <"Justification">
             >
+            ["id10"] = <
+                text = <"Professional name">
+                description = <"Professional name">
+            >
         >
         ["pt-br"] = <
             ["id1"] = <
@@ -124,6 +133,10 @@ terminology
             ["id8"] = <
                 text = <"Justificativa">
                 description = <"Justificativa">
+            >
+            ["id10"] = <
+                text = <"Professional name (en)">
+                description = <"Professional name (en)">
             >
         >
     >
