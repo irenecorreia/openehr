@@ -115,12 +115,12 @@ terminology
                 description = <"*Physical activity outside work (en)">
             >
             ["at0.1"] = <
-                text = <"*Regular (3 or more days / week, minimum 30 minutes / day) (en)">
-                description = <"*Regular (3 or more days / week, minimum 30 minutes / day) (en)">
+                text = <"Regular (3 ou mais dias / semana, mínimo 30 minutos / dia)">
+                description = <"Regular (3 ou mais dias / semana, mínimo 30 minutos / dia)">
             >
             ["at0.2"] = <
-                text = <"*Not practical or irregular (en)">
-                description = <"*Not practical or irregular (en)">
+                text = <"Não é prático ou irregular">
+                description = <"Não é prático ou irregular">
             >
             ["ac0.1"] = <
                 text = <"*Time (en)">
