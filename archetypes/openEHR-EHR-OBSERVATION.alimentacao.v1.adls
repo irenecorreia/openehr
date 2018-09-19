@@ -91,8 +91,8 @@ terminology
                 description = <"Com que frequência o trabalhador normalmente come frutas frescas.">
             >
             ["at1"] = <
-                text = <"5 ou mais vezes ao dia.">
-                description = <"5 ou mais vezes ao dia.">
+                text = <"">
+                description = <"">
             >
             ["at2"] = <
                 text = <"">
@@ -151,12 +151,12 @@ terminology
                 description = <"">
             >
             ["at12"] = <
-                text = <"Nunca retira a pele">
-                description = <"Nunca retira a pele">
+                text = <"">
+                description = <"">
             >
             ["at13"] = <
-                text = <"Não come frango">
-                description = <"Não come frango">
+                text = <"">
+                description = <"">
             >
             ["ac3"] = <
                 text = <"Quando o trabalhador come frango, o que normalmente faz com a pele.">
@@ -167,80 +167,80 @@ terminology
                 description = <"Em quantos dias da semana você costuma trocar a comida do almoço ou jantar por LANCHES (sanduíches, salgados, pizzas ou outros)?">
             >
             ["at14"] = <
-                text = <"Sempre retira antes de comer">
-                description = <"Sempre retira antes de comer">
+                text = <"">
+                description = <"">
             >
             ["at15"] = <
-                text = <"Na maioria das vezes retira">
-                description = <"Na maioria das vezes retira">
+                text = <"">
+                description = <"">
             >
             ["at16"] = <
-                text = <"Raramente retira">
-                description = <"Raramente retira">
+                text = <"">
+                description = <"">
             >
             ["at17"] = <
-                text = <"Nunca retira a gordura">
-                description = <"Nunca retira a gordura">
+                text = <"">
+                description = <"">
             >
             ["at18"] = <
-                text = <"Não come carne vermelha">
-                description = <"Não come carne vermelha">
+                text = <"">
+                description = <"">
             >
             ["ac4"] = <
                 text = <"Quando o trabalhador come carne vermelha o que normalmente faz com a gordura aparente.">
                 description = <"Quando o trabalhador come carne vermelha o que normalmente faz com a gordura aparente.">
             >
             ["at19"] = <
-                text = <"Nunca coloca sal no prato de comida">
-                description = <"Nunca coloca sal no prato de comida">
+                text = <"">
+                description = <"">
             >
             ["at20"] = <
-                text = <"Prova e coloca se estiver sem sal">
-                description = <"Prova e coloca se estiver sem sal">
+                text = <"">
+                description = <"">
             >
             ["at21"] = <
-                text = <"Sempre ou quase sempre, mesmo sem provar">
-                description = <"Sempre ou quase sempre, mesmo sem provar">
+                text = <"">
+                description = <"">
             >
             ["ac5"] = <
                 text = <"Sem contar as saladas, com que frequência o trabalhador coloca sal no prato de comida.">
                 description = <"Sem contar as saladas, com que frequência o trabalhador coloca sal no prato de comida.">
             >
             ["at22"] = <
-                text = <"Nunca">
-                description = <"Nunca">
+                text = <"">
+                description = <"">
             >
             ["at23"] = <
-                text = <"1 a 3 vezes por semana">
-                description = <"1 a 3 vezes por semana">
+                text = <"">
+                description = <"">
             >
             ["at24"] = <
-                text = <"4 a 6 vezes por semana">
-                description = <"4 a 6 vezes por semana">
+                text = <"">
+                description = <"">
             >
             ["at25"] = <
-                text = <"Diariamente, 1 vez por dia">
-                description = <"Diariamente, 1 vez por dia">
+                text = <"">
+                description = <"">
             >
             ["at26"] = <
-                text = <"Diariamente, 2 ou mais vezes por dia">
-                description = <"Diariamente, 2 ou mais vezes por dia">
+                text = <"">
+                description = <"">
             >
             ["ac6"] = <
                 text = <"Durante uma semana normal, com que frequência o trabalhador toma refrigerantes ou sucos artificias (refrescos).">
                 description = <"Durante uma semana normal, com que frequência o trabalhador toma refrigerantes ou sucos artificias (refrescos).">
             >
             ["at27"] = <
-                text = <"Nunca">
-                description = <"Nunca">
+                text = <"">
+                description = <"">
             >
             ["at28"] = <
-                text = <"Eventualmente, às vezes">
-                description = <"Eventualmente, às vezes">
+                text = <"">
+                description = <"">
             >
             ["at29"] = <
-                text = <"Sempre ou quase sempre">
-                description = <"Sempre ou quase sempre">
+                text = <"">
+                description = <"">
             >
             ["ac7"] = <
                 text = <"Proteção solar">
@@ -281,8 +281,8 @@ terminology
                 description = <"During a normal week, how often do you eat FRUITS?">
             >
             ["at1"] = <
-                text = <"*5 ou mais vezes ao dia. (pt-br)">
-                description = <"*5 ou mais vezes ao dia. (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at2"] = <
                 text = <"">
@@ -341,12 +341,12 @@ terminology
                 description = <"">
             >
             ["at12"] = <
-                text = <"*Nunca retira a pele (pt-br)">
-                description = <"*Nunca retira a pele (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at13"] = <
-                text = <"*Não come frango (pt-br)">
-                description = <"*Não come frango (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["ac3"] = <
                 text = <"*Quando o trabalhador come frango, o que normalmente faz com a pele. (pt-br)">
@@ -357,80 +357,80 @@ terminology
                 description = <"On how many days of the week do you usually exchange lunch or dinner for LANCHES (sandwiches, salads, pizzas or others)?">
             >
             ["at14"] = <
-                text = <"*Sempre retira antes de comer (pt-br)">
-                description = <"*Sempre retira antes de comer (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at15"] = <
-                text = <"*Na maioria das vezes retira (pt-br)">
-                description = <"*Na maioria das vezes retira (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at16"] = <
-                text = <"*Raramente retira (pt-br)">
-                description = <"*Raramente retira (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at17"] = <
-                text = <"*Nunca retira a gordura (pt-br)">
-                description = <"*Nunca retira a gordura (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at18"] = <
-                text = <"*Não come carne vermelha (pt-br)">
-                description = <"*Não come carne vermelha (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["ac4"] = <
                 text = <"*Quando o trabalhador come carne vermelha o que normalmente faz com a gordura aparente. (pt-br)">
                 description = <"*Quando o trabalhador come carne vermelha o que normalmente faz com a gordura aparente. (pt-br)">
             >
             ["at19"] = <
-                text = <"*Nunca coloca sal no prato de comida (pt-br)">
-                description = <"*Nunca coloca sal no prato de comida (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at20"] = <
-                text = <"*Prova e coloca se estiver sem sal (pt-br)">
-                description = <"*Prova e coloca se estiver sem sal (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at21"] = <
-                text = <"*Sempre ou quase sempre, mesmo sem provar (pt-br)">
-                description = <"*Sempre ou quase sempre, mesmo sem provar (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["ac5"] = <
                 text = <"*Sem contar as saladas, com que frequência o trabalhador coloca sal no prato de comida. (pt-br)">
                 description = <"*Sem contar as saladas, com que frequência o trabalhador coloca sal no prato de comida. (pt-br)">
             >
             ["at22"] = <
-                text = <"*Nunca (pt-br)">
-                description = <"*Nunca (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at23"] = <
-                text = <"*1 a 3 vezes por semana (pt-br)">
-                description = <"*1 a 3 vezes por semana (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at24"] = <
-                text = <"*4 a 6 vezes por semana (pt-br)">
-                description = <"*4 a 6 vezes por semana (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at25"] = <
-                text = <"*Diariamente, 1 vez por dia (pt-br)">
-                description = <"*Diariamente, 1 vez por dia (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at26"] = <
-                text = <"*Diariamente, 2 ou mais vezes por dia (pt-br)">
-                description = <"*Diariamente, 2 ou mais vezes por dia (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["ac6"] = <
                 text = <"*Durante uma semana normal, com que frequência o trabalhador toma refrigerantes ou sucos artificias (refrescos). (pt-br)">
                 description = <"*Durante uma semana normal, com que frequência o trabalhador toma refrigerantes ou sucos artificias (refrescos). (pt-br)">
             >
             ["at27"] = <
-                text = <"*Nunca (pt-br)">
-                description = <"*Nunca (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at28"] = <
-                text = <"*Eventualmente, às vezes (pt-br)">
-                description = <"*Eventualmente, às vezes (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at29"] = <
-                text = <"*Sempre ou quase sempre (pt-br)">
-                description = <"*Sempre ou quase sempre (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["ac7"] = <
                 text = <"*Proteção solar (pt-br)">
