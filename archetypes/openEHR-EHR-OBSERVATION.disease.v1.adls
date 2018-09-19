@@ -3,6 +3,12 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -11,8 +17,11 @@ description
             language = <[ISO_639-1::en]>
             purpose = <"">
         >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
+        >
     >
-    lifecycle_state = <"unmanaged">
+    lifecycle_state = <"in_review">
 
 definition
     OBSERVATION[id1] matches {    -- disease
@@ -484,6 +493,188 @@ terminology
             ["id95"] = <
                 text = <"Negative Diseases">
                 description = <"Negative Diseases">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"*disease (en)">
+                description = <"*disease (en)">
+            >
+            ["id3"] = <
+                text = <"*Any event (en)">
+                description = <"*Any event (en)">
+            >
+            ["id6"] = <
+                text = <"*Chest Angina or Infarct (Heart Attack) (en)">
+                description = <"*Chest Angina or Infarct (Heart Attack) (en)">
+            >
+            ["id8"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
+            >
+            ["id10"] = <
+                text = <"*Asthma (en)">
+                description = <"*Asthma (en)">
+            >
+            ["id12"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
+            >
+            ["id14"] = <
+                text = <"*Cancer (en)">
+                description = <"*Cancer (en)">
+            >
+            ["id16"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
+            >
+            ["id21"] = <
+                text = <"*Depression (en)">
+                description = <"*Depression (en)">
+            >
+            ["id23"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
+            >
+            ["id25"] = <
+                text = <"*Stroke (en)">
+                description = <"*Stroke (en)">
+            >
+            ["id29"] = <
+                text = <"*Diabetes (en)">
+                description = <"*Diabetes (en)">
+            >
+            ["id31"] = <
+                text = <"*Dyslipidemia- (Increased Cholesterol and / or Triglycerides) (en)">
+                description = <"*Dyslipidemia- (Increased Cholesterol and / or Triglycerides) (en)">
+            >
+            ["id33"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
+            >
+            ["id35"] = <
+                text = <"*Nephritis (en)">
+                description = <"*Nephritis (en)">
+            >
+            ["id37"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
+            >
+            ["id39"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
+            >
+            ["id41"] = <
+                text = <"*Respiratory Disease (Tuberculosis, COPD, Pneumonia) (en)">
+                description = <"*Respiratory Disease (Tuberculosis, COPD, Pneumonia) (en)">
+            >
+            ["id43"] = <
+                text = <"*Rheumatic Disease (Lupus, Rheumatoid Arthritis or Other) (en)">
+                description = <"*Rheumatic Disease (Lupus, Rheumatoid Arthritis or Other) (en)">
+            >
+            ["id45"] = <
+                text = <"*Specity (en)">
+                description = <"*Specity (en)">
+            >
+            ["id47"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
+            >
+            ["id49"] = <
+                text = <"*Sexually Transmitted Disease - STD / STI (en)">
+                description = <"*Sexually Transmitted Disease - STD / STI (en)">
+            >
+            ["id51"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
+            >
+            ["id53"] = <
+                text = <"*Epilepsy (en)">
+                description = <"*Epilepsy (en)">
+            >
+            ["id55"] = <
+                text = <"*Leprosy (en)">
+                description = <"*Leprosy (en)">
+            >
+            ["id57"] = <
+                text = <"*Hepatitis (en)">
+                description = <"*Hepatitis (en)">
+            >
+            ["id59"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
+            >
+            ["id61"] = <
+                text = <"*Spinal Injury (Disk Herniation or Other) (en)">
+                description = <"*Spinal Injury (Disk Herniation or Other) (en)">
+            >
+            ["id63"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
+            >
+            ["id65"] = <
+                text = <"*Knee Injury (Ligament Rupture, Meniscus / Patella Injury or other) (en)">
+                description = <"*Knee Injury (Ligament Rupture, Meniscus / Patella Injury or other) (en)">
+            >
+            ["id67"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
+            >
+            ["id69"] = <
+                text = <"*Shoulder Injury (Tendonitis, Dislocation or other) (en)">
+                description = <"*Shoulder Injury (Tendonitis, Dislocation or other) (en)">
+            >
+            ["id71"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
+            >
+            ["id73"] = <
+                text = <"*Low back (en)">
+                description = <"*Low back (en)">
+            >
+            ["id75"] = <
+                text = <"*Other Hernias (Epigastric, Umbilical, Inguinal / Groin or other) (en)">
+                description = <"*Other Hernias (Epigastric, Umbilical, Inguinal / Groin or other) (en)">
+            >
+            ["id77"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
+            >
+            ["id79"] = <
+                text = <"*High Blood Pressure (Hypertension) (en)">
+                description = <"*High Blood Pressure (Hypertension) (en)">
+            >
+            ["id81"] = <
+                text = <"*Auditory Problem (Hearing Loss, Perforation, Inflammation) (en)">
+                description = <"*Auditory Problem (Hearing Loss, Perforation, Inflammation) (en)">
+            >
+            ["id83"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
+            >
+            ["id85"] = <
+                text = <"*Blood Transfusion (en)">
+                description = <"*Blood Transfusion (en)">
+            >
+            ["id87"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
+            >
+            ["id89"] = <
+                text = <"*Anxiety Disorders (Panic, Phobias, etc.) (en)">
+                description = <"*Anxiety Disorders (Panic, Phobias, etc.) (en)">
+            >
+            ["id91"] = <
+                text = <"*Thrombosis or Embolism (en)">
+                description = <"*Thrombosis or Embolism (en)">
+            >
+            ["id93"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
+            >
+            ["id95"] = <
+                text = <"*Negative Diseases (en)">
+                description = <"*Negative Diseases (en)">
             >
         >
     >
