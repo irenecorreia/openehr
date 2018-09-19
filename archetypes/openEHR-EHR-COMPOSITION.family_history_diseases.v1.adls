@@ -52,6 +52,73 @@ definition
         /category[id6]/defining_code matches {[at1]}
         /context[id7]/other_context[id4]/items matches {
             allow_archetype ITEM[id5]
+            CLUSTER[id0.6] matches {    -- Do you have cancer case (s) in your family?
+                items matches {
+                    ELEMENT[id0.7] matches {    -- Uterine cervix
+                        value matches {
+                            DV_BOOLEAN[id0.8] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                    ELEMENT[id0.9] matches {    -- Intestine
+                        value matches {
+                            DV_BOOLEAN[id0.10] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                    ELEMENT[id0.11] matches {    -- Leucemia
+                        value matches {
+                            DV_BOOLEAN[id0.12] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                    ELEMENT[id0.13] matches {    -- breast cancer
+                        value matches {
+                            DV_BOOLEAN[id0.14] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                    ELEMENT[id0.15] matches {    -- Skin
+                        value matches {
+                            DV_BOOLEAN[id0.16] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                    ELEMENT[id0.17] matches {    -- Prostate
+                        value matches {
+                            DV_BOOLEAN[id0.18] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                    ELEMENT[id0.19] matches {    -- Lung
+                        value matches {
+                            DV_BOOLEAN[id0.20] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                    ELEMENT[id0.21] matches {    -- Others
+                        value matches {
+                            DV_BOOLEAN[id0.22] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                    ELEMENT[id0.23] matches {    -- Specify
+                        value matches {
+                            DV_BOOLEAN[id0.24] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                }
+            }
         }
         content cardinality matches {1..*; unordered} matches {
             allow_archetype EVALUATION[id2]
@@ -66,11 +133,91 @@ terminology
                 text = <"Family History">
                 description = <"A persistent and managed list about relevant family history of the subject that may influence clinical decision-making and care provision.">
             >
+            ["id0.6"] = <
+                text = <"Do you have cancer case (s) in your family?">
+                description = <"Do you have cancer case (s) in your family?">
+            >
+            ["id0.7"] = <
+                text = <"Uterine cervix">
+                description = <"Uterine cervix">
+            >
+            ["id0.9"] = <
+                text = <"Intestine">
+                description = <"Intestine">
+            >
+            ["id0.11"] = <
+                text = <"Leucemia">
+                description = <"Leucemia">
+            >
+            ["id0.13"] = <
+                text = <"breast cancer">
+                description = <"breast cancer">
+            >
+            ["id0.15"] = <
+                text = <"Skin">
+                description = <"Skin">
+            >
+            ["id0.17"] = <
+                text = <"Prostate">
+                description = <"Prostate">
+            >
+            ["id0.19"] = <
+                text = <"Lung">
+                description = <"Lung">
+            >
+            ["id0.21"] = <
+                text = <"Others">
+                description = <"Others">
+            >
+            ["id0.23"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
         >
         ["pt-br"] = <
             ["id1.1"] = <
                 text = <"História familiar">
                 description = <"Uma lista persistente e gerenciada sobre histórico familiar relevante do assunto que pode influenciar a tomada de decisões clínicas e a provisão de cuidados.">
+            >
+            ["id0.6"] = <
+                text = <"Do you have cancer case (s) in your family? (en)">
+                description = <"Do you have cancer case (s) in your family? (en)">
+            >
+            ["id0.7"] = <
+                text = <"Uterine cervix (en)">
+                description = <"Uterine cervix (en)">
+            >
+            ["id0.9"] = <
+                text = <"Intestine (en)">
+                description = <"Intestine (en)">
+            >
+            ["id0.11"] = <
+                text = <"Leucemia (en)">
+                description = <"Leucemia (en)">
+            >
+            ["id0.13"] = <
+                text = <"breast cancer (en)">
+                description = <"breast cancer (en)">
+            >
+            ["id0.15"] = <
+                text = <"Skin (en)">
+                description = <"Skin (en)">
+            >
+            ["id0.17"] = <
+                text = <"Prostate (en)">
+                description = <"Prostate (en)">
+            >
+            ["id0.19"] = <
+                text = <"Lung (en)">
+                description = <"Lung (en)">
+            >
+            ["id0.21"] = <
+                text = <"Others (en)">
+                description = <"Others (en)">
+            >
+            ["id0.23"] = <
+                text = <"Specify (en)">
+                description = <"Specify (en)">
             >
         >
     >
