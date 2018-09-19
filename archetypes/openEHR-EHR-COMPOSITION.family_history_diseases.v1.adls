@@ -119,6 +119,20 @@ definition
                     }
                 }
             }
+            ELEMENT[id0.31] matches {    -- Do you have DIABETES case (s) in your family?
+                value matches {
+                    DV_CODED_TEXT[id0.32] matches {
+                        defining_code matches {[ac0.1]}
+                    }
+                }
+            }
+            ELEMENT[id0.33] matches {    -- Do you have HIGH PRESSURE / HYPERTENSION case (s) in your family?
+                value matches {
+                    DV_CODED_TEXT[id0.34] matches {
+                        defining_code matches {[ac0.1]}
+                    }
+                }
+            }
         }
         content cardinality matches {1..*; unordered} matches {
             allow_archetype EVALUATION[id2]
@@ -177,6 +191,30 @@ terminology
                 text = <"Specify">
                 description = <"Specify">
             >
+            ["at0.1"] = <
+                text = <"Yes">
+                description = <"Yes">
+            >
+            ["at0.2"] = <
+                text = <"No">
+                description = <"No">
+            >
+            ["at0.3"] = <
+                text = <"do not know">
+                description = <"do not know">
+            >
+            ["ac0.1"] = <
+                text = <"Value">
+                description = <"Value">
+            >
+            ["id0.31"] = <
+                text = <"Do you have DIABETES case (s) in your family?">
+                description = <"Do you have DIABETES case (s) in your family?">
+            >
+            ["id0.33"] = <
+                text = <"Do you have HIGH PRESSURE / HYPERTENSION case (s) in your family?">
+                description = <"Do you have HIGH PRESSURE / HYPERTENSION case (s) in your family?">
+            >
         >
         ["pt-br"] = <
             ["at1"] = <
@@ -227,6 +265,36 @@ terminology
                 text = <"Specify (en)">
                 description = <"Specify (en)">
             >
+            ["at0.1"] = <
+                text = <"Yes (en)">
+                description = <"Yes (en)">
+            >
+            ["at0.2"] = <
+                text = <"No (en)">
+                description = <"No (en)">
+            >
+            ["at0.3"] = <
+                text = <"do not know (en)">
+                description = <"do not know (en)">
+            >
+            ["ac0.1"] = <
+                text = <"Value (en)">
+                description = <"Value (en)">
+            >
+            ["id0.31"] = <
+                text = <"Do you have DIABETES case (s) in your family? (en)">
+                description = <"Do you have DIABETES case (s) in your family? (en)">
+            >
+            ["id0.33"] = <
+                text = <"Do you have HIGH PRESSURE / HYPERTENSION case (s) in your family? (en)">
+                description = <"Do you have HIGH PRESSURE / HYPERTENSION case (s) in your family? (en)">
+            >
+        >
+    >
+    value_sets = <
+        ["ac0.1"] = <
+            id = <"ac0.1">
+            members = <"at0.1", "at0.2", "at0.3">
         >
     >
 
