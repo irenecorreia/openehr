@@ -1,0 +1,77 @@
+archetype (adl_version=2.0.5; rm_release=1.0.2; generated)
+    openEHR-EHR-COMPOSITION.family_history_diseases.v1.0.0
+
+specialize
+    openEHR-EHR-COMPOSITION.family_history.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
+    
+description
+    copyright = <"© National E-Health Transition Authority">
+    details = <
+        ["en"] = <
+            keywords = <"family", "history", "pedigree">
+            language = <[ISO_639-1::en]>
+            misuse = <"">
+            purpose = <"Para registrar uma lista persistente e gerenciada de todo o histórico familiar relevante para o assunto, ou declarações sobre exclusão positiva ou ausência real de informações sobre reações adversas, que podem influenciar a tomada de decisões clínicas e a provisão de cuidados">
+            use = <"Usado para gravar uma lista persistente e gerenciada de todos os antecedentes familiares relevantes para o assunto, ou declarações sobre exclusão positiva ou ausência real de informações sobre reações adversas, que podem influenciar a tomada de decisões clínicas e a provisão de cuidados.
+
+Também é possível gravar informações de histórico familiar para indivíduos que não sejam o sujeito do registro de saúde - por exemplo, informações sobre o pai do feto não nascido precisam ser armazenadas no registro de saúde da mãe até o nascimento. Nessa situação, o assunto do cuidado deve ser explicitamente especificado.
+
+A intenção desta COMPOSITION é para uso como um resumo persistente, no entanto, foi identificado que, para implementação, o arquétipo também precisa de atributos adicionais relacionados ao contexto do evento. Como resultado, a COMPOSITION foi modificada temporariamente como uma EVENT COMPOSITION que permite a adição de um SLOT de itens em que os arquétipos relacionados ao contexto adicionais podem ser incluídos. Este novo requisito para atributos relacionados ao contexto na COMPOSITION persistente foi solicitado como uma atualização futura do modelo de referência OpenEHR.">
+        >
+        ["pt-br"] = <
+            keywords = <"família", "história. raça">
+            language = <[ISO_639-1::pt-br]>
+            misuse = <"">
+            purpose = <"Para gravar uma lista persistente e gerenciada de todos os antecedentes familiares relevantes para o assunto, ou declarações sobre exclusão positiva ou ausência real de informações sobre reações adversas, que podem influenciar a tomada de decisões clínicas e a provisão de cuidados.">
+            use = <"Usado para gravar uma lista persistente e gerenciada de todos os antecedentes familiares relevantes para o assunto, ou declarações sobre exclusão positiva ou ausência real de informações sobre reações adversas, que podem influenciar a tomada de decisões clínicas e a provisão de cuidados.
+
+Também é possível gravar informações de histórico familiar para indivíduos que não sejam o sujeito do registro de saúde - por exemplo, informações sobre o pai do feto não nascido precisam ser armazenadas no registro de saúde da mãe até o nascimento. Nessa situação, o assunto do cuidado deve ser explicitamente especificado.
+
+A intenção desta COMPOSITION é para uso como um resumo persistente, no entanto, foi identificado que, para implementação, o arquétipo também precisa de atributos adicionais relacionados ao contexto do evento. Como resultado, a COMPOSITION foi modificada temporariamente como uma EVENT COMPOSITION que permite a adição de um SLOT de itens em que os arquétipos relacionados ao contexto adicionais podem ser incluídos. Este novo requisito para atributos relacionados ao contexto na COMPOSITION persistente foi solicitado como uma atualização futura do modelo de referência OpenEHR.">
+        >
+    >
+    lifecycle_state = <"in_review">
+    original_author = <
+        ["name"] = <"Heather Leslie">
+        ["organisation"] = <"Ocean Informatics">
+        ["email"] = <"heather.leslie@oceaninformatics.com">
+        ["date"] = <"2013-06-16">
+    >
+
+definition
+    COMPOSITION[id1.1] matches {    -- Family History
+        /category[id6]/defining_code matches {[at1]}
+        /context[id7]/other_context[id4]/items matches {
+            allow_archetype ITEM[id5]
+        }
+        content cardinality matches {1..*; unordered} matches {
+            allow_archetype EVALUATION[id2]
+            allow_archetype EVALUATION[id3]
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Family History">
+                description = <"A persistent and managed list about relevant family history of the subject that may influence clinical decision-making and care provision.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"História familiar">
+                description = <"Uma lista persistente e gerenciada sobre histórico familiar relevante do assunto que pode influenciar a tomada de decisões clínicas e a provisão de cuidados.">
+            >
+        >
+    >
+
