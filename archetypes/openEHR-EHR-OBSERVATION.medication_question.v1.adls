@@ -32,7 +32,7 @@ definition
                         data matches {
                             ITEM_TREE[id4] matches {
                                 items matches {
-                                    ELEMENT[id9] matches {    -- Do you take any MEDICINES FOR CONTINUOUS USE ?
+                                    ELEMENT[id9] matches {    -- Do you take any MEDICINES FOR CONTINUOUS USE (Antihypertensive, Anticonvulsant, Hypoglycemic, Antidepressant, Immunosuppressant, etc)?
                                         value matches {
                                             DV_BOOLEAN[id10] matches {
                                                 value matches {True, False}
@@ -68,7 +68,7 @@ terminology
                 description = <"Any event">
             >
             ["id9"] = <
-                text = <"Do you take any MEDICINES FOR CONTINUOUS USE ?">
+                text = <"Do you take any MEDICINES FOR CONTINUOUS USE (Antihypertensive, Anticonvulsant, Hypoglycemic, Antidepressant, Immunosuppressant, etc)?">
                 description = <"Do you take any MEDICINES FOR CONTINUOUS USE (Antihypertensive, Anticonvulsant, Hypoglycemic, Antidepressant, Immunosuppressant, etc)?">
             >
             ["id11"] = <
@@ -78,20 +78,20 @@ terminology
         >
         ["pt-br"] = <
             ["id1"] = <
-                text = <"*medication_question (en)">
-                description = <"*medication_question (en)">
+                text = <"Questões sobre Medicamentos">
+                description = <"Questões sobre Medicamentos">
             >
             ["id3"] = <
-                text = <"*Any event (en)">
-                description = <"*Any event (en)">
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
             >
             ["id9"] = <
-                text = <"*Do you take any MEDICINES FOR CONTINUOUS USE ? (en)">
-                description = <"*Do you take any MEDICINES FOR CONTINUOUS USE (Antihypertensive, Anticonvulsant, Hypoglycemic, Antidepressant, Immunosuppressant, etc)? (en)">
+                text = <"Você toma algum MEDICAMENTO DE USO CONTÍNUO (Antihipertensivo, Anticonvulsivante, Hipoglicemiante, Antidepressivo, Imunossupressor, etc)?">
+                description = <"Você toma algum MEDICAMENTO DE USO CONTÍNUO (Antihipertensivo, Anticonvulsivante, Hipoglicemiante, Antidepressivo, Imunossupressor, etc)?">
             >
             ["id11"] = <
-                text = <"*Which are (en)">
-                description = <"*Which are (en)">
+                text = <"Quais?">
+                description = <"Quais?">
             >
         >
     >
