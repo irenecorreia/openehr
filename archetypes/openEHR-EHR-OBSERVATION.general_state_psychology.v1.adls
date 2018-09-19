@@ -170,7 +170,13 @@ definition
                                             }
                                         }
                                     }
-                                    ELEMENT[id47]     -- Do you have unpleasant sensations in your stomach?
+                                    ELEMENT[id47] matches {    -- Do you have unpleasant sensations in your stomach?
+                                        value matches {
+                                            DV_BOOLEAN[id51] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                     ELEMENT[id48] matches {    -- Are you crying more than you usually do?
                                         value matches {
                                             DV_BOOLEAN[id49] matches {
@@ -178,7 +184,13 @@ definition
                                             }
                                         }
                                     }
-                                    ELEMENT[id50]     -- Do you get tired easily?
+                                    ELEMENT[id50] matches {    -- Do you get tired easily?
+                                        value matches {
+                                            DV_BOOLEAN[id52] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
