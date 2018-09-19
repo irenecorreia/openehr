@@ -64,20 +64,20 @@ definition
         data matches {
             HISTORY[id2] matches {
                 events cardinality matches {1..*; unordered} matches {
-                    EVENT[id3] occurrences matches {0..1} matches {    -- Any event
+                    EVENT[id3] matches {    -- Any event
                         data matches {
                             ITEM_TREE[id4] matches {
                                 items matches {
                                     CLUSTER[id6] matches {    -- Consumption Details
                                         items matches {
-                                            ELEMENT[id7] occurrences matches {0..1} matches {    -- Form
+                                            ELEMENT[id7] matches {    -- Form
                                                 value matches {
                                                     DV_TEXT[id29] 
                                                 }
                                             }
-                                            CLUSTER[id16] occurrences matches {0..1} matches {    -- Amount
+                                            CLUSTER[id16] matches {    -- Amount
                                                 items cardinality matches {1; unordered} matches {
-                                                    ELEMENT[id15] occurrences matches {0..1} matches {    -- Standard Drinks
+                                                    ELEMENT[id15] matches {    -- Standard Drinks
                                                         value matches {
                                                             DV_QUANTITY[id30] matches {
                                                                 property matches {[at1]}
@@ -85,7 +85,7 @@ definition
                                                             }
                                                         }
                                                     }
-                                                    ELEMENT[id17] occurrences matches {0..1} matches {    -- Grams Consumed
+                                                    ELEMENT[id17] matches {    -- Grams Consumed
                                                         value matches {
                                                             DV_QUANTITY[id31] matches {
                                                                 property matches {[at2]}
@@ -95,19 +95,19 @@ definition
                                                     }
                                                 }
                                             }
-                                            ELEMENT[id18] occurrences matches {0..1} matches {    -- Triggers
+                                            ELEMENT[id18] matches {    -- Triggers
                                                 value matches {
                                                     DV_TEXT[id32] 
                                                 }
                                             }
-                                            ELEMENT[id19] occurrences matches {0..1} matches {    -- Context
+                                            ELEMENT[id19] matches {    -- Context
                                                 value matches {
                                                     DV_TEXT[id33] 
                                                 }
                                             }
                                         }
                                     }
-                                    ELEMENT[id20] occurrences matches {0..1} matches {    -- Behavioural Issues
+                                    ELEMENT[id20] matches {    -- Behavioural Issues
                                         value matches {
                                             DV_TEXT[id34] 
                                         }
@@ -116,7 +116,7 @@ definition
                                         include
                                             archetype_id/value matches {/openEHR-EHR-CLUSTER\.change(-a-zA-Z0-9_]+)*\.v1/}
                                     }
-                                    ELEMENT[id22] occurrences matches {0..1} matches {    -- Comment
+                                    ELEMENT[id22] matches {    -- Comment
                                         value matches {
                                             DV_TEXT[id35] 
                                         }
@@ -146,7 +146,7 @@ definition
         protocol matches {
             ITEM_TREE[id25] matches {
                 items matches {
-                    ELEMENT[id26] occurrences matches {0..1} matches {    -- Standard Drink Definition
+                    ELEMENT[id26] matches {    -- Standard Drink Definition
                         value matches {
                             DV_QUANTITY[id39] matches {
                                 property matches {[at4]}
@@ -154,7 +154,7 @@ definition
                             }
                         }
                     }
-                    ELEMENT[id27] occurrences matches {0..1} matches {    -- Average Use Frequency
+                    ELEMENT[id27] matches {    -- Average Use Frequency
                         value matches {
                             DV_QUANTITY[id40] matches {
                                 property matches {[at1]}
