@@ -178,6 +178,61 @@ definition
                                             DV_TEXT[id60] 
                                         }
                                     }
+                                    ELEMENT[id61] matches {    -- Spinal Injury (Disk Herniation or Other)
+                                        value matches {
+                                            DV_BOOLEAN[id62] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id63] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id64] 
+                                        }
+                                    }
+                                    ELEMENT[id65] matches {    -- Knee Injury (Ligament Rupture, Meniscus / Patella Injury or other)
+                                        value matches {
+                                            DV_BOOLEAN[id66] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id67] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id68] 
+                                        }
+                                    }
+                                    ELEMENT[id69] matches {    -- Shoulder Injury (Tendonitis, Dislocation or other)
+                                        value matches {
+                                            DV_BOOLEAN[id70] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id71] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id72] 
+                                        }
+                                    }
+                                    ELEMENT[id73] matches {    -- Low back
+                                        value matches {
+                                            DV_BOOLEAN[id74] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id75] matches {    -- Other Hernias (Epigastric, Umbilical, Inguinal / Groin or other)
+                                        value matches {
+                                            DV_BOOLEAN[id76] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id77] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id78] 
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -298,6 +353,42 @@ terminology
                 description = <"Hepatitis">
             >
             ["id59"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id61"] = <
+                text = <"Spinal Injury (Disk Herniation or Other)">
+                description = <"Spinal Injury (Disk Herniation or Other)">
+            >
+            ["id63"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id65"] = <
+                text = <"Knee Injury (Ligament Rupture, Meniscus / Patella Injury or other)">
+                description = <"Knee Injury (Ligament Rupture, Meniscus / Patella Injury or other)">
+            >
+            ["id67"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id69"] = <
+                text = <"Shoulder Injury (Tendonitis, Dislocation or other)">
+                description = <"Shoulder Injury (Tendonitis, Dislocation or other)">
+            >
+            ["id71"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id73"] = <
+                text = <"Low back">
+                description = <"Low back">
+            >
+            ["id75"] = <
+                text = <"Other Hernias (Epigastric, Umbilical, Inguinal / Groin or other)">
+                description = <"Other Hernias (Epigastric, Umbilical, Inguinal / Groin or other)">
+            >
+            ["id77"] = <
                 text = <"Specify">
                 description = <"Specify">
             >
