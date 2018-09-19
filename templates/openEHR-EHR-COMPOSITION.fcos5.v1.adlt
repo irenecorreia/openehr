@@ -3239,6 +3239,7 @@ definition
     SECTION[id1.1] matches {    -- Adhoc Heading
         items matches {
             use_archetype OBSERVATION[id0.3, openEHR-EHR-OBSERVATION.ovl-fcos5-general_state_psychology-001.v1.0.0]
+            use_archetype OBSERVATION[id0.4, openEHR-EHR-OBSERVATION.ovl-fcos5-head_ab_neck-001.v1.0.0]
         }
     }
 
@@ -3350,6 +3351,54 @@ terminology
             ["id1.1"] = <
                 text = <"Estado geral - Psiquismo">
                 description = <"Estado geral - Psiquismo">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-fcos5-head_ab_neck-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.head_ab_neck.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- head and neck
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6] matches {
+                /value[id7]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id8] matches {
+                /value[id9]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id10] matches {
+                /value[id11]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id12] matches {
+                /value[id13]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id14] matches {
+                /value[id15]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id16] matches {
+                /value[id17]/defining_code matches {[ac1]}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"head and neck">
+                description = <"head ab neck">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Cabeça e pescoço">
+                description = <"cabeça e pescoço">
             >
         >
     >
