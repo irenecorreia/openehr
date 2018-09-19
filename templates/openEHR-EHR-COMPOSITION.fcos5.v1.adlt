@@ -17,21 +17,23 @@ description
     copyright = <"© openEHR">
     details = <
         ["en"] = <
-            keywords = <"progress", "note", "encounter">
+            keywords = <"worker", "occupacional">
             language = <[ISO_639-1::en]>
             misuse = <"">
-            purpose = <"Record of encounter as a progress note.">
-            use = <"For use to record when a person and clinician interact.">
+            purpose = <"to evolve the modeling of the complete occupational clinical record used in the s5 + system of SESI
+">
+            use = <"Used to collect employee data
+">
         >
         ["pt-br"] = <
-            keywords = <"Progresso", "nota", "encontro">
+            keywords = <"trabalhador", "ocupacional">
             language = <[ISO_639-1::pt-br]>
             misuse = <"">
-            purpose = <"Registro de encontro como nota de progresso.">
-            use = <"Usado para gravar uma interação entre uma pessoa e um clínico.">
+            purpose = <"evoluir a modelagem da ficha clínica ocupacional completa utilizada no sistema s5+ do SESI">
+            use = <"Usado para coletar os dados do trabalhador ">
         >
     >
-    lifecycle_state = <"unmanaged">
+    lifecycle_state = <"in_review">
     original_author = <
         ["name"] = <"Thomas Beale">
         ["organisation"] = <"Ocean Informatics">
