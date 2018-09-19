@@ -78,20 +78,20 @@ terminology
         >
         ["pt-br"] = <
             ["id1"] = <
-                text = <"*abdomen (en)">
-                description = <"*abdomen (en)">
+                text = <"abdômen">
+                description = <"abdômen">
             >
             ["id3"] = <
-                text = <"*Any event (en)">
-                description = <"*Any event (en)">
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
             >
             ["id6"] = <
-                text = <"*Is there evidence of any change? (bulging, tumor, hernia, surgical scars)? (en)">
-                description = <"*Is there evidence of any change? (bulging, tumor, hernia, surgical scars)? (en)">
+                text = <"Existe evidência de alguma mudança? (protuberância, tumor, hérnia, cicatrizes cirúrgicas)?">
+                description = <"Existe evidência de alguma mudança? (protuberância, tumor, hérnia, cicatrizes cirúrgicas)?">
             >
             ["id8"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
         >
     >
