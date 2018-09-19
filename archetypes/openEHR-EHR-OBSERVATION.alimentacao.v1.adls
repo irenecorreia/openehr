@@ -95,32 +95,32 @@ terminology
                 description = <"5 ou mais vezes ao dia.">
             >
             ["at2"] = <
-                text = <"3 ou 4 vezes por dia">
-                description = <"3 ou 4 vezes por dia">
+                text = <"">
+                description = <"">
             >
             ["at3"] = <
-                text = <"1 ou 2 vezes por dia">
-                description = <"1 ou 2 vezes por dia">
+                text = <"">
+                description = <"">
             >
             ["at4"] = <
-                text = <"5 ou mais vezes na semana">
-                description = <"5 ou mais vezes na semana">
+                text = <"">
+                description = <"">
             >
             ["at5"] = <
-                text = <"3 ou 4 vezes por semana">
-                description = <"3 ou 4 vezes por semana">
+                text = <"">
+                description = <"">
             >
             ["at6"] = <
-                text = <"1 ou 2 vezes na semana">
-                description = <"1 ou 2 vezes na semana">
+                text = <"">
+                description = <"">
             >
             ["at7"] = <
-                text = <"1 a 3  vezes por mês">
-                description = <"1 a 3  vezes por mês">
+                text = <"">
+                description = <"">
             >
             ["at8"] = <
-                text = <"Menos de 1 vez por mês">
-                description = <"Menos de 1 vez por mês">
+                text = <"">
+                description = <"">
             >
             ["ac1"] = <
                 text = <"Frequencia">
@@ -139,16 +139,16 @@ terminology
                 description = <"Durante uma semana normal, com que frequência você toma REFRIGERANTES ou SUCOS ARTIFICIAIS?">
             >
             ["at9"] = <
-                text = <"Sempre retira antes de comer">
-                description = <"Sempre retira antes de comer">
+                text = <"">
+                description = <"">
             >
             ["at10"] = <
-                text = <"Na maioria das vezes retira">
-                description = <"Na maioria das vezes retira">
+                text = <"">
+                description = <"">
             >
             ["at11"] = <
-                text = <"Raramente retira a pele">
-                description = <"Raramente retira a pele">
+                text = <"">
+                description = <"">
             >
             ["at12"] = <
                 text = <"Nunca retira a pele">
@@ -285,32 +285,32 @@ terminology
                 description = <"*5 ou mais vezes ao dia. (pt-br)">
             >
             ["at2"] = <
-                text = <"*3 ou 4 vezes por dia (pt-br)">
-                description = <"*3 ou 4 vezes por dia (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at3"] = <
-                text = <"*1 ou 2 vezes por dia (pt-br)">
-                description = <"*1 ou 2 vezes por dia (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at4"] = <
-                text = <"*5 ou mais vezes na semana (pt-br)">
-                description = <"*5 ou mais vezes na semana (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at5"] = <
-                text = <"*3 ou 4 vezes por semana (pt-br)">
-                description = <"*3 ou 4 vezes por semana (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at6"] = <
-                text = <"*1 ou 2 vezes na semana (pt-br)">
-                description = <"*1 ou 2 vezes na semana (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at7"] = <
-                text = <"*1 a 3  vezes por mês (pt-br)">
-                description = <"*1 a 3  vezes por mês (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at8"] = <
-                text = <"*Menos de 1 vez por mês (pt-br)">
-                description = <"*Menos de 1 vez por mês (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["ac1"] = <
                 text = <"Frequencia (pt-br)">
@@ -329,16 +329,16 @@ terminology
                 description = <"During a normal week, how often do you take REFRIGERANTS or ARTIFICIAL JUICES?">
             >
             ["at9"] = <
-                text = <"*Sempre retira antes de comer (pt-br)">
-                description = <"*Sempre retira antes de comer (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at10"] = <
-                text = <"*Na maioria das vezes retira (pt-br)">
-                description = <"*Na maioria das vezes retira (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at11"] = <
-                text = <"*Raramente retira a pele (pt-br)">
-                description = <"*Raramente retira a pele (pt-br)">
+                text = <"">
+                description = <"">
             >
             ["at12"] = <
                 text = <"*Nunca retira a pele (pt-br)">
