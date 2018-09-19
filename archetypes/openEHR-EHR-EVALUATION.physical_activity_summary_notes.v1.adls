@@ -107,12 +107,12 @@ terminology
         >
         ["pt-br"] = <
             ["id1.1"] = <
-                text = <"*Physical Activity Summary (en)">
-                description = <"*A record of the level of physical activity undertaken by the individual as assessed by a clinician. (en)">
+                text = <"Resumo da atividade física">
+                description = <"Resumo da atividade física">
             >
             ["id0.2"] = <
-                text = <"*Physical activity outside work (en)">
-                description = <"*Physical activity outside work (en)">
+                text = <"Atividade física fora do trabalho">
+                description = <"Atividade física fora do trabalho">
             >
             ["at0.1"] = <
                 text = <"Regular (3 ou mais dias / semana, mínimo 30 minutos / dia)">
