@@ -1,0 +1,71 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-OBSERVATION.medication_question.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    
+description
+    copyright = <"">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+
+definition
+    OBSERVATION[id1] matches {    -- medication_question
+        data matches {
+            HISTORY[id2] matches {
+                events matches {
+                    EVENT[id3] matches {    -- Any event
+                        data matches {
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id9] matches {    -- Do you take any MEDICINES FOR CONTINUOUS USE ?
+                                        value matches {
+                                            DV_BOOLEAN[id10] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id11] matches {    -- Which are
+                                        value matches {
+                                            DV_TEXT[id12] 
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        state matches {
+                            ITEM_TREE[id5] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"medication_question">
+                description = <"medication_question">
+            >
+            ["id3"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
+            ["id9"] = <
+                text = <"Do you take any MEDICINES FOR CONTINUOUS USE ?">
+                description = <"Do you take any MEDICINES FOR CONTINUOUS USE (Antihypertensive, Anticonvulsant, Hypoglycemic, Antidepressant, Immunosuppressant, etc)?">
+            >
+            ["id11"] = <
+                text = <"Which are">
+                description = <"Which are">
+            >
+        >
+    >
+
