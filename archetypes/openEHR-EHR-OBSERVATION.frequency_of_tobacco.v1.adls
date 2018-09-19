@@ -1,0 +1,100 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-OBSERVATION.frequency_of_tobacco.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    
+description
+    copyright = <"">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+
+definition
+    OBSERVATION[id1] matches {    -- Frequency of tobacco
+        data matches {
+            HISTORY[id2] matches {
+                events matches {
+                    EVENT[id3] matches {    -- Any event
+                        data matches {
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id6] matches {    -- You smoke?
+                                        value matches {
+                                            DV_CODED_TEXT[id7] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        state matches {
+                            ITEM_TREE[id5] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"Frequency of tobacco">
+                description = <"Frequency of tobacco">
+            >
+            ["id3"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"You smoke?">
+                description = <"You smoke?">
+            >
+            ["at1"] = <
+                text = <"Never smoked">
+                description = <"Never smoked">
+            >
+            ["at2"] = <
+                text = <"Former smoker or cigar smoker, pipe without inhaling">
+                description = <"Former smoker or cigar smoker, pipe without inhaling">
+            >
+            ["at3"] = <
+                text = <"Less than 10 cigarettes per day">
+                description = <"Less than 10 cigarettes per day">
+            >
+            ["at4"] = <
+                text = <"10-20 cigarettes per day">
+                description = <"10-20 cigarettes per day">
+            >
+            ["at5"] = <
+                text = <"21-30 cigarros por dia">
+                description = <"21-30 cigarros por dia">
+            >
+            ["at6"] = <
+                text = <"21-30 cigarettes per day">
+                description = <"21-30 cigarettes per day">
+            >
+            ["at7"] = <
+                text = <"31-40 cigarros por dia">
+                description = <"31-40 cigarros por dia">
+            >
+            ["ac1"] = <
+                text = <"Frequency">
+                description = <"Frequency">
+            >
+        >
+    >
+    value_sets = <
+        ["ac1"] = <
+            id = <"ac1">
+            members = <"at1", "at2", "at3", "at4", "at6", "at7">
+        >
+    >
+
