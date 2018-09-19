@@ -3,6 +3,12 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -10,6 +16,9 @@ description
         ["en"] = <
             language = <[ISO_639-1::en]>
             purpose = <"">
+        >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
         >
     >
     lifecycle_state = <"unmanaged">
@@ -111,6 +120,68 @@ terminology
             ["ac2"] = <
                 text = <"Plan">
                 description = <"Plan">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"*oral health (en)">
+                description = <"*oral health (en)">
+            >
+            ["id3"] = <
+                text = <"*Any event (en)">
+                description = <"*Any event (en)">
+            >
+            ["id6"] = <
+                text = <"*Have you been to the DENTISTA in the last 12 months? (en)">
+                description = <"*Have you been to the DENTISTA in the last 12 months? (en)">
+            >
+            ["at1"] = <
+                text = <"*Yes, Routine Consultation (en)">
+                description = <"*Yes, Routine Consultation (en)">
+            >
+            ["at2"] = <
+                text = <"*Yes, Specific Treatment (Esthetic, Orthodontic Apparatus, etc) (en)">
+                description = <"*Yes, Specific Treatment (Esthetic, Orthodontic Apparatus, etc) (en)">
+            >
+            ["at3"] = <
+                text = <"*Yes, Periodic Examination (en)">
+                description = <"*Yes, Periodic Examination (en)">
+            >
+            ["at4"] = <
+                text = <"*SESI (en)">
+                description = <"*SESI (en)">
+            >
+            ["at5"] = <
+                text = <"*SUS (en)">
+                description = <"*SUS (en)">
+            >
+            ["ac1"] = <
+                text = <"*Frenquency (en)">
+                description = <"*Frenquency (en)">
+            >
+            ["id8"] = <
+                text = <"*When are you looking for a DENTIST, where are you going? (en)">
+                description = <"*When are you looking for a DENTIST, where are you going? (en)">
+            >
+            ["at6"] = <
+                text = <"*Dental Plan (Agreement) (en)">
+                description = <"*Dental Plan (Agreement) (en)">
+            >
+            ["at7"] = <
+                text = <"*Syndicate (en)">
+                description = <"*Syndicate (en)">
+            >
+            ["at8"] = <
+                text = <"*Particular (en)">
+                description = <"*Particular (en)">
+            >
+            ["at9"] = <
+                text = <"*Do not look for (en)">
+                description = <"*Do not look for (en)">
+            >
+            ["ac2"] = <
+                text = <"*Plan (en)">
+                description = <"*Plan (en)">
             >
         >
     >
