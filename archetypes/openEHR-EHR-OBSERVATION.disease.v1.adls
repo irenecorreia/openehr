@@ -497,96 +497,96 @@ terminology
         >
         ["pt-br"] = <
             ["id1"] = <
-                text = <"*disease (en)">
-                description = <"*disease (en)">
+                text = <"doença">
+                description = <"doença">
             >
             ["id3"] = <
-                text = <"*Any event (en)">
-                description = <"*Any event (en)">
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
             >
             ["id6"] = <
-                text = <"*Chest Angina or Infarct (Heart Attack) (en)">
-                description = <"*Chest Angina or Infarct (Heart Attack) (en)">
+                text = <"Angina de peito ou infarto (ataque cardíaco)">
+                description = <"Angina de peito ou infarto (ataque cardíaco)">
             >
             ["id8"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
             ["id10"] = <
-                text = <"*Asthma (en)">
-                description = <"*Asthma (en)">
+                text = <"Asma">
+                description = <"Asma">
             >
             ["id12"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
             ["id14"] = <
-                text = <"*Cancer (en)">
-                description = <"*Cancer (en)">
+                text = <"Cancer">
+                description = <"Cancer">
             >
             ["id16"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
             ["id21"] = <
-                text = <"*Depression (en)">
-                description = <"*Depression (en)">
+                text = <"Depressão">
+                description = <"Depressão">
             >
             ["id23"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
             ["id25"] = <
-                text = <"*Stroke (en)">
-                description = <"*Stroke (en)">
+                text = <"Acidente vascular encefálico">
+                description = <"Acidente vascular encefálico">
             >
             ["id29"] = <
-                text = <"*Diabetes (en)">
-                description = <"*Diabetes (en)">
+                text = <"Diabetes">
+                description = <"Diabetes">
             >
             ["id31"] = <
-                text = <"*Dyslipidemia- (Increased Cholesterol and / or Triglycerides) (en)">
-                description = <"*Dyslipidemia- (Increased Cholesterol and / or Triglycerides) (en)">
+                text = <"Dislipidemia - (aumento do colesterol e / ou triglicerídeos)">
+                description = <"Dislipidemia - (aumento do colesterol e / ou triglicerídeos)">
             >
             ["id33"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
             ["id35"] = <
-                text = <"*Nephritis (en)">
-                description = <"*Nephritis (en)">
+                text = <"doença renal">
+                description = <"doença renal">
             >
             ["id37"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
             ["id39"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
             ["id41"] = <
-                text = <"*Respiratory Disease (Tuberculosis, COPD, Pneumonia) (en)">
-                description = <"*Respiratory Disease (Tuberculosis, COPD, Pneumonia) (en)">
+                text = <"Doença Respiratória (Tuberculose, DPOC, Pneumonia)">
+                description = <"Doença Respiratória (Tuberculose, DPOC, Pneumonia)">
             >
             ["id43"] = <
-                text = <"*Rheumatic Disease (Lupus, Rheumatoid Arthritis or Other) (en)">
-                description = <"*Rheumatic Disease (Lupus, Rheumatoid Arthritis or Other) (en)">
+                text = <"Doença Reumática (Lupus, Artrite Reumatóide ou Outro)">
+                description = <"Doença Reumática (Lupus, Artrite Reumatóide ou Outro)">
             >
             ["id45"] = <
-                text = <"*Specity (en)">
-                description = <"*Specity (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
             ["id47"] = <
                 text = <"*Specify (en)">
                 description = <"*Specify (en)">
             >
             ["id49"] = <
-                text = <"*Sexually Transmitted Disease - STD / STI (en)">
-                description = <"*Sexually Transmitted Disease - STD / STI (en)">
+                text = <"Doença Sexualmente Transmissível - DST / IST">
+                description = <"Doença Sexualmente Transmissível - DST / IST">
             >
             ["id51"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
             ["id53"] = <
                 text = <"*Epilepsy (en)">
@@ -605,76 +605,76 @@ terminology
                 description = <"*Specify (en)">
             >
             ["id61"] = <
-                text = <"*Spinal Injury (Disk Herniation or Other) (en)">
-                description = <"*Spinal Injury (Disk Herniation or Other) (en)">
+                text = <"Lesão da coluna vertebral (hérnia de disco ou outro)">
+                description = <"Lesão da coluna vertebral (hérnia de disco ou outro)">
             >
             ["id63"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
             ["id65"] = <
                 text = <"*Knee Injury (Ligament Rupture, Meniscus / Patella Injury or other) (en)">
                 description = <"*Knee Injury (Ligament Rupture, Meniscus / Patella Injury or other) (en)">
             >
             ["id67"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
             ["id69"] = <
-                text = <"*Shoulder Injury (Tendonitis, Dislocation or other) (en)">
-                description = <"*Shoulder Injury (Tendonitis, Dislocation or other) (en)">
+                text = <"Lesão no Ombro (Tendinite, Luxação ou outro)">
+                description = <"Lesão no Ombro (Tendinite, Luxação ou outro)">
             >
             ["id71"] = <
                 text = <"*Specify (en)">
                 description = <"*Specify (en)">
             >
             ["id73"] = <
-                text = <"*Low back (en)">
-                description = <"*Low back (en)">
+                text = <"Lombar">
+                description = <"Lombar">
             >
             ["id75"] = <
-                text = <"*Other Hernias (Epigastric, Umbilical, Inguinal / Groin or other) (en)">
-                description = <"*Other Hernias (Epigastric, Umbilical, Inguinal / Groin or other) (en)">
+                text = <"Outras hérnias (epigástrica, umbilical, inguinal / virilha ou outra)">
+                description = <"Outras hérnias (epigástrica, umbilical, inguinal / virilha ou outra)">
             >
             ["id77"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
             ["id79"] = <
-                text = <"*High Blood Pressure (Hypertension) (en)">
-                description = <"*High Blood Pressure (Hypertension) (en)">
+                text = <"Pressão Arterial Alta (Hipertensão)">
+                description = <"Pressão Arterial Alta (Hipertensão)">
             >
             ["id81"] = <
-                text = <"*Auditory Problem (Hearing Loss, Perforation, Inflammation) (en)">
-                description = <"*Auditory Problem (Hearing Loss, Perforation, Inflammation) (en)">
+                text = <"Problema Auditivo (Perda Auditiva, Perfuração, Inflamação)">
+                description = <"Problema Auditivo (Perda Auditiva, Perfuração, Inflamação)">
             >
             ["id83"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
             ["id85"] = <
-                text = <"*Blood Transfusion (en)">
-                description = <"*Blood Transfusion (en)">
+                text = <"Transfusão de sangue">
+                description = <"Transfusão de sangue">
             >
             ["id87"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
             ["id89"] = <
-                text = <"*Anxiety Disorders (Panic, Phobias, etc.) (en)">
-                description = <"*Anxiety Disorders (Panic, Phobias, etc.) (en)">
+                text = <"Transtornos de Ansiedade (Pânico, Fobias, etc.)">
+                description = <"Transtornos de Ansiedade (Pânico, Fobias, etc.)">
             >
             ["id91"] = <
-                text = <"*Thrombosis or Embolism (en)">
-                description = <"*Thrombosis or Embolism (en)">
+                text = <"Trombose ou Embolia">
+                description = <"Trombose ou Embolia">
             >
             ["id93"] = <
-                text = <"*Specify (en)">
-                description = <"*Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
             ["id95"] = <
-                text = <"*Negative Diseases (en)">
-                description = <"*Negative Diseases (en)">
+                text = <"Doenças Negativas">
+                description = <"Doenças Negativas">
             >
         >
     >
