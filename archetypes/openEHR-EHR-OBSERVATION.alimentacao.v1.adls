@@ -45,21 +45,21 @@ definition
                                     ELEMENT[id9] matches {    -- Durante uma semana normal, com que frequência você come VERDURAS, HORTALIÇAS e SALADAS VERDES?
                                         value matches {
                                             DV_CODED_TEXT[id10] matches {
-                                                defining_code matches {[ac2]}
+                                                defining_code matches {[ac1]}
                                             }
                                         }
                                     }
                                     ELEMENT[id11] matches {    -- Durante uma semana normal, com que frequência você toma REFRIGERANTES ou SUCOS ARTIFICIAIS?
                                         value matches {
                                             DV_CODED_TEXT[id12] matches {
-                                                defining_code matches {[ac3]}
+                                                defining_code matches {[ac1]}
                                             }
                                         }
                                     }
                                     ELEMENT[id13] matches {    -- Em quantos dias da semana você costuma trocar a comida do almoço ou jantar por LANCHES (sanduíches, salgados, pizzas ou outros)?
                                         value matches {
                                             DV_CODED_TEXT[id14] matches {
-                                                defining_code matches {[ac4]}
+                                                defining_code matches {[ac1]}
                                             }
                                         }
                                     }
@@ -123,7 +123,7 @@ terminology
                 description = <"Menos de 1 vez por mês">
             >
             ["ac1"] = <
-                text = <"Com que freqüência o trabalhador normalmente come frutas frescas">
+                text = <"Frequencia">
                 description = <"Com que freqüência o trabalhador normalmente come frutas frescas">
             >
             ["id9"] = <
@@ -246,6 +246,26 @@ terminology
                 text = <"Proteção solar">
                 description = <"Proteção solar">
             >
+            ["at30"] = <
+                text = <"Nunca">
+                description = <"Nunca">
+            >
+            ["at31"] = <
+                text = <"1 a 2 dias por semana">
+                description = <"1 a 2 dias por semana">
+            >
+            ["at32"] = <
+                text = <"3 a 4 dias por semana">
+                description = <"3 a 4 dias por semana">
+            >
+            ["at33"] = <
+                text = <"5 a 6 dias por semana">
+                description = <"5 a 6 dias por semana">
+            >
+            ["at34"] = <
+                text = <"Todos os dias (inclusive sábado e domingo)">
+                description = <"Todos os dias (inclusive sábado e domingo)">
+            >
         >
         ["en"] = <
             ["id1"] = <
@@ -293,7 +313,7 @@ terminology
                 description = <"*Menos de 1 vez por mês (pt-br)">
             >
             ["ac1"] = <
-                text = <"*Com que freqüência o trabalhador normalmente come frutas frescas (pt-br)">
+                text = <"Frequencia (pt-br)">
                 description = <"*Com que freqüência o trabalhador normalmente come frutas frescas (pt-br)">
             >
             ["id9"] = <
@@ -416,12 +436,32 @@ terminology
                 text = <"*Proteção solar (pt-br)">
                 description = <"*Proteção solar (pt-br)">
             >
+            ["at30"] = <
+                text = <"Nunca (pt-br)">
+                description = <"Nunca (pt-br)">
+            >
+            ["at31"] = <
+                text = <"1 a 2 dias por semana (pt-br)">
+                description = <"1 a 2 dias por semana (pt-br)">
+            >
+            ["at32"] = <
+                text = <"3 a 4 dias por semana (pt-br)">
+                description = <"3 a 4 dias por semana (pt-br)">
+            >
+            ["at33"] = <
+                text = <"5 a 6 dias por semana (pt-br)">
+                description = <"5 a 6 dias por semana (pt-br)">
+            >
+            ["at34"] = <
+                text = <"Todos os dias (inclusive sábado e domingo) (pt-br)">
+                description = <"Todos os dias (inclusive sábado e domingo) (pt-br)">
+            >
         >
     >
     value_sets = <
         ["ac1"] = <
             id = <"ac1">
-            members = <"at1", "at2", "at3", "at4", "at5", "at6", "at7", "at8">
+            members = <"at30", "at31", "at32", "at33", "at34">
         >
         ["ac2"] = <
             id = <"ac2">
