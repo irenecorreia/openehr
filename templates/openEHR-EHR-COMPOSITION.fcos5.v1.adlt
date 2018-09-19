@@ -74,6 +74,7 @@ definition
             use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-exposure-024.v1.0.0]
             use_archetype SECTION[id0.5, openEHR-EHR-SECTION.ovl-fcos5-adhoc-003.v1.0.0]
             use_archetype SECTION[id0.4, openEHR-EHR-SECTION.ovl-fcos5-adhoc-002.v1.0.0]
+            use_archetype SECTION[id0.6, openEHR-EHR-SECTION.ovl-fcos5-adhoc-001.v1.0.0]
         }
     }
 
@@ -3222,6 +3223,133 @@ terminology
             ["id3.1"] = <
                 text = <"Qualquer evento">
                 description = <"Qualquer evento">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-fcos5-adhoc-001.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items matches {
+            use_archetype OBSERVATION[id0.3, openEHR-EHR-OBSERVATION.ovl-fcos5-general_state_psychology-001.v1.0.0]
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Exame físico">
+                description = <"Exame físico">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-fcos5-general_state_psychology-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.general_state_psychology.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- General state_psychology
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6] matches {
+                /value[id7]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id10] matches {
+                /value[id11]/value matches {True, False}
+            }
+            ELEMENT[id12] matches {
+                /value[id13]/value matches {True, False}
+            }
+            ELEMENT[id14] matches {
+                /value[id15]/value matches {True, False}
+            }
+            ELEMENT[id16] matches {
+                /value[id17]/value matches {True, False}
+            }
+            ELEMENT[id19] matches {
+                /value[id20]/value matches {True, False}
+            }
+            ELEMENT[id21] matches {
+                /value[id22]/value matches {True, False}
+            }
+            ELEMENT[id23] matches {
+                /value[id24]/value matches {True, False}
+            }
+            ELEMENT[id25] matches {
+                /value[id26]/value matches {True, False}
+            }
+            ELEMENT[id27] matches {
+                /value[id28]/value matches {True, False}
+            }
+            ELEMENT[id29] matches {
+                /value[id30]/value matches {True, False}
+            }
+            ELEMENT[id31] matches {
+                /value[id32]/value matches {True, False}
+            }
+            ELEMENT[id33] matches {
+                /value[id34]/value matches {True, False}
+            }
+            ELEMENT[id35] matches {
+                /value[id36]/value matches {True, False}
+            }
+            ELEMENT[id37] matches {
+                /value[id38]/value matches {True, False}
+            }
+            ELEMENT[id39] matches {
+                /value[id40]/value matches {True, False}
+            }
+            ELEMENT[id41] matches {
+                /value[id42]/value matches {True, False}
+            }
+            ELEMENT[id43] matches {
+                /value[id44]/value matches {True, False}
+            }
+            ELEMENT[id45] matches {
+                /value[id46]/value matches {True, False}
+            }
+            ELEMENT[id47] matches {
+                /value[id51]/value matches {True, False}
+            }
+            ELEMENT[id48] matches {
+                /value[id49]/value matches {True, False}
+            }
+            ELEMENT[id50] matches {
+                /value[id52]/value matches {True, False}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"General state_psychology">
+                description = <"General state_psychology">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Estado geral - Psiquismo">
+                description = <"Estado geral - Psiquismo">
             >
         >
     >
