@@ -1,0 +1,306 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-OBSERVATION.disease.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    
+description
+    copyright = <"">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+
+definition
+    OBSERVATION[id1] matches {    -- disease
+        data matches {
+            HISTORY[id2] matches {
+                events matches {
+                    EVENT[id3] matches {    -- Any event
+                        data matches {
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id6] matches {    -- Chest Angina or Infarct (Heart Attack)
+                                        value matches {
+                                            DV_BOOLEAN[id7] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id8] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id9] 
+                                        }
+                                    }
+                                    ELEMENT[id10] matches {    -- Asthma
+                                        value matches {
+                                            DV_BOOLEAN[id11] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id12] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id13] 
+                                        }
+                                    }
+                                    ELEMENT[id14] matches {    -- Cancer
+                                        value matches {
+                                            DV_BOOLEAN[id15] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id16] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id17] 
+                                        }
+                                    }
+                                    ELEMENT[id21] matches {    -- Depression
+                                        value matches {
+                                            DV_BOOLEAN[id22] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id23] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id24] 
+                                        }
+                                    }
+                                    ELEMENT[id25] matches {    -- Stroke
+                                        value matches {
+                                            DV_BOOLEAN[id26] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id29] matches {    -- Diabetes
+                                        value matches {
+                                            DV_BOOLEAN[id30] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id31] matches {    -- Dyslipidemia- (Increased Cholesterol and / or Triglycerides)
+                                        value matches {
+                                            DV_BOOLEAN[id32] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id33] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id34] 
+                                        }
+                                    }
+                                    ELEMENT[id35] matches {    -- Nephritis
+                                        value matches {
+                                            DV_BOOLEAN[id36] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id37] matches {    -- Specify
+                                        value matches {
+                                            DV_BOOLEAN[id38] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id39] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id40] 
+                                        }
+                                    }
+                                    ELEMENT[id41] matches {    -- Respiratory Disease (Tuberculosis, COPD, Pneumonia)
+                                        value matches {
+                                            DV_BOOLEAN[id42] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id43] matches {    -- Rheumatic Disease (Lupus, Rheumatoid Arthritis or Other)
+                                        value matches {
+                                            DV_BOOLEAN[id44] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id45] matches {    -- Specity
+                                        value matches {
+                                            DV_TEXT[id46] 
+                                        }
+                                    }
+                                    ELEMENT[id47] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id48] 
+                                        }
+                                    }
+                                    ELEMENT[id49] matches {    -- Sexually Transmitted Disease - STD / STI
+                                        value matches {
+                                            DV_BOOLEAN[id50] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id51] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id52] 
+                                        }
+                                    }
+                                    ELEMENT[id53] matches {    -- Epilepsy
+                                        value matches {
+                                            DV_BOOLEAN[id54] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id55] matches {    -- Leprosy
+                                        value matches {
+                                            DV_BOOLEAN[id56] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id57] matches {    -- Hepatitis
+                                        value matches {
+                                            DV_BOOLEAN[id58] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id59] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id60] 
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        state matches {
+                            ITEM_TREE[id5] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"disease">
+                description = <"disease">
+            >
+            ["id3"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"Chest Angina or Infarct (Heart Attack)">
+                description = <"Chest Angina or Infarct (Heart Attack)">
+            >
+            ["id8"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id10"] = <
+                text = <"Asthma">
+                description = <"Asthma">
+            >
+            ["id12"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id14"] = <
+                text = <"Cancer">
+                description = <"Cancer">
+            >
+            ["id16"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id21"] = <
+                text = <"Depression">
+                description = <"Depression">
+            >
+            ["id23"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id25"] = <
+                text = <"Stroke">
+                description = <"Stroke">
+            >
+            ["id29"] = <
+                text = <"Diabetes">
+                description = <"Diabetes">
+            >
+            ["id31"] = <
+                text = <"Dyslipidemia- (Increased Cholesterol and / or Triglycerides)">
+                description = <"Dyslipidemia- (Increased Cholesterol and / or Triglycerides)">
+            >
+            ["id33"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id35"] = <
+                text = <"Nephritis">
+                description = <"Nephritis">
+            >
+            ["id37"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id39"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id41"] = <
+                text = <"Respiratory Disease (Tuberculosis, COPD, Pneumonia)">
+                description = <"Respiratory Disease (Tuberculosis, COPD, Pneumonia)">
+            >
+            ["id43"] = <
+                text = <"Rheumatic Disease (Lupus, Rheumatoid Arthritis or Other)">
+                description = <"Rheumatic Disease (Lupus, Rheumatoid Arthritis or Other)">
+            >
+            ["id45"] = <
+                text = <"Specity">
+                description = <"Specity">
+            >
+            ["id47"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id49"] = <
+                text = <"Sexually Transmitted Disease - STD / STI">
+                description = <"Sexually Transmitted Disease - STD / STI">
+            >
+            ["id51"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id53"] = <
+                text = <"Epilepsy">
+                description = <"Epilepsy">
+            >
+            ["id55"] = <
+                text = <"Leprosy">
+                description = <"Leprosy">
+            >
+            ["id57"] = <
+                text = <"Hepatitis">
+                description = <"Hepatitis">
+            >
+            ["id59"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+        >
+    >
+
