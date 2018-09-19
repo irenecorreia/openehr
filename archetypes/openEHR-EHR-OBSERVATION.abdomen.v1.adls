@@ -3,6 +3,12 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -10,6 +16,9 @@ description
         ["en"] = <
             language = <[ISO_639-1::en]>
             purpose = <"">
+        >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
         >
     >
     lifecycle_state = <"in_review">
@@ -65,6 +74,24 @@ terminology
             ["id8"] = <
                 text = <"Specify">
                 description = <"Specify">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"*abdomen (en)">
+                description = <"*abdomen (en)">
+            >
+            ["id3"] = <
+                text = <"*Any event (en)">
+                description = <"*Any event (en)">
+            >
+            ["id6"] = <
+                text = <"*Is there evidence of any change? (bulging, tumor, hernia, surgical scars)? (en)">
+                description = <"*Is there evidence of any change? (bulging, tumor, hernia, surgical scars)? (en)">
+            >
+            ["id8"] = <
+                text = <"*Specify (en)">
+                description = <"*Specify (en)">
             >
         >
     >
