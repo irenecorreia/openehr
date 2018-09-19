@@ -3,6 +3,12 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -10,6 +16,9 @@ description
         ["en"] = <
             language = <[ISO_639-1::en]>
             purpose = <"">
+        >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
         >
     >
     lifecycle_state = <"unmanaged">
@@ -145,6 +154,56 @@ terminology
             ["id24"] = <
                 text = <"For what reason?">
                 description = <"For what reason?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"Hitória pregressa">
+                description = <"Hitória pregressa">
+            >
+            ["id3"] = <
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
+            >
+            ["id6"] = <
+                text = <"Você tem alguma alergia importante?">
+                description = <"Você tem alguma alergia importante?">
+            >
+            ["id8"] = <
+                text = <"Especifique">
+                description = <"Especifique">
+            >
+            ["id10"] = <
+                text = <"Você já teve alguma fratura?">
+                description = <"Você já teve alguma fratura?">
+            >
+            ["id12"] = <
+                text = <"Especifique">
+                description = <"Especifique">
+            >
+            ["id14"] = <
+                text = <"Você já sofreu alguma cirurgia?">
+                description = <"Você já sofreu alguma cirurgia?">
+            >
+            ["id16"] = <
+                text = <"Especifique">
+                description = <"Especifique">
+            >
+            ["id18"] = <
+                text = <"Você tem alguma cirurgia prevista?">
+                description = <"Você tem alguma cirurgia prevista?">
+            >
+            ["id20"] = <
+                text = <"Especifique">
+                description = <"Especifique">
+            >
+            ["id22"] = <
+                text = <"Você já teve alguma internação?">
+                description = <"Você já teve alguma internação?">
+            >
+            ["id24"] = <
+                text = <"Por qual motivo?">
+                description = <"Por qual motivo?">
             >
         >
     >
