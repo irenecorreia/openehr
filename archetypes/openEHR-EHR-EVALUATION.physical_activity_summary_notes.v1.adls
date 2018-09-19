@@ -18,7 +18,7 @@ description
             use = <"Use to record a summary of physical activity.">
         >
     >
-    lifecycle_state = <"unmanaged">
+    lifecycle_state = <"in_review">
     original_author = <
         ["name"] = <"Hugh Leslie">
         ["organisation"] = <"Ocean Informatics">
