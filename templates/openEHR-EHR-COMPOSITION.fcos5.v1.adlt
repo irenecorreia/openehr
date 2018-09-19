@@ -78,6 +78,9 @@ definition
             use_archetype SECTION[id0.7, openEHR-EHR-SECTION.ovl-fcos5-adhoc-004.v1.0.0]
             use_archetype SECTION[id0.8, openEHR-EHR-SECTION.ovl-fcos5-adhoc-005.v1.0.0]
             use_archetype SECTION[id0.9, openEHR-EHR-SECTION.ovl-fcos5-adhoc-006.v1.0.0]
+            use_archetype SECTION[id0.11, openEHR-EHR-SECTION.ovl-fcos5-adhoc-008.v1.0.0]
+            use_archetype SECTION[id0.10, openEHR-EHR-SECTION.ovl-fcos5-adhoc-007.v1.0.0]
+            use_archetype SECTION[id0.12, openEHR-EHR-SECTION.ovl-fcos5-adhoc-009.v1.0.0]
         }
     }
 
@@ -3946,8 +3949,256 @@ terminology
         >
         ["pt-br"] = <
             ["id1.1"] = <
-                text = <"Encabeçamento">
-                description = <"Um título genérico para renomeação contextual dentro de um modelo.">
+                text = <"Conclusão diagnóstica">
+                description = <"Conclusão diagnóstica">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-fcos5-adhoc-007.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items matches {
+            use_archetype OBSERVATION[id0.2, openEHR-EHR-OBSERVATION.ovl-fcos5-diferentiated_condition_of_work-001.v1.0.0]
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Conclusão para condição diferenciada de trabalho">
+                description = <"Conclusão para condição diferenciada de trabalho">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-fcos5-diferentiated_condition_of_work-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.diferentiated_condition_of_work.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- diferentiated condition of work
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6] matches {
+                /value[id7]/value matches {True, False}
+            }
+            ELEMENT[id8] matches {
+                /value[id9]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id10] matches {
+                /value[id11]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id12] matches {
+                /value[id13]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id14] matches {
+                /value[id15]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id16] matches {
+                /value[id17]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id18] matches {
+                /value[id19]/value matches {True, False}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"diferentiated condition of work">
+                description = <"diferentiated condition of work">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Condição diferenciada de trabalho">
+                description = <"condição diferenciada de trabalho">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-fcos5-adhoc-008.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items matches {
+            use_archetype OBSERVATION[id0.3, openEHR-EHR-OBSERVATION.ovl-fcos5-clinical_evaluation-001.v1.0.0]
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Conclusão da avaliação clínica">
+                description = <"Conclusão da avaliação clínica">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-fcos5-clinical_evaluation-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.clinical_evaluation.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- clinical evaluation
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6] matches {
+                /value[id7]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id10.1] matches {    -- Professional name
+                value matches {
+                    DV_TEXT[id11.1] 
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"clinical evaluation">
+                description = <"clinical evaluation">
+            >
+            ["id10.1"] = <
+                text = <"Professional name">
+                description = <"Professional name">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Avaliação clínica">
+                description = <"Avaliação clínica">
+            >
+            ["id10.1"] = <
+                text = <"Nome do profissional">
+                description = <"Nome do profissional">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-fcos5-adhoc-009.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items matches {
+            use_archetype OBSERVATION[id0.2, openEHR-EHR-OBSERVATION.ovl-fcos5-clinical_evaluation-002.v1.0.0]
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Responsável">
+                description = <"Responsável">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-fcos5-clinical_evaluation-002.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.clinical_evaluation.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- clinical evaluation
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6.1] matches {    -- Conclusion of clinical evaluation
+                value matches {
+                    DV_CODED_TEXT[id7.1] matches {
+                        defining_code matches {[ac1]}
+                    }
+                }
+            }
+            ELEMENT[id8.1] matches {    -- Justification
+                value matches {
+                    DV_TEXT[id9.1] 
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"clinical evaluation">
+                description = <"clinical evaluation">
+            >
+            ["id6.1"] = <
+                text = <"Conclusion of clinical evaluation">
+                description = <"Conclusion of clinical evaluation">
+            >
+            ["id8.1"] = <
+                text = <"Justification">
+                description = <"Justification">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Avaliação clínica">
+                description = <"Avaliação clínica">
+            >
+            ["id6.1"] = <
+                text = <"Conclusão da avaliação clínica">
+                description = <"Conclusão da avaliação clínica">
+            >
+            ["id8.1"] = <
+                text = <"Justificativa">
+                description = <"Justificativa">
             >
         >
     >
