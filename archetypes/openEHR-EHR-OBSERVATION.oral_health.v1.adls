@@ -1,0 +1,127 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-OBSERVATION.oral_health.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    
+description
+    copyright = <"">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+
+definition
+    OBSERVATION[id1] matches {    -- oral health
+        data matches {
+            HISTORY[id2] matches {
+                events matches {
+                    EVENT[id3] matches {    -- Any event
+                        data matches {
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id6] matches {    -- Have you been to the DENTISTA in the last 12 months?
+                                        value matches {
+                                            DV_CODED_TEXT[id7] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id8] matches {    -- When are you looking for a DENTIST, where are you going?
+                                        value matches {
+                                            DV_CODED_TEXT[id9] matches {
+                                                defining_code matches {[ac2]}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        state matches {
+                            ITEM_TREE[id5] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"oral health">
+                description = <"oral health">
+            >
+            ["id3"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"Have you been to the DENTISTA in the last 12 months?">
+                description = <"Have you been to the DENTISTA in the last 12 months?">
+            >
+            ["at1"] = <
+                text = <"Yes, Routine Consultation">
+                description = <"Yes, Routine Consultation">
+            >
+            ["at2"] = <
+                text = <"Yes, Specific Treatment (Esthetic, Orthodontic Apparatus, etc)">
+                description = <"Yes, Specific Treatment (Esthetic, Orthodontic Apparatus, etc)">
+            >
+            ["at3"] = <
+                text = <"Yes, Periodic Examination">
+                description = <"Yes, Periodic Examination">
+            >
+            ["at4"] = <
+                text = <"SESI">
+                description = <"SESI">
+            >
+            ["at5"] = <
+                text = <"SUS">
+                description = <"SUS">
+            >
+            ["ac1"] = <
+                text = <"Frenquency">
+                description = <"Frenquency">
+            >
+            ["id8"] = <
+                text = <"When are you looking for a DENTIST, where are you going?">
+                description = <"When are you looking for a DENTIST, where are you going?">
+            >
+            ["at6"] = <
+                text = <"Dental Plan (Agreement)">
+                description = <"Dental Plan (Agreement)">
+            >
+            ["at7"] = <
+                text = <"Syndicate">
+                description = <"Syndicate">
+            >
+            ["at8"] = <
+                text = <"Particular">
+                description = <"Particular">
+            >
+            ["at9"] = <
+                text = <"Do not look for">
+                description = <"Do not look for">
+            >
+            ["ac2"] = <
+                text = <"Plan">
+                description = <"Plan">
+            >
+        >
+    >
+    value_sets = <
+        ["ac1"] = <
+            id = <"ac1">
+            members = <"at1", "at2", "at3", "at4", "at5">
+        >
+        ["ac2"] = <
+            id = <"ac2">
+            members = <"at6", "at7", "at8", "at9">
+        >
+    >
+
