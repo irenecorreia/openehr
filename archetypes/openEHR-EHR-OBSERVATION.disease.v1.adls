@@ -233,6 +233,63 @@ definition
                                             DV_TEXT[id78] 
                                         }
                                     }
+                                    ELEMENT[id79] matches {    -- High Blood Pressure (Hypertension)
+                                        value matches {
+                                            DV_BOOLEAN[id80] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id81] matches {    -- Auditory Problem (Hearing Loss, Perforation, Inflammation)
+                                        value matches {
+                                            DV_BOOLEAN[id82] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id83] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id84] 
+                                        }
+                                    }
+                                    ELEMENT[id85] matches {    -- Blood Transfusion
+                                        value matches {
+                                            DV_BOOLEAN[id86] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id87] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id88] 
+                                        }
+                                    }
+                                    ELEMENT[id89] matches {    -- Anxiety Disorders (Panic, Phobias, etc.)
+                                        value matches {
+                                            DV_BOOLEAN[id90] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id91] matches {    -- Thrombosis or Embolism
+                                        value matches {
+                                            DV_BOOLEAN[id92] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id93] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id94] 
+                                        }
+                                    }
+                                    ELEMENT[id95] matches {    -- Negative Diseases
+                                        value matches {
+                                            DV_BOOLEAN[id96] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -391,6 +448,42 @@ terminology
             ["id77"] = <
                 text = <"Specify">
                 description = <"Specify">
+            >
+            ["id79"] = <
+                text = <"High Blood Pressure (Hypertension)">
+                description = <"High Blood Pressure (Hypertension)">
+            >
+            ["id81"] = <
+                text = <"Auditory Problem (Hearing Loss, Perforation, Inflammation)">
+                description = <"Auditory Problem (Hearing Loss, Perforation, Inflammation)">
+            >
+            ["id83"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id85"] = <
+                text = <"Blood Transfusion">
+                description = <"Blood Transfusion">
+            >
+            ["id87"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id89"] = <
+                text = <"Anxiety Disorders (Panic, Phobias, etc.)">
+                description = <"Anxiety Disorders (Panic, Phobias, etc.)">
+            >
+            ["id91"] = <
+                text = <"Thrombosis or Embolism">
+                description = <"Thrombosis or Embolism">
+            >
+            ["id93"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id95"] = <
+                text = <"Negative Diseases">
+                description = <"Negative Diseases">
             >
         >
     >
