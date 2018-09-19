@@ -135,8 +135,8 @@ terminology
                 description = <"Justificativa">
             >
             ["id10"] = <
-                text = <"Professional name (en)">
-                description = <"Professional name (en)">
+                text = <"Nome do profissional">
+                description = <"Nome do profissional">
             >
         >
     >
