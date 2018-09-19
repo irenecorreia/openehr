@@ -392,20 +392,20 @@ terminology
                 description = <"Estado de Humor (no momento da consulta):">
             >
             ["at1"] = <
-                text = <"*Stable / Euthymic (en)">
-                description = <"*Stable / Euthymic (en)">
+                text = <"Estável / Eutímico">
+                description = <"Estável / Eutímico">
             >
             ["at2"] = <
-                text = <"*Anxious / Euphoric (en)">
-                description = <"*Anxious / Euphoric (en)">
+                text = <"Ansioso / Eufórico">
+                description = <"Ansioso / Eufórico">
             >
             ["at3"] = <
-                text = <"*Depressed / sad (en)">
-                description = <"*Depressed / sad (en)">
+                text = <"Deprimido / triste">
+                description = <"Deprimido / triste">
             >
             ["at4"] = <
-                text = <"*Angry / Exalted (en)">
-                description = <"*Angry / Exalted (en)">
+                text = <"Irritado / Exaltado">
+                description = <"Irritado / Exaltado">
             >
             ["ac1"] = <
                 text = <"*State of mood (en)">
@@ -500,36 +500,36 @@ terminology
                 description = <"Você se cansa com facilidade?">
             >
             ["id53"] = <
-                text = <"How would you define your state of mental health since the last medical examination? (en)">
-                description = <"How would you define your state of mental health since the last medical examination? (en)">
+                text = <"Como você definiria seu estado de saúde mental desde o último exame médico?">
+                description = <"Como você definiria seu estado de saúde mental desde o último exame médico?">
             >
             ["at5"] = <
-                text = <"great (en)">
-                description = <"great (en)">
+                text = <"otimo">
+                description = <"otimo">
             >
             ["at6"] = <
-                text = <"good (en)">
-                description = <"good (en)">
+                text = <"bom">
+                description = <"bom">
             >
             ["at7"] = <
-                text = <"regular (en)">
-                description = <"regular (en)">
+                text = <"regular">
+                description = <"regular">
             >
             ["at8"] = <
-                text = <"bad (en)">
-                description = <"bad (en)">
+                text = <"ruim">
+                description = <"ruim">
             >
             ["ac2"] = <
                 text = <"Mental Health (en)">
                 description = <"Mental Health (en)">
             >
             ["id55"] = <
-                text = <"Do you have any other complaints or problems you want to report? (en)">
-                description = <"Do you have any other complaints or problems you want to report? (en)">
+                text = <"Você tem outras reclamações ou problemas que deseja denunciar?">
+                description = <"Você tem outras reclamações ou problemas que deseja denunciar?">
             >
             ["id57"] = <
-                text = <"Report (en)">
-                description = <"Report (en)">
+                text = <"Relate">
+                description = <"Relate">
             >
         >
     >
