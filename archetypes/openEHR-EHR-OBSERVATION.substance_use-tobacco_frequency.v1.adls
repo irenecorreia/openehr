@@ -20,7 +20,7 @@ Other types of tobacco use are not included here, but may be added added as a re
 A typical use would be to record usage in an tobacco usage diary.">
         >
     >
-    lifecycle_state = <"unmanaged">
+    lifecycle_state = <"in_review">
     original_author = <
         ["name"] = <"Heather Leslie">
         ["organisation"] = <"Ocean Informatics">
