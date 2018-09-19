@@ -84,8 +84,8 @@ terminology
                 description = <"not completed">
             >
             ["ac1"] = <
-                text = <"conclusion">
-                description = <"conclusion">
+                text = <"Conclusion">
+                description = <"Conclusion">
             >
             ["id8"] = <
                 text = <"Justification">
@@ -118,8 +118,8 @@ terminology
                 description = <"Não concluído">
             >
             ["ac1"] = <
-                text = <"*conclusion (en)">
-                description = <"*conclusion (en)">
+                text = <"Conclusion (en)">
+                description = <"Conclusion (en)">
             >
             ["id8"] = <
                 text = <"Justificativa">
