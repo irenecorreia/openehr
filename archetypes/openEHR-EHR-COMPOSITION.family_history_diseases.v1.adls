@@ -226,44 +226,44 @@ terminology
                 description = <"Uma lista persistente e gerenciada sobre histórico familiar relevante do assunto que pode influenciar a tomada de decisões clínicas e a provisão de cuidados.">
             >
             ["id0.6"] = <
-                text = <"Do you have cancer case (s) in your family? (en)">
-                description = <"Do you have cancer case (s) in your family? (en)">
+                text = <"Você tem câncer (s) em sua família?">
+                description = <"Você tem câncer (s) em sua família?">
             >
             ["id0.7"] = <
-                text = <"Uterine cervix (en)">
-                description = <"Uterine cervix (en)">
+                text = <"Uterine cervix">
+                description = <"Uterine cervix">
             >
             ["id0.9"] = <
-                text = <"Intestine (en)">
-                description = <"Intestine (en)">
+                text = <"Intestino">
+                description = <"Intestino">
             >
             ["id0.11"] = <
-                text = <"Leucemia (en)">
-                description = <"Leucemia (en)">
+                text = <"Leucemia">
+                description = <"Leucemia">
             >
             ["id0.13"] = <
-                text = <"breast cancer (en)">
-                description = <"breast cancer (en)">
+                text = <"Câncer de mana">
+                description = <"Câncer de mana">
             >
             ["id0.15"] = <
-                text = <"Skin (en)">
-                description = <"Skin (en)">
+                text = <"Pele">
+                description = <"Pele">
             >
             ["id0.17"] = <
-                text = <"Prostate (en)">
-                description = <"Prostate (en)">
+                text = <"Prostata">
+                description = <"Prostata">
             >
             ["id0.19"] = <
-                text = <"Lung (en)">
-                description = <"Lung (en)">
+                text = <"Pulmão">
+                description = <"Pulmão">
             >
             ["id0.21"] = <
-                text = <"Others (en)">
-                description = <"Others (en)">
+                text = <"Outros">
+                description = <"Outros">
             >
             ["id0.23"] = <
-                text = <"Specify (en)">
-                description = <"Specify (en)">
+                text = <"Especifique">
+                description = <"Especifique">
             >
             ["at0.1"] = <
                 text = <"Yes (en)">
@@ -282,12 +282,12 @@ terminology
                 description = <"Value (en)">
             >
             ["id0.31"] = <
-                text = <"Do you have DIABETES case (s) in your family? (en)">
-                description = <"Do you have DIABETES case (s) in your family? (en)">
+                text = <"Você tem o (s) caso (s) da DIABETES na sua família?">
+                description = <"Você tem o (s) caso (s) da DIABETES na sua família?">
             >
             ["id0.33"] = <
-                text = <"Do you have HIGH PRESSURE / HYPERTENSION case (s) in your family? (en)">
-                description = <"Do you have HIGH PRESSURE / HYPERTENSION case (s) in your family? (en)">
+                text = <"Você tem casos de ALTA PRESSÃO / HIPERTENSÃO em sua família?">
+                description = <"Você tem casos de ALTA PRESSÃO / HIPERTENSÃO em sua família?">
             >
         >
     >
