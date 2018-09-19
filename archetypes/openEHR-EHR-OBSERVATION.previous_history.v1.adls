@@ -30,6 +30,30 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id8] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id9] 
+                                        }
+                                    }
+                                    ELEMENT[id10] matches {    -- Have you ever had a fracture?
+                                        value matches {
+                                            DV_BOOLEAN[id11] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id12] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id13] 
+                                        }
+                                    }
+                                    ELEMENT[id14] matches {    -- Have you ever had any surgery?
+                                        value matches {
+                                            DV_BOOLEAN[id15] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -56,6 +80,22 @@ terminology
             ["id6"] = <
                 text = <"Do you have any important allergy?">
                 description = <"Do you have any important allergy?">
+            >
+            ["id8"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id10"] = <
+                text = <"Have you ever had a fracture?">
+                description = <"Have you ever had a fracture?">
+            >
+            ["id12"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id14"] = <
+                text = <"Have you ever had any surgery?">
+                description = <"Have you ever had any surgery?">
             >
         >
     >
