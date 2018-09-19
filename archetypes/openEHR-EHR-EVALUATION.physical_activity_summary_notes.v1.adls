@@ -1,0 +1,74 @@
+archetype (adl_version=2.0.5; rm_release=1.0.2; generated)
+    openEHR-EHR-EVALUATION.physical_activity_summary_notes.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.physical_activity_summary.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    
+description
+    copyright = <"© 2010 NEHTA">
+    details = <
+        ["en"] = <
+            keywords = <"activity", "exercise", "physical", "fitness">
+            language = <[ISO_639-1::en]>
+            misuse = <"Not to be used to record diary-like observations of physical activity.">
+            purpose = <"To record a summary of an individual's physical activity with regard to assessing the general level of physical activity and fitness of an individual.">
+            use = <"Use to record a summary of physical activity.">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+    original_author = <
+        ["name"] = <"Hugh Leslie">
+        ["organisation"] = <"Ocean Informatics">
+        ["email"] = <"hugh.leslie@oceaninformatics.com">
+        ["date"] = <"17/12/2010">
+    >
+    other_contributors = <"Stephen Chu, NEHTA, Australia">
+
+definition
+    EVALUATION[id1.1] matches {    -- Physical Activity Summary
+        /data[id2]/items matches {
+            ELEMENT[id0.2] matches {    -- Physical activity outside work
+                value matches {
+                    DV_CODED_TEXT[id0.3] matches {
+                        defining_code matches {[ac0.1]}
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Physical Activity Summary">
+                description = <"A record of the level of physical activity undertaken by the individual as assessed by a clinician.">
+            >
+            ["id0.2"] = <
+                text = <"Physical activity outside work">
+                description = <"Physical activity outside work">
+            >
+            ["at0.1"] = <
+                text = <"Regular (3 or more days / week, minimum 30 minutes / day)">
+                description = <"Regular (3 or more days / week, minimum 30 minutes / day)">
+            >
+            ["at0.2"] = <
+                text = <"Not practical or irregular">
+                description = <"Not practical or irregular">
+            >
+            ["ac0.1"] = <
+                text = <"Time">
+                description = <"Time">
+            >
+        >
+    >
+    value_sets = <
+        ["ac0.1"] = <
+            id = <"ac0.1">
+            members = <"at0.1", "at0.2">
+        >
+    >
+
