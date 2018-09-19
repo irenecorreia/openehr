@@ -256,7 +256,7 @@
     "rmType" : "EVALUATION",
     "name" : "exame_fisico",
     "path" : "archetypes/openEHR-EHR-EVALUATION.exame_fisico.v1.adls",
-    "sha" : "fe07eaa6a651da35d7a9783b6c2d55adcc954c61",
+    "sha" : "52453924b0950ac0e21f3d70467ad9fbcbb23f4a",
     "languages" : [ "pt-br", "en" ]
   }, {
     "id" : "openEHR-EHR-EVALUATION.family_history-SESI-BR.v1.0.0",
@@ -291,7 +291,7 @@
     "rmType" : "OBSERVATION",
     "name" : "Alcohol Use",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.alcohol_use.v1.adls",
-    "sha" : "33032eb40ac81a84e33234287db54fc5aeb6f593",
+    "sha" : "c6c03907c475abd73cae669acf85674f3a80e252",
     "languages" : [ "en", "pt-br" ]
   }, {
     "id" : "openEHR-EHR-OBSERVATION.antecedentes_ginecologico_urologico.v1.0.0",
@@ -1056,15 +1056,15 @@
     "rmType" : "OBSERVATION",
     "name" : "chest",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.chest.v1.adls",
-    "sha" : "85616c731424a381c240d2e177857ae0f91df13b",
-    "languages" : [ "en" ]
+    "sha" : "9e6512cf02c934e2cbf386af9ee05888c2914793",
+    "languages" : [ "en", "pt-br" ]
   }, {
     "id" : "openEHR-EHR-OBSERVATION.head_ab_neck.v1.0.0",
     "rmType" : "OBSERVATION",
-    "name" : "head ab neck",
+    "name" : "head and neck",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.head_ab_neck.v1.adls",
-    "sha" : "c1e18a81920a0ac62ec4509521b7a412352fdce7",
-    "languages" : [ "en" ]
+    "sha" : "ab0dbcaffaf7908ede3e09d63289b3b9724a5a02",
+    "languages" : [ "en", "pt-br" ]
   }, {
     "id" : "openEHR-EHR-OBSERVATION.personal_protective_equipament.v1.0.0",
     "rmType" : "OBSERVATION",
@@ -1072,5 +1072,138 @@
     "path" : "archetypes/openEHR-EHR-OBSERVATION.personal_protective_equipament.v1.adls",
     "sha" : "31b1e642ffade187c725dc4ecbf5c8de6b6dbb6f",
     "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-COMPOSITION.family_history_diseases.v1.0.0",
+    "rmType" : "COMPOSITION",
+    "name" : "Family History",
+    "path" : "archetypes/openEHR-EHR-COMPOSITION.family_history_diseases.v1.adls",
+    "sha" : "11f2d1b10b82ffb3f60306744e29d5192abe618d",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-EVALUATION.physical_activity_summary_notes.v1.0.0",
+    "rmType" : "EVALUATION",
+    "name" : "Physical Activity Summary",
+    "path" : "archetypes/openEHR-EHR-EVALUATION.physical_activity_summary_notes.v1.adls",
+    "sha" : "768ac9b275bf7332f956949c15d87e73a937857a",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.abdomen.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "abdomen",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.abdomen.v1.adls",
+    "sha" : "88c4e599d4f77289e59fe7d47eba68232149697f",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.clinical_evaluation.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "clinical evaluation",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.clinical_evaluation.v1.adls",
+    "sha" : "53c522b3c8c30e013c6de688f3a63a4b8580d5f4",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.column.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "Column",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.column.v1.adls",
+    "sha" : "e624cb317e4faa7fd57b7eea43f36b1b6e17cf20",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.complementary_exames_altered.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "complementary exames altered",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.complementary_exames_altered.v1.adls",
+    "sha" : "d79244bb5552b4040638f783cd686d96ac26b44c",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.diferentiated_condition_of_work.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "diferentiated condition of work",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.diferentiated_condition_of_work.v1.adls",
+    "sha" : "d54731b3047f2403bc56254b083b36094282ed39",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.disease.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "disease",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.disease.v1.adls",
+    "sha" : "45e6bdfe2bcfddee158628ce740bc88eb41aefb6",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.extremities.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "extremities",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.extremities.v1.adls",
+    "sha" : "86aaa0b5654212f60469e2851786553855fcc91a",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.general_state_psychology.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "General state_psychology",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.general_state_psychology.v1.adls",
+    "sha" : "a430470629f50006ae46b49f81718f5b36aea632",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.health_and_lifestyle_recommendations.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "health and lifestyle recommendations",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.health_and_lifestyle_recommendations.v1.adls",
+    "sha" : "037f2df0d4aefbf2c02b2843f6fabc8bb150aaf7",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.medication_question.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "medication_question",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.medication_question.v1.adls",
+    "sha" : "e5e36724359e4ed4bfb2e382f3aa677a15e6a101",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.members.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "members",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.members.v1.adls",
+    "sha" : "228b184d71d0fccaff5f64b7be47a08463cadd72",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.nervous_system.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "NERVOUS SYSTEM",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.nervous_system.v1.adls",
+    "sha" : "152b3955c53152e40705b5c60fbfdca1c192becf",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.people_with_disabilities.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "People with Disabilities",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.people_with_disabilities.v1.adls",
+    "sha" : "e1fcfa0abd768bb04ae25e0c7c5e7b10cead8867",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.previous_history.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "previous history",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.previous_history.v1.adls",
+    "sha" : "3a34a70d4408485355fef617e0488ba6d7735bec",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.prosthetics_or_organs.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "prosthetics or organs",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.prosthetics_or_organs.v1.adls",
+    "sha" : "d9c4eb25c849fcea886044b640eddc01bafb1e17",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.skin_mucous_faneros.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "skin_mucous_faneros",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.skin_mucous_faneros.v1.adls",
+    "sha" : "045a4ab37f4843bed1205de217cdd81a67c3acc7",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.substance_use-tobacco_frequency.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "Tobacco Use",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.substance_use-tobacco_frequency.v1.adls",
+    "sha" : "d4ed00f9ec5d8fc6f018110807e93b0f24cbb3ac",
+    "languages" : [ "en" ]
   } ]
 }
