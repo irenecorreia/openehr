@@ -3094,6 +3094,7 @@ definition
     SECTION[id1.1] matches {    -- Adhoc Heading
         items matches {
             use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-problem_diagnosis-001.v1.0.0]
+            use_archetype OBSERVATION[id0.5, openEHR-EHR-OBSERVATION.ovl-fcos5-medication_question-001.v1.0.0]
         }
     }
 
@@ -4790,6 +4791,51 @@ terminology
             ["id70.1"] = <
                 text = <"Comente">
                 description = <"Narrativa adicional sobre o problema ou diagnóstico não capturado em outros campos.">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-fcos5-medication_question-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.medication_question.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- medication_question
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id9.1] matches {    -- Do you take any MEDICINES FOR CONTINUOUS USE (Antihypertensive, Anticonvulsant, Hypoglycemic, Antidepressant, Immunosuppressant, etc)?
+                value matches {
+                    DV_BOOLEAN[id10.1] matches {
+                        value matches {True, False}
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"medication_question">
+                description = <"medication_question">
+            >
+            ["id9.1"] = <
+                text = <"Do you take any MEDICINES FOR CONTINUOUS USE (Antihypertensive, Anticonvulsant, Hypoglycemic, Antidepressant, Immunosuppressant, etc)?">
+                description = <"Do you take any MEDICINES FOR CONTINUOUS USE (Antihypertensive, Anticonvulsant, Hypoglycemic, Antidepressant, Immunosuppressant, etc)?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Questões sobre Medicamentos">
+                description = <"Questões sobre Medicamentos">
+            >
+            ["id9.1"] = <
+                text = <"Está em uso de algum medicamento (incluindo os que não necessitam de receita médica)?">
+                description = <"Está em uso de algum medicamento (incluindo os que não necessitam de receita médica)?">
             >
         >
     >
