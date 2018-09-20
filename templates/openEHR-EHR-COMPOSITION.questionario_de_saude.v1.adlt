@@ -17,18 +17,20 @@ description
     copyright = <"© openEHR">
     details = <
         ["en"] = <
-            keywords = <"progress", "note", "encounter">
+            keywords = <"worker", "health", "occupational">
             language = <[ISO_639-1::en]>
             misuse = <"">
-            purpose = <"Record of encounter as a progress note.">
-            use = <"For use to record when a person and clinician interact.">
+            purpose = <"Store the questionnaire used in the S5 + system used in SESI
+">
+            use = <"Used to store data collected after application of health questionnaire to worker
+">
         >
         ["pt-br"] = <
-            keywords = <"Progresso", "nota", "encontro">
+            keywords = <"trabalhador", "saúde", "ocupacional">
             language = <[ISO_639-1::pt-br]>
             misuse = <"">
-            purpose = <"Registro de encontro como nota de progresso.">
-            use = <"Usado para gravar uma interação entre uma pessoa e um clínico.">
+            purpose = <"Armazenar o questionário utilizado no sistema S5+ utilizado no SESI">
+            use = <"Usado para armazenar os dados coletados após a aplicação do questionário de saúde ao trabalhador">
         >
     >
     lifecycle_state = <"unmanaged">
