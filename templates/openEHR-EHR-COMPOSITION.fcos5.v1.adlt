@@ -3092,7 +3092,9 @@ specialize
 
 definition
     SECTION[id1.1] matches {    -- Adhoc Heading
-        items
+        items matches {
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-fcos5-problem_diagnosis-001.v1.0.0]
+        }
     }
 
 terminology
@@ -3105,7 +3107,7 @@ terminology
         >
         ["pt-br"] = <
             ["id1.1"] = <
-                text = <"História Clínica">
+                text = <"HISTÓRIA CLÍNICA (QUEIXA PRINCIPAL / HISTÓRIA DA DOENÇA ATUAL)">
                 description = <"História Clínica">
             >
         >
@@ -4244,6 +4246,290 @@ terminology
             ["id57.1"] = <
                 text = <"Relate">
                 description = <"Relate">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-fcos5-problem_diagnosis-001.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.problem_diagnosis.v1.0.0
+
+definition
+    EVALUATION[id1.1] matches {    -- Problem/Diagnosis
+        /data[id2]/items matches {
+            ELEMENT[id3.1] matches {    -- Problem/Diagnosis
+                value matches {
+                    DV_TEXT[id84.1] 
+                }
+            }
+            ELEMENT[id10.1] matches {    -- Clinical description
+                value matches {
+                    DV_TEXT[id85.1] 
+                }
+            }
+            ELEMENT[id83.1] matches {    -- Severity
+                value matches {
+                    DV_TEXT[id86.1] 
+                }
+            }
+            ELEMENT[id11.1] matches {    -- Date of onset
+                value matches {
+                    DV_DATE_TIME[id87.1] 
+                }
+            }
+            ELEMENT[id38.1] matches {    -- Age at onset
+                value matches {
+                    DV_DURATION[id88.1] 
+                }
+            }
+            allow_archetype CLUSTER[id45] matches { 
+                include
+                    archetype_id/value matches {/openEHR-EHR-CLUSTER\.anatomical_location(-a-zA-Z0-9_]+)*\.v1/}
+            }
+            CLUSTER[id19] matches {
+                items matches {
+                    ELEMENT[id26.1] matches {    -- Number
+                        value matches {
+                            DV_COUNT[id89.1] matches {
+                                magnitude matches {|>=1|}
+                            }
+                        }
+                    }
+                    ELEMENT[id20.1] matches {    -- Frequency
+                        value matches {
+                            DV_QUANTITY[id90.1] matches {
+                                property matches {[at83]}
+                                units matches {"/min", "/h", "/d", "/wk", "/mo", "/yr"}
+                            }
+                        }
+                    }
+                    ELEMENT[id21.1] matches {    -- Latest occurrence
+                        value matches {
+                            DV_DATE[id91.1] 
+                        }
+                    }
+                    ELEMENT[id73.1] matches {    -- Description
+                        value matches {
+                            DV_TEXT[id92.1] 
+                        }
+                    }
+                    ELEMENT[id74.1] matches {    -- Link to occurrence details
+                        value matches {
+                            DV_URI[id93.1] 
+                        }
+                    }
+                }
+            }
+            CLUSTER[id27] matches {
+                items matches {
+                    ELEMENT[id29.1] matches {    -- Related item
+                        value matches {
+                            DV_TEXT[id94.1] 
+                        }
+                    }
+                    ELEMENT[id57.1] matches {    -- Relationship type
+                        value matches {
+                            DV_CODED_TEXT[id95.1] matches {
+                                defining_code matches {[ac1]}
+                            }
+                        }
+                    }
+                }
+            }
+            ELEMENT[id31.1] matches {    -- Date of resolution/remission
+                value matches {
+                    DV_DATE[id96.1] 
+                }
+            }
+            ELEMENT[id32.1] matches {    -- Age at resolution/remission
+                value matches {
+                    DV_DURATION[id97.1] 
+                }
+            }
+            allow_archetype CLUSTER[id55] matches { 
+                include
+                    archetype_id/value matches {/.*/}
+            }
+            allow_archetype CLUSTER[id56] matches { 
+                include
+                    archetype_id/value matches {/.*/}
+            }
+            ELEMENT[id70.1] matches {    -- Comment
+                value matches {
+                    DV_TEXT[id98.1] 
+                }
+            }
+            ELEMENT[id3.2] matches {    -- Problem/Diagnosis
+                value matches {
+                    DV_TEXT[id84.2] 
+                }
+            }
+        }
+        /protocol[id75]/items matches {
+            ELEMENT[id76.1] matches {    -- Link to supporting clinical evidence
+                value matches {
+                    DV_URI[id99.1] 
+                }
+            }
+            allow_archetype CLUSTER[id77] matches { 
+                include
+                    archetype_id/value matches {/.*/}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Problem/Diagnosis">
+                description = <"Any health care condition which may impact on the physical, mental and/or social well-being of an individual, that may require diagnostic, therapeutic or educational action, and which has been determined by a clinician. A diagnosis is based on scientific evaluation of physical signs, symptoms, history, laboratory tests results, and procedures.">
+            >
+            ["id3.1"] = <
+                text = <"Problem/Diagnosis">
+                description = <"Identification of the problem or diagnosis. Coding of the problem or diagnosis with a terminology is preferred, where possible.">
+            >
+            ["id3.2"] = <
+                text = <"Problem/Diagnosis">
+                description = <"Identification of the problem or diagnosis. Coding of the problem or diagnosis with a terminology is preferred, where possible.">
+            >
+            ["id10.1"] = <
+                text = <"Clinical description">
+                description = <"Narrative description or comments about clinical aspects of the problem/diagnosis.">
+            >
+            ["id73.1"] = <
+                text = <"Description">
+                description = <"A narrative description, including outcomes and other key details, about occurrences or exacerbations of the problem/diagnosis.">
+            >
+            ["id29.1"] = <
+                text = <"Related item">
+                description = <"Identification of a related problem, diagnosis, procedure, or event as text, coded text or link within the health record. Note: It is desirable that this field should be coded using terminology, wherever possible.">
+            >
+            ["id70.1"] = <
+                text = <"Comment">
+                description = <"Additional narrative about the problem or diagnosis not captured in other fields.">
+            >
+            ["id76.1"] = <
+                text = <"Link to supporting clinical evidence">
+                description = <"Links to other relevant information, including pathology reports.">
+            >
+            ["id32.1"] = <
+                text = <"Age at resolution/remission">
+                description = <"The age of the person at the time of resolution or remission of the problem/diagnosis. Note: May be important in situations where approximations of age based on calculations are not accurate enough, eg in infants under one year.">
+            >
+            ["id31.1"] = <
+                text = <"Date of resolution/remission">
+                description = <"The date or estimated date that the problem/diagnosis resolved or went into remission.">
+            >
+            ["id57.1"] = <
+                text = <"Relationship type">
+                description = <"The type of relationship that this problem/diagnosis has to the related item.">
+            >
+            ["id74.1"] = <
+                text = <"Link to occurrence details">
+                description = <"Link to further information about past occurrences or exacerbations of the problem/diagnosis that exist elsewhere in the health record.">
+            >
+            ["id21.1"] = <
+                text = <"Latest occurrence">
+                description = <"The date of the last occurrence or exacerbation of the problem/diagnosis.">
+            >
+            ["id20.1"] = <
+                text = <"Frequency">
+                description = <"The frequency or estimated frequency of occurrences or exacerbations of the problem/diagnosis.">
+            >
+            ["id26.1"] = <
+                text = <"Number">
+                description = <"Cumulative number of occurrences or exacerbations of the problem/diagnosis.">
+            >
+            ["id38.1"] = <
+                text = <"Age at onset">
+                description = <"The estimated or actual age of the individual when the clinician assesses that the problem/diagnosis began. Note: May be important in situations where approximations of age based on calculations are not accurate enough, eg in infants under one year.">
+            >
+            ["id11.1"] = <
+                text = <"Date of onset">
+                description = <"Estimated or actual date the problem/diagnosis began, in the opinion of the clinician.">
+            >
+            ["id83.1"] = <
+                text = <"Severity">
+                description = <"A subjective assessment of the severity of the Problem/Diagnosis as evaluated by the clinician. Coding of the severity with a terminology is preferred, where possible.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Problema/Diagnostico">
+                description = <"Qualquer condição de cuidados de saúde que possa ter impacto no bem-estar físico, mental e / ou social de um indivíduo, que possa requerer ação diagnóstica, terapêutica ou educacional e que tenha sido determinada por um clínico. Um diagnóstico é baseado na avaliação científica dos sinais físicos, sintomas, história, resultados de exames laboratoriais e procedimentos.">
+            >
+            ["id3.1"] = <
+                text = <"CID">
+                description = <"Identificação do problema ou diagnóstico. A codificação do problema ou diagnóstico com uma terminologia é preferida, quando possível.">
+            >
+            ["id3.2"] = <
+                text = <"Queixa PRINCIPAL:">
+                description = <"Identificação do problema ou diagnóstico. A codificação do problema ou diagnóstico com uma terminologia é preferida, quando possível.">
+            >
+            ["id10.1"] = <
+                text = <"Queixas Clínicas?">
+                description = <"Descrição narrativa ou comentários sobre aspectos clínicos do problema / diagnóstico.">
+            >
+            ["id73.1"] = <
+                text = <"Há quanto tempo a queixa principal está presente?">
+                description = <"Uma descrição narrativa, incluindo resultados e outros detalhes importantes, sobre ocorrências ou exacerbações do problema / diagnóstico.">
+            >
+            ["id29.1"] = <
+                text = <"Existe alguma outra queixa?">
+                description = <"Identificação de um problema, diagnóstico, procedimento ou evento relacionado como texto, texto codificado ou link dentro do registro de saúde. Nota: É desejável que este campo seja codificado usando terminologia, sempre que possível.">
+            >
+            ["id70.1"] = <
+                text = <"Outras QUEIXAS:">
+                description = <"Narrativa adicional sobre o problema ou diagnóstico não capturado em outros campos.">
+            >
+            ["id76.1"] = <
+                text = <"Link para apoiar evidências clínicas">
+                description = <"Links para outras informações relevantes, incluindo relatórios de patologia.">
+            >
+            ["id32.1"] = <
+                text = <"Idade em resolução / remissão">
+                description = <"A idade da pessoa no momento da resolução ou remissão do problema / diagnóstico. Nota: Pode ser importante em situações em que aproximações de idade com base em cálculos não são precisas o suficiente, por exemplo, em bebês com menos de um ano.">
+            >
+            ["id31.1"] = <
+                text = <"Data de resolução / remissão">
+                description = <"A data ou a data estimada em que o problema / diagnóstico foi resolvido ou entrou em remissão.">
+            >
+            ["id57.1"] = <
+                text = <"Tipo de relacionamento">
+                description = <"O tipo de relacionamento que esse problema / diagnóstico tem para o item relacionado.">
+            >
+            ["id74.1"] = <
+                text = <"Link para detalhes da ocorrência">
+                description = <"Link para mais informações sobre ocorrências passadas ou exacerbações do problema / diagnóstico que existem em outras partes do registro de saúde.">
+            >
+            ["id21.1"] = <
+                text = <"Última ocorrência">
+                description = <"A data da última ocorrência ou exacerbação do problema / diagnóstico.">
+            >
+            ["id20.1"] = <
+                text = <"Frequencia">
+                description = <"A frequência ou frequência estimada de ocorrências ou exacerbações do problema / diagnóstico.">
+            >
+            ["id26.1"] = <
+                text = <"Numero">
+                description = <"Número cumulativo de ocorrências ou exacerbações do problema / diagnóstico.">
+            >
+            ["id38.1"] = <
+                text = <"Idade no início">
+                description = <"A idade estimada ou real do indivíduo quando o clínico avalia que o problema / diagnóstico começou. Nota: Pode ser importante em situações em que aproximações de idade com base em cálculos não são precisas o suficiente, por exemplo, em bebês com menos de um ano.">
+            >
+            ["id11.1"] = <
+                text = <"Data de inicio">
+                description = <"Data estimada ou real o problema / diagnóstico começou, na opinião do clínico.">
+            >
+            ["id83.1"] = <
+                text = <"Gravidade">
+                description = <"Uma avaliação subjetiva da gravidade do problema / diagnóstico, conforme avaliado pelo clínico. A codificação da gravidade com uma terminologia é preferida, quando possível.">
             >
         >
     >
