@@ -12,7 +12,7 @@ description
             purpose = <"">
         >
     >
-    lifecycle_state = <"unmanaged">
+    lifecycle_state = <"in_review">
 
 definition
     OBSERVATION[id1] matches {    -- Health man
