@@ -408,16 +408,16 @@ terminology
                 description = <"Último Exame Preventivo Ginecológico realizado:">
             >
             ["at1"] = <
-                text = <"*1 year ago (en)">
-                description = <"*1 year ago (en)">
+                text = <"Há 1 ano">
+                description = <"Há 1 ano">
             >
             ["at2"] = <
-                text = <"*2 years ago (en)">
-                description = <"*2 years ago (en)">
+                text = <"Há 2 anos">
+                description = <"Há 2 anos">
             >
             ["at3"] = <
-                text = <"*3 years or more (en)">
-                description = <"*3 years or more (en)">
+                text = <"Há 3 anos ou mais">
+                description = <"Há 3 anos ou mais">
             >
             ["ac1"] = <
                 text = <"*Time (en)">
