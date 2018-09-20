@@ -1,0 +1,859 @@
+template (adl_version=2.0.5; rm_release=1.0.2; generated)
+    openEHR-EHR-COMPOSITION.questionario_de_saude.v1.0.0
+
+specialize
+    openEHR-EHR-COMPOSITION.encounter.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
+    
+description
+    copyright = <"© openEHR">
+    details = <
+        ["en"] = <
+            keywords = <"progress", "note", "encounter">
+            language = <[ISO_639-1::en]>
+            misuse = <"">
+            purpose = <"Record of encounter as a progress note.">
+            use = <"For use to record when a person and clinician interact.">
+        >
+        ["pt-br"] = <
+            keywords = <"Progresso", "nota", "encontro">
+            language = <[ISO_639-1::pt-br]>
+            misuse = <"">
+            purpose = <"Registro de encontro como nota de progresso.">
+            use = <"Usado para gravar uma interação entre uma pessoa e um clínico.">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+    original_author = <
+        ["name"] = <"Thomas Beale">
+        ["organisation"] = <"Ocean Informatics">
+        ["date"] = <"2005-10-10">
+    >
+
+definition
+    COMPOSITION[id1.1] matches {    -- Encounter
+        /category[id3]/defining_code matches {[at1]}
+        content matches {
+            use_archetype SECTION[id0.2, openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-001.v1.0.0]
+            use_archetype SECTION[id0.3, openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-002.v1.0.0]
+            use_archetype SECTION[id0.4, openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-003.v1.0.0]
+            use_archetype SECTION[id0.5, openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-004.v1.0.0]
+            use_archetype SECTION[id0.6, openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-005.v1.0.0]
+            use_archetype SECTION[id0.7, openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-006.v1.0.0]
+            use_archetype SECTION[id0.8, openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-007.v1.0.0]
+            use_archetype SECTION[id0.9, openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-008.v1.0.0]
+            use_archetype SECTION[id0.10, openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-009.v1.0.0]
+            use_archetype SECTION[id0.11, openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-010.v1.0.0]
+            use_archetype SECTION[id0.12, openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-011.v1.0.0]
+            use_archetype SECTION[id0.13, openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-012.v1.0.0]
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Encounter">
+                description = <"Generic encounter or progress note composition.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Encontro">
+                description = <"Encontro genérico ou  composição da nota de progresso.">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-001.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items matches {
+            use_archetype OBSERVATION[id0.2, openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-disease-001.v1.0.0]
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"SINALIZE AS DOENÇAS QUE VOCÊ JÁ TEVE OU TEM">
+                description = <"SINALIZE AS DOENÇAS QUE VOCÊ JÁ TEVE OU TEM">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-disease-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.disease.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- Disease
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6] matches {
+                /value[id7]/value matches {True, False}
+            }
+            ELEMENT[id10] matches {
+                /value[id11]/value matches {True, False}
+            }
+            ELEMENT[id14] matches {
+                /value[id15]/value matches {True, False}
+            }
+            ELEMENT[id21] matches {
+                /value[id22]/value matches {True, False}
+            }
+            ELEMENT[id25] matches {
+                /value[id26]/value matches {True, False}
+            }
+            ELEMENT[id29] matches {
+                /value[id30]/value matches {True, False}
+            }
+            ELEMENT[id31] matches {
+                /value[id32]/value matches {True, False}
+            }
+            ELEMENT[id35] matches {
+                /value[id36]/value matches {True, False}
+            }
+            ELEMENT[id37] matches {
+                /value[id38]/value matches {True, False}
+            }
+            ELEMENT[id41] matches {
+                /value[id42]/value matches {True, False}
+            }
+            ELEMENT[id43] matches {
+                /value[id44]/value matches {True, False}
+            }
+            ELEMENT[id49] matches {
+                /value[id50]/value matches {True, False}
+            }
+            ELEMENT[id53] matches {
+                /value[id54]/value matches {True, False}
+            }
+            ELEMENT[id55] matches {
+                /value[id56]/value matches {True, False}
+            }
+            ELEMENT[id57] matches {
+                /value[id58]/value matches {True, False}
+            }
+            ELEMENT[id61] matches {
+                /value[id62]/value matches {True, False}
+            }
+            ELEMENT[id65] matches {
+                /value[id66]/value matches {True, False}
+            }
+            ELEMENT[id69] matches {
+                /value[id70]/value matches {True, False}
+            }
+            ELEMENT[id73] matches {
+                /value[id74]/value matches {True, False}
+            }
+            ELEMENT[id75] matches {
+                /value[id76]/value matches {True, False}
+            }
+            ELEMENT[id79] matches {
+                /value[id80]/value matches {True, False}
+            }
+            ELEMENT[id81] matches {
+                /value[id82]/value matches {True, False}
+            }
+            ELEMENT[id85] matches {
+                /value[id86]/value matches {True, False}
+            }
+            ELEMENT[id89] matches {
+                /value[id90]/value matches {True, False}
+            }
+            ELEMENT[id91] matches {
+                /value[id92]/value matches {True, False}
+            }
+            ELEMENT[id95] matches {
+                /value[id96]/value matches {True, False}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Disease">
+                description = <"disease">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Doença">
+                description = <"doença">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-002.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items matches {
+            use_archetype OBSERVATION[id0.2, openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-previous_history-001.v1.0.0]
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"HISTÓRIA PREGRESSA">
+                description = <"HISTÓRIA PREGRESSA">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-previous_history-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.previous_history.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- previous history
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6] matches {
+                /value[id7]/value matches {True, False}
+            }
+            ELEMENT[id10] matches {
+                /value[id11]/value matches {True, False}
+            }
+            ELEMENT[id14] matches {
+                /value[id15]/value matches {True, False}
+            }
+            ELEMENT[id18] matches {
+                /value[id19]/value matches {True, False}
+            }
+            ELEMENT[id22] matches {
+                /value[id23]/value matches {True, False}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"previous history">
+                description = <"previous history">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Hitória pregressa">
+                description = <"Hitória pregressa">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-003.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"HISTÓRICO FAMILIAR">
+                description = <"HISTÓRICO FAMILIAR">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-004.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items matches {
+            use_archetype OBSERVATION[id0.2, openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-medication_question-001.v1.0.0]
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"MEDICAMENTO">
+                description = <"MEDICAMENTO">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-medication_question-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.medication_question.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- medication_question
+        /data[id2]/events[id3]/data[id4]/items[id9]/value[id10]/value matches {True, False}
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"medication_question">
+                description = <"medication_question">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Questões sobre Medicamentos">
+                description = <"Questões sobre Medicamentos">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-005.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"USO DE ÁLCOOL E/OU DROGAS">
+                description = <"USO DE ÁLCOOL E/OU DROGAS">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-006.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items matches {
+            use_archetype EVALUATION[id0.2, openEHR-EHR-EVALUATION.ovl-questionario_de_saude-physical_activity_summary_notes-001.v1.0.0]
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"ATIVIDADE FÍSICA">
+                description = <"ATIVIDADE FÍSICA">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-EVALUATION.ovl-questionario_de_saude-physical_activity_summary_notes-001.v1.0.0
+
+specialize
+    openEHR-EHR-EVALUATION.physical_activity_summary_notes.v1.0.0
+
+definition
+    EVALUATION[id1.1.1] matches {    -- Physical Activity Summary
+        /data[id2]/items[id0.2]/value[id0.3]/defining_code matches {[ac0.1]}
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1.1"] = <
+                text = <"Physical Activity Summary">
+                description = <"A record of the level of physical activity undertaken by the individual as assessed by a clinician.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1.1"] = <
+                text = <"Resumo da atividade física">
+                description = <"Resumo da atividade física">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-007.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items matches {
+            use_archetype OBSERVATION[id0.2, openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-frequency_of_tobacco-001.v1.0.0]
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"TABAGISMO">
+                description = <"TABAGISMO">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-frequency_of_tobacco-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.frequency_of_tobacco.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- Frequency of tobacco
+        /data[id2]/events[id3]/data[id4]/items[id6]/value[id7]/defining_code matches {[ac1]}
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Frequency of tobacco">
+                description = <"Frequency of tobacco">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Frequência de tabaco">
+                description = <"Freqüência de tabaco">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-008.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items matches {
+            use_archetype OBSERVATION[id0.2, openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-alimentacao-001.v1.0.0]
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"ALIMENTAÇÃO">
+                description = <"ALIMENTAÇÃO">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-alimentacao-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.alimentacao.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- Alimentacao
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6] matches {
+                /value[id7]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id9] matches {
+                /value[id10]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id11] matches {
+                /value[id12]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id13] matches {
+                /value[id14]/defining_code matches {[ac1]}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Alimentacao">
+                description = <"Alimentacao">
+            >
+        >
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Food">
+                description = <"Food">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-009.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items matches {
+            use_archetype OBSERVATION[id0.2, openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-general_state_psychology-001.v1.0.0]
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"FATORES PSICOSSOCIAIS">
+                description = <"FATORES PSICOSSOCIAIS">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-general_state_psychology-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.general_state_psychology.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- General state_psychology
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6] matches {
+                /value[id7]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id10] matches {
+                /value[id11]/value matches {True, False}
+            }
+            ELEMENT[id12] matches {
+                /value[id13]/value matches {True, False}
+            }
+            ELEMENT[id14] matches {
+                /value[id15]/value matches {True, False}
+            }
+            ELEMENT[id16] matches {
+                /value[id17]/value matches {True, False}
+            }
+            ELEMENT[id19] matches {
+                /value[id20]/value matches {True, False}
+            }
+            ELEMENT[id21] matches {
+                /value[id22]/value matches {True, False}
+            }
+            ELEMENT[id23] matches {
+                /value[id24]/value matches {True, False}
+            }
+            ELEMENT[id25] matches {
+                /value[id26]/value matches {True, False}
+            }
+            ELEMENT[id27] matches {
+                /value[id28]/value matches {True, False}
+            }
+            ELEMENT[id29] matches {
+                /value[id30]/value matches {True, False}
+            }
+            ELEMENT[id31] matches {
+                /value[id32]/value matches {True, False}
+            }
+            ELEMENT[id33] matches {
+                /value[id34]/value matches {True, False}
+            }
+            ELEMENT[id35] matches {
+                /value[id36]/value matches {True, False}
+            }
+            ELEMENT[id37] matches {
+                /value[id38]/value matches {True, False}
+            }
+            ELEMENT[id39] matches {
+                /value[id40]/value matches {True, False}
+            }
+            ELEMENT[id41] matches {
+                /value[id42]/value matches {True, False}
+            }
+            ELEMENT[id43] matches {
+                /value[id44]/value matches {True, False}
+            }
+            ELEMENT[id45] matches {
+                /value[id46]/value matches {True, False}
+            }
+            ELEMENT[id47] matches {
+                /value[id51]/value matches {True, False}
+            }
+            ELEMENT[id48] matches {
+                /value[id49]/value matches {True, False}
+            }
+            ELEMENT[id50] matches {
+                /value[id52]/value matches {True, False}
+            }
+            ELEMENT[id53] matches {
+                /value[id54]/defining_code matches {[ac2]}
+            }
+            ELEMENT[id55] matches {
+                /value[id56]/value matches {True, False}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"General state_psychology">
+                description = <"General state_psychology">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Estado geral - Psiquismo">
+                description = <"Estado geral - Psiquismo">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-010.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items matches {
+            use_archetype OBSERVATION[id0.2, openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-oral_health-001.v1.0.0]
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"ODONTOLOGIA">
+                description = <"ODONTOLOGIA">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-oral_health-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.oral_health.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- oral health
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6] matches {
+                /value[id7]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id8] matches {
+                /value[id9]/defining_code matches {[ac2]}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"oral health">
+                description = <"oral health">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"saúde bucal">
+                description = <"saúde bucal">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-011.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"SAÚDE DA MULHER">
+                description = <"SAÚDE DA MULHER">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-questionario_de_saude-adhoc-012.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"SAÚDE DO HOMEM">
+                description = <"SAÚDE DO HOMEM">
+            >
+        >
+    >
+
