@@ -333,7 +333,6 @@ definition
     SECTION[id1.1] matches {    -- Adhoc Heading
         items matches {
             use_archetype OBSERVATION[id0.2, openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-medication_question-001.v1.0.0]
-            use_archetype OBSERVATION[id0.3, openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-medication_question-002.v1.0.0]
         }
     }
 
@@ -392,7 +391,9 @@ specialize
 
 definition
     SECTION[id1.1] matches {    -- Adhoc Heading
-        items
+        items matches {
+            use_archetype OBSERVATION[id0.2, openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-uso_of_alcohol_and_drugs-001.v1.0.0]
+        }
     }
 
 terminology
@@ -896,7 +897,9 @@ specialize
 
 definition
     SECTION[id1.1] matches {    -- Adhoc Heading
-        items
+        items matches {
+            use_archetype OBSERVATION[id0.2, openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-contraceptive_menstruation-001.v1.0.0]
+        }
     }
 
 terminology
@@ -1041,28 +1044,134 @@ terminology
 
 ---------------------------------------------------------------------------------
 template_overlay
-    openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-medication_question-002.v1.0.0
+    openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-contraceptive_menstruation-001.v1.0.0
 
 specialize
-    openEHR-EHR-OBSERVATION.medication_question.v1.0.0
+    openEHR-EHR-OBSERVATION.contraceptive_menstruation.v1.0.0
 
 definition
-    OBSERVATION[id1.1] matches {    -- medication_question
-        /data[id2]/events[id3]/data[id4]/items[id9]/value[id10]/value matches {True, False}
+    OBSERVATION[id1.1] matches {    -- Contraceptive_menstruation
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6] matches {
+                /value[id7]/value matches {True, False}
+            }
+            ELEMENT[id8] matches {
+                /value[id9]/value matches {True, False}
+            }
+            ELEMENT[id10] matches {
+                /value[id11]/value matches {True, False}
+            }
+            ELEMENT[id12] matches {
+                /value[id13]/value matches {True, False}
+            }
+            ELEMENT[id14] matches {
+                /value[id15]/value matches {True, False}
+            }
+            ELEMENT[id16] matches {
+                /value[id17]/value matches {True, False}
+            }
+            ELEMENT[id18] matches {
+                /value[id19]/value matches {True, False}
+            }
+            ELEMENT[id20] matches {
+                /value[id21]/value matches {True, False}
+            }
+            ELEMENT[id22] matches {
+                /value[id23]/value matches {True, False}
+            }
+            ELEMENT[id24] matches {
+                /value[id25]/value matches {True, False}
+            }
+            ELEMENT[id26] matches {
+                /value[id27]/value matches {True, False}
+            }
+            ELEMENT[id28] matches {
+                /value[id29]/value matches {True, False}
+            }
+            ELEMENT[id30] matches {
+                /value[id31]/value matches {True, False}
+            }
+            ELEMENT[id32] matches {
+                /value[id33]/value matches {True, False}
+            }
+            ELEMENT[id34] matches {
+                /value[id35]/value matches {True, False}
+            }
+            ELEMENT[id36] matches {
+                /value[id37]/value matches {True, False}
+            }
+            ELEMENT[id38] matches {
+                /value[id39]/value matches {True, False}
+            }
+            ELEMENT[id40] matches {
+                /value[id41]/value matches {True, False}
+            }
+            ELEMENT[id42] matches {
+                /value[id43]/value matches {*}
+            }
+            ELEMENT[id44] matches {
+                /value[id45]/value matches {True, False}
+            }
+            ELEMENT[id46] matches {
+                /value[id47]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id48] matches {
+                /value[id49]/value matches {True, False}
+            }
+        }
     }
 
 terminology
     term_definitions = <
         ["en"] = <
             ["id1.1"] = <
-                text = <"medication_question">
-                description = <"medication_question">
+                text = <"Contraceptive_menstruation">
+                description = <"Contraceptive_menstruation">
             >
         >
         ["pt-br"] = <
             ["id1.1"] = <
-                text = <"Questões sobre Medicamentos">
-                description = <"Questões sobre Medicamentos">
+                text = <"Contraceptivo menstruação">
+                description = <"Contraceptivo menstruação">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-questionario_de_saude-uso_of_alcohol_and_drugs-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.uso_of_alcohol_and_drugs.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- uso of alcohol and drugs
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id6] matches {
+                /value[id7]/value matches {True, False}
+            }
+            ELEMENT[id8] matches {
+                /value[id9]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id10] matches {
+                /value[id11]/defining_code matches {[ac2]}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"uso of alcohol and drugs">
+                description = <"uso of alcohol and drugs">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Uso de álcool e/ou drogas">
+                description = <"Uso de álcool e/ou drogas">
             >
         >
     >
