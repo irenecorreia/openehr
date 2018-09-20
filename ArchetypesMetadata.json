@@ -1077,7 +1077,7 @@
     "rmType" : "COMPOSITION",
     "name" : "Family History",
     "path" : "archetypes/openEHR-EHR-COMPOSITION.family_history_diseases.v1.adls",
-    "sha" : "11f2d1b10b82ffb3f60306744e29d5192abe618d",
+    "sha" : "a0b4e2c930f849db9d89eef9f4e0d818a5b5fd82",
     "languages" : [ "en", "pt-br" ]
   }, {
     "id" : "openEHR-EHR-EVALUATION.physical_activity_summary_notes.v1.0.0",
@@ -1210,7 +1210,7 @@
     "rmType" : "EVALUATION",
     "name" : "Problem/Diagnosis",
     "path" : "archetypes/openEHR-EHR-EVALUATION.problem_diagnosis_question.v1.adls",
-    "sha" : "4b4c6b5148060f31f45a2ff6977cfeb64936bed3",
+    "sha" : "22f223bda4b2814ed7a0c285ae5d0dafabda797c",
     "languages" : [ "en", "pt-br" ]
   }, {
     "id" : "openEHR-EHR-OBSERVATION.frequency_of_tobacco.v1.0.0",
@@ -1224,14 +1224,14 @@
     "rmType" : "OBSERVATION",
     "name" : "Health man",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.health_man.v1.adls",
-    "sha" : "a1794ba6d8d355ee935939f378d3720238ce67b2",
-    "languages" : [ "en" ]
+    "sha" : "09f7e59d3b4f84140224d3621f99f9531cbe78bc",
+    "languages" : [ "en", "pt-br" ]
   }, {
     "id" : "openEHR-EHR-OBSERVATION.menstruation_contraceptive.v1.0.0",
     "rmType" : "OBSERVATION",
     "name" : "Menstruation",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.menstruation_contraceptive.v1.adls",
-    "sha" : "14cea45e2139617e728a454e430bc06aed2794aa",
+    "sha" : "3829621ac4da52856af446f6709e5452e3023bb6",
     "languages" : [ "en" ]
   }, {
     "id" : "openEHR-EHR-OBSERVATION.oral_health.v1.0.0",
