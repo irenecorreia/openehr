@@ -1210,7 +1210,7 @@
     "rmType" : "EVALUATION",
     "name" : "Problem/Diagnosis",
     "path" : "archetypes/openEHR-EHR-EVALUATION.problem_diagnosis_question.v1.adls",
-    "sha" : "22f223bda4b2814ed7a0c285ae5d0dafabda797c",
+    "sha" : "68c5c6539b7ded45d9f9bb362af1c30600287aca",
     "languages" : [ "en", "pt-br" ]
   }, {
     "id" : "openEHR-EHR-OBSERVATION.frequency_of_tobacco.v1.0.0",
@@ -1240,5 +1240,8 @@
     "path" : "archetypes/openEHR-EHR-OBSERVATION.oral_health.v1.adls",
     "sha" : "1fa0ca8455606579cf38ee6577faf59e603a9fdd",
     "languages" : [ "en", "pt-br" ]
+  }, {
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.family_health_history.v1.adls",
+    "sha" : "a3bbff79437ab32335774eaa4b086dee389e15cc"
   } ]
 }
