@@ -3,69 +3,44 @@ archetype (adl_version=2.0.5; rm_release=1.0.2; generated)
 
 specialize
     openEHR-EHR-EVALUATION.problem_diagnosis.v1.0.0
-
 language
     original_language = <[ISO_639-1::en]>
     translations = <
         ["pt-br"] = <
-            accreditation = <"iHealthGroup">
+            accreditation = <"IHealthGroup">
             author = <
-                ["Ihealth"] = <"iHealthGroup">
+                ["Ihealth"] = <"Ihealth">
             >
             language = <[ISO_639-1::pt-br]>
-            other_details = <
-                ["Ihealth"] = <"IHealthGroup">
-            >
         >
     >
     
 description
-    copyright = <"">
+    copyright = <"SALVO">
     details = <
         ["en"] = <
-            keywords = <"issue", "condition", "problem", "concern", "diagnosis", "criteria", "illness", "disease", "disorder">
+            keywords = <"save">
             language = <[ISO_639-1::en]>
-            misuse = <"Not to be used to record 'Differential Diagnoses' - use the EVALUATION.differential diagnosis archetype.
-
-Not to be used to record 'Reason for Encounter' - use the EVALUATION.reason_for_encounter archetype.
-
-Not to be used to record 'Presenting Complaint' - which is information captured early in the encounter, usually prior to full assessment and will be represented using a separate EVALUATION archetype.
-
-Not to be used to record procedures - use the ACTION.Procedure_undertaken archetype.
-
-Not to be used to record symptoms or signs - these should be recorded as part of a patient story or history.  A problem such as 'Chest pain' may masquerade as a symptom, however in this context we are recording it as a problem the person has.">
-            purpose = <"To record details about a problem or diagnosis by a clinician.">
-            use = <"Use to record detailed information about problems or diagnoses recognised by a clinician. There are many uses including: recording a Diagnosis during an Encounter; populating a Problem List or a Summary Statement, such as a Discharge Summary.
-
-Use to record all problems or diagnoses, including those with context-specific qualifiers such as past/present, primary/secondary, active/inactive etc. These qualifiers can be archetyped separately and included in the ‘Status’ slot, because their use varies in different settings.">
+            misuse = <"Save">
+            purpose = <"Save">
+            use = <"Save">
         >
         ["pt-br"] = <
-            keywords = <"problema", "condição", "problema", "preocupação", "diagnóstico", "critérios", "doença", "doença", "transtorno">
+            keywords = <"SALVO">
             language = <[ISO_639-1::pt-br]>
-            misuse = <"Não deve ser usado para gravar 'Diagnósticos Diferenciais' - use o arquétipo de diagnóstico diferencial EVALUATION.
-
-Não deve ser usado para gravar o 'Reason for Encounter' - use o arquétipo EVALUATION.reason_for_encounter.
-
-Não deve ser usado para gravar 'Apresentando Reclamação' - que é informação capturada no início do encontro, geralmente antes da avaliação completa e será representada usando um arquétipo de AVALIAÇÃO separado.
-
-Não deve ser usado para registrar procedimentos - use o arquétipo ACTION.Procedure_undertaken.
-
-Não deve ser usado para registrar sintomas ou sinais - estes devem ser registrados como parte de uma história ou história do paciente. Um problema como \"dor torácica\" pode mascarar-se como um sintoma, no entanto, neste contexto, estamos registrando como um problema que a pessoa tem. ">
-            purpose = <"
-Registrar detalhes sobre um problema ou diagnóstico por um médico.">
-            use = <"Use para registrar informações detalhadas sobre problemas ou diagnósticos reconhecidos por um médico. Há muitos usos, incluindo: gravação de um diagnóstico durante um encontro; preenchendo uma Lista de Problemas ou uma Declaração Resumida, como um Resumo de Descarga.
-
-Use para registrar todos os problemas ou diagnósticos, incluindo aqueles com qualificadores específicos ao contexto, como passado / presente, primário / secundário, ativo / inativo, etc. Esses qualificadores podem ser arquetetados separadamente e incluídos no slot 'Status', porque seu uso varia em configurações diferentes.">
+            misuse = <"SALVO">
+            purpose = <"SALVO">
+            use = <"SALVO">
         >
     >
-    lifecycle_state = <"unmanaged">
+    lifecycle_state = <"in_review">
     original_author = <
-        ["name"] = <"Sam Heard">
+        ["name"] = <"Heather Leslie">
         ["organisation"] = <"Ocean Informatics">
-        ["email"] = <"sam.heard@oceaninformatics.com">
-        ["Ihealth"] = <"Ihealth">
+        ["email"] = <"heather.leslie@oceaninformatics.com">
+        ["date"] = <"2013-03-08">
+        ["Ihealth"] = <"IhealthGroup">
     >
-    other_contributors = <"Koray Atalag, University of Auckland, New Zealand", "John Bennett, NEHTA, Australia", "Steve Bentley, NHS CfH, United Kingdom", "Ian Bull, ACT Health, Australia", "Sergio Carmona, Chile", "Rong Chen, Cambio Healthcare Systems, Sweden", "Stephen Chu, NEHTA, Australia (Editor)", "Ed Conley, Cardiff University, United Kingdom", "Matthew Cordell, NEHTA, Australia", "Paul Donaldson, Nursing Informatics Australia, Australia", "Gail Easterbrook, Flinders Medical Centre, Australia", "David Evans, Queensland Health, Australia", "Peter Garcia-Webb, Australia", "Andrew Goodchild, NEHTA, Australia", "Anneke Goossen, Results4Care, Netherlands", "Heather Grain, Llewelyn Grain Consulting, Australia", "Trina Gregory, cpc, Australia", "Evelyn Hovenga, EJSH Consulting, Australia", "Eugene Igras, IRIS Systems Inc, Canada", "Mary Kelaher, NEHTA, Australia", "Eizen Kimura, Ehime University, Japan", "Shinji Kobayashi, Ehime University, Japan", "Robert L'egan, NEHTA, Australia", "Heather Leslie, Ocean Informatics, Australia (Editor)", "Hugh Leslie, Ocean Informatics, Australia (Editor)", "Rohan Martin, Ambulance Victoria, Australia", "David McKillop, NEHTA, Australia", "Ian McNicoll, Ocean Informatics UK, United Kingdom", "Chris Mitchell, RACGP, Australia", "Stewart Morrison, NEHTA, Australia", "Jörg Niggeman, Compugroup, Germany", "Andrej Orel, Marand d.o.o., Slovenia", "Chris Pearce, Melbourne East GP Network, Australia", "Camilla Preeston, Royal Australian College of General Practitioners, Australia", "Margaret Prichard, NEHTA, Australia", "Jodie Pycroft, Adelaide Northern Division of General Practice Ltd, Australia", "Cathy Richardson, NEHTA, Australia", "Robyn Richards, NEHTA - Clinical Terminology, Australia", "Thilo Schuler, Australia", "Gordon Tomes, Australian Institute of Health and Welfare, Australia", "Richard Townley-O'Neill, NEHTA, Australia", "Donna Truran, ACCTI-UoW, Australia", "Kylie Young, The Royal Australian College of General Practitioners, Australia", "IhealthGroup">
 
 definition
     EVALUATION[id1.1] matches {    -- Problem/Diagnosis

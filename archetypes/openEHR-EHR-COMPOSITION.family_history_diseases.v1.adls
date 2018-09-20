@@ -39,7 +39,7 @@ Também é possível gravar informações de histórico familiar para indivíduo
 A intenção desta COMPOSITION é para uso como um resumo persistente, no entanto, foi identificado que, para implementação, o arquétipo também precisa de atributos adicionais relacionados ao contexto do evento. Como resultado, a COMPOSITION foi modificada temporariamente como uma EVENT COMPOSITION que permite a adição de um SLOT de itens em que os arquétipos relacionados ao contexto adicionais podem ser incluídos. Este novo requisito para atributos relacionados ao contexto na COMPOSITION persistente foi solicitado como uma atualização futura do modelo de referência OpenEHR.">
         >
     >
-    lifecycle_state = <"in_review">
+    lifecycle_state = <"unmanaged">
     original_author = <
         ["name"] = <"Heather Leslie">
         ["organisation"] = <"Ocean Informatics">
