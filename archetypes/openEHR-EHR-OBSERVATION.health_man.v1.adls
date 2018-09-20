@@ -3,6 +3,12 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -10,6 +16,9 @@ description
         ["en"] = <
             language = <[ISO_639-1::en]>
             purpose = <"">
+        >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
         >
     >
     lifecycle_state = <"in_review">
@@ -56,6 +65,20 @@ terminology
             ["id6"] = <
                 text = <"Have you had PROSTATE EXPERIENCE in the last 12 months?">
                 description = <"Have you had PROSTATE EXPERIENCE in the last 12 months?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"Saúde do homem">
+                description = <"Saúde do homem">
+            >
+            ["id3"] = <
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
+            >
+            ["id6"] = <
+                text = <"Você realizou EXAME DE PRÓSTATA nos últimos 12 meses?">
+                description = <"Você realizou EXAME DE PRÓSTATA nos últimos 12 meses?">
             >
         >
     >
