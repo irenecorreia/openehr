@@ -32,6 +32,91 @@ definition
                         data matches {
                             ITEM_TREE[id4] matches {
                                 items
+								ELEMENT[id0.7] matches {    -- Uterine cervix
+                        value matches {
+                            DV_BOOLEAN[id0.8] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                    ELEMENT[id0.9] matches {    -- Intestine
+                        value matches {
+                            DV_BOOLEAN[id0.10] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                    ELEMENT[id0.11] matches {    -- Leucemia
+                        value matches {
+                            DV_BOOLEAN[id0.12] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                    ELEMENT[id0.13] matches {    -- breast cancer
+                        value matches {
+                            DV_BOOLEAN[id0.14] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                    ELEMENT[id0.15] matches {    -- Skin
+                        value matches {
+                            DV_BOOLEAN[id0.16] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                    ELEMENT[id0.17] matches {    -- Prostate
+                        value matches {
+                            DV_BOOLEAN[id0.18] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                    ELEMENT[id0.19] matches {    -- Lung
+                        value matches {
+                            DV_BOOLEAN[id0.20] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                    ELEMENT[id0.21] matches {    -- Others
+                        value matches {
+                            DV_BOOLEAN[id0.22] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                    ELEMENT[id0.23] matches {    -- Specify
+                        value matches {
+                            DV_BOOLEAN[id0.24] matches {
+                                value matches {True, False}
+                            }
+                        }
+                    }
+                }
+            }
+            ELEMENT[id0.31] matches {    -- Do you have DIABETES case (s) in your family?
+                value matches {
+                    DV_CODED_TEXT[id0.32] matches {
+                        defining_code matches {[ac0.1]}
+                    }
+                }
+            }
+            ELEMENT[id0.33] matches {    -- Do you have HIGH PRESSURE / HYPERTENSION case (s) in your family?
+                value matches {
+                    DV_CODED_TEXT[id0.34] matches {
+                        defining_code matches {[ac0.1]}
+                    }
+                }
+            }
+        }
+        content cardinality matches {1..*; unordered} matches {
+            allow_archetype EVALUATION[id2]
+            allow_archetype EVALUATION[id3]
+        }
+    }
                             }
                         }
                         state matches {
