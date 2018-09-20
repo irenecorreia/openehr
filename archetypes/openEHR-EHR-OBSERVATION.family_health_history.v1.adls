@@ -3,6 +3,12 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -10,6 +16,9 @@ description
         ["en"] = <
             language = <[ISO_639-1::en]>
             purpose = <"">
+        >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
         >
     >
     lifecycle_state = <"unmanaged">
@@ -44,6 +53,16 @@ terminology
             ["id3"] = <
                 text = <"Any event">
                 description = <"Any event">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"*Family health history (en)">
+                description = <"*Family health history (en)">
+            >
+            ["id3"] = <
+                text = <"*Any event (en)">
+                description = <"*Any event (en)">
             >
         >
     >
