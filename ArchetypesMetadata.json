@@ -259,13 +259,6 @@
     "sha" : "52453924b0950ac0e21f3d70467ad9fbcbb23f4a",
     "languages" : [ "pt-br", "en" ]
   }, {
-    "id" : "openEHR-EHR-EVALUATION.family_history-SESI-BR.v1.0.0",
-    "rmType" : "EVALUATION",
-    "name" : "Family History",
-    "path" : "archetypes/openEHR-EHR-EVALUATION.family_history-SESI-BR.v1.adls",
-    "sha" : "fcb3fb5b0294736bcbf84712ebef58806c51e6c4",
-    "languages" : [ "en", "pt-br" ]
-  }, {
     "id" : "openEHR-EHR-EVALUATION.physical_activity_summary-SESI_BR.v1.0.0",
     "rmType" : "EVALUATION",
     "name" : "Physical Activity Summary",
@@ -1073,11 +1066,11 @@
     "sha" : "31b1e642ffade187c725dc4ecbf5c8de6b6dbb6f",
     "languages" : [ "en", "pt-br" ]
   }, {
-    "id" : "openEHR-EHR-COMPOSITION.family_history_diseases.v1.0.0",
-    "rmType" : "COMPOSITION",
+    "id" : "openEHR-EHR-EVALUATION.family_history_diseases.v1.0.0",
+    "rmType" : "EVALUATION",
     "name" : "Family History",
     "path" : "archetypes/openEHR-EHR-COMPOSITION.family_history_diseases.v1.adls",
-    "sha" : "a0b4e2c930f849db9d89eef9f4e0d818a5b5fd82",
+    "sha" : "35c6f33970691dcbffd9858aa070b5f52ff3b32f",
     "languages" : [ "en", "pt-br" ]
   }, {
     "id" : "openEHR-EHR-EVALUATION.physical_activity_summary_notes.v1.0.0",
@@ -1205,13 +1198,6 @@
     "path" : "archetypes/openEHR-EHR-OBSERVATION.substance_use-tobacco_frequency.v1.adls",
     "sha" : "d4ed00f9ec5d8fc6f018110807e93b0f24cbb3ac",
     "languages" : [ "en" ]
-  }, {
-    "id" : "openEHR-EHR-EVALUATION.problem_diagnosis_question.v1.0.0",
-    "rmType" : "EVALUATION",
-    "name" : "Problem/Diagnosis",
-    "path" : "archetypes/openEHR-EHR-EVALUATION.problem_diagnosis_question.v1.adls",
-    "sha" : "68c5c6539b7ded45d9f9bb362af1c30600287aca",
-    "languages" : [ "en", "pt-br" ]
   }, {
     "id" : "openEHR-EHR-OBSERVATION.frequency_of_tobacco.v1.0.0",
     "rmType" : "OBSERVATION",
