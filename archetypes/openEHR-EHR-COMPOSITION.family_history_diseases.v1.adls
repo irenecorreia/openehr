@@ -1,8 +1,8 @@
 archetype (adl_version=2.0.5; rm_release=1.0.2; generated)
-    openEHR-EHR-COMPOSITION.family_history_diseases.v1.0.0
+    openEHR-EHR-EVALUATION.family_history_diseases.v1.0.0
 
 specialize
-    openEHR-EHR-COMPOSITION.family_history.v1.0.0
+    openEHR-EHR-EVALUATION.family_history.v1.0.0
 
 language
     original_language = <[ISO_639-1::en]>
@@ -36,7 +36,7 @@ A intenção desta COMPOSITION é para uso como um resumo persistente, no entant
 
 Também é possível gravar informações de histórico familiar para indivíduos que não sejam o sujeito do registro de saúde - por exemplo, informações sobre o pai do feto não nascido precisam ser armazenadas no registro de saúde da mãe até o nascimento. Nessa situação, o assunto do cuidado deve ser explicitamente especificado.
 
-A intenção desta COMPOSITION é para uso como um resumo persistente, no entanto, foi identificado que, para implementação, o arquétipo também precisa de atributos adicionais relacionados ao contexto do evento. Como resultado, a COMPOSITION foi modificada temporariamente como uma EVENT COMPOSITION que permite a adição de um SLOT de itens em que os arquétipos relacionados ao contexto adicionais podem ser incluídos. Este novo requisito para atributos relacionados ao contexto na COMPOSITION persistente foi solicitado como uma atualização futura do modelo de referência OpenEHR.">
+A intenção desta EVALUATION é para uso como um resumo persistente, no entanto, foi identificado que, para implementação, o arquétipo também precisa de atributos adicionais relacionados ao contexto do evento. Como resultado, a COMPOSITION foi modificada temporariamente como uma EVENT COMPOSITION que permite a adição de um SLOT de itens em que os arquétipos relacionados ao contexto adicionais podem ser incluídos. Este novo requisito para atributos relacionados ao contexto na COMPOSITION persistente foi solicitado como uma atualização futura do modelo de referência OpenEHR.">
         >
     >
     lifecycle_state = <"unmanaged">
@@ -48,7 +48,7 @@ A intenção desta COMPOSITION é para uso como um resumo persistente, no entant
     >
 
 definition
-    COMPOSITION[id1.1] matches {    -- Family History
+    EVALUATION[id1.1] matches {    -- Family History
         /category[id6]/defining_code matches {[at1]}
         /context[id7]/other_context[id4]/items matches {
             allow_archetype ITEM[id5]
