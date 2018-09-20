@@ -30,6 +30,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id8] matches {    -- How often do you drink alcohol?
+                                        value matches {
+                                            DV_CODED_TEXT[id9] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -57,6 +64,40 @@ terminology
                 text = <"Have you ever had or have problems with alcohol and / or drugs?">
                 description = <"Have you ever had or have problems with alcohol and / or drugs?">
             >
+            ["id8"] = <
+                text = <"How often do you drink alcohol?">
+                description = <"How often do you drink alcohol?">
+            >
+            ["at1"] = <
+                text = <"Never">
+                description = <"Never">
+            >
+            ["at2"] = <
+                text = <"Monthly or less">
+                description = <"Monthly or less">
+            >
+            ["at3"] = <
+                text = <"2 to 4 times in a month">
+                description = <"2 to 4 times in a month">
+            >
+            ["at4"] = <
+                text = <"2 or 3 times a week">
+                description = <"2 or 3 times a week">
+            >
+            ["at5"] = <
+                text = <"4 or more times per week">
+                description = <"4 or more times per week">
+            >
+            ["ac1"] = <
+                text = <"Alcohol">
+                description = <"Alcohol">
+            >
+        >
+    >
+    value_sets = <
+        ["ac1"] = <
+            id = <"ac1">
+            members = <"at1", "at2", "at3", "at4", "at5">
         >
     >
 
