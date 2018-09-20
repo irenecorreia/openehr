@@ -1,0 +1,315 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-OBSERVATION.contraceptive_menstruation.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    
+description
+    copyright = <"">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+
+definition
+    OBSERVATION[id1] matches {    -- Contraceptive_menstruation
+        data matches {
+            HISTORY[id2] matches {
+                events matches {
+                    EVENT[id3] matches {    -- Any event
+                        data matches {
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id6] matches {    -- Do you use CONTRACEPTIVE METHOD?
+                                        value matches {
+                                            DV_BOOLEAN[id7] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id8] matches {    -- Cutaneous adhesive
+                                        value matches {
+                                            DV_BOOLEAN[id9] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id10] matches {    -- Vaginal ring
+                                        value matches {
+                                            DV_BOOLEAN[id11] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id12] matches {    -- Interrupted intercourse
+                                        value matches {
+                                            DV_BOOLEAN[id13] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id14] matches {    -- Emergency contraception (morning-after pill)
+                                        value matches {
+                                            DV_BOOLEAN[id15] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id16] matches {    -- Injectable contraceptive
+                                        value matches {
+                                            DV_BOOLEAN[id17] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id18] matches {    -- Oral contraceptive
+                                        value matches {
+                                            DV_BOOLEAN[id19] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id20] matches {    -- Diaphragm
+                                        value matches {
+                                            DV_BOOLEAN[id21] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id22] matches {    -- Diu - Dispositivo intrauterino
+                                        value matches {
+                                            DV_BOOLEAN[id23] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id24] matches {    -- Spermicide
+                                        value matches {
+                                            DV_BOOLEAN[id25] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id26] matches {    -- Contraceptive sponge
+                                        value matches {
+                                            DV_BOOLEAN[id27] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id28] matches {    -- Subcutaneous Implant
+                                        value matches {
+                                            DV_BOOLEAN[id29] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id30] matches {    -- Ligation
+                                        value matches {
+                                            DV_BOOLEAN[id31] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id32] matches {    -- Cervical mucus (Billings method)
+                                        value matches {
+                                            DV_BOOLEAN[id33] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id34] matches {    -- Female condom
+                                        value matches {
+                                            DV_BOOLEAN[id35] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id36] matches {    -- Male condom (condom)
+                                        value matches {
+                                            DV_BOOLEAN[id37] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id38] matches {    -- Little table
+                                        value matches {
+                                            DV_BOOLEAN[id39] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id40] matches {    -- Basal temperature
+                                        value matches {
+                                            DV_BOOLEAN[id41] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id42] matches {    -- LAST MENSTRUATION Date?
+                                        value matches {
+                                            DV_DATE[id43] matches {
+                                                value matches {*}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id44] matches {    -- Amenorrhea
+                                        value matches {
+                                            DV_BOOLEAN[id45] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id46] matches {    -- Último Exame Preventivo Ginecológico realizado:
+                                        value matches {
+                                            DV_CODED_TEXT[id47] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id48] matches {    -- Have you had MAMOGRAPHY in the past 12 months?
+                                        value matches {
+                                            DV_BOOLEAN[id49] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        state matches {
+                            ITEM_TREE[id5] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"Contraceptive_menstruation">
+                description = <"Contraceptive_menstruation">
+            >
+            ["id3"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"Do you use CONTRACEPTIVE METHOD?">
+                description = <"Do you use CONTRACEPTIVE METHOD?">
+            >
+            ["id8"] = <
+                text = <"Cutaneous adhesive">
+                description = <"Cutaneous adhesive">
+            >
+            ["id10"] = <
+                text = <"Vaginal ring">
+                description = <"Vaginal ring">
+            >
+            ["id12"] = <
+                text = <"Interrupted intercourse">
+                description = <"Interrupted intercourse">
+            >
+            ["id14"] = <
+                text = <"Emergency contraception (morning-after pill)">
+                description = <"Emergency contraception (morning-after pill)">
+            >
+            ["id16"] = <
+                text = <"Injectable contraceptive">
+                description = <"Injectable contraceptive">
+            >
+            ["id18"] = <
+                text = <"Oral contraceptive">
+                description = <"Oral contraceptive">
+            >
+            ["id20"] = <
+                text = <"Diaphragm">
+                description = <"Diaphragm">
+            >
+            ["id22"] = <
+                text = <"Diu - Dispositivo intrauterino">
+                description = <"Diu - Dispositivo intrauterino">
+            >
+            ["id24"] = <
+                text = <"Spermicide">
+                description = <"Spermicide">
+            >
+            ["id26"] = <
+                text = <"Contraceptive sponge">
+                description = <"Contraceptive sponge">
+            >
+            ["id28"] = <
+                text = <"Subcutaneous Implant">
+                description = <"Subcutaneous Implant">
+            >
+            ["id30"] = <
+                text = <"Ligation">
+                description = <"Ligation">
+            >
+            ["id32"] = <
+                text = <"Cervical mucus (Billings method)">
+                description = <"Cervical mucus (Billings method)">
+            >
+            ["id34"] = <
+                text = <"Female condom">
+                description = <"Female condom">
+            >
+            ["id36"] = <
+                text = <"Male condom (condom)">
+                description = <"Male condom (condom)">
+            >
+            ["id38"] = <
+                text = <"Little table">
+                description = <"Little table">
+            >
+            ["id40"] = <
+                text = <"Basal temperature">
+                description = <"Basal temperature">
+            >
+            ["id42"] = <
+                text = <"LAST MENSTRUATION Date?">
+                description = <"LAST MENSTRUATION Date?">
+            >
+            ["id44"] = <
+                text = <"Amenorrhea">
+                description = <"Amenorrhea">
+            >
+            ["id46"] = <
+                text = <"Último Exame Preventivo Ginecológico realizado:">
+                description = <"Último Exame Preventivo Ginecológico realizado:">
+            >
+            ["at1"] = <
+                text = <"1 year ago">
+                description = <"1 year ago">
+            >
+            ["at2"] = <
+                text = <"2 years ago">
+                description = <"2 years ago">
+            >
+            ["at3"] = <
+                text = <"3 years or more">
+                description = <"3 years or more">
+            >
+            ["ac1"] = <
+                text = <"Time">
+                description = <"Time">
+            >
+            ["id48"] = <
+                text = <"Have you had MAMOGRAPHY in the past 12 months?">
+                description = <"Have you had MAMOGRAPHY in the past 12 months?">
+            >
+        >
+    >
+    value_sets = <
+        ["ac1"] = <
+            id = <"ac1">
+            members = <"at1", "at2", "at3">
+        >
+    >
+
