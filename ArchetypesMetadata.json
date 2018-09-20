@@ -1026,7 +1026,7 @@
     "rmType" : "OBSERVATION",
     "name" : "Alimentacao",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.alimentacao.v1.adls",
-    "sha" : "08ce8337bc237df76e571d5ef0eda11b27d22347",
+    "sha" : "c69d801eef4a6b163fdf5b544139098181d93102",
     "languages" : [ "pt-br", "en" ]
   }, {
     "path" : "archetypes/openEHR-EHR-OBSERVATION.exame_fisico_sesi_br.v1.adls",
@@ -1140,7 +1140,7 @@
     "rmType" : "OBSERVATION",
     "name" : "General state_psychology",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.general_state_psychology.v1.adls",
-    "sha" : "a430470629f50006ae46b49f81718f5b36aea632",
+    "sha" : "225da6660f019c7bdc73755f26450ac8c99c2c86",
     "languages" : [ "en", "pt-br" ]
   }, {
     "id" : "openEHR-EHR-OBSERVATION.health_and_lifestyle_recommendations.v1.0.0",
@@ -1205,5 +1205,40 @@
     "path" : "archetypes/openEHR-EHR-OBSERVATION.substance_use-tobacco_frequency.v1.adls",
     "sha" : "d4ed00f9ec5d8fc6f018110807e93b0f24cbb3ac",
     "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-EVALUATION.problem_diagnosis_question.v1.0.0",
+    "rmType" : "EVALUATION",
+    "name" : "Problem/Diagnosis",
+    "path" : "archetypes/openEHR-EHR-EVALUATION.problem_diagnosis_question.v1.adls",
+    "sha" : "4b4c6b5148060f31f45a2ff6977cfeb64936bed3",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.frequency_of_tobacco.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "Frequency of tobacco",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.frequency_of_tobacco.v1.adls",
+    "sha" : "68dd0b9168b693c4a587af6c0538b0e921b34859",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.health_man.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "Health man",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.health_man.v1.adls",
+    "sha" : "a1794ba6d8d355ee935939f378d3720238ce67b2",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.menstruation_contraceptive.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "Menstruation",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.menstruation_contraceptive.v1.adls",
+    "sha" : "14cea45e2139617e728a454e430bc06aed2794aa",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.oral_health.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "oral health",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.oral_health.v1.adls",
+    "sha" : "1fa0ca8455606579cf38ee6577faf59e603a9fdd",
+    "languages" : [ "en", "pt-br" ]
   } ]
 }
