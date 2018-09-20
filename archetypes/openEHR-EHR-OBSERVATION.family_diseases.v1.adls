@@ -3,6 +3,12 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -10,6 +16,9 @@ description
         ["en"] = <
             language = <[ISO_639-1::en]>
             purpose = <"">
+        >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
         >
     >
     lifecycle_state = <"unmanaged">
@@ -91,14 +100,14 @@ definition
                                             DV_TEXT[id25] 
                                         }
                                     }
-                                    ELEMENT[id26] matches {    -- Você tem na família caso(s) de DIABETES?
+                                    ELEMENT[id26] matches {    -- Do you have DIABETES case (s) in your family?
                                         value matches {
                                             DV_CODED_TEXT[id27] matches {
                                                 defining_code matches {[ac1]}
                                             }
                                         }
                                     }
-                                    ELEMENT[id28] matches {    -- Você tem na família caso(s) de PRESSÃO ALTA / HIPERTENSÃO?
+                                    ELEMENT[id28] matches {    -- Do you have HIGH PRESSURE / HYPERTENSION case (s) in your family?
                                         value matches {
                                             DV_CODED_TEXT[id29] matches {
                                                 defining_code matches {[ac1]}
@@ -169,8 +178,8 @@ terminology
                 description = <"Specify">
             >
             ["id26"] = <
-                text = <"Você tem na família caso(s) de DIABETES?">
-                description = <"Você tem na família caso(s) de DIABETES?">
+                text = <"Do you have DIABETES case (s) in your family?">
+                description = <"Do you have DIABETES case (s) in your family?">
             >
             ["at1"] = <
                 text = <"Yes">
@@ -187,6 +196,80 @@ terminology
             ["ac1"] = <
                 text = <"Type">
                 description = <"Type">
+            >
+            ["id28"] = <
+                text = <"Do you have HIGH PRESSURE / HYPERTENSION case (s) in your family?">
+                description = <"Do you have HIGH PRESSURE / HYPERTENSION case (s) in your family?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"Doenças na família">
+                description = <"Doenças na família">
+            >
+            ["id3"] = <
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
+            >
+            ["id6"] = <
+                text = <"Você tem na família caso(s) de CÂNCER?">
+                description = <"Você tem na família caso(s) de CÂNCER?">
+            >
+            ["id8"] = <
+                text = <"Colo de Útero">
+                description = <"Colo de Útero">
+            >
+            ["id10"] = <
+                text = <"Intestino">
+                description = <"Intestino">
+            >
+            ["id12"] = <
+                text = <"Leucemia">
+                description = <"Leucemia">
+            >
+            ["id14"] = <
+                text = <"mama">
+                description = <"mama">
+            >
+            ["id16"] = <
+                text = <"Pele">
+                description = <"Pele">
+            >
+            ["id18"] = <
+                text = <"Prostata">
+                description = <"Prostata">
+            >
+            ["id20"] = <
+                text = <"Pulmão">
+                description = <"Pulmão">
+            >
+            ["id22"] = <
+                text = <"Outros">
+                description = <"Outros">
+            >
+            ["id24"] = <
+                text = <"Especifique">
+                description = <"Especifique">
+            >
+            ["id26"] = <
+                text = <"Você tem na família caso(s) de DIABETES?">
+                description = <"Você tem na família caso(s) de DIABETES?">
+            >
+            ["at1"] = <
+                text = <"Sim">
+                description = <"Sim">
+            >
+            ["at2"] = <
+                text = <"Não">
+                description = <"Não">
+            >
+            ["at3"] = <
+                text = <"Não sabe">
+                description = <"Não sabe">
+            >
+            ["ac1"] = <
+                text = <"*Type (en)">
+                description = <"*Type (en)">
             >
             ["id28"] = <
                 text = <"Você tem na família caso(s) de PRESSÃO ALTA / HIPERTENSÃO?">
