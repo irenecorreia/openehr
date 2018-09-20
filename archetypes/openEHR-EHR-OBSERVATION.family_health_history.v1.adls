@@ -21,7 +21,9 @@ definition
                 events matches {
                     EVENT[id3] matches {    -- Any event
                         data matches {
-                            ITEM_TREE[id4] 
+                            ITEM_TREE[id4] matches {
+                                items
+                            }
                         }
                         state matches {
                             ITEM_TREE[id5] 
