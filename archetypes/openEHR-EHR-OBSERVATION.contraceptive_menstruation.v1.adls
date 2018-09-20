@@ -3,6 +3,12 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -10,6 +16,9 @@ description
         ["en"] = <
             language = <[ISO_639-1::en]>
             purpose = <"">
+        >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
         >
     >
     lifecycle_state = <"unmanaged">
@@ -303,6 +312,120 @@ terminology
             ["id48"] = <
                 text = <"Have you had MAMOGRAPHY in the past 12 months?">
                 description = <"Have you had MAMOGRAPHY in the past 12 months?">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"Contraceptivo menstruação">
+                description = <"Contraceptivo menstruação">
+            >
+            ["id3"] = <
+                text = <"Qualquer evento">
+                description = <"Qualquer evento">
+            >
+            ["id6"] = <
+                text = <"Faz uso de MÉTODO CONTRACEPTIVO?">
+                description = <"Faz uso de MÉTODO CONTRACEPTIVO?">
+            >
+            ["id8"] = <
+                text = <"Adesivo cutâneo">
+                description = <"Adesivo cutâneo">
+            >
+            ["id10"] = <
+                text = <"Anel vaginal">
+                description = <"Anel vaginal">
+            >
+            ["id12"] = <
+                text = <"Coito interrompido">
+                description = <"Coito interrompido">
+            >
+            ["id14"] = <
+                text = <"Contracepção de emergência (pílula do dia seguinte)">
+                description = <"Contracepção de emergência (pílula do dia seguinte)">
+            >
+            ["id16"] = <
+                text = <"Contraceptivo injetável">
+                description = <"Contraceptivo injetável">
+            >
+            ["id18"] = <
+                text = <"Contraceptivo oral">
+                description = <"Contraceptivo oral">
+            >
+            ["id20"] = <
+                text = <"Diafragma">
+                description = <"Diafragma">
+            >
+            ["id22"] = <
+                text = <"Diu - Dispositivo intrauterino">
+                description = <"Diu - Dispositivo intrauterino">
+            >
+            ["id24"] = <
+                text = <"Espermicida">
+                description = <"Espermicida">
+            >
+            ["id26"] = <
+                text = <"Esponja contraceptiva">
+                description = <"Esponja contraceptiva">
+            >
+            ["id28"] = <
+                text = <"Implante Subcutâneo">
+                description = <"Implante Subcutâneo">
+            >
+            ["id30"] = <
+                text = <"Ligação">
+                description = <"Ligação">
+            >
+            ["id32"] = <
+                text = <"*Cervical mucus (Billings method) (en)">
+                description = <"*Cervical mucus (Billings method) (en)">
+            >
+            ["id34"] = <
+                text = <"*Female condom (en)">
+                description = <"*Female condom (en)">
+            >
+            ["id36"] = <
+                text = <"*Male condom (condom) (en)">
+                description = <"*Male condom (condom) (en)">
+            >
+            ["id38"] = <
+                text = <"*Little table (en)">
+                description = <"*Little table (en)">
+            >
+            ["id40"] = <
+                text = <"*Basal temperature (en)">
+                description = <"*Basal temperature (en)">
+            >
+            ["id42"] = <
+                text = <"*LAST MENSTRUATION Date? (en)">
+                description = <"*LAST MENSTRUATION Date? (en)">
+            >
+            ["id44"] = <
+                text = <"*Amenorrhea (en)">
+                description = <"*Amenorrhea (en)">
+            >
+            ["id46"] = <
+                text = <"*Último Exame Preventivo Ginecológico realizado: (en)">
+                description = <"*Último Exame Preventivo Ginecológico realizado: (en)">
+            >
+            ["at1"] = <
+                text = <"*1 year ago (en)">
+                description = <"*1 year ago (en)">
+            >
+            ["at2"] = <
+                text = <"*2 years ago (en)">
+                description = <"*2 years ago (en)">
+            >
+            ["at3"] = <
+                text = <"*3 years or more (en)">
+                description = <"*3 years or more (en)">
+            >
+            ["ac1"] = <
+                text = <"*Time (en)">
+                description = <"*Time (en)">
+            >
+            ["id48"] = <
+                text = <"*Have you had MAMOGRAPHY in the past 12 months? (en)">
+                description = <"*Have you had MAMOGRAPHY in the past 12 months? (en)">
             >
         >
     >
