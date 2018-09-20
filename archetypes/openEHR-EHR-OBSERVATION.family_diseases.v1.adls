@@ -1,0 +1,203 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-OBSERVATION.family_diseases.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    
+description
+    copyright = <"">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+
+definition
+    OBSERVATION[id1] matches {    -- Family_diseases
+        data matches {
+            HISTORY[id2] matches {
+                events matches {
+                    EVENT[id3] matches {    -- Any event
+                        data matches {
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id6] matches {    -- Do you have cancer case (s) in your family?
+                                        value matches {
+                                            DV_BOOLEAN[id7] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id8] matches {    -- Uterine cervix
+                                        value matches {
+                                            DV_BOOLEAN[id9] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id10] matches {    -- Intestine
+                                        value matches {
+                                            DV_BOOLEAN[id11] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id12] matches {    -- Leucemia
+                                        value matches {
+                                            DV_BOOLEAN[id13] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id14] matches {    -- Breast
+                                        value matches {
+                                            DV_BOOLEAN[id15] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id16] matches {    -- Skin
+                                        value matches {
+                                            DV_BOOLEAN[id17] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id18] matches {    -- Prostate
+                                        value matches {
+                                            DV_BOOLEAN[id19] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id20] matches {    -- Lung
+                                        value matches {
+                                            DV_BOOLEAN[id21] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id22] matches {    -- Others
+                                        value matches {
+                                            DV_BOOLEAN[id23] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id24] matches {    -- Specify
+                                        value matches {
+                                            DV_TEXT[id25] 
+                                        }
+                                    }
+                                    ELEMENT[id26] matches {    -- Você tem na família caso(s) de DIABETES?
+                                        value matches {
+                                            DV_CODED_TEXT[id27] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id28] matches {    -- Você tem na família caso(s) de PRESSÃO ALTA / HIPERTENSÃO?
+                                        value matches {
+                                            DV_CODED_TEXT[id29] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        state matches {
+                            ITEM_TREE[id5] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"Family_diseases">
+                description = <"Family_diseases">
+            >
+            ["id3"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"Do you have cancer case (s) in your family?">
+                description = <"Do you have cancer case (s) in your family?">
+            >
+            ["id8"] = <
+                text = <"Uterine cervix">
+                description = <"Uterine cervix">
+            >
+            ["id10"] = <
+                text = <"Intestine">
+                description = <"Intestine">
+            >
+            ["id12"] = <
+                text = <"Leucemia">
+                description = <"Leucemia">
+            >
+            ["id14"] = <
+                text = <"Breast">
+                description = <"Breast">
+            >
+            ["id16"] = <
+                text = <"Skin">
+                description = <"Skin">
+            >
+            ["id18"] = <
+                text = <"Prostate">
+                description = <"Prostate">
+            >
+            ["id20"] = <
+                text = <"Lung">
+                description = <"Lung">
+            >
+            ["id22"] = <
+                text = <"Others">
+                description = <"Others">
+            >
+            ["id24"] = <
+                text = <"Specify">
+                description = <"Specify">
+            >
+            ["id26"] = <
+                text = <"Você tem na família caso(s) de DIABETES?">
+                description = <"Você tem na família caso(s) de DIABETES?">
+            >
+            ["at1"] = <
+                text = <"Yes">
+                description = <"Yes">
+            >
+            ["at2"] = <
+                text = <"No">
+                description = <"No">
+            >
+            ["at3"] = <
+                text = <"do not know">
+                description = <"do not know">
+            >
+            ["ac1"] = <
+                text = <"Type">
+                description = <"Type">
+            >
+            ["id28"] = <
+                text = <"Você tem na família caso(s) de PRESSÃO ALTA / HIPERTENSÃO?">
+                description = <"Você tem na família caso(s) de PRESSÃO ALTA / HIPERTENSÃO?">
+            >
+        >
+    >
+    value_sets = <
+        ["ac1"] = <
+            id = <"ac1">
+            members = <"at1", "at2", "at3">
+        >
+    >
+
