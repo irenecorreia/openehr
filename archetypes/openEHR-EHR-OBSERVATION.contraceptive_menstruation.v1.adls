@@ -172,7 +172,7 @@ definition
                                             }
                                         }
                                     }
-                                    ELEMENT[id46] matches {    -- Último Exame Preventivo Ginecológico realizado:
+                                    ELEMENT[id46] matches {    -- Last Gynecological Preventive Exam:
                                         value matches {
                                             DV_CODED_TEXT[id47] matches {
                                                 defining_code matches {[ac1]}
@@ -290,8 +290,8 @@ terminology
                 description = <"Amenorrhea">
             >
             ["id46"] = <
-                text = <"Último Exame Preventivo Ginecológico realizado:">
-                description = <"Último Exame Preventivo Ginecológico realizado:">
+                text = <"Last Gynecological Preventive Exam:">
+                description = <"Last Gynecological Preventive Exam:">
             >
             ["at1"] = <
                 text = <"1 year ago">
@@ -376,36 +376,36 @@ terminology
                 description = <"Ligação">
             >
             ["id32"] = <
-                text = <"*Cervical mucus (Billings method) (en)">
-                description = <"*Cervical mucus (Billings method) (en)">
+                text = <"Muco cervical (método de Billings)">
+                description = <"Muco cervical (método de Billings)">
             >
             ["id34"] = <
-                text = <"*Female condom (en)">
-                description = <"*Female condom (en)">
+                text = <"Preservativo feminino">
+                description = <"Preservativo feminino">
             >
             ["id36"] = <
-                text = <"*Male condom (condom) (en)">
-                description = <"*Male condom (condom) (en)">
+                text = <"Preservativo Masculino (preservativo)">
+                description = <"Preservativo Masculino (preservativo)">
             >
             ["id38"] = <
-                text = <"*Little table (en)">
-                description = <"*Little table (en)">
+                text = <"Tabelinha">
+                description = <"Tabelinha">
             >
             ["id40"] = <
-                text = <"*Basal temperature (en)">
-                description = <"*Basal temperature (en)">
+                text = <"Temperatura basal">
+                description = <"Temperatura basal">
             >
             ["id42"] = <
-                text = <"*LAST MENSTRUATION Date? (en)">
-                description = <"*LAST MENSTRUATION Date? (en)">
+                text = <"ÚLTIMA MENSTRUAÇÃO Data?">
+                description = <"ÚLTIMA MENSTRUAÇÃO Data?">
             >
             ["id44"] = <
-                text = <"*Amenorrhea (en)">
-                description = <"*Amenorrhea (en)">
+                text = <"Amenorreia">
+                description = <"Amenorreia">
             >
             ["id46"] = <
-                text = <"*Último Exame Preventivo Ginecológico realizado: (en)">
-                description = <"*Último Exame Preventivo Ginecológico realizado: (en)">
+                text = <"Último Exame Preventivo Ginecológico realizado:">
+                description = <"Último Exame Preventivo Ginecológico realizado:">
             >
             ["at1"] = <
                 text = <"*1 year ago (en)">
@@ -424,8 +424,8 @@ terminology
                 description = <"*Time (en)">
             >
             ["id48"] = <
-                text = <"*Have you had MAMOGRAPHY in the past 12 months? (en)">
-                description = <"*Have you had MAMOGRAPHY in the past 12 months? (en)">
+                text = <"Você realizou MAMOGRAFIA nos últimos 12 meses?">
+                description = <"Você realizou MAMOGRAFIA nos últimos 12 meses?">
             >
         >
     >
