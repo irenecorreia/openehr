@@ -18,7 +18,7 @@ description
             use = <"Use history class to record maximum and minimum durations of bleeding - uses the menstruation cluster for details of a specific or typical cycle">
         >
     >
-    lifecycle_state = <"in_review">
+    lifecycle_state = <"draft">
     original_author = <
         ["name"] = <"Heather Leslie">
         ["organisation"] = <"Ocean Informatics">
