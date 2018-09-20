@@ -37,6 +37,13 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id10] matches {    -- When you drink, how many doses do you consume?
+                                        value matches {
+                                            DV_CODED_TEXT[id11] matches {
+                                                defining_code matches {[ac2]}
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -92,12 +99,44 @@ terminology
                 text = <"Alcohol">
                 description = <"Alcohol">
             >
+            ["id10"] = <
+                text = <"When you drink, how many doses do you consume?">
+                description = <"When you drink, how many doses do you consume?">
+            >
+            ["at6"] = <
+                text = <"1 or 2">
+                description = <"1 or 2">
+            >
+            ["at7"] = <
+                text = <"3 or 4">
+                description = <"3 or 4">
+            >
+            ["at8"] = <
+                text = <"5 or 6">
+                description = <"5 or 6">
+            >
+            ["at9"] = <
+                text = <"7 or 8">
+                description = <"7 or 8">
+            >
+            ["at10"] = <
+                text = <"9 or more">
+                description = <"9 or more">
+            >
+            ["ac2"] = <
+                text = <"Dose">
+                description = <"Dose">
+            >
         >
     >
     value_sets = <
         ["ac1"] = <
             id = <"ac1">
             members = <"at1", "at2", "at3", "at4", "at5">
+        >
+        ["ac2"] = <
+            id = <"ac2">
+            members = <"at6", "at7", "at8", "at9", "at10">
         >
     >
 
