@@ -16,7 +16,7 @@
     "rmType" : "COMPOSITION",
     "name" : "Encounter",
     "path" : "templates/openEHR-EHR-COMPOSITION.fcos5.v1.adlt",
-    "sha" : "1d64800f416bd4283315fa5e9adf050e0a24140d"
+    "sha" : "d9a4325e65d0cd47c588f67208fe2a0bcf014ca1"
   }, {
     "id" : "openEHR-EHR-COMPOSITION.teste2.v1.0.0",
     "rmType" : "COMPOSITION",
@@ -40,6 +40,6 @@
     "rmType" : "COMPOSITION",
     "name" : "Encounter",
     "path" : "templates/openEHR-EHR-COMPOSITION.questionario_de_saude.v1.adlt",
-    "sha" : "b3181af2967e3be07176674084d06dd47a8357e7"
+    "sha" : "4529123135a0eb24dba854cb29cac456bf09b53f"
   } ]
 }
