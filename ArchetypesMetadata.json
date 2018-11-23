@@ -1229,5 +1229,26 @@
   }, {
     "path" : "archetypes/openEHR-EHR-OBSERVATION.family_health_history.v1.adls",
     "sha" : "a3bbff79437ab32335774eaa4b086dee389e15cc"
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.contraceptive_menstruation.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "Contraceptive_menstruation",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.contraceptive_menstruation.v1.adls",
+    "sha" : "df67e7e55bb14fdc65e91922bdb826a3dc9c1121",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.family_diseases.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "Family_diseases",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.family_diseases.v1.adls",
+    "sha" : "4f26ecf2e5bce044030b6e70e481bec2dbcd388a",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.uso_of_alcohol_and_drugs.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "uso of alcohol and drugs",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.uso_of_alcohol_and_drugs.v1.adls",
+    "sha" : "4d5231d4453552dd072c7832225badaff1750846",
+    "languages" : [ "en", "pt-br" ]
   } ]
 }
