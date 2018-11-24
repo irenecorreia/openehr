@@ -1,23 +1,5 @@
 {
   "templates" : [ {
-    "id" : "openEHR-EHR-COMPOSITION.sesifco.v1.0.0",
-    "rmType" : "COMPOSITION",
-    "name" : "Encounter",
-    "path" : "templates/openEHR-EHR-COMPOSITION.sesifco.v1.adlt",
-    "sha" : "197866c5769eff112a35b5675082a7295e751c97"
-  }, {
-    "id" : "openEHR-EHR-COMPOSITION.medicacoes.v1.0.0",
-    "rmType" : "COMPOSITION",
-    "name" : "Medication List",
-    "path" : "templates/openEHR-EHR-COMPOSITION.medicacoes.v1.adlt",
-    "sha" : "c98dd2185bbe21f1971566d33be1d18b81b68b07"
-  }, {
-    "id" : "openEHR-EHR-COMPOSITION.sesifco.v1.0.0",
-    "rmType" : "COMPOSITION",
-    "name" : "Encounter",
-    "path" : "templates/openEHR-EHR-COMPOSITION.sesifco2.v1.adlt",
-    "sha" : "3244d55149db0e5ad991f24706b5d45b417f0284"
-  }, {
     "id" : "openEHR-EHR-COMPOSITION.sesi_fco_completa.v1.0.0",
     "rmType" : "COMPOSITION",
     "name" : "Encounter",
