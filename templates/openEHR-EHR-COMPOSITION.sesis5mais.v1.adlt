@@ -72,7 +72,9 @@ specialize
 
 definition
     SECTION[id1.1] matches {    -- Adhoc Heading
-        items
+        items matches {
+            use_archetype OBSERVATION[id0.2, openEHR-EHR-OBSERVATION.ovl-sesis5mais-resultado_exame-001.v1.0.0]
+        }
     }
 
 terminology
@@ -87,6 +89,57 @@ terminology
             ["id1.1"] = <
                 text = <"Resultado Exame">
                 description = <"Resultado Exame">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-sesis5mais-resultado_exame-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.resultado_exame.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- exam result
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id11] matches {
+                /value[id12]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id13] matches {
+                /value[id14]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id17] matches {
+                /value[id18]/value matches {True, False}
+            }
+            ELEMENT[id19] matches {
+                /value[id20]/value matches {True, False}
+            }
+            ELEMENT[id21] matches {
+                /value[id22]/value matches {True, False}
+            }
+            ELEMENT[id23] matches {
+                /value[id24]/value matches {True, False}
+            }
+            ELEMENT[id27] matches {
+                /value[id28]/value matches {*}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"exam result">
+                description = <"exam result">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Exam Result">
+                description = <"Exam Result">
             >
         >
     >
