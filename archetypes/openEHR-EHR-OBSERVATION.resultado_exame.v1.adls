@@ -3,6 +3,15 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"iHealth Group">
+            author = <
+                ["iHealth"] = <"">
+            >
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -10,6 +19,9 @@ description
         ["en"] = <
             language = <[ISO_639-1::en]>
             purpose = <"">
+        >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
         >
     >
     lifecycle_state = <"unmanaged">
@@ -165,6 +177,84 @@ terminology
             ["id23"] = <
                 text = <"Stable">
                 description = <"stable">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"*resultado exame (en)">
+                description = <"*resultado exame (en)">
+            >
+            ["id3"] = <
+                text = <"*Any event (en)">
+                description = <"*Any event (en)">
+            >
+            ["id7"] = <
+                text = <"*Invoice (en)">
+                description = <"*Invoice (en)">
+            >
+            ["id9"] = <
+                text = <"*Repeat (months) (en)">
+                description = <"*Repeat (months) (en)">
+            >
+            ["id11"] = <
+                text = <"*Reference Sequence (en)">
+                description = <"*reference sequence (en)">
+            >
+            ["at1"] = <
+                text = <"*Reference (en)">
+                description = <"*Reference (en)">
+            >
+            ["at2"] = <
+                text = <"*Sequence (en)">
+                description = <"*Sequence (en)">
+            >
+            ["at3"] = <
+                text = <"*Reference (en)">
+                description = <"*Reference (en)">
+            >
+            ["at4"] = <
+                text = <"*not applicable (en)">
+                description = <"*not applicable (en)">
+            >
+            ["ac1"] = <
+                text = <"*Ref Seq (en)">
+                description = <"*Ref Seq (en)">
+            >
+            ["id13"] = <
+                text = <"*Changed (en)">
+                description = <"*changed (en)">
+            >
+            ["at5"] = <
+                text = <"*normal (en)">
+                description = <"*normal (en)">
+            >
+            ["at6"] = <
+                text = <"*changed (en)">
+                description = <"*changed (en)">
+            >
+            ["at7"] = <
+                text = <"*white (en)">
+                description = <"*white (en)">
+            >
+            ["at8"] = <
+                text = <"*white (en)">
+                description = <"*white (en)">
+            >
+            ["id17"] = <
+                text = <"*In analysis (en)">
+                description = <"*In analysis (en)">
+            >
+            ["id19"] = <
+                text = <"*Occupational (en)">
+                description = <"*occupational (en)">
+            >
+            ["id21"] = <
+                text = <"*Aggravation (en)">
+                description = <"*aggravation (en)">
+            >
+            ["id23"] = <
+                text = <"*Stable (en)">
+                description = <"*stable (en)">
             >
         >
     >
