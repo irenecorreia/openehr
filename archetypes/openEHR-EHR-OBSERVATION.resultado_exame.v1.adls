@@ -87,6 +87,53 @@ definition
                                             }
                                         }
                                     }
+                                    ELEMENT[id25] matches {    -- Exam name
+                                        value matches {
+                                            DV_TEXT[id26] 
+                                        }
+                                    }
+                                    ELEMENT[id27] matches {    -- Result date
+                                        value matches {
+                                            DV_DATE[id28] matches {
+                                                value matches {*}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id29] matches {    -- Results
+                                        value matches {
+                                            DV_TEXT[id30] 
+                                        }
+                                    }
+                                    ELEMENT[id31] matches {    -- Comment
+                                        value matches {
+                                            DV_TEXT[id32] 
+                                        }
+                                    }
+                                    ELEMENT[id33] matches {    -- Material and technique
+                                        value matches {
+                                            DV_TEXT[id34] 
+                                        }
+                                    }
+                                    ELEMENT[id35] matches {    -- Reference
+                                        value matches {
+                                            DV_TEXT[id36] 
+                                        }
+                                    }
+                                    ELEMENT[id37] matches {    -- Examiners
+                                        value matches {
+                                            DV_TEXT[id38] 
+                                        }
+                                    }
+                                    ELEMENT[id39] matches {    -- Provider
+                                        value matches {
+                                            DV_TEXT[id40] 
+                                        }
+                                    }
+                                    ELEMENT[id41] matches {    -- Image name
+                                        value matches {
+                                            DV_TEXT[id42] 
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -178,6 +225,42 @@ terminology
                 text = <"Stable">
                 description = <"stable">
             >
+            ["id25"] = <
+                text = <"Exam name">
+                description = <"Exam name">
+            >
+            ["id27"] = <
+                text = <"Result date">
+                description = <"result date">
+            >
+            ["id29"] = <
+                text = <"Results">
+                description = <"Results">
+            >
+            ["id31"] = <
+                text = <"Comment">
+                description = <"Comment">
+            >
+            ["id33"] = <
+                text = <"Material and technique">
+                description = <"material and technique">
+            >
+            ["id35"] = <
+                text = <"Reference">
+                description = <"Reference">
+            >
+            ["id37"] = <
+                text = <"Examiners">
+                description = <"Examiners">
+            >
+            ["id39"] = <
+                text = <"Provider">
+                description = <"Provider">
+            >
+            ["id41"] = <
+                text = <"Image name">
+                description = <"image name">
+            >
         >
         ["pt-br"] = <
             ["id1"] = <
@@ -255,6 +338,42 @@ terminology
             ["id23"] = <
                 text = <"Estável">
                 description = <"Estável">
+            >
+            ["id25"] = <
+                text = <"Nome exame">
+                description = <"Nome exame">
+            >
+            ["id27"] = <
+                text = <"Data do resultado">
+                description = <"Data do resultado">
+            >
+            ["id29"] = <
+                text = <"Resultado">
+                description = <"Resultado">
+            >
+            ["id31"] = <
+                text = <"Comentário">
+                description = <"Comentário">
+            >
+            ["id33"] = <
+                text = <"Material e técnica">
+                description = <"Material e técnica">
+            >
+            ["id35"] = <
+                text = <"Referência">
+                description = <"Referência">
+            >
+            ["id37"] = <
+                text = <"Examinador">
+                description = <"Examinador">
+            >
+            ["id39"] = <
+                text = <"Prestador">
+                description = <"Prestador">
+            >
+            ["id41"] = <
+                text = <"Nome da imagem">
+                description = <"Nome da imagem">
             >
         >
     >
