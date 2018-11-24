@@ -233,12 +233,12 @@ terminology
                 description = <"Detalhes de um cuidador profissional.">
             >
             ["id6"] = <
-                text = <"*Grade (en)">
-                description = <"*The employment grade or position of the carer. (en)">
+                text = <"Grau">
+                description = <"O grau de emprego ou posição do cuidador.">
             >
             ["id7"] = <
-                text = <"*Specialty (en)">
-                description = <"*The speciality of the carer. (en)">
+                text = <"Especialidade">
+                description = <"A especialidade do cuidador">
             >
             ["id12"] = <
                 text = <"*Professional Identifier (en)">
