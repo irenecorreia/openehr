@@ -1250,5 +1250,12 @@
     "path" : "archetypes/openEHR-EHR-OBSERVATION.uso_of_alcohol_and_drugs.v1.adls",
     "sha" : "4d5231d4453552dd072c7832225badaff1750846",
     "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.resultado_exame.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "exam result",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.resultado_exame.v1.adls",
+    "sha" : "f5d2fe665ca2c376b536fc6b09bb980b52424db9",
+    "languages" : [ "en", "pt-br" ]
   } ]
 }
