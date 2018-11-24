@@ -3,6 +3,12 @@ archetype (adl_version=2.0.4; rm_release=1.0.2)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"">
@@ -10,6 +16,9 @@ description
         ["en"] = <
             language = <[ISO_639-1::en]>
             purpose = <"">
+        >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
         >
     >
     lifecycle_state = <"unmanaged">
@@ -282,6 +291,160 @@ terminology
             ["id41"] = <
                 text = <"Sequential Code">
                 description = <"Sequential Code">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"Ficha Clínica">
+                description = <"Ficha Clínica">
+            >
+            ["id3"] = <
+                text = <"*Any event (en)">
+                description = <"*Any event (en)">
+            >
+            ["id9"] = <
+                text = <"Funcionário">
+                description = <"Funcionário">
+            >
+            ["id11"] = <
+                text = <"Matrícula">
+                description = <"Matrícula">
+            >
+            ["id13"] = <
+                text = <"Nascimento">
+                description = <"Nascimento">
+            >
+            ["id15"] = <
+                text = <"Admissão">
+                description = <"Admissão">
+            >
+            ["id17"] = <
+                text = <"Tempo de serviço">
+                description = <"Tempo de serviço">
+            >
+            ["id19"] = <
+                text = <"Unidade">
+                description = <"Unidade">
+            >
+            ["id21"] = <
+                text = <"Setor">
+                description = <"Setor">
+            >
+            ["id23"] = <
+                text = <"Cargo">
+                description = <"Cargo">
+            >
+            ["id25"] = <
+                text = <"Demissão">
+                description = <"Demissão">
+            >
+            ["id27"] = <
+                text = <"Situação">
+                description = <"Situação">
+            >
+            ["at1"] = <
+                text = <"Ativo">
+                description = <"Ativo">
+            >
+            ["at2"] = <
+                text = <"Inativo">
+                description = <"Inativo">
+            >
+            ["at3"] = <
+                text = <"Pendente">
+                description = <"Pendente">
+            >
+            ["at4"] = <
+                text = <"Afastado">
+                description = <"Afastado">
+            >
+            ["at5"] = <
+                text = <"Férias">
+                description = <"Férias">
+            >
+            ["ac1"] = <
+                text = <"*Situation (en)">
+                description = <"*Situation (en)">
+            >
+            ["id29"] = <
+                text = <"Idade">
+                description = <"Idade">
+            >
+            ["id31"] = <
+                text = <"RG">
+                description = <"RG">
+            >
+            ["id33"] = <
+                text = <"Sexo">
+                description = <"Sexo">
+            >
+            ["id35"] = <
+                text = <"Data da ficha">
+                description = <"Data da ficha">
+            >
+            ["id37"] = <
+                text = <"Tipo">
+                description = <"Tipo">
+            >
+            ["at6"] = <
+                text = <"Admissional">
+                description = <"Admissional">
+            >
+            ["at7"] = <
+                text = <"Periódico">
+                description = <"Periódico">
+            >
+            ["at8"] = <
+                text = <"Demissional">
+                description = <"Demissional">
+            >
+            ["at9"] = <
+                text = <"Mudança de função">
+                description = <"Mudança de função">
+            >
+            ["at10"] = <
+                text = <"Retorno ao trabalho">
+                description = <"Retorno ao trabalho">
+            >
+            ["at11"] = <
+                text = <"Monitorização pontual">
+                description = <"Monitorização pontual">
+            >
+            ["at12"] = <
+                text = <"Acidente">
+                description = <"Acidente">
+            >
+            ["at13"] = <
+                text = <"Consulta">
+                description = <"Consulta">
+            >
+            ["at14"] = <
+                text = <"Retorno consulta">
+                description = <"Retorno consulta">
+            >
+            ["at15"] = <
+                text = <"Licença médica">
+                description = <"Licença médica">
+            >
+            ["at16"] = <
+                text = <"Enfermagem">
+                description = <"Enfermagem">
+            >
+            ["at17"] = <
+                text = <"Terceiros">
+                description = <"Terceiros">
+            >
+            ["ac2"] = <
+                text = <"*Type (en)">
+                description = <"*Type (en)">
+            >
+            ["id39"] = <
+                text = <"Médico">
+                description = <"Médico">
+            >
+            ["id41"] = <
+                text = <"Código sequencial">
+                description = <"Código sequencial">
             >
         >
     >
