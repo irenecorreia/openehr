@@ -229,8 +229,8 @@ terminology
                 description = <"Dados demográficos profissionais, incluindo nome (s), endereço (s) e detalhes de contato de telecomunicação.">
             >
             ["id4"] = <
-                text = <"*Professional details (en)">
-                description = <"*Details of a professional carer. (en)">
+                text = <"Detalhes profissionais">
+                description = <"Detalhes de um cuidador profissional.">
             >
             ["id6"] = <
                 text = <"*Grade (en)">
