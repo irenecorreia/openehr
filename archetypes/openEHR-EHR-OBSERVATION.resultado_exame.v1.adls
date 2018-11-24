@@ -1,0 +1,177 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-OBSERVATION.resultado_exame.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    
+description
+    copyright = <"">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+
+definition
+    OBSERVATION[id1] matches {    -- resultado exame
+        data matches {
+            HISTORY[id2] matches {
+                events matches {
+                    EVENT[id3] matches {    -- Any event
+                        data matches {
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id7] matches {    -- Invoice
+                                        value matches {
+                                            DV_TEXT[id8] 
+                                        }
+                                    }
+                                    ELEMENT[id9] matches {    -- Repeat (months)
+                                        value matches {
+                                            DV_TEXT[id10] 
+                                        }
+                                    }
+                                    ELEMENT[id11] matches {    -- Reference Sequence
+                                        value matches {
+                                            DV_CODED_TEXT[id12] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id13] matches {    -- Changed
+                                        value matches {
+                                            DV_CODED_TEXT[id14] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id17] matches {    -- In analysis
+                                        value matches {
+                                            DV_BOOLEAN[id18] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id19] matches {    -- Occupational
+                                        value matches {
+                                            DV_BOOLEAN[id20] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id21] matches {    -- Aggravation
+                                        value matches {
+                                            DV_BOOLEAN[id22] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id23] matches {    -- Stable
+                                        value matches {
+                                            DV_BOOLEAN[id24] matches {
+                                                value matches {True, False}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        state matches {
+                            ITEM_TREE[id5] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"resultado exame">
+                description = <"resultado exame">
+            >
+            ["id3"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
+            ["id7"] = <
+                text = <"Invoice">
+                description = <"Invoice">
+            >
+            ["id9"] = <
+                text = <"Repeat (months)">
+                description = <"Repeat (months)">
+            >
+            ["id11"] = <
+                text = <"Reference Sequence">
+                description = <"reference sequence">
+            >
+            ["at1"] = <
+                text = <"Reference">
+                description = <"Reference">
+            >
+            ["at2"] = <
+                text = <"Sequence">
+                description = <"Sequence">
+            >
+            ["at3"] = <
+                text = <"Reference">
+                description = <"Reference">
+            >
+            ["at4"] = <
+                text = <"not applicable">
+                description = <"not applicable">
+            >
+            ["ac1"] = <
+                text = <"Ref Seq">
+                description = <"Ref Seq">
+            >
+            ["id13"] = <
+                text = <"Changed">
+                description = <"changed">
+            >
+            ["at5"] = <
+                text = <"normal">
+                description = <"normal">
+            >
+            ["at6"] = <
+                text = <"changed">
+                description = <"changed">
+            >
+            ["at7"] = <
+                text = <"white">
+                description = <"white">
+            >
+            ["at8"] = <
+                text = <"white">
+                description = <"white">
+            >
+            ["id17"] = <
+                text = <"In analysis">
+                description = <"In analysis">
+            >
+            ["id19"] = <
+                text = <"Occupational">
+                description = <"occupational">
+            >
+            ["id21"] = <
+                text = <"Aggravation">
+                description = <"aggravation">
+            >
+            ["id23"] = <
+                text = <"Stable">
+                description = <"stable">
+            >
+        >
+    >
+    value_sets = <
+        ["ac1"] = <
+            id = <"ac1">
+            members = <"at2", "at3", "at4", "at8">
+        >
+    >
+
