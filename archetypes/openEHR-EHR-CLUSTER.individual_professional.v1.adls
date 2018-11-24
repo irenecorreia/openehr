@@ -241,16 +241,16 @@ terminology
                 description = <"A especialidade do cuidador">
             >
             ["id12"] = <
-                text = <"*Professional Identifier (en)">
-                description = <"*Professional identifier of the individual. (en)">
+                text = <"Identificador profissional">
+                description = <"Identificador profissional do indivíduo.">
             >
             ["id13"] = <
-                text = <"*Team (en)">
-                description = <"*Team to which the individual belongs. (en)">
+                text = <"Equipe">
+                description = <"Equipe à qual o indivíduo pertence.">
             >
             ["id14"] = <
-                text = <"*Period of involvement (en)">
-                description = <"*The period during which this professional was involved in care of the subject. (en)">
+                text = <"Período de envolvimento">
+                description = <"O período durante o qual este profissional esteve envolvido no cuidado do assunto.">
             >
             ["id16"] = <
                 text = <"*Name (en)">
