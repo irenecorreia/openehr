@@ -253,24 +253,24 @@ terminology
                 description = <"O período durante o qual este profissional esteve envolvido no cuidado do assunto.">
             >
             ["id16"] = <
-                text = <"*Name (en)">
-                description = <"*Personal name details of the individual. (en)">
+                text = <"Nome">
+                description = <"Detalhes do nome pessoal do indivíduo.">
             >
             ["id17"] = <
-                text = <"*Professional Role (en)">
-                description = <"*Professional role details of the individual. (en)">
+                text = <"Papel Profissional">
+                description = <"Detalhes do papel profissional do indivíduo.">
             >
             ["id18"] = <
-                text = <"*Telecoms (en)">
-                description = <"*Telecommunication details of the individual. (en)">
+                text = <"Telecomunicações">
+                description = <"Detalhes de telecomunicação do indivíduo.">
             >
             ["id19"] = <
-                text = <"*Organisation (en)">
-                description = <"*Organisation details to which the individual is attached. (en)">
+                text = <"Organização">
+                description = <"Detalhes da organização aos quais o indivíduo está conectado.">
             >
             ["id20"] = <
-                text = <"*Address (en)">
-                description = <"*Address details of the individual. (en)">
+                text = <"Endereço">
+                description = <"Detalhes do endereço do indivíduo.">
             >
         >
     >
