@@ -512,24 +512,24 @@ terminology
                 description = <"Tipo de nome descrito.">
             >
             ["at9"] = <
-                text = <"*Previous name (en)">
-                description = <"*Name previously used by this person. (en)">
+                text = <"Nome anterior">
+                description = <"Nome usado anteriormente por essa pessoa.">
             >
             ["at10"] = <
-                text = <"*Birth name (en)">
-                description = <"*Name given to this person at birth. (en)">
+                text = <"Nome de nascimento">
+                description = <"Nome dado a essa pessoa no nascimento.">
             >
             ["at11"] = <
-                text = <"*AKA (en)">
-                description = <"*Person also known as. (en)">
+                text = <"AKA">
+                description = <"Nome de como a pessoa é conhecida">
             >
             ["at12"] = <
-                text = <"*Alias (en)">
-                description = <"*Other name used by this person. (en)">
+                text = <"Apelido">
+                description = <"Outro nome usado por essa pessoa">
             >
             ["at13"] = <
-                text = <"*Maiden name (en)">
-                description = <"*Name used by this persion before marriage. (en)">
+                text = <"Nome de solteiro (a)">
+                description = <"Nome usado por esta pessoa antes do casamento.">
             >
             ["id15"] = <
                 text = <"Período de validade">
@@ -544,16 +544,16 @@ terminology
                 description = <"Termo adicional usado após o nome de uma pessoa.">
             >
             ["at20"] = <
-                text = <"*Professional name (en)">
-                description = <"*The name used by the subject for business or professional purposes. (en)">
+                text = <"Nome profissional">
+                description = <"O nome usado para fins comerciais ou profissionais.">
             >
             ["at21"] = <
-                text = <"*Registered name (en)">
-                description = <"*The name by which the subject is officially registered. (en)">
+                text = <"Nome registrado">
+                description = <"O nome é oficialmente registrado.">
             >
             ["at22"] = <
-                text = <"*Reporting name (en)">
-                description = <"*The subject’s name as it is to be used for reporting, when used with a specific identifier. (en)">
+                text = <"Nome para relatório">
+                description = <"O nome do sujeito, como deve ser usado para relatórios, quando usado com um identificador específico.">
             >
             ["id23"] = <
                 text = <"Nome preferido">
