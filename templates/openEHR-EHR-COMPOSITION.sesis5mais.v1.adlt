@@ -167,7 +167,7 @@ terminology
         >
         ["pt-br"] = <
             ["id1.1"] = <
-                text = <"Medical record">
+                text = <"Ficha Clínica">
                 description = <"medical record">
             >
         >
