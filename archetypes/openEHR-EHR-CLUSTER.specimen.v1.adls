@@ -3,6 +3,12 @@ archetype (adl_version=2.0.5; rm_release=1.0.2; generated)
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
     
 description
     copyright = <"copyright (c) 2010 openEHR Foundation">
@@ -15,6 +21,14 @@ description
 
 It will finally be used within a laboratory result archetype to describe the specimen being reported. ">
             use = <"Generally used within OBSERVATION. Laboratory and other laboratory related Instruction and Action archetypes">
+        >
+        ["pt-br"] = <
+            keywords = <"specimen", "laboratory", "sample", "collection">
+            language = <[ISO_639-1::pt-br]>
+            purpose = <"*To record details of a laboratory specimen. Will often be used in different contexts e.g within an Instruction archetype to describe the specimen that has to be taken, or describing the specimen which accompanies the laboratory request. It may occur within an Action archetype e.g. describing specimens taken as part of a surgical procedure.
+
+It will finally be used within a laboratory result archetype to describe the specimen being reported.  (en)">
+            use = <"*Generally used within OBSERVATION. Laboratory and other laboratory related Instruction and Action archetypes (en)">
         >
     >
     lifecycle_state = <"unmanaged">
@@ -267,12 +281,10 @@ terminology
             >
             ["id9"] = <
                 text = <"Sampling preconditions">
-                description = <"Any conditions to be met before the sample should be taken e.g. fasting, 'full bladder', 'sterile field' or any special instructions on the handling or immediate processing of the sample e.g. centrifuge on receipt. 
-
-Can also be used to document any known deviations from collection or handling instructions e.g patient was not fasted.">
+                description = <"Any conditions to be met before the sample should be taken e.g. fasting, 'full bladder', 'sterile field' or any special instructions on the handling or immediate processing of the sample e.g. centrifuge on receipt. Can also be used to document any known deviations from collection or handling instructions e.g patient was not fasted.">
             >
             ["id14"] = <
-                text = <"Source site ">
+                text = <"Source site">
                 description = <"The anatomical site(s) from where the specimen was taken.">
             >
             ["id26"] = <
@@ -280,12 +292,12 @@ Can also be used to document any known deviations from collection or handling in
                 description = <"Any special preservative or transport medium requirements.">
             >
             ["id28"] = <
-                text = <"Physical details ">
-                description = <"Dimensions / weight of sample. Set as unbounded to allow variations e.g Weight of prostatic gland with and without seminal vesicles ">
+                text = <"Physical details">
+                description = <"Dimensions / weight of sample. Set as unbounded to allow variations e.g Weight of prostatic gland with and without seminal vesicles">
             >
             ["id30"] = <
                 text = <"Specimen tissue type">
-                description = <"The type of specimen to be collected e.g venous blood, prostatic biopsy. ">
+                description = <"The type of specimen to be collected e.g venous blood, prostatic biopsy.">
             >
             ["id35"] = <
                 text = <"Datetime received">
@@ -297,7 +309,7 @@ Can also be used to document any known deviations from collection or handling in
             >
             ["id40"] = <
                 text = <"Specimen quality">
-                description = <"Problems with the received specimen. ">
+                description = <"Problems with the received specimen.">
             >
             ["id42"] = <
                 text = <"Adequacy for testing">
@@ -369,9 +381,7 @@ Can also be used to document any known deviations from collection or handling in
             >
             ["id68"] = <
                 text = <"Collection setting">
-                description = <"Identification of the setting at which the specimen was collected 
-from a subject of care. The specimen is often collected by a 
-healthcare provider, but may be collected directly by the patient or carer at home.">
+                description = <"Identification of the setting at which the specimen was collected from a subject of care. The specimen is often collected by a healthcare provider, but may be collected directly by the patient or carer at home.">
             >
             ["id69"] = <
                 text = <"Additional preparation">
@@ -489,9 +499,7 @@ healthcare provider, but may be collected directly by the patient or carer at ho
             >
             ["id9"] = <
                 text = <"*Sampling preconditions(en)">
-                description = <"*Any conditions to be met before the sample should be taken e.g. fasting, 'full bladder', 'sterile field' or any special instructions on the handling or immediate processing of the sample e.g. centrifuge on receipt. 
-
-Can also be used to document any known deviations from collection or handling instructions e.g patient was not fasted.(en)">
+                description = <"*Any conditions to be met before the sample should be taken e.g. fasting, 'full bladder', 'sterile field' or any special instructions on the handling or immediate processing of the sample e.g. centrifuge on receipt. Can also be used to document any known deviations from collection or handling instructions e.g patient was not fasted.(en)">
             >
             ["id14"] = <
                 text = <"*Source site (en)">
@@ -591,9 +599,7 @@ Can also be used to document any known deviations from collection or handling in
             >
             ["id68"] = <
                 text = <"*Collection setting(en)">
-                description = <"*Identification of the setting at which the specimen was collected 
-from a subject of care. The specimen is often collected by a 
-healthcare provider, but may be collected directly by the patient or carer at home.(en)">
+                description = <"*Identification of the setting at which the specimen was collected from a subject of care. The specimen is often collected by a healthcare provider, but may be collected directly by the patient or carer at home.(en)">
             >
             ["id69"] = <
                 text = <"*Additional preparation(en)">
@@ -682,6 +688,224 @@ healthcare provider, but may be collected directly by the patient or carer at ho
             ["ac3"] = <
                 text = <"*Adequacy for testing(en) (synthesised)">
                 description = <"*Is the specimen adequate for testing?(en) (synthesised)">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"Espécime">
+                description = <"Para registrar detalhes de uma amostra de laboratório.">
+            >
+            ["id2"] = <
+                text = <"Identificador atribuído ao preenchimento">
+                description = <"Identificador único da amostra, normalmente atribuído pelo laboratório.">
+            >
+            ["id3"] = <
+                text = <"Identificadores">
+                description = <"Exemplos de identificações">
+            >
+            ["id4"] = <
+                text = <"Identificador de preenchimento pai">
+                description = <"Identificador exclusivo da amostra principal, em que a amostra é dividida em subamostras.">
+            >
+            ["id6"] = <
+                text = <"Risco potencial / risco biológico">
+                description = <"Qualquer risco ou risco biológico associado à coleta ou manipulação do espécime.">
+            >
+            ["id8"] = <
+                text = <"Procedimento de coleta">
+                description = <"O método de coleta a ser utilizado, por exemplo, punção venosa, biópsia. ressecção.">
+            >
+            ["id9"] = <
+                text = <"Pré-condições de amostragem">
+                description = <"Quaisquer condições a serem cumpridas antes que a amostra seja retirada, p. jejum, 'bexiga cheia', 'campo estéril' ou quaisquer instruções especiais sobre o manuseamento ou processamento imediato da amostra, e. centrifugação no recebimento. Também pode ser usado para documentar quaisquer desvios conhecidos das instruções de coleta ou manuseio, por exemplo, o paciente não estava em jejum.">
+            >
+            ["id14"] = <
+                text = <"Local de origem">
+                description = <"O local anatômico de onde o espécime foi retirado">
+            >
+            ["id26"] = <
+                text = <"Mídia de transporte">
+                description = <"Quaisquer requisitos especiais de preservação ou meio de transporte.">
+            >
+            ["id28"] = <
+                text = <"Detalhes físicos">
+                description = <"Dimensões / peso da amostra. Definido como ilimitado para permitir variações, por exemplo, Peso da próstata com e sem vesículas seminais">
+            >
+            ["id30"] = <
+                text = <"Tipo de tecido de amostra">
+                description = <"O tipo de amostra a ser coletada, por exemplo, sangue venoso, biópsia prostática.">
+            >
+            ["id35"] = <
+                text = <"Data e hora recebido">
+                description = <"A data e hora em que a amostra foi recebida no laboratório.">
+            >
+            ["id36"] = <
+                text = <"Data e hora processado">
+                description = <"A data e hora em que o espécime foi processado pelo laboratório.">
+            >
+            ["id40"] = <
+                text = <"Qualidade da amostra">
+                description = <"Problemas com o espécime recebido">
+            >
+            ["id42"] = <
+                text = <"Adequação para testes">
+                description = <"O espécime é adequado para testes?">
+            >
+            ["id43"] = <
+                text = <"Amostras recebidas">
+                description = <"Questão específica com uma amostra recebida.">
+            >
+            ["id45"] = <
+                text = <"Problemas de manuseio de laboratório">
+                description = <"Problema decorrente do manuseio ou processamento do espécime dentro do laboratório.">
+            >
+            ["id46"] = <
+                text = <"Comentário">
+                description = <"Um comentário de texto adicional sobre a qualidade da amostra recebida.">
+            >
+            ["id47"] = <
+                text = <"Detalhes do processamento de laboratório">
+                description = <"Fluxo de trabalho de processamento / manuseio de amostras.">
+            >
+            ["id51"] = <
+                text = <"Detalhes da coleção">
+                description = <"Requisitos de coleta e manuseio.">
+            >
+            ["at53"] = <
+                text = <"Hemolisado">
+                description = <"O espécime foi hemolisado.">
+            >
+            ["at54"] = <
+                text = <"Lipaemia">
+                description = <"O espécime era lipêmico">
+            >
+            ["at55"] = <
+                text = <"Meio de transporte incorreto">
+                description = <"Um agente de conservação incorreto foi usado ao transportar o espécime.">
+            >
+            ["at56"] = <
+                text = <"Amostra insuficiente">
+                description = <"Uma amostra insuficiente foi dada para realizar a medição.">
+            >
+            ["at57"] = <
+                text = <"Erro de manipulação">
+                description = <"Um erro surgiu ao manusear a amostra.">
+            >
+            ["at58"] = <
+                text = <"Idade">
+                description = <"O espécime era velho demais para ser analisado com precisão.">
+            >
+            ["at59"] = <
+                text = <"Acidente de laboratório">
+                description = <"Ocorreu um acidente com a amostra no laboratório.">
+            >
+            ["at60"] = <
+                text = <"Falha técnica">
+                description = <"O espécime não pôde ser analisado por razões técnicas.">
+            >
+            ["at63"] = <
+                text = <"Satisfatório">
+                description = <"A amostra é de qualidade suficiente para permitir a comunicação.">
+            >
+            ["at64"] = <
+                text = <"Insatisfatório - processado">
+                description = <"A amostra é insatisfatória, mas foi processada.">
+            >
+            ["at65"] = <
+                text = <"Insatisfatório - não processado">
+                description = <"A amostra é insatisfatória e não foi processada.">
+            >
+            ["id68"] = <
+                text = <"Configuração da coleção">
+                description = <"Identificação do local em que o espécime foi coletado de um sujeito de cuidados. A amostra é frequentemente coletada por um profissional de saúde, mas pode ser coletada diretamente pelo paciente ou cuidador em casa.">
+            >
+            ["id69"] = <
+                text = <"Preparação adicional">
+                description = <"O grupo de preparação de amostras permite o registro detalhado de uma etapa de preparação específica, por exemplo, coloração ou fixação.">
+            >
+            ["id71"] = <
+                text = <"Identificador do coletor de amostras">
+                description = <"Identificador da pessoa ou agência responsável pela coleta da amostra.">
+            >
+            ["id72"] = <
+                text = <"Detalhes do coletor de amostras">
+                description = <"A pessoa ou organização responsável pela coleta da amostra.">
+            >
+            ["id74"] = <
+                text = <"Detalhes da biópsia da agulha">
+                description = <"Detalhes da agulha usada para fazer uma biópsia por agulha.">
+            >
+            ["id75"] = <
+                text = <"Calibre de agulha do núcleo da biópsia">
+                description = <"O diâmetro do núcleo obtido por meio de biópsia de agulha, expresso pelo medidor de agulha usado para retirar a amostra.">
+            >
+            ["id76"] = <
+                text = <"Comprimento máximo do núcleo da biópsia">
+                description = <"O comprimento do núcleo obtido por biópsia por agulha.">
+            >
+            ["id77"] = <
+                text = <"Número de núcleos">
+                description = <"O número de núcleos de biópsia de agulha recebidos.">
+            >
+            ["id80"] = <
+                text = <"Descrição do procedimento de coleta">
+                description = <"Descrição detalhada adicional do método de coleta de amostras.">
+            >
+            ["id81"] = <
+                text = <"Número de contêineres">
+                description = <"O número total de recipientes que contêm este espécime.">
+            >
+            ["id82"] = <
+                text = <"Data e hora transportada">
+                description = <"sem especificação">
+            >
+            ["id84"] = <
+                text = <"Detalhe do contêiner">
+                description = <"Detalhes do contêiner e detalhes de transporte utilizados.">
+            >
+            ["id85"] = <
+                text = <"Identificador designado para a amostra">
+                description = <"sem descrição">
+            >
+            ["id86"] = <
+                text = <"Requisito de manipulação">
+                description = <"Quaisquer condições associadas ao manuseio da amostra em trânsito, por exemplo, \"Manter refrigerado\".">
+            >
+            ["id87"] = <
+                text = <"Espécime disponível">
+                description = <"sem descrição">
+            >
+            ["id89"] = <
+                text = <"Local de coleta">
+                description = <"sem descrição">
+            >
+            ["id90"] = <
+                text = <"Data e hora início da coleta">
+                description = <"A data e a hora em que a coleta foi solicitada ou ocorreu.">
+            >
+            ["id91"] = <
+                text = <"Data e hora de expiração">
+                description = <"A data e hora após as quais a amostra não pode mais ser usada para teste.">
+            >
+            ["id92"] = <
+                text = <"Data e hora de fim da coleta">
+                description = <"A data e a hora em que a coleção foi encomendada para terminar o local ou terminar.">
+            >
+            ["at66"] = <
+                text = <"Comprimento">
+                description = <"Comprimento">
+            >
+            ["ac1"] = <
+                text = <"*Specimen received issues (synthesised) (en)">
+                description = <"*Specific issue with a received specimen. (synthesised) (en)">
+            >
+            ["ac2"] = <
+                text = <"*Laboratory handling issues (synthesised) (en)">
+                description = <"*Issue arising with handling or processing of the specimen within the laboratory. (synthesised) (en)">
+            >
+            ["ac3"] = <
+                text = <"*Adequacy for testing (synthesised) (en)">
+                description = <"*Is the specimen adequate for testing? (synthesised) (en)">
             >
         >
     >
