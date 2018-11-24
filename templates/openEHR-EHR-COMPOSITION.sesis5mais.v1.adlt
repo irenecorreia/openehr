@@ -44,6 +44,7 @@ definition
         content matches {
             use_archetype SECTION[id0.2, openEHR-EHR-SECTION.ovl-sesis5mais-adhoc-001.v1.0.0]
             use_archetype SECTION[id0.3, openEHR-EHR-SECTION.ovl-sesis5mais-adhoc-002.v1.0.0]
+            use_archetype SECTION[id0.4, openEHR-EHR-SECTION.ovl-sesis5mais-adhoc-003.v1.0.0]
         }
     }
 
@@ -123,9 +124,6 @@ definition
             ELEMENT[id23] matches {
                 /value[id24]/value matches {True, False}
             }
-            ELEMENT[id27] matches {
-                /value[id28]/value matches {*}
-            }
         }
     }
 
@@ -170,6 +168,35 @@ terminology
             ["id1.1"] = <
                 text = <"Medical record">
                 description = <"medical record">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-sesis5mais-adhoc-003.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Encabeçamento">
+                description = <"Um título genérico para renomeação contextual dentro de um modelo.">
             >
         >
     >
