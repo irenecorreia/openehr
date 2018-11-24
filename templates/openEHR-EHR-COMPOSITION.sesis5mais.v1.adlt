@@ -44,7 +44,6 @@ definition
         content matches {
             use_archetype SECTION[id0.2, openEHR-EHR-SECTION.ovl-sesis5mais-adhoc-001.v1.0.0]
             use_archetype SECTION[id0.3, openEHR-EHR-SECTION.ovl-sesis5mais-adhoc-002.v1.0.0]
-            use_archetype SECTION[id0.4, openEHR-EHR-SECTION.ovl-sesis5mais-adhoc-003.v1.0.0]
         }
     }
 
@@ -153,7 +152,9 @@ specialize
 
 definition
     SECTION[id1.1] matches {    -- Adhoc Heading
-        items
+        items matches {
+            use_archetype OBSERVATION[id0.2, openEHR-EHR-OBSERVATION.ovl-sesis5mais-clinical_record-001.v1.0.0]
+        }
     }
 
 terminology
@@ -175,28 +176,35 @@ terminology
 
 ---------------------------------------------------------------------------------
 template_overlay
-    openEHR-EHR-SECTION.ovl-sesis5mais-adhoc-003.v1.0.0
+    openEHR-EHR-OBSERVATION.ovl-sesis5mais-clinical_record-001.v1.0.0
 
 specialize
-    openEHR-EHR-SECTION.adhoc.v1.0.0
+    openEHR-EHR-OBSERVATION.clinical_record.v1.0.0
 
 definition
-    SECTION[id1.1] matches {    -- Adhoc Heading
-        items
+    OBSERVATION[id1.1] matches {    -- clinical_record
+        /data[id2]/events[id3]/data[id4]/items matches {
+            ELEMENT[id27] matches {
+                /value[id28]/defining_code matches {[ac1]}
+            }
+            ELEMENT[id37] matches {
+                /value[id38]/defining_code matches {[ac2]}
+            }
+        }
     }
 
 terminology
     term_definitions = <
         ["en"] = <
             ["id1.1"] = <
-                text = <"Adhoc Heading">
-                description = <"A generic heading for contextual renaming within a template.">
+                text = <"clinical_record">
+                description = <"clinical_record">
             >
         >
         ["pt-br"] = <
             ["id1.1"] = <
-                text = <"Encabeçamento">
-                description = <"Um título genérico para renomeação contextual dentro de um modelo.">
+                text = <"Ficha Clínica">
+                description = <"Ficha Clínica">
             >
         >
     >
