@@ -1,0 +1,461 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-OBSERVATION.clinical_record.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    translations = <
+        ["pt-br"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
+    
+description
+    copyright = <"">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"">
+        >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
+        >
+    >
+    lifecycle_state = <"unmanaged">
+
+definition
+    OBSERVATION[id1] matches {    -- clinical_record
+        data matches {
+            HISTORY[id2] matches {
+                events matches {
+                    EVENT[id3] matches {    -- Any event
+                        data matches {
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id9] matches {    -- employee
+                                        value matches {
+                                            DV_TEXT[id10] 
+                                        }
+                                    }
+                                    ELEMENT[id11] matches {    -- Registration
+                                        value matches {
+                                            DV_TEXT[id12] 
+                                        }
+                                    }
+                                    ELEMENT[id13] matches {    -- Birth
+                                        value matches {
+                                            DV_DATE_TIME[id14] matches {
+                                                value matches {*}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id15] matches {    -- Admission
+                                        value matches {
+                                            DV_DATE_TIME[id16] matches {
+                                                value matches {*}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id17] matches {    -- Service time
+                                        value matches {
+                                            DV_TEXT[id18] 
+                                        }
+                                    }
+                                    ELEMENT[id19] matches {    -- Unity
+                                        value matches {
+                                            DV_TEXT[id20] 
+                                        }
+                                    }
+                                    ELEMENT[id21] matches {    -- Sector
+                                        value matches {
+                                            DV_TEXT[id22] 
+                                        }
+                                    }
+                                    ELEMENT[id23] matches {    -- Office
+                                        value matches {
+                                            DV_TEXT[id24] 
+                                        }
+                                    }
+                                    ELEMENT[id25] matches {    -- Resignation
+                                        value matches {
+                                            DV_TEXT[id26] 
+                                        }
+                                    }
+                                    ELEMENT[id27] matches {    -- Situation
+                                        value matches {
+                                            DV_CODED_TEXT[id28] matches {
+                                                defining_code matches {[ac1]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id29] matches {    -- Age
+                                        value matches {
+                                            DV_TEXT[id30] 
+                                        }
+                                    }
+                                    ELEMENT[id31] matches {    -- ID
+                                        value matches {
+                                            DV_TEXT[id32] 
+                                        }
+                                    }
+                                    ELEMENT[id33] matches {    -- GENRE
+                                        value matches {
+                                            DV_TEXT[id34] 
+                                        }
+                                    }
+                                    ELEMENT[id35] matches {    -- Date of File
+                                        value matches {
+                                            DV_TEXT[id36] 
+                                        }
+                                    }
+                                    ELEMENT[id37] matches {    -- Type
+                                        value matches {
+                                            DV_CODED_TEXT[id38] matches {
+                                                defining_code matches {[ac2]}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id39] matches {    -- Doctor
+                                        value matches {
+                                            DV_TEXT[id40] 
+                                        }
+                                    }
+                                    ELEMENT[id41] matches {    -- Sequential Code
+                                        value matches {
+                                            DV_TEXT[id42] 
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        state matches {
+                            ITEM_TREE[id5] 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"clinical_record">
+                description = <"clinical_record">
+            >
+            ["id3"] = <
+                text = <"Any event">
+                description = <"Any event">
+            >
+            ["id9"] = <
+                text = <"employee">
+                description = <"employee">
+            >
+            ["id11"] = <
+                text = <"Registration">
+                description = <"Registration">
+            >
+            ["id13"] = <
+                text = <"Birth">
+                description = <"Birth">
+            >
+            ["id15"] = <
+                text = <"Admission">
+                description = <"Admission">
+            >
+            ["id17"] = <
+                text = <"Service time">
+                description = <"Service time">
+            >
+            ["id19"] = <
+                text = <"Unity">
+                description = <"Unity">
+            >
+            ["id21"] = <
+                text = <"Sector">
+                description = <"Sector">
+            >
+            ["id23"] = <
+                text = <"Office">
+                description = <"Office">
+            >
+            ["id25"] = <
+                text = <"Resignation">
+                description = <"Resignation">
+            >
+            ["id27"] = <
+                text = <"Situation">
+                description = <"Situation">
+            >
+            ["at1"] = <
+                text = <"Active">
+                description = <"Active">
+            >
+            ["at2"] = <
+                text = <"Inactive">
+                description = <"Inactive">
+            >
+            ["at3"] = <
+                text = <"Pending">
+                description = <"Pending">
+            >
+            ["at4"] = <
+                text = <"Away">
+                description = <"Away">
+            >
+            ["at5"] = <
+                text = <"Vacation">
+                description = <"Vacation">
+            >
+            ["ac1"] = <
+                text = <"Situation">
+                description = <"Situation">
+            >
+            ["id29"] = <
+                text = <"Age">
+                description = <"Age">
+            >
+            ["id31"] = <
+                text = <"ID">
+                description = <"ID">
+            >
+            ["id33"] = <
+                text = <"GENRE">
+                description = <"GENRE">
+            >
+            ["id35"] = <
+                text = <"Date of File">
+                description = <"Date of File">
+            >
+            ["id37"] = <
+                text = <"Type">
+                description = <"Type">
+            >
+            ["at6"] = <
+                text = <"Admissional">
+                description = <"Admissional">
+            >
+            ["at7"] = <
+                text = <"Periodic">
+                description = <"Periodic">
+            >
+            ["at8"] = <
+                text = <"Demissional">
+                description = <"Demissional">
+            >
+            ["at9"] = <
+                text = <"Change of function">
+                description = <"Change of function">
+            >
+            ["at10"] = <
+                text = <"Back to work">
+                description = <"Back to work">
+            >
+            ["at11"] = <
+                text = <"Point monitoring">
+                description = <"Point monitoring">
+            >
+            ["at12"] = <
+                text = <"Accident">
+                description = <"Accident">
+            >
+            ["at13"] = <
+                text = <"Query">
+                description = <"Query">
+            >
+            ["at14"] = <
+                text = <"Return query">
+                description = <"Return query">
+            >
+            ["at15"] = <
+                text = <"Medical license">
+                description = <"Medical license">
+            >
+            ["at16"] = <
+                text = <"Nursing">
+                description = <"Nursing">
+            >
+            ["at17"] = <
+                text = <"Others">
+                description = <"Others">
+            >
+            ["ac2"] = <
+                text = <"Type">
+                description = <"Type">
+            >
+            ["id39"] = <
+                text = <"Doctor">
+                description = <"Doctor">
+            >
+            ["id41"] = <
+                text = <"Sequential Code">
+                description = <"Sequential Code">
+            >
+        >
+        ["pt-br"] = <
+            ["id1"] = <
+                text = <"Ficha Clínica">
+                description = <"Ficha Clínica">
+            >
+            ["id3"] = <
+                text = <"*Any event (en)">
+                description = <"*Any event (en)">
+            >
+            ["id9"] = <
+                text = <"Funcionário">
+                description = <"Funcionário">
+            >
+            ["id11"] = <
+                text = <"Matrícula">
+                description = <"Matrícula">
+            >
+            ["id13"] = <
+                text = <"Nascimento">
+                description = <"Nascimento">
+            >
+            ["id15"] = <
+                text = <"Admissão">
+                description = <"Admissão">
+            >
+            ["id17"] = <
+                text = <"Tempo de serviço">
+                description = <"Tempo de serviço">
+            >
+            ["id19"] = <
+                text = <"Unidade">
+                description = <"Unidade">
+            >
+            ["id21"] = <
+                text = <"Setor">
+                description = <"Setor">
+            >
+            ["id23"] = <
+                text = <"Cargo">
+                description = <"Cargo">
+            >
+            ["id25"] = <
+                text = <"Demissão">
+                description = <"Demissão">
+            >
+            ["id27"] = <
+                text = <"Situação">
+                description = <"Situação">
+            >
+            ["at1"] = <
+                text = <"Ativo">
+                description = <"Ativo">
+            >
+            ["at2"] = <
+                text = <"Inativo">
+                description = <"Inativo">
+            >
+            ["at3"] = <
+                text = <"Pendente">
+                description = <"Pendente">
+            >
+            ["at4"] = <
+                text = <"Afastado">
+                description = <"Afastado">
+            >
+            ["at5"] = <
+                text = <"Férias">
+                description = <"Férias">
+            >
+            ["ac1"] = <
+                text = <"*Situation (en)">
+                description = <"*Situation (en)">
+            >
+            ["id29"] = <
+                text = <"Idade">
+                description = <"Idade">
+            >
+            ["id31"] = <
+                text = <"RG">
+                description = <"RG">
+            >
+            ["id33"] = <
+                text = <"Sexo">
+                description = <"Sexo">
+            >
+            ["id35"] = <
+                text = <"Data da ficha">
+                description = <"Data da ficha">
+            >
+            ["id37"] = <
+                text = <"Tipo">
+                description = <"Tipo">
+            >
+            ["at6"] = <
+                text = <"Admissional">
+                description = <"Admissional">
+            >
+            ["at7"] = <
+                text = <"Periódico">
+                description = <"Periódico">
+            >
+            ["at8"] = <
+                text = <"Demissional">
+                description = <"Demissional">
+            >
+            ["at9"] = <
+                text = <"Mudança de função">
+                description = <"Mudança de função">
+            >
+            ["at10"] = <
+                text = <"Retorno ao trabalho">
+                description = <"Retorno ao trabalho">
+            >
+            ["at11"] = <
+                text = <"Monitorização pontual">
+                description = <"Monitorização pontual">
+            >
+            ["at12"] = <
+                text = <"Acidente">
+                description = <"Acidente">
+            >
+            ["at13"] = <
+                text = <"Consulta">
+                description = <"Consulta">
+            >
+            ["at14"] = <
+                text = <"Retorno consulta">
+                description = <"Retorno consulta">
+            >
+            ["at15"] = <
+                text = <"Licença médica">
+                description = <"Licença médica">
+            >
+            ["at16"] = <
+                text = <"Enfermagem">
+                description = <"Enfermagem">
+            >
+            ["at17"] = <
+                text = <"Terceiros">
+                description = <"Terceiros">
+            >
+            ["ac2"] = <
+                text = <"*Type (en)">
+                description = <"*Type (en)">
+            >
+            ["id39"] = <
+                text = <"Médico">
+                description = <"Médico">
+            >
+            ["id41"] = <
+                text = <"Código sequencial">
+                description = <"Código sequencial">
+            >
+        >
+    >
+    value_sets = <
+        ["ac1"] = <
+            id = <"ac1">
+            members = <"at1", "at2", "at3", "at4", "at5">
+        >
+        ["ac2"] = <
+            id = <"ac2">
+            members = <"at6", "at7", "at8", "at9", "at10", "at11", "at12", "at13", "at14", "at15", "at16", "at17">
+        >
+    >
+
