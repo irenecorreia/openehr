@@ -41,5 +41,11 @@
     "name" : "Encounter",
     "path" : "templates/openEHR-EHR-COMPOSITION.questionario_de_saude.v1.adlt",
     "sha" : "4529123135a0eb24dba854cb29cac456bf09b53f"
+  }, {
+    "id" : "openEHR-EHR-COMPOSITION.sesis5mais.v1.0.0",
+    "rmType" : "COMPOSITION",
+    "name" : "Encounter",
+    "path" : "templates/openEHR-EHR-COMPOSITION.sesis5mais.v1.adlt",
+    "sha" : "e86e55c5d3ae234821581528a53f1824cc0d7289"
   } ]
 }
