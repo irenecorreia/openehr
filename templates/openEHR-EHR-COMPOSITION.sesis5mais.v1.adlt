@@ -43,6 +43,7 @@ definition
         /category[id3]/defining_code matches {[at1]}
         content matches {
             use_archetype SECTION[id0.2, openEHR-EHR-SECTION.ovl-sesis5mais-adhoc-001.v1.0.0]
+            use_archetype SECTION[id0.3, openEHR-EHR-SECTION.ovl-sesis5mais-adhoc-002.v1.0.0]
         }
     }
 
@@ -140,6 +141,35 @@ terminology
             ["id1.1"] = <
                 text = <"Exam Result">
                 description = <"Exam Result">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-SECTION.ovl-sesis5mais-adhoc-002.v1.0.0
+
+specialize
+    openEHR-EHR-SECTION.adhoc.v1.0.0
+
+definition
+    SECTION[id1.1] matches {    -- Adhoc Heading
+        items
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Adhoc Heading">
+                description = <"A generic heading for contextual renaming within a template.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"Medical record">
+                description = <"medical record">
             >
         >
     >
