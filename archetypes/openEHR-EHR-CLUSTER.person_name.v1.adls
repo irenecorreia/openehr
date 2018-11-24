@@ -484,32 +484,32 @@ terminology
         >
         ["pt-br"] = <
             ["id1"] = <
-                text = <"*Person name (en)">
-                description = <"*Details of personal name of an individual, provider or third party. (en)">
+                text = <"Nome da pessoa">
+                description = <"Detalhes do nome pessoal de um indivíduo, provedor ou terceiro.">
             >
             ["id2"] = <
-                text = <"*Unstructured name (en)">
-                description = <"*Name in free text unstructured format. (en)">
+                text = <"Nome não estruturado">
+                description = <"Nome em formato livre de texto não estruturado.">
             >
             ["id3"] = <
-                text = <"*Structured name (en)">
-                description = <"*Name in structured format. (en)">
+                text = <"Nome estruturado">
+                description = <"Nome em formato estruturado.">
             >
             ["id4"] = <
-                text = <"*Given name (en)">
-                description = <"*Given / personal / first name. (en)">
+                text = <"Nome próprio">
+                description = <"Dado / pessoal / primeiro nome">
             >
             ["id5"] = <
-                text = <"*Middle name (en)">
-                description = <"*Middle name or names. (en)">
+                text = <"Segundo nome">
+                description = <"Nome do meio ou nomes.">
             >
             ["id6"] = <
-                text = <"*Family name (en)">
-                description = <"*Family name or Surname. (en)">
+                text = <"Nome da família">
+                description = <"Nome da família ou sobrenome.">
             >
             ["id7"] = <
-                text = <"*Name type (en)">
-                description = <"*Type of name described. (en)">
+                text = <"Tipo de nome">
+                description = <"Tipo de nome descrito.">
             >
             ["at9"] = <
                 text = <"*Previous name (en)">
@@ -532,16 +532,16 @@ terminology
                 description = <"*Name used by this persion before marriage. (en)">
             >
             ["id15"] = <
-                text = <"*Validity period (en)">
-                description = <"*The date interval at which this name was valid. (en)">
+                text = <"Período de validade">
+                description = <"O intervalo de datas em que esse nome é válido.">
             >
             ["id18"] = <
-                text = <"*Title (en)">
-                description = <"*The prefix or title used by the subject. (en)">
+                text = <"Título">
+                description = <"O prefixo ou título usado pelo sujeito">
             >
             ["id19"] = <
-                text = <"*Suffix (en)">
-                description = <"*Additional term used following a person name. (en)">
+                text = <"Sufixo">
+                description = <"Termo adicional usado após o nome de uma pessoa.">
             >
             ["at20"] = <
                 text = <"*Professional name (en)">
@@ -556,8 +556,8 @@ terminology
                 description = <"*The subject’s name as it is to be used for reporting, when used with a specific identifier. (en)">
             >
             ["id23"] = <
-                text = <"*Preferred name (en)">
-                description = <"*Indicates that this is the name by which a person chooses to be identified. (en)">
+                text = <"Nome preferido">
+                description = <"Indica que este é o nome pelo qual uma pessoa escolhe ser identificada.">
             >
             ["ac1"] = <
                 text = <"*Name type (synthesised) (en)">
