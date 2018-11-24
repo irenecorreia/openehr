@@ -27,7 +27,7 @@ description
     lifecycle_state = <"unmanaged">
 
 definition
-    OBSERVATION[id1] matches {    -- resultado exame
+    OBSERVATION[id1] matches {    -- exam result
         data matches {
             HISTORY[id2] matches {
                 events matches {
@@ -103,8 +103,8 @@ terminology
     term_definitions = <
         ["en"] = <
             ["id1"] = <
-                text = <"resultado exame">
-                description = <"resultado exame">
+                text = <"exam result">
+                description = <"exam result">
             >
             ["id3"] = <
                 text = <"Any event">
@@ -181,80 +181,80 @@ terminology
         >
         ["pt-br"] = <
             ["id1"] = <
-                text = <"*resultado exame (en)">
-                description = <"*resultado exame (en)">
+                text = <"resultado exame">
+                description = <"resultado exame">
             >
             ["id3"] = <
-                text = <"*Any event (en)">
-                description = <"*Any event (en)">
+                text = <"qualquer evento">
+                description = <"qualquer evento">
             >
             ["id7"] = <
-                text = <"*Invoice (en)">
-                description = <"*Invoice (en)">
+                text = <"Nota fiscal">
+                description = <"Nota Fiscal">
             >
             ["id9"] = <
-                text = <"*Repeat (months) (en)">
-                description = <"*Repeat (months) (en)">
+                text = <"Repetir ( meses)">
+                description = <"Repetir ( meses)">
             >
             ["id11"] = <
-                text = <"*Reference Sequence (en)">
-                description = <"*reference sequence (en)">
+                text = <"Referencia Sequencia">
+                description = <"Referencia Sequencia">
             >
             ["at1"] = <
-                text = <"*Reference (en)">
-                description = <"*Reference (en)">
+                text = <"Referencial">
+                description = <"Referencial">
             >
             ["at2"] = <
-                text = <"*Sequence (en)">
-                description = <"*Sequence (en)">
+                text = <"Sequencial">
+                description = <"Sequencial">
             >
             ["at3"] = <
-                text = <"*Reference (en)">
-                description = <"*Reference (en)">
+                text = <"Referencial">
+                description = <"Referencial">
             >
             ["at4"] = <
-                text = <"*not applicable (en)">
-                description = <"*not applicable (en)">
+                text = <"Não se aplica">
+                description = <"Não se aplica">
             >
             ["ac1"] = <
                 text = <"*Ref Seq (en)">
                 description = <"*Ref Seq (en)">
             >
             ["id13"] = <
-                text = <"*Changed (en)">
-                description = <"*changed (en)">
+                text = <"Alterado">
+                description = <"Alterado">
             >
             ["at5"] = <
-                text = <"*normal (en)">
-                description = <"*normal (en)">
+                text = <"Normal">
+                description = <"Normal">
             >
             ["at6"] = <
-                text = <"*changed (en)">
-                description = <"*changed (en)">
+                text = <"Alterado">
+                description = <"Alterado">
             >
             ["at7"] = <
-                text = <"*white (en)">
-                description = <"*white (en)">
+                text = <"Branco">
+                description = <"Branco">
             >
             ["at8"] = <
-                text = <"*white (en)">
-                description = <"*white (en)">
+                text = <"Branco">
+                description = <"Branco">
             >
             ["id17"] = <
-                text = <"*In analysis (en)">
-                description = <"*In analysis (en)">
+                text = <"Em análise">
+                description = <"Em análise">
             >
             ["id19"] = <
-                text = <"*Occupational (en)">
-                description = <"*occupational (en)">
+                text = <"Ocupacional">
+                description = <"Ocupacional">
             >
             ["id21"] = <
-                text = <"*Aggravation (en)">
-                description = <"*aggravation (en)">
+                text = <"Agravamento">
+                description = <"Agravamento">
             >
             ["id23"] = <
-                text = <"*Stable (en)">
-                description = <"*stable (en)">
+                text = <"Estável">
+                description = <"Estável">
             >
         >
     >
