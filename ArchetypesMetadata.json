@@ -77,13 +77,6 @@
     "sha" : "c71d5a9651512754aaee9a3a3b3f07a810fc771a",
     "languages" : [ "en", "sl" ]
   }, {
-    "id" : "openEHR-EHR-CLUSTER.specimen.v1.0.0",
-    "rmType" : "CLUSTER",
-    "name" : "Specimen",
-    "path" : "archetypes/openEHR-EHR-CLUSTER.specimen.v1.adls",
-    "sha" : "451dd85f1dd83cb86c1f8143f380af49e3abd6ef",
-    "languages" : [ "en" ]
-  }, {
     "id" : "openEHR-EHR-CLUSTER.timing.v1.0.0",
     "rmType" : "CLUSTER",
     "name" : "Timing",
@@ -259,20 +252,6 @@
     "sha" : "52453924b0950ac0e21f3d70467ad9fbcbb23f4a",
     "languages" : [ "pt-br", "en" ]
   }, {
-    "id" : "openEHR-EHR-EVALUATION.physical_activity_summary-SESI_BR.v1.0.0",
-    "rmType" : "EVALUATION",
-    "name" : "Physical Activity Summary",
-    "path" : "archetypes/openEHR-EHR-EVALUATION.physical_activity_summary-SESI_BR.v1.adls",
-    "sha" : "56f25c3895be529e24f60fc3162213885f8d2400",
-    "languages" : [ "en", "pt-br" ]
-  }, {
-    "id" : "openEHR-EHR-EVALUATION.problem_diagnosis-SESI_BR.v1.0.0",
-    "rmType" : "EVALUATION",
-    "name" : "Problem/Diagnosis",
-    "path" : "archetypes/openEHR-EHR-EVALUATION.problem_diagnosis-SESI_BR.v1.adls",
-    "sha" : "816415506070c2017f55efb6933096636511d4b9",
-    "languages" : [ "en", "pt-br" ]
-  }, {
     "id" : "openEHR-EHR-OBSERVATION.acidente_trabalho.v1.0.0",
     "rmType" : "OBSERVATION",
     "name" : "acidente_trabalho",
@@ -286,20 +265,6 @@
     "path" : "archetypes/openEHR-EHR-OBSERVATION.alcohol_use.v1.adls",
     "sha" : "c6c03907c475abd73cae669acf85674f3a80e252",
     "languages" : [ "en", "pt-br" ]
-  }, {
-    "id" : "openEHR-EHR-OBSERVATION.antecedentes_ginecologico_urologico.v1.0.0",
-    "rmType" : "OBSERVATION",
-    "name" : "Antecedentes_ginecologico_urologico",
-    "path" : "archetypes/openEHR-EHR-OBSERVATION.antecedentes_ginecologico_urologico.v1.adls",
-    "sha" : "151010fc322962e8082bdaac5ab0751919ee361f",
-    "languages" : [ "en", "pt-br" ]
-  }, {
-    "id" : "openEHR-EHR-OBSERVATION.body_weight-SESI_BR.v1.0.0",
-    "rmType" : "OBSERVATION",
-    "name" : "Body Weight",
-    "path" : "archetypes/openEHR-EHR-OBSERVATION.body_weight-SESI_BR.v1.adls",
-    "sha" : "c030bda98163e9107e7c71e7ca96ee16a986675b",
-    "languages" : [ "en", "de", "ru", "nl", "pt-br" ]
   }, {
     "id" : "openEHR-EHR-OBSERVATION.habitos_lazer.v1.0.0",
     "rmType" : "OBSERVATION",
@@ -336,20 +301,6 @@
     "sha" : "03bb22c98631544148c79768457bad8e10e3c02c",
     "languages" : [ "en", "pt-br" ]
   }, {
-    "id" : "openEHR-EHR-OBSERVATION.substance_use-SESI_BR.v1.0.0",
-    "rmType" : "OBSERVATION",
-    "name" : "Substance Use",
-    "path" : "archetypes/openEHR-EHR-OBSERVATION.substance_use-SESI_BR.v1.adls",
-    "sha" : "dbc3106d9c2fa484fa6907b2854754a71b3048e2",
-    "languages" : [ "en", "pt-br" ]
-  }, {
-    "id" : "openEHR-EHR-OBSERVATION.substance_use-tobacco-SESI_BR.v1.0.0",
-    "rmType" : "OBSERVATION",
-    "name" : "Tobacco Use",
-    "path" : "archetypes/openEHR-EHR-OBSERVATION.substance_use-tobacco-SESI_BR.v1.adls",
-    "sha" : "d58a95cbe5d17f2627fd44f75cdb5d5788a2c5a2",
-    "languages" : [ "en", "pt-br" ]
-  }, {
     "id" : "openEHR-EHR-SECTION.adhoc.v1.0.0",
     "rmType" : "SECTION",
     "name" : "Adhoc Heading",
@@ -371,13 +322,6 @@
     "sha" : "d15653f8de1151a41ad15def67149e2514cfaac1",
     "languages" : [ "en" ]
   }, {
-    "id" : "openEHR-EHR-ACTION.imaging_exam-SESI_BR.v1.0.0",
-    "rmType" : "ACTION",
-    "name" : "Imaging examination",
-    "path" : "archetypes/openEHR-EHR-ACTION.imaging_exam-SESI_BR.v1.adls",
-    "sha" : "bc3b806eea14309b81d5349e9789b5ff83343bab",
-    "languages" : [ "en", "pt-br" ]
-  }, {
     "id" : "openEHR-EHR-ACTION.medication.v1.0.0",
     "rmType" : "ACTION",
     "name" : "Medication action",
@@ -390,13 +334,6 @@
     "path" : "archetypes/openEHR-EHR-ACTION.pathology_test.v1.adls",
     "sha" : "800fe20e2e06915a4a24c44a3023f930356c7db7",
     "languages" : [ "en" ]
-  }, {
-    "id" : "openEHR-EHR-ACTION.procedure-SESI_BR.v1.0.0",
-    "rmType" : "ACTION",
-    "name" : "Procedure",
-    "path" : "archetypes/openEHR-EHR-ACTION.procedure-SESI_BR.v1.adls",
-    "sha" : "de1b810998dc6f0c657a9b479332dda1e75136ba",
-    "languages" : [ "en", "pt-br" ]
   }, {
     "id" : "openEHR-EHR-ACTION.procedure.v1.0.0",
     "rmType" : "ACTION",
@@ -489,13 +426,6 @@
     "sha" : "a2bff37fc88fd63e98179824605be7bfaf4f77ee",
     "languages" : [ "en" ]
   }, {
-    "id" : "openEHR-EHR-CLUSTER.individual_professional.v1.0.0",
-    "rmType" : "CLUSTER",
-    "name" : "Professional Individual demographics",
-    "path" : "archetypes/openEHR-EHR-CLUSTER.individual_professional.v1.adls",
-    "sha" : "60416106764eb63a7a0d89b21ac3a6d1fe7c7c7d",
-    "languages" : [ "en", "de" ]
-  }, {
     "path" : "archetypes/openEHR-EHR-CLUSTER.lab-restricted_devices.v1.adls",
     "sha" : "ebb7a42c3bab6924fe7f8c2f5d1fc87eca0b4af2"
   }, {
@@ -512,13 +442,6 @@
     "path" : "archetypes/openEHR-EHR-CLUSTER.medication_ingredients.v1.adls",
     "sha" : "3411e9c5baed1750470d10f15e4f5688a63969c7",
     "languages" : [ "en" ]
-  }, {
-    "id" : "openEHR-EHR-CLUSTER.person_name.v1.0.0",
-    "rmType" : "CLUSTER",
-    "name" : "Person name",
-    "path" : "archetypes/openEHR-EHR-CLUSTER.person_name.v1.adls",
-    "sha" : "c06de58dd63bf3e8be0694fe1bf61674f090e805",
-    "languages" : [ "en", "de", "ar-sy", "es-ar" ]
   }, {
     "id" : "openEHR-EHR-CLUSTER.professional_role.v1.0.0",
     "rmType" : "CLUSTER",
@@ -642,13 +565,6 @@
     "sha" : "9f85017fae927bfaaac153261363f6c446622b8d",
     "languages" : [ "en" ]
   }, {
-    "id" : "openEHR-EHR-EVALUATION.exposure.v1.0.0",
-    "rmType" : "EVALUATION",
-    "name" : "Exposure",
-    "path" : "archetypes/openEHR-EHR-EVALUATION.exposure.v1.adls",
-    "sha" : "52d49e02a507f5ab33b15b81dde936a57cdb9e54",
-    "languages" : [ "en", "pt-br" ]
-  }, {
     "id" : "openEHR-EHR-EVALUATION.family_history.v1.0.0",
     "rmType" : "EVALUATION",
     "name" : "Family History",
@@ -740,13 +656,6 @@
     "sha" : "93e340291fc61f3cdd9fb7e33157ac6e77414056",
     "languages" : [ "en" ]
   }, {
-    "id" : "openEHR-EHR-OBSERVATION.alcohol_use_SESI_BR.v1.0.0",
-    "rmType" : "OBSERVATION",
-    "name" : "Alcohol Use",
-    "path" : "archetypes/openEHR-EHR-OBSERVATION.alcohol_use_SESI_BR.v1.adls",
-    "sha" : "6d496f971a9a36bff1ee72bf040c75e82665b3b9",
-    "languages" : [ "en", "pt-br" ]
-  }, {
     "id" : "openEHR-EHR-OBSERVATION.body_weight-adjusted.v1.0.0",
     "rmType" : "OBSERVATION",
     "name" : "Adjusted Body weight",
@@ -767,33 +676,12 @@
     "sha" : "be1fa664b093eaed6238c5058c5e313215a2171e",
     "languages" : [ "ptbr", "en", "pt-br" ]
   }, {
-    "id" : "openEHR-EHR-OBSERVATION.lab_test-result-SESI_BR.v1.0.0",
-    "rmType" : "OBSERVATION",
-    "name" : "Laboratory test result",
-    "path" : "archetypes/openEHR-EHR-OBSERVATION.lab_test-result-SESI_BR.v1.adls",
-    "sha" : "ddff136e70032909e94cb50418535d56ebae7c41",
-    "languages" : [ "en", "pt-br" ]
-  }, {
-    "id" : "openEHR-EHR-OBSERVATION.menstruation-SESI_BR.v1.0.0",
-    "rmType" : "OBSERVATION",
-    "name" : "Menstruation",
-    "path" : "archetypes/openEHR-EHR-OBSERVATION.menstruation-SESI_BR.v1.adls",
-    "sha" : "65dc23d25c2f44cf0789cbabf0e0169ef1877a01",
-    "languages" : [ "en", "pt-br" ]
-  }, {
     "id" : "openEHR-EHR-OBSERVATION.menstruation.v1.0.0",
     "rmType" : "OBSERVATION",
     "name" : "Menstruation",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.menstruation.v1.adls",
     "sha" : "af7a1a90b506ecbe0b8ce317d880cfcfda1b503b",
     "languages" : [ "en" ]
-  }, {
-    "id" : "openEHR-EHR-OBSERVATION.pathology_test-SESI_BR.v1.0.0",
-    "rmType" : "OBSERVATION",
-    "name" : "Pathology Test Result",
-    "path" : "archetypes/openEHR-EHR-OBSERVATION.pathology_test-SESI_BR.v1.adls",
-    "sha" : "798f239e12d60ae77790e0bb616174dd71a16aa8",
-    "languages" : [ "en", "pt-br" ]
   }, {
     "id" : "openEHR-EHR-OBSERVATION.pathology_test-blood_glucose.v1.0.0",
     "rmType" : "OBSERVATION",
@@ -973,26 +861,12 @@
     "sha" : "204ea290811fd014139de568747366bdd1b878e9",
     "languages" : [ "en" ]
   }, {
-    "id" : "openEHR-EHR-ADMIN_ENTRY.admission_SESI-BR.v1.0.0",
-    "rmType" : "ADMIN_ENTRY",
-    "name" : "Patient admission",
-    "path" : "archetypes/openEHR-EHR-ADMIN_ENTRY.admission_SESI-BR.v1.adls",
-    "sha" : "8e1f82dc2f95cf37e2a2bb39a8e1360d7cfbcde5",
-    "languages" : [ "en", "ar-sy", "pt-br" ]
-  }, {
     "id" : "openEHR-EHR-ADMIN_ENTRY.aplicacao_pesquisa.v1.0.0",
     "rmType" : "ADMIN_ENTRY",
     "name" : "Aplicacao pesquisa",
     "path" : "archetypes/openEHR-EHR-ADMIN_ENTRY.aplicacao_pesquisa.v1.adls",
     "sha" : "431e72a9de986f9a0d800117ece01e86690ce66d",
     "languages" : [ "pt-br", "en" ]
-  }, {
-    "id" : "openEHR-EHR-ADMIN_ENTRY.dados_socioeconomicos.v1.0.0",
-    "rmType" : "ADMIN_ENTRY",
-    "name" : "dados socioeconomicos",
-    "path" : "archetypes/openEHR-EHR-ADMIN_ENTRY.dados_socioeconomicos.v1.adls",
-    "sha" : "d06a91583a4191212bc776b63726b53cac05903d",
-    "languages" : [ "pt-br" ]
   }, {
     "id" : "openEHR-EHR-CLUSTER.dados.v1.0.0",
     "rmType" : "CLUSTER",
@@ -1008,22 +882,12 @@
     "sha" : "109b625d6650aefee875d1d646d7b70380bc50ec",
     "languages" : [ "pt-br" ]
   }, {
-    "id" : "openEHR-EHR-OBSERVATION.alcohol_useSESI_BR.v1.0.0",
-    "rmType" : "OBSERVATION",
-    "name" : "Alcohol Use",
-    "path" : "archetypes/openEHR-EHR-OBSERVATION.alcohol_useSESI_BR.v1.adls",
-    "sha" : "848bb5e7bf808b47e438a47c9872ccf725b2b6cb",
-    "languages" : [ "en", "pt-br" ]
-  }, {
     "id" : "openEHR-EHR-OBSERVATION.alimentacao.v1.0.0",
     "rmType" : "OBSERVATION",
     "name" : "Alimentacao",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.alimentacao.v1.adls",
     "sha" : "c69d801eef4a6b163fdf5b544139098181d93102",
     "languages" : [ "pt-br", "en" ]
-  }, {
-    "path" : "archetypes/openEHR-EHR-OBSERVATION.exame_fisico_sesi_br.v1.adls",
-    "sha" : "a0a79f6a057ba714901d7c5a1214c409db747b41"
   }, {
     "rmType" : "OBSERVATION",
     "name" : "morbidade referida",
@@ -1256,6 +1120,13 @@
     "name" : "exam result",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.resultado_exame.v1.adls",
     "sha" : "f5d2fe665ca2c376b536fc6b09bb980b52424db9",
+    "languages" : [ "en", "pt-br" ]
+  }, {
+    "id" : "openEHR-EHR-OBSERVATION.clinical_record.v1.0.0",
+    "rmType" : "OBSERVATION",
+    "name" : "clinical_record",
+    "path" : "archetypes/openEHR-EHR-OBSERVATION.clinical_record.v1.adls",
+    "sha" : "3999512f4c9075c47d32d2ed9373d367e73ae318",
     "languages" : [ "en", "pt-br" ]
   } ]
 }
